@@ -1,0 +1,27 @@
+{
+  "name": "connect-hub-co",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@11.9.0",
+  "description": "Connect Hub Co. - AI-powered service platform",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "format": "turbo run format",
+    "clean": "turbo run clean"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "eslint": "^10.7.0",
+    "prettier": "^3.9.5",
+    "tsx": "^4.23.0",
+    "turbo": "^2.10.2",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "react-hook-form": "^7.81.0"
+  }
+}

@@ -1,0 +1,27 @@
+# Node Modules
+node_modules/
+
+# Next.js
+.next/
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/settings.json
+
+# Build
+dist/
+out/
+
+# Prisma
+prisma/dev.db
+/generated/prisma
