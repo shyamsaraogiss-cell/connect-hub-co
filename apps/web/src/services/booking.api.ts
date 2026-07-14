@@ -1,0 +1,10 @@
+import { api } from "@/lib/api";
+import { Booking, BookingInput } from "@/types/booking";
+const endpoint = "/bookings";
+export const getBookings = () => api<Booking[]>(endpoint);
+export const getBooking = (id: string) => api<Booking>(`${endpoint}/${id}`);
+export const createBooking = (value: BookingInput) => api<Booking>(endpoint, { method: "POST", body: JSON.stringify(value) });
+export const updateBooking = (id: string, value: Partial<BookingInput>) => api<Booking>(`${endpoint}/${id}`, { method: "PATCH", body: JSON.stringify(value) });
+export const updateBookingStatus = (id: string, status: Booking["status"]) => api<Booking>(`${endpoint}/${id}/status`, { method: "PATCH", body: JSON.stringify({ status }) });
+export const cancelBooking = (id: string) => api<Booking>(`${endpoint}/${id}/cancel`, { method: "PATCH" });
+export const deleteBooking = (id: string) => api<Booking>(`${endpoint}/${id}`, { method: "DELETE" });

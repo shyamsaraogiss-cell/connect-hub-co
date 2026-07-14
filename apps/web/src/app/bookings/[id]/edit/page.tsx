@@ -1,0 +1,7 @@
+"use client";
+import { useEffect, useState } from "react";
+import { useParams, useRouter } from "next/navigation";
+import BookingForm from "@/components/booking/BookingForm";
+import { getBooking, updateBooking } from "@/services/booking.api";
+import { Booking, BookingInput } from "@/types/booking";
+export default function EditBookingPage() { const { id } = useParams<{ id: string }>(); const router = useRouter(); const [booking, setBooking] = useState<Booking | null>(null); const [error, setError] = useState<string | null>(null); useEffect(() => { if (id) void getBooking(id).then(setBooking).catch((reason) => setError(reason instanceof Error ? reason.message : "Unable to load booking.")); }, [id]); if (error) return <main className="p-8 text-red-700" role="alert">{error}</main>; if (!booking) return <main className="p-8">Loading...</main>; const initial: BookingInput = { customerId: booking.customerId, religiousPartnerId: booking.religiousPartnerId ?? "", serviceName: booking.serviceName, scheduledAt: booking.scheduledAt, notes: booking.notes, status: booking.status }; async function submit(v: BookingInput) { await updateBooking(id, { ...v, scheduledAt: new Date(v.scheduledAt).toISOString() }); router.push(`/bookings/${id}`); } return <main className="p-8"><h1 className="text-3xl font-bold">Edit Booking</h1><BookingForm initialValue={initial} label="Save Changes" onSubmit={submit} /></main>; }
