@@ -1,0 +1,2 @@
+"use client";
+export default function ErrorPage({reset}:{error:Error;reset:()=>void}){return <main className="grid min-h-[65vh] place-items-center px-6 text-center"><div><h1 className="text-3xl font-serif font-bold text-teal-900">Something went wrong</h1><p className="mt-3 text-stone-600">We could not load this page. Please try again.</p><button className="mt-6 rounded-xl bg-teal-800 px-6 py-3 font-bold text-white shadow hover:bg-teal-900 transition" onClick={reset}>Try again</button></div></main>}

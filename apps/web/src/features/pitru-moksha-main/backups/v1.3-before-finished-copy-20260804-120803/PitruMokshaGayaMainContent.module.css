@@ -1,0 +1,256 @@
+﻿.mainContent {
+  background: #ffffff;
+}
+
+.closingSection {
+  padding: 52px 48px 56px;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(8, 127, 140, 0.98),
+      rgba(21, 153, 166, 0.96)
+    );
+  color: #ffffff;
+}
+
+.closingInner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 34px;
+  align-items: center;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.closingEyebrow {
+  margin: 0 0 10px;
+  color: #f4b942;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.closingTitle {
+  max-width: 760px;
+  margin: 0;
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 4vw, 3.1rem);
+  font-weight: 700;
+  line-height: 1.08;
+}
+
+.closingCopy {
+  max-width: 760px;
+  margin: 16px 0 0;
+  color: rgba(255, 255, 255, 0.94);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.closingActions {
+  display: grid;
+  gap: 12px;
+  min-width: 190px;
+}
+
+.primaryAction,
+.secondaryAction {
+  display: inline-flex;
+  min-height: 46px;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 20px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 900;
+  line-height: 1.25;
+  text-align: center;
+  text-decoration: none;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease,
+    transform 160ms ease;
+}
+
+.primaryAction {
+  border: 2px solid #f4b942;
+  background: #f4b942;
+  color: #075763;
+}
+
+.secondaryAction {
+  border: 2px solid rgba(255, 255, 255, 0.88);
+  background: transparent;
+  color: #ffffff;
+}
+
+.primaryAction:hover,
+.secondaryAction:hover {
+  transform: translateY(-1px);
+}
+
+.primaryAction:hover {
+  border-color: #ffffff;
+  background: #ffffff;
+}
+
+.secondaryAction:hover {
+  border-color: #f4b942;
+  color: #f4b942;
+}
+
+.primaryAction:focus-visible,
+.secondaryAction:focus-visible,
+.relatedLink:focus-visible {
+  outline: 3px solid #f4b942;
+  outline-offset: 4px;
+}
+
+.relatedNavigation {
+  padding: 24px 48px;
+  border-top: 1px solid rgba(8, 127, 140, 0.16);
+  background: #fffaf0;
+}
+
+.relatedInner {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.relatedLabel {
+  flex: 0 0 auto;
+  color: #075763;
+  font-size: 0.84rem;
+  font-weight: 900;
+}
+
+.relatedLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.relatedLink {
+  display: inline-flex;
+  min-height: 39px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 15px;
+  border: 1px solid rgba(8, 127, 140, 0.32);
+  border-radius: 999px;
+  background: #ffffff;
+  color: #087f8c;
+  font-size: 0.82rem;
+  font-weight: 850;
+  line-height: 1.3;
+  text-align: center;
+  text-decoration: none;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease;
+}
+
+.relatedLink:hover {
+  border-color: #087f8c;
+  background: #087f8c;
+  color: #ffffff;
+}
+
+.scopeNotice {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 22px 48px 28px;
+  background: #ffffff;
+  color: #365b60;
+  font-size: 0.82rem;
+  line-height: 1.65;
+  text-align: center;
+}
+
+.scopeNotice strong {
+  color: #075763;
+}
+
+@media (max-width: 900px) {
+  .closingSection {
+    padding: 46px 32px 50px;
+  }
+
+  .closingInner {
+    grid-template-columns: 1fr;
+  }
+
+  .closingActions {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    min-width: 0;
+  }
+
+  .relatedNavigation {
+    padding: 22px 32px;
+  }
+
+  .relatedInner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .relatedLinks {
+    justify-content: flex-start;
+  }
+
+  .scopeNotice {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .closingSection {
+    padding: 40px 20px 44px;
+  }
+
+  .closingActions {
+    grid-template-columns: 1fr;
+  }
+
+  .relatedNavigation {
+    padding: 22px 20px;
+  }
+
+  .relatedLinks {
+    display: grid;
+    width: 100%;
+  }
+
+  .relatedLink {
+    width: 100%;
+  }
+
+  .scopeNotice {
+    padding: 20px;
+    text-align: left;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .primaryAction,
+  .secondaryAction,
+  .relatedLink {
+    transition: none;
+  }
+
+  .primaryAction:hover,
+  .secondaryAction:hover {
+    transform: none;
+  }
+}

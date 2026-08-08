@@ -1,0 +1,276 @@
+.page {
+  display: grid;
+  width: 100%;
+  min-width: 0;
+  gap: 26px;
+  padding: 32px 0 56px;
+  color: #153d42;
+}
+
+.intro,
+.section,
+.priceSection {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  border: 1px solid rgba(8, 127, 140, 0.18);
+  border-radius: 18px;
+  padding: clamp(24px, 4vw, 48px);
+  background: #fffdf8;
+  box-shadow: 0 14px 34px rgba(3, 47, 54, 0.08);
+  overflow-wrap: anywhere;
+}
+
+.intro {
+  background: linear-gradient(135deg, #062f38, #0a5962);
+  color: #fff;
+}
+
+.intro > p:first-child,
+.section > header p,
+.priceSection > header p {
+  margin: 0;
+  color: #d4af37;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.intro h1,
+.section h2,
+.priceSection h2 {
+  margin: 8px 0 16px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  line-height: 1.08;
+  color: #063943;
+}
+
+.intro h1 {
+  color: #fff;
+}
+
+.logoTwoBadge {
+}.lead {
+  color: #f4b942;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.25rem;
+}
+
+.intro p,
+.section p {
+  line-height: 1.7;
+}
+
+.section h3 {
+  margin: 26px 0 8px;
+  color: #087f8c;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.section ul,
+.lockedPanel ul {
+  display: grid;
+  gap: 10px;
+  padding-left: 22px;
+  line-height: 1.65;
+}
+
+.note {
+  border-left: 5px solid #d4af37;
+  background: #fffdf7;
+  border-top: 1px solid rgba(8, 127, 140, 0.18);
+  border-right: 1px solid rgba(8, 127, 140, 0.18);
+  border-bottom: 1px solid rgba(8, 127, 140, 0.18);
+}
+
+.workflow {
+  display: grid;
+  gap: 16px;
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.workflow li {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: 48px minmax(0, 1fr);
+  gap: 16px;
+  border-top: 1px solid rgba(8, 127, 140, 0.16);
+  padding-top: 18px;
+}
+
+.workflow li > span {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border-radius: 50%;
+  background: #087f8c;
+  color: #fff;
+  font-weight: 800;
+}
+
+.workflow h3 {
+  margin: 0 0 3px;
+  color: #063943;
+}
+
+.workflow strong {
+  color: #087f8c;
+  font-size: 0.85rem;
+}
+
+.workflow p {
+  margin: 8px 0 0;
+}
+
+.priceSection {
+  border: 2px solid #d4af37;
+  background: #fffdf8;
+}
+
+.lockedPanel {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+}
+
+.accessActions a {
+  display: inline-flex;
+  border-radius: 8px;
+  padding: 11px 18px;
+  background: #087f8c;
+  color: #fff;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.accessActions a:hover {
+  background: #055b66;
+}
+
+.unlockForm {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 8px 14px;
+  margin-top: 22px;
+}
+
+.unlockForm label {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #063943;
+}
+
+.unlockForm input {
+  min-width: 0;
+  border: 1px solid #087f8c;
+  border-radius: 8px;
+  padding: 11px;
+  background: #fff;
+  color: #063943;
+}
+
+.unlockForm button {
+  grid-column: 1 / -1;
+  border: 0;
+  border-radius: 8px;
+  padding: 12px;
+  background: #087f8c;
+  color: #fff;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.unlockForm button:hover {
+  background: #055b66;
+}
+
+.unlockForm button:disabled {
+  opacity: 0.6;
+}
+
+.accessMessage {
+  margin-top: 14px;
+  border-radius: 8px;
+  padding: 12px;
+  background: #f0f7f8;
+  color: #087f8c;
+  border: 1px solid rgba(8, 127, 140, 0.3);
+  font-weight: 600;
+}
+
+.matrixWrap {
+  width: 100%;
+  min-width: 0;
+  overflow-x: auto;
+}
+
+.matrixWrap table {
+  width: 100%;
+  min-width: 680px;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.matrixWrap th,
+.matrixWrap td {
+  border: 1px solid rgba(8, 127, 140, 0.25);
+  padding: 12px;
+  text-align: center;
+}
+
+.matrixWrap thead th {
+  background: #063943;
+  color: #fff;
+  font-weight: 800;
+}
+
+.matrixWrap tbody th {
+  background: #f0f7f8;
+  color: #063943;
+  font-weight: 700;
+}
+
+.priceNotes {
+  margin-top: 20px;
+  line-height: 1.65;
+  color: #153d42;
+}
+
+.priceNotes ul {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+  padding-left: 22px;
+  line-height: 1.65;
+  list-style-type: disc;
+}
+
+@media (max-width: 680px) {
+  .page {
+    padding-top: 18px;
+  }
+  .intro,
+  .section,
+  .priceSection {
+    width: 100%;
+    margin: 0;
+    padding: 22px 18px;
+  }
+  .workflow li {
+    grid-template-columns: 38px minmax(0, 1fr);
+  }
+  .workflow li > span {
+    width: 34px;
+    height: 34px;
+  }
+  .unlockForm {
+    grid-template-columns: 1fr;
+  }
+}

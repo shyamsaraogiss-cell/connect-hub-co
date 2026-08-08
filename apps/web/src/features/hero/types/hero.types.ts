@@ -1,0 +1,6 @@
+export type HeroServicePoint = { label: string };
+export type HeroCoreMessage = { title:string;copy:string };
+export type HeroRitualCategory = { title:string;items:readonly string[] };
+export type HeroSlideData = { id:string;logoSrc:string;logoAlt:string;backgroundSrc?:string;imageSrc?:string;title:string;tagline:string;supportingCopy:readonly string[];servicePoints:readonly HeroServicePoint[];location:string;locationSubtitle:string;locationLines?:readonly string[];exploreTitle:string;exploreCopy:string;primaryHref:string;assistantPrompts:readonly AssistantPrompt[];label?:string;mainDescription?:string;secondaryDescription?:string;coreMessages?:readonly HeroCoreMessage[];keyBenefits?:readonly string[];featureItems?:readonly string[];ritualCategories?:readonly HeroRitualCategory[];secondaryCtaLabel?:string;secondaryHref?:string;trustTitle?:string;trustItems?:readonly string[];assistantTitle?:string;assistantSubtitle?:string;assistantIntro?:string;assistantPlaceholder?:string;defaultGuidance?:string;aiDisclosure?:string;compactAssistant?:boolean;assistantTrustItems?:readonly string[] };
+export type AssistantPrompt = { id:string;label:string;response:string;nextQuestion?:string;requiresAdmin?:boolean };
+export type CoreService = { label:string;href:string;icon:string;testMode?:boolean };

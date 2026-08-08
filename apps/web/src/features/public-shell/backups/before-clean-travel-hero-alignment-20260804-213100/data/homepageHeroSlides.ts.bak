@@ -1,0 +1,198 @@
+import type { AssistantPrompt, HeroSlideData } from "../types/hero.types";
+import { heroSlides as existingHeroSlides } from "./heroSlides";
+
+const ritualServicesAssistantPrompts: readonly AssistantPrompt[] = [
+  { id: "recommended-ritual", label: "Which ritual is recommended for my situation?", response: "Detailed verified guidance for this question will be added from the approved Gold Standard Q&A database." },
+  { id: "verified-experts", label: "Are the Religious Partners verified and experienced?", response: "Detailed verified guidance for this question will be added from the approved Gold Standard Q&A database." },
+  { id: "nearby-ritual", label: "Can I arrange a ritual near my location?", response: "Detailed verified guidance for this question will be added from the approved Gold Standard Q&A database." },
+  { id: "samagri", label: "Is the required samagri included?", response: "Detailed verified guidance for this question will be added from the approved Gold Standard Q&A database." },
+  { id: "online-ritual", label: "Can the ritual be performed online?", response: "Detailed verified guidance for this question will be added from the approved Gold Standard Q&A database." },
+  { id: "language-tradition", label: "Can I choose language and regional tradition?", response: "Detailed verified guidance for this question will be added from the approved Gold Standard Q&A database." },
+  { id: "future-date", label: "Can I book for a future date?", response: "Detailed verified guidance for this question will be added from the approved Gold Standard Q&A database." },
+  { id: "family-tradition", label: "Can rituals follow my Sampradaya or family tradition?", response: "Detailed verified guidance for this question will be added from the approved Gold Standard Q&A database." },
+];
+
+const ritualServicesSlide: HeroSlideData = {
+  id: "ritual-services", label: "Connect Hub Co.", logoSrc: "", logoAlt: "Ritual Services", backgroundSrc: "/images/hero/hero2-ritual-services.png",
+  title: "Ritual Services", tagline: "",
+  mainDescription: "Every ritual carries its own purpose, tradition, and prescribed method.",
+  supportingCopy: [],
+  servicePoints: [],
+  featureItems: ["Griha Pravesh", "Marriage Rituals", "Customized Puja", "Upanayan Sanskar", "Havan & Homam", "Preferred Location Puja", "Navagraha Shanti", "Dosha Remedies", "Festival Rituals", "Others / Rituals"],
+  trustTitle: "Verified Religious Partners", location: "Selected Service Locations", locationSubtitle: "Ayodhya · Pune · Hyderabad · Nashik\nKashi / Varanasi · Patna · Mathura · Vrindavan\nDelhi NCR · Lucknow · Gorakhpur · Gaya Ji\nBengaluru · Mumbai · Nepal",
+  locationLines: ["Ayodhya · Pune · Hyderabad · Nashik · Kashi / Varanasi", "Patna · Mathura · Vrindavan · Delhi NCR · Lucknow · Gorakhpur", "Gaya Ji · Bengaluru · Mumbai ·"],
+  exploreTitle: "Explore Ritual Services",
+  exploreCopy: "Find the right ritual, verified Religious Partner, and trusted guidance for every occasion.",
+  primaryHref: "/ritual-services", assistantTitle: "GenZ Ritual AI",
+  assistantSubtitle: "Your Ritual Assistant",
+  assistantIntro: "Namaste! How can I help you today?",
+  assistantPrompts: ritualServicesAssistantPrompts,
+  assistantPlaceholder: "Ask about Ritual Services...",
+  defaultGuidance: "Your question has been recorded. Verified guidance will be added from the approved Ritual Services Q&A database.",
+  aiDisclosure: "AI gives guidance. Final decisions may be confirmed with our experts.",
+  compactAssistant: true,
+};
+
+const existingTravelSlide = existingHeroSlides.find((slide) => slide.id === "travel-assistance");
+if (!existingTravelSlide) throw new Error("Travel Assistance hero data is missing");
+const existingHeroOneSlide = existingHeroSlides.find((slide) => slide.id === "pitru-moksha-gaya");
+if (!existingHeroOneSlide) throw new Error("PitruMoksha Gaya hero data is missing");
+
+const heroOneSlide: HeroSlideData = {
+  ...existingHeroOneSlide,
+  backgroundSrc: "/images/hero/Hero_1_Gaya_Temple_Background_v1.0.png",
+  tagline: "Daan. Dharma. Moksha.",
+  supportingCopy: [],
+  secondaryDescription: "Distance Never Stops Devotion.",
+  mainDescription: "",
+  servicePoints: [
+    { label: "Narayan Bali — for unnatural death" },
+    { label: "Nag Bali — for death caused by snakebite" },
+    { label: "Tripindi Shraddha — for a missed Tithi, Pitra Dosh, or both" },
+    { label: "Shared Sankalp" },
+    { label: "Pitra Daan / Shraddha" },
+  ],
+  exploreTitle: "Explore Now — The Land of Moksha, Gaya",
+  exploreCopy: "The Journey of Moksha is a duty of Love. Let us handle the Logistics; You Focus on the Prayers.",
+  assistantTitle: "GenZ Ritual AI",
+  assistantSubtitle: "Your Ritual Assistant",
+  assistantIntro: "Namaste! I can help you understand and guide you through PitruMoksha Gaya. Try asking me:",
+  assistantPlaceholder: "Ask about PitruMoksha Gaya...",
+  assistantPrompts: [
+    { id: "pitra-daan", label: "What is Pitra Daan?", response: "Pitra Daan is an ancestral rite performed with prescribed offerings and prayers under qualified guidance." },
+    { id: "virtual-shraddh-tradition", label: "Is Virtual Shraddh accepted in Hindu traditions?", response: "Remote participation may be arranged where appropriate; a qualified Religious Partner confirms the correct format for your tradition." },
+    { id: "another-country", label: "Can I participate from another country?", response: "Yes. Remote participation can be coordinated across time zones with preparation guidance in advance." },
+    { id: "remote-sankalp", label: "How is Sankalp performed remotely?", response: "A Religious Partner guides the family live through the required names, Gotra, intention, and Sankalp steps." },
+    { id: "photos-videos", label: "Will I receive photos and videos?", response: "Available documentation options are confirmed transparently before the ritual begins." },
+    { id: "family-online", label: "Can my family participate online?", response: "Yes. Family members may join the scheduled live session once participation details are confirmed." },
+    { id: "documents", label: "What documents will I receive?", response: "The agreed completion confirmation and available ritual documentation are provided after the service." },
+    { id: "begin", label: "How do I begin?", response: "Share your ritual requirement, preferred date, participation format, and contact details for expert review." },
+  ],
+  defaultGuidance: "Select a question or enter your query for clear, verified guidance about ritual options, online or offline participation, documentation, travel support, and the next booking step.",
+};
+
+const travelAssistanceSlide: HeroSlideData = {
+  ...existingTravelSlide,
+  backgroundSrc: "/images/hero/Hero_3_Airport_Arrival_Photo_v2.0.png",
+  imageSrc: "/images/hero/Hero_3_Airport_Arrival_Photo_v2.0.png",
+  label: "TRAVEL ASSISTANCE",
+  title: "Peace & Travel, We Move Together.",
+  tagline: "Your Shadow Traveler—always with You, always for You. A Worry-Free Journey",
+  mainDescription: "",
+  coreMessages: [
+    { title: "You Plan. Tell Us. We Execute.", copy: "Personalized travel planning and seamless execution." },
+    { title: "Travelling with you at every step.", copy: "Local help, logistics & support throughout your journey." },
+  ],
+  servicePoints: [
+    { label: "Shadow Assistance" },
+    { label: "Emergency Family & Personal Support" },
+    { label: "24×7 On-Trip Support" },
+    { label: "Safari Assistance" },
+    { label: "Beach Assistance" },
+    { label: "Local Ground Assistance" },
+    { label: "Customized Travel Planning" },
+    { label: "Nepal Jungle Ride & Stay" },
+    { label: "Customized & Others" },
+  ],
+  keyBenefits: undefined,
+  location: "Services Available Across India & Nepal",
+  locationSubtitle: "",
+  exploreTitle: "Explore Travel Assistance",
+  exploreCopy: "Your Shadow Traveler—always with You, always for You. A Worry-Free Journey",
+  primaryHref: "/travel-assistance",
+  assistantTitle: "GenZ Travel AI",
+  assistantSubtitle: "Your Travel Assistant",
+  assistantIntro: "Namaste! I can help you plan your journey, arrange travel assistance, coordinate accommodation, connect on arrival, and answer your travel-related questions. You may ask me:",
+  assistantPlaceholder: "Ask anything about travel assistance...",
+  defaultGuidance: "Select a question or enter your travel query for clear, verified guidance about journey planning, accommodation, local coordination, safety support, India and Nepal travel assistance, and the next booking step.",
+  aiDisclosure: "AI provides guidance. Final travel arrangements and bookings are confirmed by our experts.",
+  compactAssistant: true,
+};
+
+const virtualShraddhPrompts: readonly AssistantPrompt[] = [
+  { id: "virtual-shraddh", label: "What is Virtual Shraddh?", response: "Virtual Shraddh enables a family to participate remotely while a verified Religious Partner performs the prescribed ritual with live guidance and transparent coordination." },
+  { id: "tradition", label: "Is Virtual Shraddh accepted in Hindu traditions?", response: "Remote participation can be arranged where appropriate, but the correct ritual format depends on family tradition and must be confirmed by a qualified Religious Partner." },
+  { id: "another-country", label: "Can I participate from another country?", response: "Yes. Families may join from another country through a scheduled live connection, with timing and preparation coordinated in advance." },
+  { id: "remote-sankalp", label: "How is Sankalp performed remotely?", response: "The Religious Partner guides the family through Sankalp live, including the required names, Gotra, intention, and participation steps." },
+  { id: "photos-videos", label: "Will I receive photos and videos?", response: "Available documentation options, including ritual photos or videos, are confirmed before the service begins." },
+  { id: "family-online", label: "Can my family participate online?", response: "Yes. Multiple family members can join the scheduled session online when connection details and participation requirements are confirmed." },
+  { id: "documents", label: "What documents will I receive?", response: "Depending on the selected service, completion confirmation and other agreed documentation may be provided after the ritual." },
+  { id: "begin", label: "How do I begin?", response: "Share your family details, ritual purpose, preferred date, location or time zone, and contact information for expert review.", requiresAdmin: true },
+];
+
+const virtualShraddhSlide: HeroSlideData = {
+  id: "vahi-records",
+  label: "HERO 4",
+  logoSrc: "",
+  logoAlt: "Vahi Records",
+  backgroundSrc: "/images/hero/Hero_4_Solemn_Shraddh_Pind_Daan_v2.0.png",
+  title: "Vahi Records",
+  tagline: "Verified Lineage. Guided With Care.",
+  mainDescription: "Guided ancestral lineage documentation, Gotra verification, and Vahi record assistance coordinated through authorised traditional Panda custodians.",
+  supportingCopy: [],
+  servicePoints: [],
+  featureItems: ["Family Lineage Inquiry", "Vahi Record Guidance", "Gotra & Ancestor Details", "Custodian Coordination", "Record Availability Review", "NRI Family Assistance"],
+  location: "Sacred Lineage Records",
+  locationSubtitle: "Guidance for families in India and worldwide.",
+  exploreTitle: "Explore Vahi Records",
+  exploreCopy: "Understand traditional lineage records and begin an authorised guidance inquiry.",
+  primaryHref: "/vahi-records",
+  secondaryCtaLabel: "Ask About Vahi Records",
+  secondaryHref: "#hero-assistant-title",
+  assistantTitle: "Vahi Lineage & Ledger AI",
+  assistantSubtitle: "Your Vahi Records Assistant",
+  assistantIntro: "Namaste! I can explain Vahi Records guidance and the information required for an authorised lineage inquiry.",
+  assistantPlaceholder: "Ask about Vahi Records…",
+  assistantPrompts: virtualShraddhPrompts,
+  aiDisclosure: "AI provides approved guidance. Final ritual arrangements are confirmed by qualified Religious Partners and our authorised team.",
+  compactAssistant: true,
+};
+
+const religiousPartnerPrompts: readonly AssistantPrompt[] = [
+  { id: "partner-eligibility", label: "Who can register as a Religious Partner?", response: "Qualified individual Religious Partners and eligible religious institutions may apply, subject to identity, experience, service, and verification requirements." },
+  { id: "partner-documents", label: "What documents are required?", response: "The required documents typically cover identity, address, qualifications or experience, service specializations, and payment or contact details. The final checklist is confirmed during registration." },
+  { id: "partner-verification", label: "How does RPN verification work?", response: "Applications are reviewed for identity, experience, service capability, references, and profile accuracy before approval." },
+  { id: "individual-priest", label: "Can an individual priest register?", response: "Yes. An individual priest may apply and create a verified professional profile after completing the required review." },
+  { id: "institution", label: "Can a religious institution register?", response: "Eligible religious institutions may apply, with authorised representatives and institutional details verified during review." },
+  { id: "services-offered", label: "Which services can I offer?", response: "Approved partners may offer services matching their verified knowledge, experience, location, language, tradition, and operational capability." },
+  { id: "nri-customers", label: "Can I serve NRI customers?", response: "Yes. Eligible partners may support NRI families through approved online or coordinated in-person service formats." },
+  { id: "registration-fee", label: "Is there any registration fee?", response: "Any applicable registration or service terms are disclosed during the authorised review before you commit." },
+  { id: "approval-time", label: "How long does approval take?", response: "Approval time depends on document completeness and verification. Submit accurate details to help the authorised team complete the review.", requiresAdmin: true },
+];
+
+const religiousPartnerNetworkSlide: HeroSlideData = {
+  id: "religious-partner-network",
+  label: "HERO 6",
+  logoSrc: "",
+  logoAlt: "Religious Partner Network",
+  backgroundSrc: "/images/hero/Hero_6_Religious_Partner_Network_Five_Priests_v2.0.png",
+  title: "Religious Partner Network",
+  tagline: "Serve With Tradition. Grow With Trust.",
+  mainDescription: "Join a Trusted Network of Religious Service Professionals. Register with Connect Hub Co. and become part of a structured Religious Partner Network connecting verified religious professionals with families seeking authentic, transparent and professionally coordinated services.",
+  supportingCopy: [],
+  servicePoints: [],
+  featureItems: ["PitruMoksha Gaya Services", "Ritual Services", "Virtual Shraddh", "Pind Daan & Tarpan Services", "Family Ritual Services", "Festival & Occasion Rituals", "Religious Guidance", "Vahi & Lineage Record Assistance", "Online & Offline Coordination", "Location Based Services"],
+  keyBenefits: ["Verified Profile", "Genuine Enquiries", "India and NRI Reach", "Structured Coordination"],
+  location: "Partner Network Across India",
+  locationSubtitle: "Building a trusted network of qualified Religious Partners across sacred destinations, cities and communities.",
+  exploreTitle: "Explore Partner Network",
+  exploreCopy: "Join a verified professional network built around tradition, trust, and structured coordination.",
+  primaryHref: "/religious-partners",
+  secondaryCtaLabel: "Learn About RPN",
+  secondaryHref: "/about",
+  assistantTitle: "GenZ Ritual AI",
+  assistantSubtitle: "Your Partner Network Assistant",
+  assistantIntro: "Namaste! 🙏 I can explain the Religious Partner Network, help you understand eligibility, required documents, verification standards, registration steps and the services you may offer through Connect Hub Co.",
+  assistantPlaceholder: "Ask about partner registration…",
+  assistantPrompts: religiousPartnerPrompts,
+  aiDisclosure: "AI provides approved registration guidance. Eligibility and final approval are confirmed by the authorised verification team.",
+  compactAssistant: true,
+};
+
+export const heroSlides: readonly HeroSlideData[] = [
+  ...existingHeroSlides.map((slide) =>
+    slide.id === heroOneSlide.id ? heroOneSlide : slide.id === ritualServicesSlide.id ? ritualServicesSlide : slide.id === travelAssistanceSlide.id ? travelAssistanceSlide : slide,
+  ),
+  virtualShraddhSlide,
+  religiousPartnerNetworkSlide,
+];

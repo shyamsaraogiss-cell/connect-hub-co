@@ -1,0 +1,698 @@
+.rpnContent {
+  grid-column: 2;
+  display: grid;
+  width: 100%;
+  min-width: 0;
+  gap: 26px;
+  padding: 32px 0 56px;
+  color: #153d42;
+  box-sizing: border-box;
+}
+
+.section,
+.inquiry {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  border: 1px solid rgba(8, 127, 140, 0.18);
+  border-radius: 18px;
+  padding: clamp(24px, 4vw, 48px);
+  background: #fffdf8;
+  box-shadow: 0 14px 34px rgba(3, 47, 54, 0.08);
+  overflow-wrap: anywhere;
+  box-sizing: border-box;
+}
+
+.section header {
+  margin-bottom: 28px;
+}
+
+.eyebrow,
+.section header > p {
+  margin: 0;
+  color: var(--ritual-gold, #D4AF37);
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.section h2 {
+  margin: 8px 0 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 3vw, 3rem);
+  color: #087F8C;
+}
+
+.inquiry > div:first-child > span {
+  display: block;
+  max-width: 780px;
+  margin-top: 12px;
+  line-height: 1.65;
+  color: #4a5568;
+}
+
+/* Section 1 Box & Callout */
+.sectionBox {
+  border: 1px solid rgba(8, 127, 140, 0.25);
+  border-radius: 18px;
+  padding: 36px;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(8, 127, 140, 0.05);
+}
+
+.sectionGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.sectionItem {
+  border-left: 3px solid var(--ritual-gold, #D4AF37);
+  padding-left: 18px;
+}
+
+.sectionItem h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #087F8C;
+}
+
+.sectionItem p {
+  margin: 8px 0 0;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: #4a5568;
+}
+
+.noticeAlert {
+  margin-top: 28px;
+  border-radius: 14px;
+  padding: 20px 24px;
+  background: #fff9ee;
+  border: 1px solid rgba(180, 120, 0, 0.3);
+  color: #087F8C;
+}
+
+.noticeAlert strong {
+  color: #b47800;
+  display: block;
+  margin-bottom: 6px;
+  font-size: 1rem;
+}
+
+.noticeAlert p {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: #4a5568;
+}
+
+/* Section 2: Choose Your Partner Path (6 Cards) */
+.pathwayGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.pathwayCard {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  border: 1px solid rgba(8, 127, 140, 0.25);
+  border-radius: 16px;
+  padding: 26px 22px;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(8, 127, 140, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pathwayCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(8, 127, 140, 0.1);
+}
+
+.pathwayCard > span {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  border-radius: 12px;
+  background: #087F8C;
+  color: var(--ritual-gold, #D4AF37);
+  flex-shrink: 0;
+}
+
+.pathwayCard svg {
+  width: 24px;
+  height: 24px;
+}
+
+.pathwayCard h3 {
+  margin: 16px 0 0;
+  font-size: 1.15rem;
+  color: #087F8C;
+  line-height: 1.3;
+}
+
+.pathwayCard strong {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.85rem;
+  color: #b47800;
+}
+
+.pathwayCard p {
+  margin: 10px 0 0;
+  font-size: 0.9rem;
+  line-height: 1.58;
+  color: #4a5568;
+  flex-grow: 1;
+}
+
+.pathwayCard a {
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 10px 16px;
+  background: #087F8C;
+  color: #fff;
+  font-weight: 800;
+  font-size: 0.88rem;
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.2s ease;
+}
+
+.pathwayCard a:hover {
+  background: #066671;
+}
+
+/* Benefits Grid */
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.benefitCard {
+  border: 1px solid rgba(8, 127, 140, 0.25);
+  border-radius: 16px;
+  padding: 24px;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(8, 127, 140, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.benefitCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(8, 127, 140, 0.1);
+}
+
+.benefitCard > span {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  border-radius: 12px;
+  background: #087F8C;
+  color: var(--ritual-gold, #D4AF37);
+}
+
+.benefitCard svg {
+  width: 24px;
+  height: 24px;
+}
+
+.benefitCard h3 {
+  margin: 16px 0 0;
+  font-size: 1.12rem;
+  color: #087F8C;
+}
+
+.benefitCard p {
+  margin: 8px 0 0;
+  font-size: 0.9rem;
+  line-height: 1.58;
+  color: #4a5568;
+}
+
+/* Eligibility & Expectations Section */
+.eligibilitySection {
+  background: #fff9ee;
+  border-top: 1px solid rgba(8, 127, 140, 0.15);
+  border-bottom: 1px solid rgba(8, 127, 140, 0.15);
+}
+
+.eligibilityGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.eligibilityCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  border: 1px solid rgba(8, 127, 140, 0.25);
+  border-radius: 14px;
+  padding: 20px;
+  background: #fff;
+}
+
+.eligibilityCard svg {
+  color: #b47800;
+  width: 24px;
+  height: 24px;
+  flex: 0 0 auto;
+  margin-top: 2px;
+}
+
+.eligibilityCard h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #087F8C;
+}
+
+.eligibilityCard p {
+  margin: 6px 0 0;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: #4a5568;
+}
+
+/* Section 6: Checklist Grid */
+.reqSection {
+  background: #fff;
+}
+
+.reqGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.reqCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  border: 1px solid rgba(8, 127, 140, 0.22);
+  border-radius: 14px;
+  padding: 18px;
+  background: #fff9ee;
+}
+
+.reqCard svg {
+  color: #b47800;
+  width: 22px;
+  height: 22px;
+  flex: 0 0 auto;
+  margin-top: 2px;
+}
+
+.reqCard h3 {
+  margin: 0;
+  font-size: 0.98rem;
+  color: #087F8C;
+}
+
+.reqCard p {
+  margin: 4px 0 0;
+  font-size: 0.85rem;
+  line-height: 1.48;
+  color: #4a5568;
+}
+
+/* Section 7: Verification and Onboarding Section */
+.verificationSection {
+  background: #fff9ee;
+  border-top: 1px solid rgba(8, 127, 140, 0.15);
+  border-bottom: 1px solid rgba(8, 127, 140, 0.15);
+}
+
+.verificationGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.verificationCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  border: 1px solid rgba(8, 127, 140, 0.25);
+  border-radius: 14px;
+  padding: 22px;
+  background: #fff;
+}
+
+.verificationCard svg {
+  color: #087F8C;
+  width: 24px;
+  height: 24px;
+  flex: 0 0 auto;
+  margin-top: 2px;
+}
+
+.verificationCard h3 {
+  margin: 0;
+  font-size: 1.08rem;
+  color: #087F8C;
+}
+
+.verificationCard p {
+  margin: 6px 0 0;
+  font-size: 0.9rem;
+  line-height: 1.58;
+  color: #4a5568;
+}
+
+/* Section 10: Knowledge Centre Preview */
+.knowledgeSection {
+  background: #fff9ee;
+  border-top: 1px solid rgba(8, 127, 140, 0.15);
+  border-bottom: 1px solid rgba(8, 127, 140, 0.15);
+}
+
+.knowledgeGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.knowledgeCard {
+  border: 1px solid rgba(8, 127, 140, 0.25);
+  border-radius: 16px;
+  padding: 22px;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(8, 127, 140, 0.04);
+}
+
+.knowledgeCard h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #087F8C;
+  line-height: 1.35;
+}
+
+.knowledgeCard p {
+  margin: 8px 0 0;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: #4a5568;
+}
+
+/* Categories Grid */
+.categoriesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.categoryCard {
+  border: 1px solid rgba(8, 127, 140, 0.22);
+  border-radius: 16px;
+  padding: 24px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(8, 127, 140, 0.03);
+}
+
+.categoryCard h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #087F8C;
+}
+
+.categoryCard p {
+  margin: 8px 0 0;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: #4a5568;
+}
+
+/* Process Section */
+.stepsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.stepsGrid li {
+  border-top: 4px solid var(--ritual-gold, #D4AF37);
+  border-radius: 14px;
+  padding: 22px;
+  background: #087F8C;
+  color: #fff;
+}
+
+.stepsGrid li > span {
+  color: var(--ritual-gold, #D4AF37);
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.stepsGrid h3 {
+  margin: 10px 0 0;
+  font-size: 1.05rem;
+  color: #fff;
+}
+
+.stepsGrid p {
+  margin: 8px 0 0;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Standards Box */
+.standardsBox {
+  border: 1px solid rgba(8, 127, 140, 0.25);
+  border-radius: 18px;
+  padding: 36px;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(8, 127, 140, 0.05);
+}
+
+.standardsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.standardItem {
+  border-left: 3px solid var(--ritual-gold, #D4AF37);
+  padding-left: 18px;
+}
+
+.standardItem h3 {
+  margin: 0;
+  font-size: 1.08rem;
+  color: #087F8C;
+}
+
+.standardItem p {
+  margin: 6px 0 0;
+  font-size: 0.9rem;
+  line-height: 1.58;
+  color: #4a5568;
+}
+
+/* FAQs */
+.faqs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.faqs details {
+  border: 1px solid rgba(8, 127, 140, 0.25);
+  border-radius: 14px;
+  padding: 20px;
+  background: #fff;
+}
+
+.faqs summary {
+  cursor: pointer;
+  font-weight: 800;
+  color: #087F8C;
+  font-size: 1.02rem;
+}
+
+.faqs p {
+  margin: 12px 0 0;
+  line-height: 1.6;
+  color: #4a5568;
+  font-size: 0.92rem;
+}
+
+/* Inquiry Section */
+.inquiry {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 38px;
+  scroll-margin-top: 24px;
+  padding: 48px;
+  background: #087F8C;
+  color: #fff;
+  border-radius: 20px;
+  margin: 0 48px 48px;
+}
+
+.inquiry h2 {
+  margin: 8px 0 0;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 3vw, 3rem);
+}
+
+.inquiryActions {
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.inquiryActions a {
+  border-radius: 12px;
+  padding: 12px 20px;
+  background: var(--ritual-gold, #D4AF37);
+  color: #087F8C;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.inquiryActions a:last-child {
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+}
+
+/* Related Navigation */
+.related {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 48px;
+  border-top: 1px solid rgba(8, 127, 140, 0.2);
+}
+
+.related strong {
+  color: #087F8C;
+}
+
+.related > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.related a {
+  border: 1px solid rgba(8, 127, 140, 0.3);
+  border-radius: 999px;
+  padding: 9px 16px;
+  font-weight: 700;
+  color: #087F8C;
+  text-decoration: none;
+  font-size: 0.88rem;
+  transition: background 0.2s ease;
+}
+
+.related a:hover {
+  background: rgba(8, 127, 140, 0.08);
+}
+
+.rpnContent a:focus-visible,
+.rpnContent summary:focus-visible {
+  outline: 3px solid var(--ritual-gold, #D4AF37);
+  outline-offset: 3px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .benefitsGrid,
+  .reqGrid,
+  .pathwayGrid,
+  .eligibilityGrid,
+  .knowledgeGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .categoriesGrid,
+  .verificationGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .stepsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .section {
+    padding: 48px 34px;
+  }
+  .sectionGrid,
+  .pathwayGrid,
+  .benefitsGrid,
+  .categoriesGrid,
+  .eligibilityGrid,
+  .verificationGrid,
+  .knowledgeGrid,
+  .reqGrid,
+  .standardsGrid {
+    grid-template-columns: 1fr;
+  }
+  .inquiry,
+  .related {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 40px 34px;
+  }
+  .related > div {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 42px 22px;
+  }
+  .stepsGrid,
+  .faqs {
+    grid-template-columns: 1fr;
+  }
+  .inquiry {
+    padding: 32px 20px;
+  }
+  .inquiryActions {
+    align-items: stretch;
+    flex-direction: column;
+    width: 100%;
+  }
+  .inquiryActions a {
+    text-align: center;
+  }
+  .related > div {
+    display: grid;
+    width: 100%;
+  }
+  .related a {
+    text-align: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rpnContent * {
+    scroll-behavior: auto !important;
+  }
+}

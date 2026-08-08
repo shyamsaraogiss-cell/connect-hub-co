@@ -1,0 +1,1 @@
+export default function Loading(){return <main className="grid min-h-[65vh] place-items-center" role="status"><div className="text-center"><div className="mx-auto h-10 w-10 animate-spin rounded-full border-4 border-orange-200 border-t-orange-800"/><p className="mt-4 text-stone-600">Loading Connect Hub Co…</p></div></main>}
