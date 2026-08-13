@@ -24,19 +24,13 @@ export interface CreateReligiousPartnerDTO {
 
   relocationAvailable?: boolean;
 
-  identityVerified?: boolean;
-
-  addressVerified?: boolean;
-
-  qualificationVerified?: boolean;
-
-  verificationDate?: Date;
-
-  status?: string;
-
-  remarks?: string;
-
 }
 
-export interface UpdateReligiousPartnerDTO
-  extends Partial<CreateReligiousPartnerDTO> {}
+export interface UpdateReligiousPartnerDTO extends Partial<CreateReligiousPartnerDTO> {
+  identityVerified?: boolean;
+  addressVerified?: boolean;
+  qualificationVerified?: boolean;
+  verificationDate?: Date | null;
+  status?: string;
+  remarks?: string | null;
+}
