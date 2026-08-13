@@ -45,6 +45,12 @@
 | `apps/web/src/config/khem-master-vault.ts` | `docs/khem-reconstruction/KHEM_RECOVERY_apps-web_src-config_khem-master-vault.ts` | `acb1e9763d39422bece648cc1f15f326cd53510a` |
 | `apps/web/src/features/public-shell/data/homepageHeroSlides.ts` | `docs/khem-reconstruction/KHEM_RECOVERY_apps-web_src-features-public-shell-data_homepageHeroSlides.ts` | `f6854176330ccf8f2ac36e87f05cbd0a950b7bd7` |
 
+### Archived reconstruction package
+
+| Original path | Archive path | SHA-256 | Provenance |
+|---|---|---|---|
+| `KHEM_LAYOUT_SOURCE_CHECK_20260802-181522.zip` | `docs/khem-reconstruction/KHEM_LAYOUT_SOURCE_CHECK_20260802-181522.zip` | `F3961263971ACD9BAA3CF9E842F7F9464A71D827E25F01447B0510359583807F` | Historical 2026-08-02 layout/source-check package retained as reconstruction evidence; no runtime authority. |
+
 ## Chronology
 
 - Pre-trial: Founder premise places governance and 24 planning rounds before trial implementation; primary manuals unavailable.
