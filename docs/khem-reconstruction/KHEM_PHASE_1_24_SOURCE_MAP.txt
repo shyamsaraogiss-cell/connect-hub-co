@@ -1,0 +1,122 @@
+KHEM PHASE 1–24 SOURCE MAP
+
+Classification meanings:
+DIRECT = explicit numbered phase plus content.
+REFERENCE ONLY = numbered name exists without decisions.
+INDIRECT/DISTRIBUTED = related architecture exists but association is not provable.
+NOT FOUND = neither numbered evidence nor a safe association.
+
+PHASE 1
+CLASSIFICATION: NOT FOUND
+SEARCHED: all five roots; text terms; both physical ZIPs; Git refs/log/stash/reflog; unreachable commit metadata
+MISSING: question block, options, Founder decision, final answer, document update
+POSSIBLE LOCATION: original MEM/BRS or external Office/cloud/email archive
+
+PHASE 2
+CLASSIFICATION: REFERENCE ONLY
+FOUND: Git branch refs/heads/sitaram-phase-2; stash messages “On sitaram-phase-2”
+OBJECTS: afdcd580, 882d49af; base milestone c8d45833
+MISSING: Phase 2 scope, questions and approval record
+CONFIDENCE: HIGH that the branch name existed; LOW that it maps to Round/Phase 2 planning
+
+PHASE 3
+CLASSIFICATION: NOT FOUND
+POSSIBLE LOCATION: WPB/BRS archive or external planning export
+
+PHASE 4
+CLASSIFICATION: NOT FOUND
+POSSIBLE LOCATION: WPB/DBB/DPB archive
+
+PHASE 5
+CLASSIFICATION: NOT FOUND
+POSSIBLE LOCATION: AOM/KPL archive
+
+PHASE 6
+CLASSIFICATION: FOUND — DISTRIBUTED/DIRECT LABEL, PARTIAL CONTENT
+FOUND: “Phase 6 — Ask GenZ AI + Knowledge Center + URMS Engine”
+PATHS: apps/web/src/app/zen-g/page.tsx and two KHEM_MASTER_VAULT copies
+RELATED: GenZRitualAIEngine, ai-knowledge, semantic-search, urms.api/types, Knowledge Center and tracking routes
+MISSING: original questions/options, exact Founder answer, document/version update and approval record
+CONFIDENCE: HIGH for label; MEDIUM for recovered scope; LOW for completeness
+
+PHASE 7
+CLASSIFICATION: NOT FOUND
+POSSIBLE LOCATION: AOM/KPL/WPB
+
+PHASE 8
+CLASSIFICATION: NOT FOUND
+POSSIBLE LOCATION: KPL/BRS
+
+PHASE 9
+CLASSIFICATION: NOT FOUND
+POSSIBLE LOCATION: WPB/BRS
+
+PHASE 10
+CLASSIFICATION: NOT FOUND
+POSSIBLE LOCATION: WPB/navigation planning
+
+PHASE 11
+CLASSIFICATION: NOT FOUND
+POSSIBLE LOCATION: WPB/DPB
+
+PHASE 12
+CLASSIFICATION: NOT FOUND
+POSSIBLE LOCATION: DBB/DPB
+
+PHASE 13
+CLASSIFICATION: NOT FOUND
+POSSIBLE LOCATION: AOM/KPL
+
+PHASE 14
+CLASSIFICATION: NOT FOUND
+POSSIBLE LOCATION: KPL/Golden Q&A review records
+
+PHASE 15
+CLASSIFICATION: NOT FOUND
+POSSIBLE LOCATION: DBB/URMS/QRSR specifications
+
+PHASE 16
+CLASSIFICATION: NOT FOUND
+POSSIBLE LOCATION: DPB/dashboard specifications
+
+PHASE 17
+CLASSIFICATION: NOT FOUND
+POSSIBLE LOCATION: RPN/partner requirements
+
+PHASE 18
+CLASSIFICATION: NOT FOUND
+POSSIBLE LOCATION: customer-account requirements
+
+PHASE 19
+CLASSIFICATION: NOT FOUND
+POSSIBLE LOCATION: ERP/admin blueprint
+
+PHASE 20
+CLASSIFICATION: NOT FOUND
+POSSIBLE LOCATION: quotation/pricing/payment sheets
+
+PHASE 21
+CLASSIFICATION: NOT FOUND
+POSSIBLE LOCATION: complaint/grievance/support standards
+
+PHASE 22
+CLASSIFICATION: NOT FOUND
+POSSIBLE LOCATION: technical architecture/route definitions
+
+PHASE 23
+CLASSIFICATION: NOT FOUND
+FOUND RELATED BUT UNASSIGNED: Git implementation chronology and recovery artifacts
+POSSIBLE LOCATION: implementation/change-control ledger
+
+PHASE 24
+CLASSIFICATION: NOT FOUND
+FOUND RELATED BUT UNASSIGNED: five Vahi DOCX stash objects, Aug-5 source/content/migration, Hero 4 folders
+MISSING: explicit Phase 24 label and decision block
+POSSIBLE LOCATION: Vahi DOCX internal headings, external phase ledger, Office history
+
+SUMMARY
+DIRECT NUMBERED EVIDENCE: Phase 6 (1)
+REFERENCE/INDIRECT NUMBERED EVIDENCE: Phase 2 (1)
+STILL WITHOUT NUMBERED EVIDENCE: Phases 1, 3–5, 7–24 (22)
+
+The presence of unnumbered business architecture is not treated as completed phase evidence.
