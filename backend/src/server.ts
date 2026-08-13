@@ -8,6 +8,7 @@ import pitruMokshaRoutes from "./routes/pitrumoksha.routes";
 import dashboardRoutes from "./routes/dashboard.routes";
 import universalRequestRoutes from "./routes/universalRequest.routes";
 import { requireAuth, requireRoles } from "./middleware/auth.middleware";
+import governanceRoutes from "./routes/governance.routes";
 
 const app = express();
 
@@ -42,6 +43,7 @@ app.use(
   dashboardRoutes
 );
 app.use("/api/urms/universal-requests", universalRequestRoutes);
+app.use("/api/governance", governanceRoutes);
 
 const PORT = 5000;
 
