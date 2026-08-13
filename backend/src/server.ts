@@ -6,6 +6,7 @@ import customerRoutes from "./routes/customer.routes";
 import religiousPartnerRoutes from "./routes/religiousPartner.routes";
 import pitruMokshaRoutes from "./routes/pitrumoksha.routes";
 import dashboardRoutes from "./routes/dashboard.routes";
+import universalRequestRoutes from "./routes/universalRequest.routes";
 
 const app = express();
 
@@ -37,6 +38,7 @@ app.use(
   "/api/dashboard",
   dashboardRoutes
 );
+app.use("/api/urms/universal-requests", universalRequestRoutes);
 
 const PORT = 5000;
 
