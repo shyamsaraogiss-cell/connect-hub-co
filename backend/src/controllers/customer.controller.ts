@@ -102,19 +102,8 @@ export async function deleteCustomer(
   req: Request<{ id: string }>,
   res: Response
 ): Promise<void> {
-  try {
-    await CustomerService.deleteCustomer(req.params.id);
-
-    res.status(200).json({
-      success: true,
-      message: "Customer deleted successfully.",
-    });
-  } catch (error) {
-    console.error(error);
-
-    res.status(500).json({
-      success: false,
-      message: "Failed to delete customer.",
-    });
-  }
+  res.status(409).json({
+    success: false,
+    message: "Customer hard deletion is disabled. Historical operational records must be preserved.",
+  });
 }
