@@ -316,9 +316,17 @@ export function searchKnowledgeCenter(query: string): {
 
 export async function syncKnowledgeFromBackend() {
   try {
-    const resArticles = await fetch(`${API_BASE_URL}/api/governance/articles?status=APPROVED`).then((r) => r.json());
-    const resFAQs = await fetch(`${API_BASE_URL}/api/governance/faqs?status=APPROVED`).then((r) => r.json());
-    
+    const fetchPublished = async (path: string) => {
+      const response = await fetch(`${API_BASE_URL}${path}`);
+      if (!response.ok) {
+        throw new Error(`Knowledge sync request failed with HTTP ${response.status}.`);
+      }
+      return response.json();
+    };
+
+    const resArticles = await fetchPublished('/api/governance/articles/published');
+    const resFAQs = await fetchPublished('/api/governance/faqs/published');
+
     if (resArticles.success && Array.isArray(resArticles.articles)) {
       // Clear cache as index changed
       SEARCH_CACHE.clear();
@@ -330,7 +338,9 @@ export async function syncKnowledgeFromBackend() {
       APPROVED_KNOWLEDGE_FAQS.length = 0;
       APPROVED_KNOWLEDGE_FAQS.push(...resFAQs.faqs);
     }
+    return true;
   } catch (err) {
     console.error('Failed to sync knowledge from backend:', err);
+    return false;
   }
 }

@@ -1,12 +1,18 @@
 import { Request, Response } from "express";
 import * as CustomerService from "../services/customer.service";
 
-export async function getCustomers(
+type CustomerServiceDependency = Pick<
+  typeof CustomerService,
+  "getCustomers" | "getCustomer" | "createCustomer" | "updateCustomer"
+>;
+
+export function createCustomerHandlers(service: CustomerServiceDependency = CustomerService) {
+async function getCustomers(
   _req: Request,
   res: Response
 ): Promise<void> {
   try {
-    const customers = await CustomerService.getCustomers();
+    const customers = await service.getCustomers();
 
     res.status(200).json({
       success: true,
@@ -22,12 +28,12 @@ export async function getCustomers(
   }
 }
 
-export async function getCustomer(
+async function getCustomer(
   req: Request<{ id: string }>,
   res: Response
 ): Promise<void> {
   try {
-    const customer = await CustomerService.getCustomer(req.params.id);
+    const customer = await service.getCustomer(req.params.id);
 
     if (!customer) {
       res.status(404).json({
@@ -51,12 +57,12 @@ export async function getCustomer(
   }
 }
 
-export async function createCustomer(
+async function createCustomer(
   req: Request,
   res: Response
 ): Promise<void> {
   try {
-    const customer = await CustomerService.createCustomer(req.body);
+    const customer = await service.createCustomer(req.body);
 
     res.status(201).json({
       success: true,
@@ -73,12 +79,12 @@ export async function createCustomer(
   }
 }
 
-export async function updateCustomer(
+async function updateCustomer(
   req: Request<{ id: string }>,
   res: Response
 ): Promise<void> {
   try {
-    const customer = await CustomerService.updateCustomer(
+    const customer = await service.updateCustomer(
       req.params.id,
       req.body
     );
@@ -98,7 +104,7 @@ export async function updateCustomer(
   }
 }
 
-export async function deleteCustomer(
+async function deleteCustomer(
   req: Request<{ id: string }>,
   res: Response
 ): Promise<void> {
@@ -107,3 +113,14 @@ export async function deleteCustomer(
     message: "Customer hard deletion is disabled. Historical operational records must be preserved.",
   });
 }
+
+return { getCustomers, getCustomer, createCustomer, updateCustomer, deleteCustomer };
+}
+
+export const {
+  getCustomers,
+  getCustomer,
+  createCustomer,
+  updateCustomer,
+  deleteCustomer,
+} = createCustomerHandlers();

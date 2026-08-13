@@ -1,4 +1,9 @@
-import { searchKnowledgeCenter } from '../features/ai/knowledge/semantic-search';
+import {
+  APPROVED_KNOWLEDGE_ARTICLES,
+  APPROVED_KNOWLEDGE_FAQS,
+  searchKnowledgeCenter,
+  syncKnowledgeFromBackend,
+} from '../features/ai/knowledge/semantic-search';
 import { APPROVED_AI_KNOWLEDGE_TREES } from '../features/ai/knowledge/ai-knowledge';
 import type { BusinessCategory } from '../features/ai/types/ai.types';
 
@@ -208,6 +213,65 @@ export async function runGenZAITestSuite() {
     results.push({ name: 'Security & Role Authorization Privacy Boundaries', status: 'PASSED' });
   } catch (err: unknown) {
     results.push({ name: 'Security & Role Authorization Privacy Boundaries', status: 'FAILED', error: String(err) });
+  }
+
+  const originalFetch = globalThis.fetch;
+  const originalArticles = [...APPROVED_KNOWLEDGE_ARTICLES];
+  const originalFAQs = [...APPROVED_KNOWLEDGE_FAQS];
+  try {
+    const requestedUrls: string[] = [];
+    globalThis.fetch = async (input) => {
+      const url = String(input);
+      requestedUrls.push(url);
+      if (url.endsWith('/api/governance/articles/published')) {
+        return new Response(JSON.stringify({ success: true, articles: [originalArticles[0]] }), {
+          status: 200,
+          headers: { 'Content-Type': 'application/json' },
+        });
+      }
+      if (url.endsWith('/api/governance/faqs/published')) {
+        return new Response(JSON.stringify({ success: true, faqs: [originalFAQs[0]] }), {
+          status: 200,
+          headers: { 'Content-Type': 'application/json' },
+        });
+      }
+      throw new Error(`Unexpected semantic-search URL: ${url}`);
+    };
+
+    assert(await syncKnowledgeFromBackend(), 'Published governance sync succeeds');
+    assert(requestedUrls[0].endsWith('/api/governance/articles/published'), 'Uses the public published article URL');
+    assert(requestedUrls[1].endsWith('/api/governance/faqs/published'), 'Uses the public published FAQ URL');
+    assert(APPROVED_KNOWLEDGE_ARTICLES[0]?.id === originalArticles[0]?.id, 'Normalizes article response envelope');
+    assert(APPROVED_KNOWLEDGE_FAQS[0]?.id === originalFAQs[0]?.id, 'Normalizes FAQ response envelope');
+    results.push({ name: 'Published Governance Knowledge Sync URLs & JSON Normalization', status: 'PASSED' });
+  } catch (err: unknown) {
+    results.push({ name: 'Published Governance Knowledge Sync URLs & JSON Normalization', status: 'FAILED', error: String(err) });
+  } finally {
+    APPROVED_KNOWLEDGE_ARTICLES.splice(0, APPROVED_KNOWLEDGE_ARTICLES.length, ...originalArticles);
+    APPROVED_KNOWLEDGE_FAQS.splice(0, APPROVED_KNOWLEDGE_FAQS.length, ...originalFAQs);
+    globalThis.fetch = originalFetch;
+  }
+
+  try {
+    let jsonCalled = false;
+    globalThis.fetch = async () => ({
+      ok: false,
+      status: 404,
+      json: async () => { jsonCalled = true; throw new Error('HTML must not be parsed as JSON'); },
+    }) as unknown as Response;
+    const originalConsoleError = console.error;
+    console.error = () => undefined;
+    try {
+      assert(!(await syncKnowledgeFromBackend()), 'Non-2xx knowledge sync returns a controlled failure');
+    } finally {
+      console.error = originalConsoleError;
+    }
+    assert(!jsonCalled, 'Non-2xx response body is not parsed as JSON');
+    results.push({ name: 'Knowledge Sync Non-2xx Controlled Failure', status: 'PASSED' });
+  } catch (err: unknown) {
+    results.push({ name: 'Knowledge Sync Non-2xx Controlled Failure', status: 'FAILED', error: String(err) });
+  } finally {
+    globalThis.fetch = originalFetch;
   }
 
   return results;

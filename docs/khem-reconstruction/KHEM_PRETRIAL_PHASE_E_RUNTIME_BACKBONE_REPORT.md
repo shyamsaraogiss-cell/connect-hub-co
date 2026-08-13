@@ -180,3 +180,11 @@ Database verification inserted non-production records explicitly titled Phase E 
 - `docs/khem-reconstruction/KHEM_PRETRIAL_PHASE_E_RUNTIME_BACKBONE_REPORT.md`
 
 Generated Prisma client output is ignored runtime build output and is not listed as source architecture. No file was deleted. No commit, push or deployment occurred.
+
+## 2026-08-13 authorized test-side-effect cleanup
+
+- Cause: the customer hard-delete regression test's ineffective ESM namespace replacement allowed its create regression case to reach the configured database.
+- Proven test-created Customer: `cmsrlaxno0000usxoxpwjqrmo`; `Customer`; mobile `9999999999`; purpose `Ritual`; status `New`; created and updated `2026-08-13T14:04:44.388Z`.
+- Founder-authorized action: re-read the exact ID, reconfirm every identifying field and timestamp, verify the `Customer` model has no dependent relations, then delete only that exact record.
+- Verification: the exact ID no longer exists; Customer count changed from 4 to 3. User remained 5, UniversalRequest remained 15, UniversalRequestStatusHistory remained 14, and PitruMokshaRequest remained 3.
+- No URMS, Pitru Moksha, User, history, schema, or migration record was modified by the cleanup.
