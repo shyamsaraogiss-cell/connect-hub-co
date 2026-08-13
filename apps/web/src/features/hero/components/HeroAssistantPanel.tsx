@@ -1,9 +1,9 @@
-'use client';
+﻿'use client';
 
 import type { HeroSlideData } from '../types/hero.types';
 import { GenZRitualAIEngine } from '@/features/ai/components/GenZRitualAIEngine';
 import type { BusinessCategory } from '@/features/ai/types/ai.types';
-import styles from '../HeroCarousel.module.css';
+import styles from '../../public-shell/components/HeroCarousel.module.css';
 
 type AssistantSlide = Pick<
   HeroSlideData,
@@ -33,7 +33,7 @@ export function HeroAssistantPanel({
   slide: AssistantSlide;
   standalone?: boolean;
 }) {
-  const category: BusinessCategory = slideCategoryMap[slide.id] || 'pitru-moksha-gaya';
+  const category: BusinessCategory = slideCategoryMap[slide?.id || "hero-1"] || 'pitru-moksha-gaya';
 
   return (
     <aside
@@ -44,3 +44,5 @@ export function HeroAssistantPanel({
     </aside>
   );
 }
+
+

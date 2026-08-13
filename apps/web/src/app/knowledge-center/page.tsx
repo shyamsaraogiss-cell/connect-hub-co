@@ -47,7 +47,7 @@ export default function KnowledgeCenterPage() {
                 Live Knowledge Assistant
               </span>
             </div>
-            <GenZRitualAIEngine category="pitru-moksha-gaya" />
+            <GenZRitualAIEngine category="company-info" />
           </div>
 
           {/* Knowledge Center Article Grid */}

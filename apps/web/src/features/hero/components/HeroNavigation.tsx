@@ -1,2 +1,4 @@
-import styles from "../HeroCarousel.module.css";
+import styles from "../../public-shell/components/HeroCarousel.module.css";
 export function HeroNavigation({current,total,onPrevious,onNext}:{current:number;total:number;onPrevious:()=>void;onNext:()=>void}){const disabled=total<=1;return <><button className={`${styles.carouselArrow} ${styles.previous}`} type="button" onClick={onPrevious} disabled={disabled} aria-label="Show previous hero">‹</button><button className={`${styles.carouselArrow} ${styles.next}`} type="button" onClick={onNext} disabled={disabled} aria-label="Show next hero">›</button><div className={styles.dots} aria-label={`Hero ${current+1} of ${total}`}>{Array.from({length:total},(_,index)=><span className={index===current?styles.activeDot:""} key={index}/>)}</div></>}
+
+

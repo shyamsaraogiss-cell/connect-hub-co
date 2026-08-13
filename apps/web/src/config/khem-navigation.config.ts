@@ -27,7 +27,7 @@ export interface VisualShellLock {
 export const KHEM_PUBLIC_NAVIGATION: readonly (readonly [string, string])[] = Object.freeze([
   ['About Us', '/about'],
   ['Services', '/services'],
-  ['Pitru Moksha', '/pitru-moksha'],
+  ['PitruMoksha Gaya', '/pitru-moksha-gaya'],
   ['Travel', '/travel-assistance'],
   ['Knowledge Hub', '/knowledge-center'],
   ['Zen G AI', '/zen-g'],

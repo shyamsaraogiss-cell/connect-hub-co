@@ -25,7 +25,7 @@ export async function runKHEMNavigationShellTestSuite() {
     assert(KHEM_PUBLIC_NAVIGATION.every(([label]) => label !== 'Home' && label !== 'Homepage'), 'No Home or Homepage link exists in public header navigation');
     assert(KHEM_PUBLIC_NAVIGATION[0][0] === 'About Us' && KHEM_PUBLIC_NAVIGATION[0][1] === '/about', 'Route 1: About Us (/about)');
     assert(KHEM_PUBLIC_NAVIGATION[1][0] === 'Services' && KHEM_PUBLIC_NAVIGATION[1][1] === '/services', 'Route 2: Services (/services)');
-    assert(KHEM_PUBLIC_NAVIGATION[2][0] === 'Pitru Moksha' && KHEM_PUBLIC_NAVIGATION[2][1] === '/pitru-moksha', 'Route 3: Pitru Moksha (/pitru-moksha)');
+    assert(KHEM_PUBLIC_NAVIGATION[2][0] === 'PitruMoksha Gaya' && KHEM_PUBLIC_NAVIGATION[2][1] === '/pitru-moksha-gaya', 'Route 3: PitruMoksha Gaya (/pitru-moksha-gaya)');
     assert(KHEM_PUBLIC_NAVIGATION[3][0] === 'Travel' && KHEM_PUBLIC_NAVIGATION[3][1] === '/travel-assistance', 'Route 4: Travel (/travel-assistance)');
     assert(KHEM_PUBLIC_NAVIGATION[4][0] === 'Knowledge Hub' && KHEM_PUBLIC_NAVIGATION[4][1] === '/knowledge-center', 'Route 5: Knowledge Hub (/knowledge-center)');
     assert(KHEM_PUBLIC_NAVIGATION[5][0] === 'Zen G AI' && KHEM_PUBLIC_NAVIGATION[5][1] === '/zen-g', 'Route 6: Zen G AI (/zen-g)');

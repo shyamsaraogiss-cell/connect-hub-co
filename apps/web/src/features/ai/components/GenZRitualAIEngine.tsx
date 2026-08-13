@@ -1,10 +1,10 @@
 'use client';
 
-import React, { useState, type FormEvent } from 'react';
+import React, { useState, useEffect, type FormEvent } from 'react';
 import Link from 'next/link';
 import type { BusinessCategory } from '../types/ai.types';
 import { APPROVED_AI_KNOWLEDGE_TREES } from '../knowledge/ai-knowledge';
-import { searchKnowledgeCenter } from '../knowledge/semantic-search';
+import { searchKnowledgeCenter, syncKnowledgeFromBackend } from '../knowledge/semantic-search';
 import { getAISessionMemory, updateAISessionMemory } from '../services/ai-session.service';
 import { submitUnifiedInquiry } from '@/services/inquiry.api';
 import { getUniversalRequestByReferenceId } from '@/services/urms.api';
@@ -68,6 +68,10 @@ const tabCategoryMapping: Record<FixedTabKey, BusinessCategory> = {
 export function GenZRitualAIEngine({ category: initialCategory }: GenZRitualAIEngineProps) {
   const [activeTabKey, setActiveTabKey] = useState<FixedTabKey>('services');
   const [activePageCategory] = useState<BusinessCategory>(initialCategory);
+
+  useEffect(() => {
+    syncKnowledgeFromBackend();
+  }, []);
 
   // Compute active question tree adapting to active tab and current Hero context
   const currentCategory: BusinessCategory = (activeTabKey === 'services' || activeTabKey === 'rituals')

@@ -49,7 +49,7 @@ export function VahiPriceMatrixAccess() {
   const [matrix, setMatrix] = useState<Matrix>(DEFAULT_PRICE_MATRIX);
 
   useEffect(() => {
-    if (user?.role !== 'FOUNDER' && user?.role !== 'ADMIN') return;
+    if ((user?.role as string) !== 'FOUNDER' && (user?.role as string) !== 'ADMIN') return;
     void api<{ matrix: Matrix }>('/vahi/price-matrix/internal')
       .then((response) => setMatrix(response.matrix))
       .catch(() => {});

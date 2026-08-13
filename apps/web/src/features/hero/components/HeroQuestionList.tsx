@@ -1,5 +1,5 @@
 import type { AssistantPrompt } from "../types/hero.types";
-import styles from "../HeroCarousel.module.css";
+import styles from "../../public-shell/components/HeroCarousel.module.css";
 
 export function HeroQuestionList({ prompts, onSelect }: { prompts: readonly AssistantPrompt[]; onSelect: (prompt: AssistantPrompt) => void }) {
   return (
@@ -14,3 +14,5 @@ export function HeroQuestionList({ prompts, onSelect }: { prompts: readonly Assi
     </div>
   );
 }
+
+

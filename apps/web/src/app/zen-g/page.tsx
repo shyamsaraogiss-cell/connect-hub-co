@@ -43,7 +43,7 @@ export default function ZenGPage() {
             <div className="rounded-2xl bg-white p-5 border border-stone-200 shadow-sm">
               <h3 className="font-bold text-stone-950 text-sm mb-1">✦ Knowledge Base Verified</h3>
               <p className="text-stone-600 leading-relaxed">
-                Answers are generated strictly from approved Knowledge Center categories, avoiding unverified scriptural or business claims.
+                AI assistance is drawn from the current Knowledge Center sources and must not be treated as Founder-approved Golden Q&amp;A unless a response carries separate version and provenance evidence.
               </p>
             </div>
             <div className="rounded-2xl bg-white p-5 border border-stone-200 shadow-sm">

@@ -1,0 +1,193 @@
+import Image from "next/image";
+import Link from "next/link";
+import type { HeroSlideData } from "../../hero/types/hero.types";
+import styles from "./HeroCarousel.module.css";
+
+export function HeroSlide({ slide }: { slide: HeroSlideData }) {
+  if (slide.id === "pitru-moksha-gaya") {
+    return (
+      <article className={`${styles.slide} ${styles.heroOneSlide}`} aria-labelledby={`hero-title-${slide.id}`}>
+        <Image className={styles.heroOneBackground} src={slide.backgroundSrc!} alt="Representative view of a Gaya ancestral ritual with remote family participation" fill priority sizes="(max-width: 1023px) 100vw, 70vw" />
+        <div className={styles.heroOneOverlay} aria-hidden="true" />
+        <p className={styles.heroOneDisclosure}><span aria-hidden="true">ⓘ</span> Representative image — not an actual ritual photograph.</p>
+        <div className={styles.heroOneContent}>
+          <Image className={styles.heroOneLogo} src={slide.logoSrc} alt={slide.logoAlt} width={92} height={92} priority />
+          <h1 className={styles.heroOneBrand} id={`hero-title-${slide.id}`}>PitruMoksha Gaya</h1>
+          <p className={styles.heroOnePhilosophy}>Daan. Dharma. Moksha.</p>
+          <p className={styles.heroOnePromise}>Distance, Never Stops Devotion.</p>
+          <ul className={styles.heroOneServiceList} aria-label="PitruMoksha Gaya services">
+            {slide.servicePoints.map((service) => <li key={service.label}><span aria-hidden="true">✓</span>{service.label}</li>)}
+          </ul>
+          <p className={styles.heroOneCaution}><strong>Make Sure</strong><span aria-hidden="true"> — </span>Don’t assume that every ritual follows the same procedure, requires the same offerings, or uses the same route.</p>
+        </div>
+      </article>
+    );
+  }
+
+  if (slide.id === "religious-partner-network") {
+    return (
+      <article className={`${styles.slide} ${styles.partnerSlide}`} aria-labelledby={`hero-title-${slide.id}`}>
+        {slide.backgroundSrc ? (
+          <Image
+            className={styles.partnerBackground}
+            src={slide.backgroundSrc}
+            alt="Five verified Vedic Religious Partners in traditional white and gold attire at a sacred temple"
+            fill
+            priority
+            sizes="(max-width: 1023px) 100vw, 70vw"
+          />
+        ) : null}
+        <div className={styles.partnerOverlay} aria-hidden="true" />
+        <div className={styles.partnerShield} aria-label="Verified partner network"><span aria-hidden="true">✓</span></div>
+        <div className={styles.partnerContent}>
+          <h1 id={`hero-title-${slide.id}`}>{slide.title}</h1>
+          <p className={styles.partnerTagline}>{slide.tagline}</p>
+          <p className={styles.partnerDescription}>{slide.mainDescription}</p>
+          <div className={styles.partnerActions}>
+            <Link className={styles.partnerPrimaryAction} href={slide.primaryHref}>Register as a Religious Partner <span aria-hidden="true">→</span></Link>
+            <Link className={styles.partnerSecondaryAction} href={slide.secondaryHref ?? "/about"}><span aria-hidden="true">♙</span>{slide.secondaryCtaLabel}</Link>
+          </div>
+          <p className={styles.partnerGeo}><strong>{slide.location}</strong><span aria-hidden="true">—</span>{slide.locationSubtitle}</p>
+        </div>
+        <aside className={styles.partnerRegistration} aria-label="Religious Partner Registration">
+          <h2>Religious Partner Registration</h2>
+          <p>Join the Religious Partner Network</p>
+          <ul>{slide.keyBenefits?.map((item) => <li key={item}><span aria-hidden="true">✓</span>{item}</li>)}</ul>
+          <Link href={slide.primaryHref}>Start Registration <span aria-hidden="true">→</span></Link>
+        </aside>
+        <section className={styles.partnerServices} aria-label="Services partners can offer">
+          <h2>As A Partner You Can Offer</h2>
+          <ul>{slide.featureItems?.map((item) => <li key={item}><span aria-hidden="true">✓</span>{item}</li>)}</ul>
+        </section>
+      </article>
+    );
+  }
+
+  if (slide.id === "vahi-records") {
+    return (
+      <article className={`${styles.slide} ${styles.virtualSlide}`} aria-labelledby={`hero-title-${slide.id}`}>
+        {slide.backgroundSrc ? (
+          <Image
+            className={styles.virtualBackground}
+            src={slide.backgroundSrc}
+            alt="Representative sacred service image accompanying Vahi Records guidance"
+            fill
+            priority
+            sizes="(max-width: 1023px) 100vw, 70vw"
+          />
+        ) : null}
+        <div className={styles.virtualOverlay} aria-hidden="true" />
+        <div className={styles.virtualContent}>
+          <p className={styles.virtualLabel}>{slide.label}</p>
+          <h1 id={`hero-title-${slide.id}`}>{slide.title}</h1>
+          <p className={styles.virtualTagline}>{slide.tagline}</p>
+          <p className={styles.virtualDescription}>{slide.mainDescription}</p>
+          <div className={styles.virtualActions}>
+            <Link className={styles.virtualSecondaryAction} href={slide.secondaryHref ?? "#hero-assistant-title"}><span aria-hidden="true">🤖</span>{slide.secondaryCtaLabel}</Link>
+          </div>
+          <p className={styles.virtualWorldwide}><strong>{slide.location}</strong><span aria-hidden="true">—</span>{slide.locationSubtitle}</p>
+        </div>
+        <section className={styles.virtualServices} aria-label="Vahi Records core services">
+          <h2>Our Core Services</h2>
+          <ul>{slide.featureItems?.map((item) => <li key={item}><span aria-hidden="true">✓</span>{item}</li>)}</ul>
+        </section>
+      </article>
+    );
+  }
+
+  if (slide.id === "travel-assistance") {
+    return (
+      <article className={`${styles.slide} ${styles.travelSlide}`} aria-labelledby={`hero-title-${slide.id}`}>
+        <h1 id={`hero-title-${slide.id}`} className="sr-only">
+          Peace &amp; Travel, We Move Together. Your Shadow Traveler—always with You, always for You. A Worry-Free Journey
+        </h1>
+        <div className="relative w-full h-full overflow-hidden flex items-center justify-center">
+          <Image
+            className={`${styles.travelIllustration} object-contain object-center`}
+            src={slide.imageSrc ?? slide.backgroundSrc!}
+            alt="Connect Hub Co. Travel Assistance - Peace & Travel, We Move Together"
+            fill
+            priority
+            sizes="(max-width: 1024px) 100vw, 70vw"
+          />
+        </div>
+      </article>
+    );
+  }
+
+  if (slide.id === "ritual-services") {
+    return (
+      <article className={`${styles.slide} ${styles.ritualSlide}`} aria-labelledby={`hero-title-${slide.id}`}>
+        <div className={styles.ritualContent}>
+          <div className={styles.ritualIntro}>
+            <p className={styles.ritualEyebrow}>SITARAM • Ritual Services</p>
+            <h1 id={`hero-title-${slide.id}`}>{slide.title}</h1>
+            <p className={styles.ritualDescription}>{slide.mainDescription}</p>
+            <section className={styles.ritualLocations} aria-labelledby="ritual-locations-title">
+              <h2 id="ritual-locations-title">{slide.location}</h2>
+              <p>
+                {slide.locationLines?.map((line, index) => (
+                  <span key={line}>
+                    {line}
+                    {index === slide.locationLines!.length - 1 ? (
+                      <> <strong className={styles.nepalLocation}>Nepal</strong></>
+                    ) : null}
+                  </span>
+                ))}
+              </p>
+            </section>
+          </div>
+        </div>
+      </article>
+    );
+  }
+
+  return (
+    <article className={styles.slide} aria-labelledby={`hero-title-${slide.id}`}>
+      {slide.backgroundSrc ? (
+        <Image
+          className={styles.templeBackground}
+          src={slide.backgroundSrc}
+          alt=""
+          fill
+          priority
+          sizes="(max-width: 680px) 100vw, (max-width: 1100px) 65vw, 60vw"
+        />
+      ) : null}
+      <div className={styles.ivoryOverlay} aria-hidden="true" />
+      <div className={styles.heroCopy}>
+        {slide.logoSrc ? (
+          <Image className={styles.heroLogo} src={slide.logoSrc} alt={slide.logoAlt} width={150} height={150} priority />
+        ) : null}
+        <h1 id={`hero-title-${slide.id}`}>{slide.title}</h1>
+        <p className={styles.tagline}>{slide.tagline}</p>
+        <div className={styles.ornament} aria-hidden="true">
+          <span />
+          ◆
+          <span />
+        </div>
+        <p className={styles.supportingCopy}>
+          {slide.supportingCopy.map((line) => (
+            <span key={line}>{line}</span>
+          ))}
+        </p>
+        <ul className={styles.servicePoints} aria-label="Available service points">
+          {slide.servicePoints.map((point) => (
+            <li key={point.label}>
+              <span aria-hidden="true">✓</span>
+              {point.label}
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className={styles.locationCard}>
+        <span className={styles.pin} aria-hidden="true">●</span>
+        <span>
+          <strong>{slide.location}</strong>
+          <small>{slide.locationSubtitle}</small>
+        </span>
+      </div>
+    </article>
+  );
+}
+

@@ -3,6 +3,15 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --shell-peacock-top: #043D45;
+  --shell-peacock: #087F8C;
+  --shell-peacock-bottom: #032E35;
+  --royal-navy: #0c192c;
+  --ritual-gold: #D4AF37;
+  --gold-bright: #F4B942;
+  --border-soft: #055B66;
+  --text-on-peacock: #ffffff;
+  --warm-ivory-soft: #fffdf8;
 }
 
 @theme inline {
@@ -24,3 +33,4 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
