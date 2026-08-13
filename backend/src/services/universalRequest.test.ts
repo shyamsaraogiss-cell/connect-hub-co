@@ -43,16 +43,18 @@ async function replace<T extends object, K extends keyof T>(object: T, key: K, v
 }
 
 test("public intake accepts valid input without authentication and returns a safe projection", { concurrency: false }, async () => {
-  await replace(service, "createUniversalRequest", (async (_input: any, customerId?: string) => {
-    assert.equal(customerId, undefined);
-    return safeRecord as any;
-  }) as any, async () => {
-    const { response, state } = responseDouble();
-    await controller.createUniversalRequest(request({ requestType: "INQUIRY", guestName: "Customer", title: "Question", description: "Details" }), response);
-    assert.equal(state.status, 201);
-    assert.equal(state.body.referenceId, safeRecord.referenceId);
-    assert.equal("internalNote" in state.body, false);
-    assert.equal("guestEmail" in state.body, false);
+  await replace(prisma.universalRequest, "findUnique", (async () => null) as any, async () => {
+    await replace(prisma.universalRequest, "create", (async ({ data }: any) => {
+      assert.equal(data.customerId, undefined);
+      return safeRecord as any;
+    }) as any, async () => {
+      const { response, state } = responseDouble();
+      await controller.createUniversalRequest(request({ requestType: "INQUIRY", guestName: "Customer", title: "Question", description: "Details" }), response);
+      assert.equal(state.status, 201);
+      assert.equal(state.body.referenceId, safeRecord.referenceId);
+      assert.equal("internalNote" in state.body, false);
+      assert.equal("guestEmail" in state.body, false);
+    });
   });
 });
 
@@ -63,9 +65,9 @@ test("public intake rejects invalid required input", { concurrency: false }, asy
 });
 
 test("public tracking succeeds with matching contact and does not disclose unsafe fields", { concurrency: false }, async () => {
-  await replace(service, "trackGuestRequest", (async (reference: string, contact: string) => {
-    assert.equal(reference, safeRecord.referenceId);
-    assert.equal(contact, "customer@example.test");
+  await replace(prisma.universalRequest, "findFirst", (async ({ where }: any) => {
+    assert.equal(where.referenceId, safeRecord.referenceId);
+    assert.equal(where.OR[0].guestEmail.equals, "customer@example.test");
     return safeRecord as any;
   }) as any, async () => {
     const { response, state } = responseDouble();

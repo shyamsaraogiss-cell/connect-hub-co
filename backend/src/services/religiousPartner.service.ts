@@ -1,4 +1,3 @@
-import { Prisma } from "@prisma/client";
 import { prisma } from "../lib/prisma";
 import {
   CreateReligiousPartnerDTO,
@@ -19,11 +18,20 @@ export class PartnerServiceError extends Error {
   }
 }
 
+function isKnownPrismaRequestError(error: unknown): error is Error & { code: string; clientVersion: string } {
+  if (!(error instanceof Error)) return false;
+  const candidate = error as Error & { code?: unknown; clientVersion?: unknown };
+  return candidate.name === "PrismaClientKnownRequestError"
+    && typeof candidate.code === "string"
+    && /^P\d{4}$/.test(candidate.code)
+    && typeof candidate.clientVersion === "string";
+}
+
 function translatePrismaError(error: unknown): never {
-  if (error instanceof Prisma.PrismaClientKnownRequestError && error.code === "P2025") {
+  if (isKnownPrismaRequestError(error) && error.code === "P2025") {
     throw new PartnerServiceError("PARTNER_NOT_FOUND");
   }
-  if (error instanceof Prisma.PrismaClientKnownRequestError && error.code === "P2002") {
+  if (isKnownPrismaRequestError(error) && error.code === "P2002") {
     throw new PartnerServiceError("PARTNER_USER_ALREADY_LINKED");
   }
   throw error;

@@ -6,6 +6,12 @@ import * as service from "./religiousPartner.service";
 
 const partner = { id: "profile-1", fullName: "Applicant", category: "Purohit", mobile: "9999999999", userId: null };
 
+function prismaError(code: string) {
+  const error = new Error(`Prisma ${code}`);
+  error.name = "PrismaClientKnownRequestError";
+  return Object.assign(error, { code, clientVersion: "test" });
+}
+
 function responseDouble() {
   const state = { status: 200, body: undefined as any };
   const response = { status(code: number) { state.status = code; return response; }, json(body: unknown) { state.body = body; return response; } };
@@ -42,24 +48,46 @@ test("Founder/Admin list service returns partners", { concurrency: false }, asyn
 });
 
 test("detail succeeds and controller maps missing partner to 404", { concurrency: false }, async () => {
-  await replace(service, "getReligiousPartner", (async () => partner) as any, async () => {
+  await replace(prisma.religiousPartner, "findUnique", (async () => partner) as any, async () => {
     const { response, state } = responseDouble(); await controller.getReligiousPartner(request(), response); assert.equal(state.body.data.id, partner.id);
   });
-  await replace(service, "getReligiousPartner", (async () => null) as any, async () => {
+  await replace(prisma.religiousPartner, "findUnique", (async () => null) as any, async () => {
     const { response, state } = responseDouble(); await controller.getReligiousPartner(request(), response); assert.equal(state.status, 404);
   });
 });
 
 test("management update accepts allowlisted fields and rejects unknown fields", { concurrency: false }, async () => {
-  await replace(service, "updateReligiousPartner", (async (_id: string, data: any) => ({ ...partner, ...data })) as any, async () => {
+  await replace(prisma.religiousPartner, "update", (async ({ data }: any) => ({ ...partner, ...data })) as any, async () => {
     const { response, state } = responseDouble(); await controller.updateReligiousPartner(request({ status: "Active", remarks: "Approved" }), response); assert.equal(state.body.data.status, "Active");
   });
   const { response, state } = responseDouble(); await controller.updateReligiousPartner(request({ userId: "forbidden" }), response); assert.equal(state.status, 400);
 });
 
 test("update maps missing partner to 404", { concurrency: false }, async () => {
-  await replace(service, "updateReligiousPartner", (async () => { throw new service.PartnerServiceError("PARTNER_NOT_FOUND"); }) as any, async () => {
+  await replace(prisma.religiousPartner, "update", (async () => { throw prismaError("P2025"); }) as any, async () => {
     const { response, state } = responseDouble(); await controller.updateReligiousPartner(request({ status: "Active" }), response); assert.equal(state.status, 404);
+  });
+});
+
+test("link-user maps a Prisma uniqueness conflict to 409", { concurrency: false }, async () => {
+  await linkFixture({ id: partner.id, userId: null }, { id: "user-1", role: "RELIGIOUS_PARTNER", isActive: true }, null, async () => {
+    await replace(prisma.religiousPartner, "update", (async () => { throw prismaError("P2002"); }) as any, async () => {
+      const { response, state } = responseDouble();
+      await controller.linkReligiousPartnerUser(request({ userId: "user-1" }), response);
+      assert.equal(state.status, 409);
+    });
+  });
+});
+
+test("unknown update errors are not translated as Prisma failures", { concurrency: false }, async () => {
+  const unknownError = new Error("unexpected failure");
+  await replace(prisma.religiousPartner, "update", (async () => { throw unknownError; }) as any, async () => {
+    await replace(console, "error", (() => undefined) as any, async () => {
+      const { response, state } = responseDouble();
+      await controller.updateReligiousPartner(request({ status: "Active" }), response);
+      assert.equal(state.status, 500);
+      assert.equal(state.body.message, "Failed to update Religious Partner.");
+    });
   });
 });
 
