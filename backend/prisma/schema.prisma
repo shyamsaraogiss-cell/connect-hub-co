@@ -32,6 +32,10 @@ model User {
 
   updatedAt DateTime @updatedAt
 
+  ownedRequests    UniversalRequest[] @relation("CustomerRequests")
+  assignedRequests UniversalRequest[] @relation("PartnerAssignments")
+  religiousPartnerProfile ReligiousPartner?
+
 }
 
 model Customer {
@@ -62,6 +66,9 @@ model Customer {
 model ReligiousPartner {
 
   id                     String   @id @default(cuid())
+
+  userId                 String?  @unique
+  user                   User?    @relation(fields: [userId], references: [id])
 
   fullName               String
 
@@ -151,4 +158,53 @@ model PitruMokshaRequest {
   createdAt              DateTime @default(now())
 
   updatedAt              DateTime @updatedAt
+}
+
+model UniversalRequest {
+  id                    String   @id @default(cuid())
+  referenceId           String   @unique
+  requestType           String
+  serviceDomain         String?
+  customerId            String?
+  customer              User?    @relation("CustomerRequests", fields: [customerId], references: [id])
+  guestName             String
+  guestPhone            String
+  guestEmail            String
+  title                  String
+  description            String
+  currentStatus          String   @default("SUBMITTED")
+  currentStage           String   @default("Submitted")
+  assignedTeam           String?
+  assignedPartnerUserId String?
+  assignedPartner        User?    @relation("PartnerAssignments", fields: [assignedPartnerUserId], references: [id])
+  priority               String   @default("MEDIUM")
+  sourceChannel          String   @default("WEBSITE_FORM")
+  publicNote             String?
+  internalNote           String?
+  metadata               Json?
+  completedAt            DateTime?
+  createdAt              DateTime @default(now())
+  updatedAt              DateTime @updatedAt
+  history                UniversalRequestStatusHistory[]
+
+  @@index([customerId, createdAt])
+  @@index([assignedPartnerUserId, currentStatus])
+  @@index([requestType, currentStatus])
+}
+
+model UniversalRequestStatusHistory {
+  id              String           @id @default(cuid())
+  requestId       String
+  request         UniversalRequest @relation(fields: [requestId], references: [id], onDelete: Cascade)
+  previousStatus  String?
+  newStatus       String
+  previousStage   String?
+  newStage        String
+  changedByUserId String?
+  changedByRole   String
+  publicNote      String?
+  internalNote    String?
+  createdAt       DateTime         @default(now())
+
+  @@index([requestId, createdAt])
 }
