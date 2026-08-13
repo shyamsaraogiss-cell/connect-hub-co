@@ -14,6 +14,26 @@ enum UserRole {
   RELIGIOUS_PARTNER
 }
 
+enum GovernanceStatus {
+  DRAFT
+  FOUNDER_APPROVED
+  ERP_LOCKED
+  PUBLISHED
+  SUPERSEDED
+  ARCHIVED
+}
+
+enum GovernanceAction {
+  CREATE
+  EDIT
+  FOUNDER_APPROVE
+  ERP_LOCK
+  PUBLISH
+  SUPERSEDE
+  ROLLBACK
+  ARCHIVE
+}
+
 model User {
 
   id        String   @id @default(cuid())
@@ -207,4 +227,121 @@ model UniversalRequestStatusHistory {
   createdAt       DateTime         @default(now())
 
   @@index([requestId, createdAt])
+}
+
+model KnowledgeArticle {
+  id            String   @id @default(cuid())
+  category      String
+  categoryTitle String
+  title         String
+  keywords      String[]
+  synonyms      String[]
+  summary       String
+  content       String
+  link          String
+  status        String   @default("DRAFT") // DRAFT, UNDER_REVIEW, APPROVED, WITHDRAWN
+  governanceStatus GovernanceStatus @default(DRAFT)
+  version       Int      @default(1)
+  publishedAt   DateTime?
+  contentKey    String?
+  founderApprovedAt DateTime?
+  founderApprovedBy String?
+  erpLockedAt   DateTime?
+  erpLockedBy   String?
+  publishedVersionId String?
+  createdBy     String?
+  lastEditedBy  String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  history       KnowledgeArticleHistory[]
+
+  @@index([category, status])
+  @@index([contentKey])
+  @@index([governanceStatus, contentKey])
+  @@unique([contentKey, governanceStatus])
+}
+
+model KnowledgeFAQ {
+  id          String   @id @default(cuid())
+  category    String
+  question    String
+  answer      String
+  keywords    String[]
+  link        String
+  status      String   @default("DRAFT") // DRAFT, UNDER_REVIEW, APPROVED, WITHDRAWN
+  governanceStatus GovernanceStatus @default(DRAFT)
+  version     Int      @default(1)
+  publishedAt DateTime?
+  contentKey  String?
+  founderApprovedAt DateTime?
+  founderApprovedBy String?
+  erpLockedAt DateTime?
+  erpLockedBy String?
+  publishedVersionId String?
+  createdBy   String?
+  lastEditedBy String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  history     KnowledgeFAQHistory[]
+
+  @@index([category, status])
+  @@index([contentKey])
+  @@index([governanceStatus, contentKey])
+  @@unique([contentKey, governanceStatus])
+}
+
+model KnowledgeArticleHistory {
+  id          String           @id @default(cuid())
+  articleId   String
+  article     KnowledgeArticle @relation(fields: [articleId], references: [id], onDelete: Cascade)
+  version     Int
+  title       String
+  summary     String
+  content     String
+  link        String
+  status      String
+  changedBy   String
+  action      GovernanceAction?
+  changedByRole UserRole?
+  metadata    Json?
+  createdAt   DateTime         @default(now())
+
+  @@index([articleId, version])
+  @@index([articleId, createdAt])
+}
+
+model KnowledgeFAQHistory {
+  id        String           @id @default(cuid())
+  faqId     String
+  faq       KnowledgeFAQ     @relation(fields: [faqId], references: [id], onDelete: Cascade)
+  version   Int
+  question  String
+  answer    String
+  link      String
+  status    String
+  changedBy String
+  action    GovernanceAction?
+  changedByRole UserRole?
+  metadata  Json?
+  createdAt DateTime         @default(now())
+
+  @@index([faqId, version])
+  @@index([faqId, createdAt])
+}
+
+model GovernanceAuditLog {
+  id          String           @id @default(cuid())
+  contentType String           // "ARTICLE" | "FAQ"
+  contentId   String           // The specific article/faq id
+  contentKey  String?          // Stable content identifier
+  version     Int              // Version number at time of action
+  action      GovernanceAction
+  actorUserId String?          // User who performed action
+  actorRole   UserRole
+  metadata    Json?            // Additional context
+  createdAt   DateTime         @default(now())
+
+  @@index([contentType, contentId, createdAt])
+  @@index([actorUserId, createdAt])
+  @@index([action, createdAt])
 }
