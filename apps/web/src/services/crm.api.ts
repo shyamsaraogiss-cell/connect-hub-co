@@ -1,5 +1,6 @@
 import { api } from '@/lib/api';
 import type { CRMLead, CRMLeadInput } from '@/types/crm';
+import type { BookingInput } from '@/types/booking';
 import { createBooking } from './booking.api';
 
 const endpoint = '/crm/leads';
@@ -203,7 +204,7 @@ export const convertLeadToBooking = async (
 ): Promise<{ lead: CRMLead; bookingId: string }> => {
   const lead = await getCRMLead(leadId);
 
-  const booking = await createBooking({
+  const bookingInput: BookingInput & { inquiryId?: string; category: CRMLead['category']; ancestorNames?: string; gotra?: string } = {
     inquiryId: lead.inquiryId || lead.id,
     category: lead.category,
     customerId: lead.customerName,
@@ -211,10 +212,11 @@ export const convertLeadToBooking = async (
     serviceName: `${lead.category.replaceAll('-', ' ').toUpperCase()} Service`,
     scheduledAt,
     notes: `Converted from CRM Lead ${lead.id}. ${lead.internalNotes || ''}`,
-    status: 'NEW',
+    status: 'PENDING',
     ancestorNames: lead.ancestorDetails,
     gotra: lead.gotra,
-  });
+  };
+  const booking = await createBooking(bookingInput);
 
   const updatedLead = await updateCRMLead(leadId, {
     status: 'CONVERTED',

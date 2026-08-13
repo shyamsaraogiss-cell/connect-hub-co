@@ -40,6 +40,7 @@ export default function TrackingPage() {
   const initialRef = searchParams.get('ref') || searchParams.get('id') || '';
 
   const [inputRef, setInputRef] = useState(initialRef);
+  const [contactVerification, setContactVerification] = useState('');
   const [loading, setLoading] = useState(false);
   const [record, setRecord] = useState<URMSUniversalRecord | null>(null);
   const [searched, setSearched] = useState(false);
@@ -66,14 +67,14 @@ export default function TrackingPage() {
     setSearched(true);
     try {
       // Pass role='GUEST' to guarantee customer-safe data output (hides internal notes/documents)
-      const data = await getUniversalRequestByReferenceId(refToSearch, 'GUEST');
+      const data = await getUniversalRequestByReferenceId(refToSearch, 'GUEST', contactVerification);
       setRecord(data);
     } catch {
       setRecord(null);
     } finally {
       setLoading(false);
     }
-  }, []);
+  }, [contactVerification]);
 
   useEffect(() => {
     if (initialRef) {
@@ -83,7 +84,8 @@ export default function TrackingPage() {
         setLoading(true);
         setSearched(true);
         try {
-          const data = await getUniversalRequestByReferenceId(initialRef, 'GUEST');
+          if (!contactVerification) return;
+          const data = await getUniversalRequestByReferenceId(initialRef, 'GUEST', contactVerification);
           if (isMounted) setRecord(data);
         } catch {
           if (isMounted) setRecord(null);
@@ -95,7 +97,7 @@ export default function TrackingPage() {
         isMounted = false;
       };
     }
-  }, [initialRef]);
+  }, [contactVerification, initialRef]);
 
   const currentStepIdx = record ? STATUS_STEPS.findIndex((s) => s.key === record.currentStatus) : -1;
 
@@ -138,6 +140,15 @@ export default function TrackingPage() {
                   {loading ? 'Searching...' : 'Track Request →'}
                 </button>
               </div>
+              <input
+                type="text"
+                required
+                value={contactVerification}
+                onChange={(event) => setContactVerification(event.target.value)}
+                placeholder="Enter the email address or phone number used for this request"
+                className="w-full rounded-xl border border-stone-300 px-4 py-3 text-sm outline-none focus:border-[var(--peacock-dark,#087F8C)] focus:ring-2 focus:ring-cyan-600/20"
+                autoComplete="email"
+              />
               {validationError && <p className="text-xs text-red-600 font-medium">{validationError}</p>}
             </form>
           </div>

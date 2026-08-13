@@ -4,8 +4,13 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { useAuth } from '@/components/auth/AuthProvider';
+import { UnavailableAuthFlow } from '@/components/auth/UnavailableAuthFlow';
 
 export default function VerifyEmailPage() {
+  return <UnavailableAuthFlow title="Email Verification Unavailable" message="Email verification is not available during the current pre-trial phase." />;
+}
+
+export function LegacyVerifyEmailPage() {
   const searchParams = useSearchParams();
   const token = searchParams.get('token') || 'demo_verification_token';
   const { verifyEmail } = useAuth();

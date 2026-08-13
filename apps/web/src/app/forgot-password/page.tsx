@@ -3,8 +3,13 @@
 import { useState, type FormEvent } from 'react';
 import Link from 'next/link';
 import { useAuth } from '@/components/auth/AuthProvider';
+import { UnavailableAuthFlow } from '@/components/auth/UnavailableAuthFlow';
 
 export default function ForgotPasswordPage() {
+  return <UnavailableAuthFlow title="Password Recovery Unavailable" message="Password recovery is not available during the current pre-trial phase." />;
+}
+
+export function LegacyForgotPasswordPage() {
   const { forgotPassword } = useAuth();
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState<string | null>(null);

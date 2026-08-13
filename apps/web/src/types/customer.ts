@@ -5,9 +5,11 @@ export interface Customer {
   phone?: string | null;
   country?: string | null;
   city?: string | null;
-  isNRI: boolean;
+  purpose: string;
+  serviceType?: string | null;
+  status: string;
   createdAt?: string;
   updatedAt?: string;
 }
 
-export type CustomerInput = Omit<Customer, "id" | "createdAt" | "updatedAt">;
+export type CustomerInput = Omit<Customer, "id" | "createdAt" | "updatedAt" | "status"> & { status?: string };

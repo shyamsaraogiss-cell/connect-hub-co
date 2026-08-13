@@ -20,7 +20,7 @@ export function usePartners() {
     }
   }
 
-  useEffect(() => { void refresh(); }, []);
+  useEffect(() => { queueMicrotask(() => void refresh()); }, []);
 
   return { partners, loading, error, refresh };
 }

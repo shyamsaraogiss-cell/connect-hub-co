@@ -230,6 +230,46 @@ const initialMockUniversalRecords: URMSUniversalRecord[] = [
 
 let inMemoryRecordsFallback: URMSUniversalRecord[] = [...initialMockUniversalRecords];
 
+type ServerHistoryRecord = Partial<URMSStatusHistoryRecord> & {
+  changedByRole?: string;
+  createdAt?: string;
+};
+
+type ServerUniversalRecord = Omit<Partial<URMSUniversalRecord>, 'history'> & Pick<URMSUniversalRecord, 'id' | 'referenceId' | 'requestType' | 'title' | 'currentStatus' | 'currentStage' | 'createdAt' | 'updatedAt'> & {
+  serviceDomain?: string;
+  publicNote?: string | null;
+  history?: ServerHistoryRecord[];
+};
+
+function normalizeServerRecord(record: ServerUniversalRecord): URMSUniversalRecord {
+  return {
+    ...record,
+    relatedService: record.relatedService ?? record.serviceDomain,
+    guestName: record.guestName ?? 'Customer',
+    guestPhone: record.guestPhone ?? '',
+    guestEmail: record.guestEmail ?? '',
+    priority: record.priority ?? 'MEDIUM',
+    sourceChannel: record.sourceChannel ?? 'WEBSITE_FORM',
+    expectedNextStep: record.expectedNextStep ?? record.publicNote ?? undefined,
+    history: (record.history ?? []).map((item) => ({
+      id: item.id ?? `history_${record.referenceId}`,
+      referenceId: record.referenceId,
+      previousStatus: item.previousStatus,
+      newStatus: item.newStatus ?? record.currentStatus,
+      previousStage: item.previousStage,
+      newStage: item.newStage ?? record.currentStage,
+      changedBy: item.changedBy ?? item.changedByRole ?? 'SYSTEM',
+      changeSource: item.changeSource ?? (item.changedByRole === 'RELIGIOUS_PARTNER' ? 'WORKFLOW' : 'SYSTEM'),
+      publicNote: item.publicNote,
+      timestamp: item.timestamp ?? item.createdAt ?? record.updatedAt,
+    })),
+    timeline: record.timeline ?? [],
+    communications: record.communications ?? [],
+    documents: record.documents ?? [],
+    description: record.description ?? '',
+  };
+}
+
 function getStoredRecords(): URMSUniversalRecord[] {
   if (typeof window === 'undefined') return inMemoryRecordsFallback;
   try {
@@ -331,19 +371,11 @@ export async function createUniversalRequest(input: {
     documents: [],
   };
 
-  try {
-    const res = await api<URMSUniversalRecord>('/urms/universal-requests', {
-      method: 'POST',
-      body: JSON.stringify(newRecord),
-    });
-    const list = getStoredRecords();
-    saveStoredRecords([res, ...list]);
-    return res;
-  } catch {
-    const list = getStoredRecords();
-    saveStoredRecords([newRecord, ...list]);
-    return newRecord;
-  }
+  const res = await api<ServerUniversalRecord>('/urms/universal-requests/public', {
+    method: 'POST',
+    body: JSON.stringify(newRecord),
+  });
+  return normalizeServerRecord(res);
 }
 
 export async function updateUniversalRequestStatus(
@@ -354,69 +386,29 @@ export async function updateUniversalRequestStatus(
   publicNote?: string,
   internalNote?: string
 ): Promise<URMSUniversalRecord> {
-  const list = getStoredRecords();
-  const record = list.find((r) => r.referenceId.toUpperCase() === referenceId.toUpperCase());
-
-  if (!record) {
-    throw new Error(`Record ${referenceId} not found`);
-  }
-
-  if (!validateStatusTransition(record.currentStatus, newStatus)) {
-    throw new Error(`Invalid status transition from ${record.currentStatus} to ${newStatus}`);
-  }
-
-  const now = new Date().toISOString();
-  const historyItem: URMSStatusHistoryRecord = {
-    id: `h_${Date.now()}`,
-    referenceId: record.referenceId,
-    previousStatus: record.currentStatus,
-    newStatus,
-    previousStage: record.currentStage,
-    newStage,
-    changedBy,
-    changeSource: 'ADMIN',
-    publicNote,
-    internalNote,
-    timestamp: now,
-  };
-
-  const updatedRecord: URMSUniversalRecord = {
-    ...record,
-    currentStatus: newStatus,
-    currentStage: newStage,
-    updatedAt: now,
-    closedAt: ['CLOSED', 'COMPLETED', 'RESOLVED', 'REJECTED', 'CANCELLED'].includes(newStatus) ? now : record.closedAt,
-    history: [historyItem, ...record.history],
-    timeline: [
-      {
-        id: `t_${Date.now()}`,
-        timestamp: now,
-        status: newStatus,
-        title: `Status Changed to ${newStatus}`,
-        description: publicNote || `Stage updated to ${newStage}`,
-        actor: changedBy,
-        isPublic: true,
-      },
-      ...record.timeline,
-    ],
-  };
-
-  const updatedList = list.map((item) => (item.referenceId === record.referenceId ? updatedRecord : item));
-  saveStoredRecords(updatedList);
-  return updatedRecord;
+  const updated = await api<ServerUniversalRecord>(`/urms/universal-requests/${referenceId}`, {
+    method: 'PATCH',
+    body: JSON.stringify({ currentStatus: newStatus, currentStage: newStage, changedBy, publicNote, internalNote }),
+  });
+  return normalizeServerRecord(updated);
 }
 
 export async function getUniversalRequestByReferenceId(
   referenceId: string,
-  role: 'GUEST' | 'CUSTOMER' | 'ADMIN' = 'GUEST'
+  role: 'GUEST' | 'CUSTOMER' | 'ADMIN' = 'GUEST',
+  contactVerification?: string
 ): Promise<URMSUniversalRecord | null> {
   const cleanId = referenceId.trim().toUpperCase();
   let found: URMSUniversalRecord | null = null;
   try {
-    found = await api<URMSUniversalRecord>(`/urms/universal-requests/${cleanId}`);
+    found = role === 'GUEST'
+      ? normalizeServerRecord(await api<ServerUniversalRecord>('/urms/universal-requests/track', {
+          method: 'POST',
+          body: JSON.stringify({ referenceId: cleanId, contactVerification }),
+        }))
+      : normalizeServerRecord(await api<ServerUniversalRecord>(`/urms/universal-requests/${cleanId}`));
   } catch {
-    const list = getStoredRecords();
-    found = list.find((item) => item.referenceId.toUpperCase() === cleanId) || null;
+    return null;
   }
 
   if (!found) return null;
@@ -430,9 +422,5 @@ export async function getUniversalRequestByReferenceId(
 }
 
 export async function listUniversalRequests(): Promise<URMSUniversalRecord[]> {
-  try {
-    return await api<URMSUniversalRecord[]>('/urms/universal-requests');
-  } catch {
-    return getStoredRecords();
-  }
+  return api<URMSUniversalRecord[]>('/urms/universal-requests');
 }

@@ -99,18 +99,13 @@ export async function submitUnifiedInquiry(
       endpoint = '/public/travel-assistance/requests';
     }
 
-    try {
-      const res = await api<{ requestId?: string; inquiryId?: string }>(endpoint, {
-        method: 'POST',
-        body: JSON.stringify({ category, ...data }),
-      });
-      const inquiryId = res.requestId || res.inquiryId || `CHC-2026-${Math.floor(100000 + Math.random() * 900000)}`;
-      submittedInquiries.add(hash);
-      return { success: true, inquiryId };
-    } catch {
-      const fallbackId = `CHC-2026-${Math.floor(100000 + Math.random() * 900000)}`;
-      submittedInquiries.add(hash);
-      return { success: true, inquiryId: fallbackId };
-    }
+    const res = await api<{ requestId?: string; inquiryId?: string }>(endpoint, {
+      method: 'POST',
+      body: JSON.stringify({ category, ...data }),
+    });
+    const inquiryId = res.requestId || res.inquiryId;
+    if (!inquiryId) throw new Error('The server did not issue a request reference.');
+    submittedInquiries.add(hash);
+    return { success: true, inquiryId };
   }
 }

@@ -1,4 +1,5 @@
 import type { BusinessCategory } from '../types/ai.types';
+import { API_BASE_URL } from '../../../lib/api';
 
 export interface KnowledgeArticle {
   id: string;
@@ -311,4 +312,25 @@ export function searchKnowledgeCenter(query: string): {
 
   SEARCH_CACHE.set(normalized, res);
   return res;
+}
+
+export async function syncKnowledgeFromBackend() {
+  try {
+    const resArticles = await fetch(`${API_BASE_URL}/api/governance/articles?status=APPROVED`).then((r) => r.json());
+    const resFAQs = await fetch(`${API_BASE_URL}/api/governance/faqs?status=APPROVED`).then((r) => r.json());
+    
+    if (resArticles.success && Array.isArray(resArticles.articles)) {
+      // Clear cache as index changed
+      SEARCH_CACHE.clear();
+      APPROVED_KNOWLEDGE_ARTICLES.length = 0;
+      APPROVED_KNOWLEDGE_ARTICLES.push(...resArticles.articles);
+    }
+    if (resFAQs.success && Array.isArray(resFAQs.faqs)) {
+      SEARCH_CACHE.clear();
+      APPROVED_KNOWLEDGE_FAQS.length = 0;
+      APPROVED_KNOWLEDGE_FAQS.push(...resFAQs.faqs);
+    }
+  } catch (err) {
+    console.error('Failed to sync knowledge from backend:', err);
+  }
 }

@@ -2,8 +2,8 @@
 
 import { useAuth } from '@/components/auth/AuthProvider';
 import { AdminDashboard } from '@/components/admin/AdminDashboard';
-import { CustomerDashboard } from '@/components/dashboard/CustomerDashboard';
-import { PartnerDashboard } from '@/components/dashboard/PartnerDashboard';
+import { SafeCustomerDashboard } from '@/components/dashboard/SafeCustomerDashboard';
+import { LimitedPartnerDashboard } from '@/components/dashboard/LimitedPartnerDashboard';
 
 export default function DashboardPage() {
   const { user, loading } = useAuth();
@@ -19,13 +19,13 @@ export default function DashboardPage() {
     );
   }
 
-  if (user?.role === 'ADMIN' || user?.role === 'STAFF' || (user?.email && user.email.includes('admin'))) {
+  if (user?.role === 'FOUNDER' || user?.role === 'ADMIN') {
     return <AdminDashboard />;
   }
 
-  if (user?.role === 'PARTNER' || (user?.email && user.email.includes('partner'))) {
-    return <PartnerDashboard />;
+  if (user?.role === 'RELIGIOUS_PARTNER') {
+    return <LimitedPartnerDashboard />;
   }
 
-  return <CustomerDashboard />;
+  return <SafeCustomerDashboard />;
 }

@@ -32,7 +32,7 @@ export function AdminDashboard() {
   const [refundReason, setRefundReason] = useState('');
 
   // Guard: Role-based access control (Admin / Staff only)
-  const isAuthorized = hasRole(['ADMIN', 'STAFF']) || (user && user.email.includes('admin'));
+  const isAuthorized = hasRole(['FOUNDER', 'ADMIN']);
 
   if (!isAuthorized) {
     return (

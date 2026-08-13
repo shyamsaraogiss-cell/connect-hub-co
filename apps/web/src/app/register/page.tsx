@@ -3,8 +3,13 @@
 import { useState, type FormEvent } from 'react';
 import Link from 'next/link';
 import { useAuth } from '@/components/auth/AuthProvider';
+import { UnavailableAuthFlow } from '@/components/auth/UnavailableAuthFlow';
 
 export default function RegisterPage() {
+  return <UnavailableAuthFlow title="Registration Unavailable" message="Account registration is not available during the current pre-trial phase." />;
+}
+
+export function LegacyRegisterPage() {
   const { register } = useAuth();
   const [role, setRole] = useState<'CUSTOMER' | 'PARTNER'>('CUSTOMER');
   const [name, setName] = useState('');

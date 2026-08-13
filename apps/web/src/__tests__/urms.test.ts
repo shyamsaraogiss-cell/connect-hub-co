@@ -7,7 +7,28 @@ import {
 import { validateStatusTransition, getCustomerSafeRecord, type URMSUniversalRecord } from '../types/urms';
 import { dispatchURMSNotification, getNotificationLogsByReferenceId } from '../services/notifications.api';
 
+type FetchCall = { url: string; init?: RequestInit };
+
 export async function runURMSTestSuite() {
+  const originalFetch = globalThis.fetch;
+  const calls: FetchCall[] = [];
+  let storedRecord: Record<string, unknown> | null = null;
+  process.env.TEST_AUTH_TOKEN = 'deterministic-test-token';
+  globalThis.fetch = async (input, init) => {
+    const url = String(input);
+    calls.push({ url, init });
+    const body = init?.body ? JSON.parse(String(init.body)) as Record<string, unknown> : {};
+
+    if (init?.method === 'POST') storedRecord = { ...body, id: 'urms_test_1' };
+    if (init?.method === 'PATCH') storedRecord = { ...storedRecord, ...body, updatedAt: '2026-08-13T00:00:00.000Z' };
+    if (!storedRecord) throw new Error(`Unexpected fetch before test record creation: ${url}`);
+
+    return new Response(JSON.stringify(storedRecord), {
+      status: 200,
+      headers: { 'Content-Type': 'application/json' },
+    });
+  };
+
   const results: { name: string; status: 'PASSED' | 'FAILED'; error?: string }[] = [];
 
   const assert = (condition: boolean, message: string) => {
@@ -47,6 +68,17 @@ export async function runURMSTestSuite() {
 
     const updated = await updateUniversalRequestStatus(req.referenceId, 'ACKNOWLEDGED', 'Acknowledged Stage', 'System Admin');
     assert(updated.currentStatus === 'ACKNOWLEDGED', 'Status updated to ACKNOWLEDGED');
+    const [createCall, lookupCall, updateCall] = calls;
+    assert(createCall.url === 'http://localhost:5000/api/urms/universal-requests/public', 'Create path uses shared API base');
+    assert(createCall.init?.method === 'POST', 'Create uses POST');
+    assert(String(createCall.init?.body).includes('PitruMoksha Gaya Rites'), 'Create maps request body');
+    assert((createCall.init?.headers as Record<string, string>).Authorization === 'Bearer deterministic-test-token', 'Authorization header mapped');
+    assert((createCall.init?.headers as Record<string, string>)['Content-Type'] === 'application/json', 'JSON content header mapped');
+    assert(lookupCall.url.endsWith(`/api/urms/universal-requests/${req.referenceId}`), 'Lookup path maps reference ID');
+    assert(lookupCall.init?.method === undefined, 'Lookup uses GET');
+    assert(updateCall.url.endsWith(`/api/urms/universal-requests/${req.referenceId}`), 'Update path maps reference ID');
+    assert(updateCall.init?.method === 'PATCH', 'Update uses PATCH');
+    assert(updated.guestName === 'Test Traveler', 'Server response is normalized');
 
     results.push({ name: 'Request Creation, Lookup & Status Transition Update', status: 'PASSED' });
   } catch (err: unknown) {
@@ -190,6 +222,8 @@ export async function runURMSTestSuite() {
     results.push({ name: 'Notification Service Adapter Queue', status: 'FAILED', error: String(err) });
   }
 
+  globalThis.fetch = originalFetch;
+  delete process.env.TEST_AUTH_TOKEN;
   return results;
 }
 
@@ -197,5 +231,9 @@ if (require.main === module) {
   runURMSTestSuite().then((res) => {
     console.log('=== URMS TEST SUITE RESULTS ===');
     console.log(JSON.stringify(res, null, 2));
+    if (res.some(({ status }) => status === 'FAILED')) process.exitCode = 1;
+  }).catch((error) => {
+    console.error(error);
+    process.exitCode = 1;
   });
 }

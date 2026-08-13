@@ -4,8 +4,13 @@ import { useState, type FormEvent } from 'react';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { useAuth } from '@/components/auth/AuthProvider';
+import { UnavailableAuthFlow } from '@/components/auth/UnavailableAuthFlow';
 
 export default function ResetPasswordPage() {
+  return <UnavailableAuthFlow title="Password Reset Unavailable" message="Password reset is not available during the current pre-trial phase." />;
+}
+
+export function LegacyResetPasswordPage() {
   const searchParams = useSearchParams();
   const token = searchParams.get('token') || 'demo_reset_token';
   const { resetPassword } = useAuth();
