@@ -1,5 +1,6 @@
 import { Router } from "express";
-import { registerUser, loginUser } from "../controllers/auth.controller";
+import { getCurrentUser, loginUser, logoutUser, registerUser } from "../controllers/auth.controller";
+import { requireAuth } from "../middleware/auth.middleware";
 
 const router = Router();
 
@@ -13,5 +14,9 @@ router.get("/health", (req, res) => {
 router.post("/register", registerUser);
 
 router.post("/login", loginUser);
+
+router.get("/me", requireAuth, getCurrentUser);
+
+router.post("/logout", requireAuth, logoutUser);
 
 export default router;
