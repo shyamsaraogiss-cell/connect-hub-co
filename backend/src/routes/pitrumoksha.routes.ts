@@ -1,4 +1,5 @@
 import { Router } from "express";
+import { requireAuth, requireRoles } from "../middleware/auth.middleware";
 
 import {
 
@@ -10,7 +11,7 @@ import {
 
 const router = Router();
 
-router.get("/", getRequests);
+router.get("/", requireAuth, requireRoles("FOUNDER", "ADMIN"), getRequests);
 
 router.post("/", createRequest);
 
