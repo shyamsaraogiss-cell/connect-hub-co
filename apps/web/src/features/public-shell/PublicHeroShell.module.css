@@ -206,23 +206,26 @@
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  gap: 4px !important;
-  height: 32px !important; /* Toggle Tab Height: 32px */
+  gap: 3px !important; /* Reduced internal gap between icon and label */
+  height: 30px !important; /* Subtab height: 30px EXACT */
+  min-height: 30px !important;
+  max-height: 30px !important;
   border-radius: 6px !important;
   border: 1px solid #F4B942 !important;
   color: #FFFFFF !important;
   text-decoration: none !important;
   font-family: system-ui, -apple-system, sans-serif !important;
-  font-size: 14px !important; /* font-size: 14px */
-  font-weight: 500 !important; /* font-weight: 500 */
+  font-size: 13px !important; /* Font size: 13px */
+  font-weight: 600 !important; /* Font weight: 600 */
   background: transparent !important;
   transition: all 0.2s ease !important;
-  padding: 0 4px !important;
+  padding: 0 4px !important; /* Reduced horizontal padding */
+  box-sizing: border-box !important;
 }
 
 .toggleTab svg {
-  width: 15px !important; /* icon size 15px */
-  height: 15px !important;
+  width: 14px !important; /* Icon size: 14px consistent */
+  height: 14px !important;
   color: #F4B942 !important;
 }
 
