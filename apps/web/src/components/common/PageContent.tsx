@@ -34,7 +34,7 @@ export function PageContent({ children }: { children: React.ReactNode }) {
     path.startsWith("/pitru-moksha-gaya") ||
     path.startsWith("/ritual-services") ||
     path === "/vahi-records" ||
-    path.startsWith("/travel-assistance") ||
+    path === "/travel-assistance" ||
     path.startsWith("/travel-assistance/success") ||
     path === "/religious-partners" ||
     path === "/knowledge-center" ||

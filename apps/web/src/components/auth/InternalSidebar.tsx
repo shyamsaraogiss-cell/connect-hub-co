@@ -5,6 +5,8 @@ import { useMemo, useState } from "react";
 import { useAuth } from "./AuthProvider";
 import { KHEM_EXACT_SIDEBAR_HIERARCHY } from "@/config/khem-navigation.config";
 
+import { SessionHeader } from "./SessionHeader";
+
 const sidebarItems = KHEM_EXACT_SIDEBAR_HIERARCHY;
 
 export function InternalSidebar({ children }: { children: React.ReactNode }) {
@@ -60,7 +62,7 @@ export function InternalSidebar({ children }: { children: React.ReactNode }) {
                   href={item.href}
                   onClick={() => setOpen(false)}
                   className={`flex items-center gap-3 rounded-lg px-3 py-2 text-sm transition-colors ${
-                    item.isChild ? "ml-4 text-stone-300 text-xs border-l border-stone-700 pl-3" : ""
+                     item.isChild ? "ml-4 text-stone-300 text-xs border-l border-stone-700 pl-3" : ""
                   } ${
                     active ? "bg-orange-700 font-semibold text-white" : "hover:bg-stone-800 hover:text-white"
                   }`}
@@ -127,7 +129,10 @@ export function InternalSidebar({ children }: { children: React.ReactNode }) {
 
       {/* Desktop Fixed Sidebar */}
       <div className="sticky top-0 hidden h-screen lg:block">{sidebar}</div>
-      <div className="min-w-0">{children}</div>
+      <div className="min-w-0 flex flex-col flex-1">
+        <SessionHeader />
+        <div className="flex-1">{children}</div>
+      </div>
     </div>
   );
 }
