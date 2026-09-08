@@ -21,10 +21,6 @@ export default function PartnersPage() {
   const [partners, setPartners] = useState<ReligiousPartner[]>([]);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    loadPartners();
-  }, []);
-
   async function loadPartners() {
     try {
       const data = await getPartners();
@@ -35,6 +31,10 @@ export default function PartnersPage() {
       setLoading(false);
     }
   }
+
+  useEffect(() => {
+    queueMicrotask(() => void loadPartners());
+  }, []);
 
   async function deactivate(id: string) {
     if (!window.confirm("Deactivate this partner?")) return;
@@ -106,8 +106,8 @@ export default function PartnersPage() {
                   <td className="p-3">{partner.partnerType}</td>
                   <td className="p-3">{partner.city ?? "-"}</td>
                   <td className="p-3">{partner.email ?? "-"}</td>
-                  <td className="p-3">{partner.verified ? "✅" : "❌"}</td>
-                  <td className="p-3">{partner.active ? "✅" : "❌"}</td>
+                  <td className="p-3">{partner.verified ? "" : ""}</td>
+                  <td className="p-3">{partner.active ? "" : ""}</td>
                 </tr>
               ))}
             </tbody>

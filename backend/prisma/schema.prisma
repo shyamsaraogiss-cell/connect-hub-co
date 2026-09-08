@@ -14,141 +14,563 @@ enum UserRole {
   RELIGIOUS_PARTNER
 }
 
+enum GovernanceStatus {
+  DRAFT
+  FOUNDER_APPROVED
+  ERP_LOCKED
+  PUBLISHED
+  SUPERSEDED
+  ARCHIVED
+}
+
+enum GovernanceAction {
+  CREATE
+  EDIT
+  FOUNDER_APPROVE
+  ERP_LOCK
+  PUBLISH
+  SUPERSEDE
+  ROLLBACK
+  ARCHIVE
+}
+
+enum CommercialWorkflowStage {
+  NOT_STARTED
+  QUOTATION_DRAFT
+  QUOTATION_RELEASED
+  QUOTATION_CHANGE_REQUESTED
+  QUOTATION_REJECTED
+  QUOTATION_ACCEPTED
+  AGREEMENT_AVAILABLE
+  AGREEMENT_ACCEPTED
+  AWAITING_EXTERNAL_PAYMENT
+  PAYMENT_CONFIRMED
+  BOOKING_CONFIRMED
+}
+
+enum ServiceQuotationStatus {
+  DRAFT
+  RELEASED
+  CHANGE_REQUESTED
+  ACCEPTED
+  REJECTED
+  EXPIRED
+  SUPERSEDED
+}
+
+enum QuotationDecisionType {
+  ACCEPT
+  REQUEST_CHANGE
+  REJECT
+}
+
+enum ClientAgreementStatus {
+  AVAILABLE
+  ACCEPTED
+  SUPERSEDED
+}
+
+enum ExternalPaymentStatus {
+  AWAITING_EXTERNAL_PAYMENT
+  PAYMENT_CONFIRMED
+}
+
+enum ExternalBankPaymentMode {
+  BANK_TRANSFER
+  NEFT
+  RTGS
+  IMPS
+}
+
 model User {
+  id String @id @default(cuid())
 
-  id        String   @id @default(cuid())
+  fullName String
 
-  fullName  String
+  email String @unique
 
-  email     String   @unique
+  password String
 
-  password  String
+  role UserRole @default(CUSTOMER)
 
-  role      UserRole @default(CUSTOMER)
-
-  isActive  Boolean  @default(true)
+  isActive Boolean @default(true)
 
   createdAt DateTime @default(now())
 
   updatedAt DateTime @updatedAt
 
+  ownedRequests           UniversalRequest[]            @relation("CustomerRequests")
+  assignedRequests        UniversalRequest[]            @relation("PartnerAssignments")
+  religiousPartnerProfile ReligiousPartner?
+  quotationsCreated       ServiceQuotation[]            @relation("QuotationCreatedBy")
+  quotationsReleased      ServiceQuotation[]            @relation("QuotationReleasedBy")
+  quotationDecisions      QuotationCustomerDecision[]   @relation("QuotationDecisionCustomer")
+  agreementAcceptances    ClientAgreementAcceptance[]   @relation("AgreementAcceptanceCustomer")
+  paymentConfirmations    ExternalPaymentConfirmation[] @relation("PaymentConfirmedBy")
+  paymentDetailSubmissions CustomerPaymentDetailSubmission[] @relation("PaymentDetailSubmittedByCustomer")
+  bookingsConfirmed       ServiceCommercialWorkflow[]   @relation("BookingConfirmedBy")
 }
 
 model Customer {
-  id          String   @id @default(cuid())
+  id String @id @default(cuid())
 
-  fullName    String
-  mobile      String
-  whatsapp    String?
-  email       String?
+  fullName String
+  mobile   String
+  whatsapp String?
+  email    String?
 
-  city        String?
-  state       String?
-  country     String?
+  city    String?
+  state   String?
+  country String?
 
   purpose     String
   serviceType String?
 
-  status      String   @default("New")
+  status String @default("New")
 
-  assignedTo  String?
+  assignedTo String?
 
-  remarks     String?
+  remarks String?
 
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
 
 model ReligiousPartner {
+  id String @id @default(cuid())
 
-  id                     String   @id @default(cuid())
+  userId String? @unique
+  user   User?   @relation(fields: [userId], references: [id])
 
-  fullName               String
+  fullName String
 
-  category               String
+  category String
 
-  mobile                 String
+  mobile String
 
-  whatsapp               String?
+  whatsapp String?
 
-  email                  String?
+  email String?
 
-  city                   String?
+  city String?
 
-  state                  String?
+  state String?
 
-  country                String?
+  country String?
 
-  preferredServiceArea   String?
+  preferredServiceArea String?
 
-  onlineAvailable        Boolean @default(true)
+  onlineAvailable Boolean @default(true)
 
-  offlineAvailable       Boolean @default(true)
+  offlineAvailable Boolean @default(true)
 
-  relocationAvailable    Boolean @default(false)
+  relocationAvailable Boolean @default(false)
 
-  identityVerified       Boolean @default(false)
+  identityVerified Boolean @default(false)
 
-  addressVerified        Boolean @default(false)
+  addressVerified Boolean @default(false)
 
-  qualificationVerified  Boolean @default(false)
+  qualificationVerified Boolean @default(false)
 
-  verificationDate       DateTime?
+  verificationDate DateTime?
 
-  status                 String  @default("Pending")
+  status String @default("Pending")
 
-  remarks                String?
+  remarks String?
 
-  createdAt              DateTime @default(now())
+  createdAt DateTime @default(now())
 
-  updatedAt              DateTime @updatedAt
+  updatedAt DateTime @updatedAt
 }
 
 model PitruMokshaRequest {
+  id String @id @default(cuid())
 
-  id                     String   @id @default(cuid())
+  customerName String
 
-  customerName           String
+  mobile String
 
-  mobile                 String
+  whatsapp String?
 
-  whatsapp               String?
+  email String?
 
-  email                  String?
+  country String?
 
-  country                String?
+  state String?
 
-  state                  String?
+  city String?
 
-  city                   String?
+  serviceMode String
 
-  serviceMode            String
+  ritualType String
 
-  ritualType             String
+  preferredDate DateTime?
 
-  preferredDate          DateTime?
+  preferredTime String?
 
-  preferredTime          String?
+  language String?
 
-  language               String?
+  samagriRequired Boolean @default(false)
 
-  samagriRequired        Boolean @default(false)
+  documentationRequired Boolean @default(false)
 
-  documentationRequired  Boolean @default(false)
+  travelAssistance Boolean @default(false)
 
-  travelAssistance       Boolean @default(false)
+  specialRequirements String?
 
-  specialRequirements    String?
+  status String @default("New")
 
-  status                 String   @default("New")
+  quotationStatus String @default("Pending")
 
-  quotationStatus        String   @default("Pending")
+  assignedPartner String?
 
-  assignedPartner        String?
+  founderRemarks String?
 
-  founderRemarks         String?
+  createdAt DateTime @default(now())
 
-  createdAt              DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
 
-  updatedAt              DateTime @updatedAt
+model UniversalRequest {
+  id                          String                          @id @default(cuid())
+  referenceId                 String                          @unique
+  requestType                 String
+  serviceDomain               String?
+  customerId                  String?
+  customer                    User?                           @relation("CustomerRequests", fields: [customerId], references: [id])
+  guestName                   String
+  guestPhone                  String
+  guestEmail                  String
+  title                       String
+  description                 String
+  currentStatus               String                          @default("SUBMITTED")
+  currentStage                String                          @default("Submitted")
+  assignedTeam                String?
+  assignedPartnerUserId       String?
+  assignedPartner             User?                           @relation("PartnerAssignments", fields: [assignedPartnerUserId], references: [id])
+  priority                    String                          @default("MEDIUM")
+  sourceChannel               String                          @default("WEBSITE_FORM")
+  publicNote                  String?
+  internalNote                String?
+  metadata                    Json?
+  completedAt                 DateTime?
+  createdAt                   DateTime                        @default(now())
+  updatedAt                   DateTime                        @updatedAt
+  history                     UniversalRequestStatusHistory[]
+  commercialWorkflow          ServiceCommercialWorkflow?
+  quotations                  ServiceQuotation[]
+  quotationDecisions          QuotationCustomerDecision[]
+  agreements                  ClientServiceAgreement[]
+  agreementAcceptances        ClientAgreementAcceptance[]
+  externalPaymentConfirmation ExternalPaymentConfirmation?
+  customerPaymentDetailSubmission CustomerPaymentDetailSubmission?
+
+  @@index([customerId, createdAt])
+  @@index([assignedPartnerUserId, currentStatus])
+  @@index([requestType, currentStatus])
+}
+
+model ServiceCommercialWorkflow {
+  id                          String                       @id @default(cuid())
+  requestId                   String                       @unique
+  request                     UniversalRequest             @relation(fields: [requestId], references: [id], onDelete: Cascade)
+  stage                       CommercialWorkflowStage      @default(NOT_STARTED)
+  bookingConfirmedAt          DateTime?
+  bookingConfirmedByUserId    String?
+  bookingConfirmedBy          User?                        @relation("BookingConfirmedBy", fields: [bookingConfirmedByUserId], references: [id], onDelete: SetNull)
+  quotations                  ServiceQuotation[]
+  agreements                  ClientServiceAgreement[]
+  externalPaymentConfirmation ExternalPaymentConfirmation?
+  customerPaymentDetailSubmission CustomerPaymentDetailSubmission?
+  createdAt                   DateTime                     @default(now())
+  updatedAt                   DateTime                     @updatedAt
+
+  @@index([stage])
+}
+
+model ServiceQuotation {
+  id                     String                      @id @default(cuid())
+  workflowId             String
+  workflow               ServiceCommercialWorkflow   @relation(fields: [workflowId], references: [id], onDelete: Cascade)
+  requestId              String
+  request                UniversalRequest            @relation(fields: [requestId], references: [id], onDelete: Cascade)
+  version                Int
+  status                 ServiceQuotationStatus      @default(DRAFT)
+  serviceName            String
+  serviceScope           String
+  inclusions             String[]
+  exclusions             String[]
+  basePrice              Decimal                     @db.Decimal(12, 2)
+  applicableChargesTaxes Decimal                     @db.Decimal(12, 2)
+  finalPrice             Decimal                     @db.Decimal(12, 2)
+  currency               String                      @default("INR")
+  validUntil             DateTime?
+  notes                  String?
+  paymentTerms           String
+  paymentInstructions    String
+  createdByUserId        String
+  createdBy              User                        @relation("QuotationCreatedBy", fields: [createdByUserId], references: [id])
+  releasedByUserId       String?
+  releasedBy             User?                       @relation("QuotationReleasedBy", fields: [releasedByUserId], references: [id], onDelete: SetNull)
+  releasedAt             DateTime?
+  acceptedAt             DateTime?
+  rejectedAt             DateTime?
+  decisions              QuotationCustomerDecision[]
+  agreements             ClientServiceAgreement[]
+  createdAt              DateTime                    @default(now())
+  updatedAt              DateTime                    @updatedAt
+
+  @@unique([requestId, version])
+  @@index([requestId, status])
+  @@index([workflowId, version])
+}
+
+model QuotationCustomerDecision {
+  id             String                @id @default(cuid())
+  requestId      String
+  request        UniversalRequest      @relation(fields: [requestId], references: [id], onDelete: Cascade)
+  quotationId    String                @unique
+  quotation      ServiceQuotation      @relation(fields: [quotationId], references: [id], onDelete: Cascade)
+  decision       QuotationDecisionType
+  changeRequest  String?
+  customerUserId String?
+  customerUser   User?                 @relation("QuotationDecisionCustomer", fields: [customerUserId], references: [id], onDelete: SetNull)
+  decidedAt      DateTime              @default(now())
+  createdAt      DateTime              @default(now())
+
+  @@index([requestId, decidedAt])
+}
+
+model ClientServiceAgreement {
+  id                                String                       @id @default(cuid())
+  workflowId                        String
+  workflow                          ServiceCommercialWorkflow    @relation(fields: [workflowId], references: [id], onDelete: Cascade)
+  requestId                         String
+  request                           UniversalRequest             @relation(fields: [requestId], references: [id], onDelete: Cascade)
+  quotationId                       String
+  quotation                         ServiceQuotation             @relation(fields: [quotationId], references: [id])
+  version                           Int
+  status                            ClientAgreementStatus        @default(AVAILABLE)
+  customerName                      String
+  customerEmail                     String
+  customerPhone                     String
+  selectedService                   String
+  agreedScope                       String
+  inclusions                        String[]
+  exclusions                        String[]
+  finalAgreedPrice                  Decimal                      @db.Decimal(12, 2)
+  currency                          String                       @default("INR")
+  paymentTerms                      String
+  paymentInstructions               String
+  customerResponsibilities          String[]
+  connectHubResponsibilities        String[]
+  cancellationRefundPolicyReference String
+  importantServiceDisclosures       String[]
+  generatedAt                       DateTime                     @default(now())
+  acceptance                        ClientAgreementAcceptance?
+  paymentConfirmation               ExternalPaymentConfirmation?
+  paymentDetailSubmission           CustomerPaymentDetailSubmission?
+  createdAt                         DateTime                     @default(now())
+  updatedAt                         DateTime                     @updatedAt
+
+  @@unique([requestId, version])
+  @@index([requestId, status])
+}
+
+model ClientAgreementAcceptance {
+  id                String                 @id @default(cuid())
+  requestId         String
+  request           UniversalRequest       @relation(fields: [requestId], references: [id], onDelete: Cascade)
+  agreementId       String                 @unique
+  agreement         ClientServiceAgreement @relation(fields: [agreementId], references: [id], onDelete: Cascade)
+  agreementVersion  Int
+  customerUserId    String?
+  customerUser      User?                  @relation("AgreementAcceptanceCustomer", fields: [customerUserId], references: [id], onDelete: SetNull)
+  acceptanceChannel String                 @default("PUBLIC_TRACKING")
+  acceptedAt        DateTime               @default(now())
+  createdAt         DateTime               @default(now())
+
+  @@index([requestId, acceptedAt])
+}
+
+model ExternalPaymentConfirmation {
+  id                String                    @id @default(cuid())
+  workflowId        String                    @unique
+  workflow          ServiceCommercialWorkflow @relation(fields: [workflowId], references: [id], onDelete: Cascade)
+  requestId         String                    @unique
+  request           UniversalRequest          @relation(fields: [requestId], references: [id], onDelete: Cascade)
+  agreementId       String                    @unique
+  agreement         ClientServiceAgreement    @relation(fields: [agreementId], references: [id])
+  status            ExternalPaymentStatus     @default(AWAITING_EXTERNAL_PAYMENT)
+  amountConfirmed   Decimal?                  @db.Decimal(12, 2)
+  currency          String                    @default("INR")
+  externalReference String?
+  confirmedAt       DateTime?
+  confirmedByUserId String?
+  confirmedBy       User?                     @relation("PaymentConfirmedBy", fields: [confirmedByUserId], references: [id], onDelete: SetNull)
+  internalNote      String?
+  createdAt         DateTime                  @default(now())
+  updatedAt         DateTime                  @updatedAt
+
+  @@index([status, confirmedAt])
+}
+
+model CustomerPaymentDetailSubmission {
+  id                        String                    @id @default(cuid())
+  workflowId                String                    @unique
+  workflow                  ServiceCommercialWorkflow @relation(fields: [workflowId], references: [id], onDelete: Cascade)
+  requestId                 String                    @unique
+  request                   UniversalRequest          @relation(fields: [requestId], references: [id], onDelete: Cascade)
+  agreementId               String                    @unique
+  agreement                 ClientServiceAgreement    @relation(fields: [agreementId], references: [id], onDelete: Restrict)
+  amountPaid                Decimal                   @db.Decimal(12, 2)
+  currency                  String                    @default("INR")
+  paymentDate               DateTime                  @db.Date
+  externalReference         String
+  paymentMode               ExternalBankPaymentMode
+  payerName                 String
+  remarks                   String?
+  submittedByCustomerUserId String?
+  submittedByCustomer       User?                     @relation("PaymentDetailSubmittedByCustomer", fields: [submittedByCustomerUserId], references: [id], onDelete: SetNull)
+  submissionChannel         String                    @default("PUBLIC_TRACKING")
+  submittedAt               DateTime                  @default(now())
+  createdAt                 DateTime                  @default(now())
+  updatedAt                 DateTime                  @updatedAt
+
+  @@index([requestId, submittedAt])
+  @@index([paymentMode, paymentDate])
+}
+
+model UniversalRequestStatusHistory {
+  id              String           @id @default(cuid())
+  requestId       String
+  request         UniversalRequest @relation(fields: [requestId], references: [id], onDelete: Cascade)
+  previousStatus  String?
+  newStatus       String
+  previousStage   String?
+  newStage        String
+  changedByUserId String?
+  changedByRole   String
+  publicNote      String?
+  internalNote    String?
+  createdAt       DateTime         @default(now())
+
+  @@index([requestId, createdAt])
+}
+
+model KnowledgeArticle {
+  id                 String                    @id @default(cuid())
+  category           String
+  categoryTitle      String
+  title              String
+  keywords           String[]
+  synonyms           String[]
+  summary            String
+  content            String
+  link               String
+  status             String                    @default("DRAFT") // DRAFT, UNDER_REVIEW, APPROVED, WITHDRAWN
+  governanceStatus   GovernanceStatus          @default(DRAFT)
+  version            Int                       @default(1)
+  publishedAt        DateTime?
+  contentKey         String?
+  founderApprovedAt  DateTime?
+  founderApprovedBy  String?
+  erpLockedAt        DateTime?
+  erpLockedBy        String?
+  publishedVersionId String?
+  createdBy          String?
+  lastEditedBy       String?
+  createdAt          DateTime                  @default(now())
+  updatedAt          DateTime                  @updatedAt
+  history            KnowledgeArticleHistory[]
+
+  @@unique([contentKey, governanceStatus])
+  @@index([category, status])
+  @@index([contentKey])
+  @@index([governanceStatus, contentKey])
+}
+
+model KnowledgeFAQ {
+  id                 String                @id @default(cuid())
+  category           String
+  question           String
+  answer             String
+  keywords           String[]
+  link               String
+  status             String                @default("DRAFT") // DRAFT, UNDER_REVIEW, APPROVED, WITHDRAWN
+  governanceStatus   GovernanceStatus      @default(DRAFT)
+  version            Int                   @default(1)
+  publishedAt        DateTime?
+  contentKey         String?
+  founderApprovedAt  DateTime?
+  founderApprovedBy  String?
+  erpLockedAt        DateTime?
+  erpLockedBy        String?
+  publishedVersionId String?
+  createdBy          String?
+  lastEditedBy       String?
+  createdAt          DateTime              @default(now())
+  updatedAt          DateTime              @updatedAt
+  history            KnowledgeFAQHistory[]
+
+  @@unique([contentKey, governanceStatus])
+  @@index([category, status])
+  @@index([contentKey])
+  @@index([governanceStatus, contentKey])
+}
+
+model KnowledgeArticleHistory {
+  id            String            @id @default(cuid())
+  articleId     String
+  article       KnowledgeArticle  @relation(fields: [articleId], references: [id], onDelete: Cascade)
+  version       Int
+  title         String
+  summary       String
+  content       String
+  link          String
+  status        String
+  changedBy     String
+  action        GovernanceAction?
+  changedByRole UserRole?
+  metadata      Json?
+  createdAt     DateTime          @default(now())
+
+  @@index([articleId, version])
+  @@index([articleId, createdAt])
+}
+
+model KnowledgeFAQHistory {
+  id            String            @id @default(cuid())
+  faqId         String
+  faq           KnowledgeFAQ      @relation(fields: [faqId], references: [id], onDelete: Cascade)
+  version       Int
+  question      String
+  answer        String
+  link          String
+  status        String
+  changedBy     String
+  action        GovernanceAction?
+  changedByRole UserRole?
+  metadata      Json?
+  createdAt     DateTime          @default(now())
+
+  @@index([faqId, version])
+  @@index([faqId, createdAt])
+}
+
+model GovernanceAuditLog {
+  id          String           @id @default(cuid())
+  contentType String // "ARTICLE" | "FAQ"
+  contentId   String // The specific article/faq id
+  contentKey  String? // Stable content identifier
+  version     Int // Version number at time of action
+  action      GovernanceAction
+  actorUserId String? // User who performed action
+  actorRole   UserRole
+  metadata    Json? // Additional context
+  createdAt   DateTime         @default(now())
+
+  @@index([contentType, contentId, createdAt])
+  @@index([actorUserId, createdAt])
+  @@index([action, createdAt])
 }

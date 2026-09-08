@@ -6,10 +6,28 @@ import customerRoutes from "./routes/customer.routes";
 import religiousPartnerRoutes from "./routes/religiousPartner.routes";
 import pitruMokshaRoutes from "./routes/pitrumoksha.routes";
 import dashboardRoutes from "./routes/dashboard.routes";
+import universalRequestRoutes from "./routes/universalRequest.routes";
+import { requireAuth, requireRoles } from "./middleware/auth.middleware";
+import governanceRoutes from "./routes/governance.routes";
+import serviceCatalogRoutes from "./routes/serviceCatalog.routes";
+import commercialWorkflowRoutes from "./routes/commercialWorkflow.routes";
 
 const app = express();
 
-app.use(cors());
+const allowedOrigins = new Set([
+  "http://localhost:3000",
+  ...(process.env.CORS_ALLOWED_ORIGINS ?? "")
+    .split(",")
+    .map((origin) => origin.trim())
+    .filter(Boolean),
+]);
+
+app.use(
+  cors({
+    origin: Array.from(allowedOrigins),
+    credentials: true,
+  })
+);
 app.use(express.json());
 
 app.get("/", (req, res) => {
@@ -21,7 +39,7 @@ app.get("/", (req, res) => {
 
 app.use("/api/auth", authRoutes);
 
-app.use("/api/customers", customerRoutes);
+app.use("/api/customers", requireAuth, requireRoles("FOUNDER", "ADMIN"), customerRoutes);
 
 app.use(
   "/api/religious-partners",
@@ -35,8 +53,15 @@ app.use(
 
 app.use(
   "/api/dashboard",
+  requireAuth,
+  requireRoles("FOUNDER", "ADMIN"),
   dashboardRoutes
 );
+app.use("/api/urms/universal-requests", universalRequestRoutes);
+app.use("/api/commercial-workflows", commercialWorkflowRoutes);
+app.use("/api/governance", governanceRoutes);
+app.use("/api/public", serviceCatalogRoutes);
+app.use("/api", serviceCatalogRoutes);
 
 const PORT = 5000;
 

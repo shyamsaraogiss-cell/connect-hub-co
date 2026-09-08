@@ -1,0 +1,70 @@
+KHEM CORE DOCUMENT SOURCE MAP
+
+MEM — MASTER EXECUTION MANUAL
+CLASSIFICATION: REFERENCE ONLY / NOT FOUND AS DOCUMENT
+EXACT TERM MATCH: none outside Founder-supplied request/reconstruction outputs
+DISTRIBUTED EVIDENCE: KHEM protection/change process in khem-navigation.config.ts; recovery commands
+LOCATION: recovery-review stash source, KHEM_MASTER_VAULT/Schemas_Configs, current config
+DATE/VERSION: KHEM Architecture Lock v1.0 string; file lineage captured Aug 5/8, 2026
+MISSING: complete execution manual, role authority, document dependencies, version/approval ledger
+CONFIDENCE: HIGH that governance rules exist; NONE that they constitute the original MEM
+
+AOM — AI OPERATING MANUAL
+CLASSIFICATION: FOUND — DISTRIBUTED EVIDENCE
+SOURCES: GenZRitualAIEngine.tsx; ai-knowledge.ts; semantic-search.ts; ai-session.service.ts; Hero AI disclosures; zen-g/page.tsx
+CONTENT: contextual assistance, approved-knowledge search, session/intake, reference tracking, lead handoff, human authority boundary
+PHASE: Phase 6 partial
+MISSING: exact manual, privacy/retention policy, prohibited-action matrix, escalation SLA, approval/version ledger
+CONFIDENCE: HIGH for behavior; LOW for historical manual reconstruction
+
+KPL — KNOWLEDGE & PROMPT LIBRARY
+CLASSIFICATION: FOUND — DISTRIBUTED EVIDENCE
+SOURCES: ai-knowledge.ts; semantic-search.ts; homepageHeroSlides prompts; Ritual/Vahi/RPN Q&A; Knowledge Center
+CONTENT: category trees, approved prompt/answer structures, placeholder/pending answers, reuse in AI
+PHASE: Phase 6 partial
+MISSING: Golden Q&A approval ledger, rejected/duplicate/pending classification, complete library/version history
+CONFIDENCE: HIGH for partial library; HIGH that completion is missing
+
+WPB — WEBSITE PRODUCT BLUEPRINT
+CLASSIFICATION: FOUND — DISTRIBUTED EVIDENCE / ARCHIVE CONTENT
+SOURCES: khem-navigation.config.ts; route-index; App Router; PublicHeroShell; Hero data; SITARAM Hero lock documents; both physical ZIPs
+CONTENT: locked public navigation, global shell registry, sidebar/footer hierarchy, five-business route architecture, rotating vs fixed Heroes
+PHASE: not established
+MISSING: exact blueprint, final CTA/interlinking matrix, page approval ledger, supersession mapping
+CONFIDENCE: HIGH for substantial implementation intent
+
+DBB — DATABASE BLUEPRINT
+CLASSIFICATION: FOUND — DISTRIBUTED EVIDENCE
+SOURCES: backend/prisma/schema.prisma; migrations; apps/web/src/types; URMS/CRM/quote/payment services
+CONTENT: user/customer/partner/Pitru request models plus richer client operational records
+PHASE: not established
+MISSING: exact blueprint, system-of-record allocation, full relationships, security/privacy/retention/audit rules
+CONFLICT: narrow backend schema versus broad web client model
+CONFIDENCE: HIGH for fragments and conflict; LOW for intended final DBB
+
+DPB — DASHBOARD BLUEPRINT
+CLASSIFICATION: FOUND — DISTRIBUTED EVIDENCE
+SOURCES: AdminDashboard, CustomerDashboard, PartnerDashboard, CRMLeadManager, dashboard services, locked internal ERP navigation in khem-navigation.config.ts
+CONTENT: role routing, admin operations, CRM/inquiries, customer/partner views, reporting and AI review
+PHASE: not established
+MISSING: exact blueprint, permission matrix, Founder role, KPI definitions, approval workflows
+CONFIDENCE: HIGH for implemented modules; LOW for final approval
+
+BRS — BUSINESS RULES / BUSINESS REQUIREMENTS STANDARD
+CLASSIFICATION: FOUND — DISTRIBUTED EVIDENCE
+SOURCES: khem-navigation.config.ts; tests; validation/types; approved Hero locks; Vahi confidentiality/non-guarantee; RPN verification; policies and inquiry forms
+CONTENT: lock/change control, navigation ownership, human approval, service boundaries, privacy, support and commercial rules
+PHASE: not established
+MISSING: exact standard, precedence table, complete requirements traceability and supersession history
+CONFIDENCE: HIGH for scattered rules; LOW for completeness
+
+CORE DOCUMENT SUMMARY
+EXACT DOCUMENTS: 0/7
+REFERENCE ONLY: MEM
+DISTRIBUTED EVIDENCE: AOM, KPL, WPB, DBB, DPB, BRS
+ARCHIVE CONTENT: WPB-related navigation/business page source in two physical ZIPs; SITARAM Hero packages indexed in stash
+HISTORICAL GIT ONLY: no exact core manual; distributed files exist in f51/stash history
+
+STRONGEST GOVERNANCE SOURCE:
+C:\Projects\connect-hub-co-recovery-review\stash-49106b-source\apps\web\src\config\khem-navigation.config.ts
+Git lineage: untracked stash object 49106b4053ec0d49e292c254e0fba4b3a27946be; consolidated in f51d9e8b.

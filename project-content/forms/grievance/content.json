@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "ownership": "MASTER_CONTENT_LIBRARY",
+  "runtimeReference": "UNCHANGED_COPY_FIRST",
+  "sources": [
+    {
+      "source": "apps/web/src/components/support/GrievanceForm.tsx",
+      "sha256": "e2869030bd2bc8a3b3c50dcaeb2a011d9eee24234541fc78b8e07653e5d11bad",
+      "entries": [
+        {
+          "kind": "field:label",
+          "line": 11,
+          "value": "text-xs font-semibold uppercase tracking-wider text-stone-700"
+        },
+        {
+          "kind": "list:verified",
+          "line": 25,
+          "value": "COMPLAINT"
+        },
+        {
+          "kind": "list:verified",
+          "line": 25,
+          "value": "SERVICE_REQUEST"
+        },
+        {
+          "kind": "list:verified",
+          "line": 25,
+          "value": "BOOKING"
+        },
+        {
+          "kind": "field:description",
+          "line": 27,
+          "value": "reason"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 33,
+          "value": "Grievance submitted"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 33,
+          "value": "Keep this Grievance Reference ID for tracking."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 33,
+          "value": "Track Service Request"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 36,
+          "value": "Service Request ID *"
+        },
+        {
+          "kind": "field:name",
+          "line": 36,
+          "value": "existingReference"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 36,
+          "value": "Enter Service / Booking Reference ID"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 36,
+          "value": "Grievance Date"
+        },
+        {
+          "kind": "field:name",
+          "line": 36,
+          "value": "filingDate"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 37,
+          "value": "1. Applicant Details"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 37,
+          "value": "Full Name *"
+        },
+        {
+          "kind": "field:name",
+          "line": 37,
+          "value": "fullName"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 37,
+          "value": "Enter full name"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 37,
+          "value": "Registered Email / Mobile *"
+        },
+        {
+          "kind": "field:name",
+          "line": 37,
+          "value": "registeredContact"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 37,
+          "value": "Enter registered email or mobile"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 38,
+          "value": "2. Existing Matter"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 38,
+          "value": "Original Complaint Date *"
+        },
+        {
+          "kind": "field:name",
+          "line": 38,
+          "value": "originalComplaintDate"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 38,
+          "value": "Grievance Category *"
+        },
+        {
+          "kind": "field:name",
+          "line": 38,
+          "value": "category"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 38,
+          "value": "Select category"
+        },
+        {
+          "kind": "list:content",
+          "line": 38,
+          "value": "Unresolved Complaint"
+        },
+        {
+          "kind": "list:content",
+          "line": 38,
+          "value": "Unsatisfactory Resolution"
+        },
+        {
+          "kind": "list:content",
+          "line": 38,
+          "value": "Delay"
+        },
+        {
+          "kind": "list:content",
+          "line": 38,
+          "value": "Refund / Payment Dispute"
+        },
+        {
+          "kind": "list:content",
+          "line": 38,
+          "value": "Religious Partner / Service Provider"
+        },
+        {
+          "kind": "list:content",
+          "line": 38,
+          "value": "Privacy / Personal Information"
+        },
+        {
+          "kind": "list:content",
+          "line": 38,
+          "value": "Other"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 39,
+          "value": "3. Grievance Details"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 39,
+          "value": "Reason for Escalation *"
+        },
+        {
+          "kind": "field:name",
+          "line": 39,
+          "value": "reason"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 39,
+          "value": "Describe the reason for escalation"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 39,
+          "value": "Previous Resolution / Response Received *"
+        },
+        {
+          "kind": "field:name",
+          "line": 39,
+          "value": "previousResponse"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 39,
+          "value": "Describe the previous response"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 39,
+          "value": "Resolution Requested *"
+        },
+        {
+          "kind": "field:name",
+          "line": 39,
+          "value": "resolutionRequested"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 39,
+          "value": "Describe the resolution requested"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 39,
+          "value": "Supporting Document"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 39,
+          "value": "File-storage integration is not currently available."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 40,
+          "value": "4. Declaration &amp; Consent"
+        },
+        {
+          "kind": "field:name",
+          "line": 40,
+          "value": "accuracy"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 40,
+          "value": "I confirm that the information provided in this grievance is accurate to the best of my knowledge. *"
+        },
+        {
+          "kind": "field:name",
+          "line": 40,
+          "value": "reviewConsent"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 40,
+          "value": "I consent to Connect Hub Co. reviewing the related complaint/service records for the purpose of considering this grievance. *"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,643 @@
+{
+  "schemaVersion": 1,
+  "ownership": "MASTER_CONTENT_LIBRARY",
+  "runtimeReference": "UNCHANGED_COPY_FIRST",
+  "sources": [
+    {
+      "source": "apps/web/src/components/support/ComplaintForm.tsx",
+      "sha256": "a6ac65a5b4d9bd3b5555c4a7d257318800434591f19a73fc2f0cfb4c85859c35",
+      "entries": [
+        {
+          "kind": "field:label",
+          "line": 11,
+          "value": "text-xs font-semibold uppercase tracking-wider text-stone-700"
+        },
+        {
+          "kind": "field:description",
+          "line": 27,
+          "value": "description"
+        },
+        {
+          "kind": "list:allowedTypes",
+          "line": 32,
+          "value": "PARTNER_REGISTRATION"
+        },
+        {
+          "kind": "list:allowedTypes",
+          "line": 32,
+          "value": "INQUIRY"
+        },
+        {
+          "kind": "list:allowedTypes",
+          "line": 32,
+          "value": "BOOKING"
+        },
+        {
+          "kind": "list:allowedTypes",
+          "line": 32,
+          "value": "SERVICE_REQUEST"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 44,
+          "value": "Complaint submitted"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 44,
+          "value": "Keep this Complaint Reference ID for tracking."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 44,
+          "value": "Track Service Request"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 48,
+          "value": "1. Complainant Details"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 48,
+          "value": "First Name *"
+        },
+        {
+          "kind": "field:name",
+          "line": 48,
+          "value": "firstName"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 48,
+          "value": "Enter first name"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 48,
+          "value": "Middle Name"
+        },
+        {
+          "kind": "field:name",
+          "line": 48,
+          "value": "middleName"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 48,
+          "value": "Enter middle name"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 48,
+          "value": "Last Name *"
+        },
+        {
+          "kind": "field:name",
+          "line": 48,
+          "value": "lastName"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 48,
+          "value": "Enter last name"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 48,
+          "value": "Registered Mobile Number *"
+        },
+        {
+          "kind": "field:name",
+          "line": 48,
+          "value": "mobile"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 48,
+          "value": "Enter registered mobile number"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 48,
+          "value": "WhatsApp Number"
+        },
+        {
+          "kind": "field:name",
+          "line": 48,
+          "value": "whatsapp"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 48,
+          "value": "Enter WhatsApp number"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 48,
+          "value": "Email Address *"
+        },
+        {
+          "kind": "field:name",
+          "line": 48,
+          "value": "email"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 48,
+          "value": "Enter email address"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 48,
+          "value": "Preferred Contact Method *"
+        },
+        {
+          "kind": "field:name",
+          "line": 48,
+          "value": "preferredContactMethod"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 48,
+          "value": "Select method"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 48,
+          "value": "Mobile"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 48,
+          "value": "Email"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 48,
+          "value": "WhatsApp"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 50,
+          "value": "2. Complaint Reference"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 53,
+          "value": "Reference Type *\n          "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 55,
+          "value": "Select reference type"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 56,
+          "value": "Service Request ID"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 57,
+          "value": "Booking / Payment Reference"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 58,
+          "value": "Partner Registration ID"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 59,
+          "value": "Inquiry Reference"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 60,
+          "value": "No Existing Reference"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 66,
+          "value": "Reference ID *\n            "
+        },
+        {
+          "kind": "field:name",
+          "line": 67,
+          "value": "existingReferenceId"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 67,
+          "value": "Enter reference ID"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 74,
+          "value": "Complaint Date\n          "
+        },
+        {
+          "kind": "field:name",
+          "line": 75,
+          "value": "filingDate"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 79,
+          "value": "3. Complaint Category"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 79,
+          "value": "Complaint Related To *"
+        },
+        {
+          "kind": "field:name",
+          "line": 79,
+          "value": "category"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 79,
+          "value": "Select category"
+        },
+        {
+          "kind": "list:content",
+          "line": 79,
+          "value": "PitruMoksha Gaya"
+        },
+        {
+          "kind": "list:content",
+          "line": 79,
+          "value": "Ritual Services"
+        },
+        {
+          "kind": "list:content",
+          "line": 79,
+          "value": "Travel Assistance"
+        },
+        {
+          "kind": "list:content",
+          "line": 79,
+          "value": "Vahi Records"
+        },
+        {
+          "kind": "list:content",
+          "line": 79,
+          "value": "Religious Partner / Service Provider"
+        },
+        {
+          "kind": "list:content",
+          "line": 79,
+          "value": "Booking / Scheduling"
+        },
+        {
+          "kind": "list:content",
+          "line": 79,
+          "value": "Payment / Refund"
+        },
+        {
+          "kind": "list:content",
+          "line": 79,
+          "value": "Website / Technical Issue"
+        },
+        {
+          "kind": "list:content",
+          "line": 79,
+          "value": "Customer Support"
+        },
+        {
+          "kind": "list:content",
+          "line": 79,
+          "value": "Privacy / Personal Information"
+        },
+        {
+          "kind": "list:content",
+          "line": 79,
+          "value": "Other"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 80,
+          "value": "4. Complaint Details"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 80,
+          "value": "Complaint Subject *"
+        },
+        {
+          "kind": "field:name",
+          "line": 80,
+          "value": "subject"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 80,
+          "value": "Enter complaint subject"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 80,
+          "value": "Date of Issue / Incident *"
+        },
+        {
+          "kind": "field:name",
+          "line": 80,
+          "value": "issueDate"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 80,
+          "value": "Service / Ritual Concerned"
+        },
+        {
+          "kind": "field:name",
+          "line": 80,
+          "value": "serviceConcerned"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 80,
+          "value": "Enter service / ritual, if applicable"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 80,
+          "value": "Location Concerned"
+        },
+        {
+          "kind": "field:name",
+          "line": 80,
+          "value": "locationConcerned"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 80,
+          "value": "Enter location, if applicable"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 80,
+          "value": "Describe the Complaint *"
+        },
+        {
+          "kind": "field:name",
+          "line": 80,
+          "value": "description"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 80,
+          "value": "Describe the complaint in detail"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 80,
+          "value": "Resolution Requested *"
+        },
+        {
+          "kind": "field:name",
+          "line": 80,
+          "value": "resolutionRequested"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 80,
+          "value": "Describe the resolution requested"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 81,
+          "value": "5. Previous Communication"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 81,
+          "value": "Have you already contacted us regarding this issue?"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 81,
+          "value": "Select option"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 81,
+          "value": "Yes"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 81,
+          "value": "No"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 81,
+          "value": "Previous Inquiry / Complaint Reference"
+        },
+        {
+          "kind": "field:name",
+          "line": 81,
+          "value": "previousReference"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 81,
+          "value": "Enter previous reference ID"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 81,
+          "value": "Approximate Contact Date"
+        },
+        {
+          "kind": "field:name",
+          "line": 81,
+          "value": "previousContactDate"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 81,
+          "value": "Contact Channel"
+        },
+        {
+          "kind": "field:name",
+          "line": 81,
+          "value": "previousContactChannel"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 81,
+          "value": "Select channel"
+        },
+        {
+          "kind": "list:content",
+          "line": 81,
+          "value": "Email"
+        },
+        {
+          "kind": "list:content",
+          "line": 81,
+          "value": "WhatsApp"
+        },
+        {
+          "kind": "list:content",
+          "line": 81,
+          "value": "Raise Inquiry"
+        },
+        {
+          "kind": "list:content",
+          "line": 81,
+          "value": "Phone"
+        },
+        {
+          "kind": "list:content",
+          "line": 81,
+          "value": "Other"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 82,
+          "value": "6. Supporting Evidence"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 82,
+          "value": "Supporting Document / Image"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 82,
+          "value": "Additional Supporting Document"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 82,
+          "value": "File-storage integration is not currently available."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 82,
+          "value": "Additional Reference / Notes"
+        },
+        {
+          "kind": "field:name",
+          "line": 82,
+          "value": "supportingNotes"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 82,
+          "value": "Add relevant notes, if applicable"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 83,
+          "value": "7. Follow-up Preference"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 83,
+          "value": "The preferred contact method selected above will be used for follow-up."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 83,
+          "value": "Preferred Contact Time"
+        },
+        {
+          "kind": "field:name",
+          "line": 83,
+          "value": "preferredContactTime"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 83,
+          "value": "Enter preferred contact time"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 83,
+          "value": "Additional Contact Instructions"
+        },
+        {
+          "kind": "field:name",
+          "line": 83,
+          "value": "contactInstructions"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 83,
+          "value": "Add contact instructions, if applicable"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 84,
+          "value": "8. Declaration &amp; Consent"
+        },
+        {
+          "kind": "field:name",
+          "line": 84,
+          "value": "accuracy"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 84,
+          "value": "I confirm that the information provided in this complaint is accurate to the best of my knowledge. *"
+        },
+        {
+          "kind": "field:name",
+          "line": 84,
+          "value": "reviewConsent"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 84,
+          "value": "I consent to Connect Hub Co. reviewing the information and supporting material submitted for the purpose of investigating and responding to this complaint. *"
+        },
+        {
+          "kind": "field:name",
+          "line": 84,
+          "value": "policyConsent"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 84,
+          "value": "I agree to the "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 84,
+          "value": "Privacy Policy"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 84,
+          "value": "and applicable "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 84,
+          "value": "Terms &amp; Conditions"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 84,
+          "value": ". *"
+        },
+        {
+          "kind": "field:name",
+          "line": 86,
+          "value": "outcomeAcknowledgement"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 86,
+          "value": "I understand that if I submit incorrect information, the Company does not guarantee a particular resolution, refund, compensation, disciplinary action, or other requested outcome. *"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "ownership": "MASTER_CONTENT_LIBRARY",
+  "runtimeReference": "UNCHANGED_COPY_FIRST",
+  "sources": [
+    {
+      "source": "apps/web/src/app/complaint/page.tsx",
+      "sha256": "0710152467e5876e9ad0b5eebb4166caeaf9865ac36391573ac1f19a9fa8550f",
+      "entries": [
+        {
+          "kind": "field:title",
+          "line": 5,
+          "value": "Complaint Form | Connect Hub Co."
+        },
+        {
+          "kind": "field:description",
+          "line": 5,
+          "value": "File a customer or service complaint with Connect Hub Co."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 11,
+          "value": "Complaint Form"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 12,
+          "value": "Complaint &amp; Resolution Support"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 14,
+          "value": "Use this form to report or raise a concern requiring formal review. Please provide accurate details and any existing Reference / Service ID so our team can investigate and respond appropriately.\n        "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 17,
+          "value": "PLEASE MAKE SURE -"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 17,
+          "value": "To use constant identity, use the same name, email ID and Reference ID for every purpose.\n        "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 19,
+          "value": "Fields marked * are mandatory."
+        }
+      ]
+    }
+  ]
+}

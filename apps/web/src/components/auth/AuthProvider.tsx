@@ -10,6 +10,11 @@ interface AuthContextValue {
   loading: boolean;
   login: (input: LoginInput) => Promise<void>;
   logout: () => Promise<void>;
+  register: (...args: unknown[]) => Promise<void>;
+  forgotPassword: (...args: unknown[]) => Promise<{ message: string }>;
+  resetPassword: (...args: unknown[]) => Promise<{ message: string }>;
+  verifyEmail: (...args: unknown[]) => Promise<{ message: string }>;
+  hasRole: (role: AuthUser["role"] | AuthUser["role"][]) => boolean;
 }
 
 const AuthContext = createContext<AuthContextValue | null>(null);
@@ -20,7 +25,23 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<AuthUser | null>(null);
   const [loading, setLoading] = useState(true);
 
-  const isPublic = pathname === "/login" || pathname === "/pitru-moksha" || pathname.startsWith("/pitru-moksha/success") || pathname === "/travel-assistance" || pathname.startsWith("/travel-assistance/success");
+  const isInternalERPRoute =
+    pathname === "/dashboard" ||
+    pathname.startsWith("/dashboard/") ||
+    pathname === "/admin" ||
+    pathname.startsWith("/admin/") ||
+    pathname === "/customers" ||
+    pathname.startsWith("/customers/") ||
+    pathname === "/partners" ||
+    pathname.startsWith("/partners/") ||
+    pathname === "/bookings" ||
+    pathname.startsWith("/bookings/") ||
+    pathname === "/reports" ||
+    pathname.startsWith("/reports/") ||
+    pathname === "/pitru-moksha/requests" ||
+    pathname === "/travel-assistance/requests";
+
+  const isPublic = !isInternalERPRoute;
 
   useEffect(() => {
     let active = true;
@@ -47,7 +68,27 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     finally { setUser(null); router.replace("/login"); }
   }, [router]);
 
-  const value = useMemo(() => ({ user, loading, login, logout }), [loading, login, logout, user]);
+  const hasRole = useCallback((role: AuthUser["role"] | AuthUser["role"][]) => {
+    if (Array.isArray(role)) return user ? role.includes(user.role) : false;
+    return user?.role === role;
+  }, [user]);
+
+  const unsupportedAuthFlow = useCallback(async (): Promise<never> => {
+    throw new Error('This authentication flow is unavailable during the current pre-trial phase.');
+  }, []);
+
+  const value = useMemo(() => ({
+    user,
+    loading,
+    login,
+    logout,
+    hasRole,
+    register: unsupportedAuthFlow,
+    forgotPassword: unsupportedAuthFlow,
+    resetPassword: unsupportedAuthFlow,
+    verifyEmail: unsupportedAuthFlow,
+  }), [hasRole, loading, login, logout, unsupportedAuthFlow, user]);
+
   const canRender = isPublic || (!loading && user);
 
   return <AuthContext.Provider value={value}>{canRender ? children : <main className="grid min-h-screen place-items-center">Checking your session...</main>}</AuthContext.Provider>;

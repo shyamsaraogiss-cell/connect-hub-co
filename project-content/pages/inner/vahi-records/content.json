@@ -1,0 +1,599 @@
+{
+  "schemaVersion": 1,
+  "ownership": "MASTER_CONTENT_LIBRARY",
+  "runtimeReference": "UNCHANGED_COPY_FIRST",
+  "sources": [
+    {
+      "source": "apps/web/src/app/vahi-records/page.tsx",
+      "sha256": "cfae0c7d6d617653a3e94433deeb189627298e3cdad0c6134b59fd48ff8358ef",
+      "entries": [
+        {
+          "kind": "field:title",
+          "line": 7,
+          "value": "Vahi (Panji) Ancestral Lineage Records & Guidance | Connect Hub Co."
+        },
+        {
+          "kind": "field:description",
+          "line": 8,
+          "value": "Guided ancestral lineage documentation, Gotra verification, and Vahi (Panji) record assistance coordinated through authorised traditional Panda custodians."
+        }
+      ]
+    },
+    {
+      "source": "apps/web/src/components/business-pages/vahi-records/VahiApprovedContent.tsx",
+      "sha256": "1ce5b7b1f1281962720d1902f7b562e33750acac00e0470ca41deb9c58120e32",
+      "entries": [
+        {
+          "kind": "field:title",
+          "line": 7,
+          "value": "Submit Information"
+        },
+        {
+          "kind": "field:intro",
+          "line": 8,
+          "value": "Complete the comprehensive search initiation form under our 'Book Now' tab."
+        },
+        {
+          "kind": "field:sourceTitle",
+          "line": 9,
+          "value": "Key details required include:"
+        },
+        {
+          "kind": "field:text",
+          "line": 10,
+          "value": "applicant details, ancestor names, father, grandfather, family surnames or aliases, earlier known lineage including adoptions (if any), Gotra (if known), native village, district, state, country, previous pilgrimage details & historical migration paths (family movements, native villages if known), and supporting documents or references (where available)."
+        },
+        {
+          "kind": "field:title",
+          "line": 13,
+          "value": "Information Review"
+        },
+        {
+          "kind": "field:sourceTitle",
+          "line": 14,
+          "value": "Data Validation & Completeness Review"
+        },
+        {
+          "kind": "field:text",
+          "line": 15,
+          "value": "Our team reviews the provided material for internal consistency and completeness. If details require further clarification or exhibit ambiguity, we will contact you directly before passing the parameters to the ground team."
+        },
+        {
+          "kind": "field:title",
+          "line": 18,
+          "value": "Search Coordination"
+        },
+        {
+          "kind": "field:sourceTitle",
+          "line": 19,
+          "value": "On-Ground Search Coordination"
+        },
+        {
+          "kind": "field:text",
+          "line": 20,
+          "value": "Once validated, your request is safely mapped to the specific traditional record custodian (from the Gayawal Panda Sabha) who holds hereditary jurisdiction over your family's native geographic region, Gotra, or surname."
+        },
+        {
+          "kind": "field:title",
+          "line": 23,
+          "value": "Findings & Verification"
+        },
+        {
+          "kind": "field:sourceTitle",
+          "line": 24,
+          "value": "Findings Verification & Evaluation"
+        },
+        {
+          "kind": "field:text",
+          "line": 25,
+          "value": "Available findings are thoroughly examined on-site. The outcomes are governed strictly by the preservation status, legibility, and existence of the document. If information cannot be successfully verified or cross-referenced, we share these details transparently."
+        },
+        {
+          "kind": "field:title",
+          "line": 28,
+          "value": "Customer Communication, Completion & Deliverables"
+        },
+        {
+          "kind": "field:sourceTitle",
+          "line": 29,
+          "value": "Deliverables & Guidance Briefing"
+        },
+        {
+          "kind": "field:text",
+          "line": 30,
+          "value": "Upon conclusion, you will receive the agreed-upon deliverables along with an interpretive guide explaining the historical findings and outlining any recommended follow-up actions."
+        },
+        {
+          "kind": "list:services",
+          "line": 35,
+          "value": "Ancestor’s Name & Family Tree"
+        },
+        {
+          "kind": "list:services",
+          "line": 35,
+          "value": "Coordinate a search using available ancestor names, family branches, Gotra, native place and earlier family history."
+        },
+        {
+          "kind": "list:services",
+          "line": 36,
+          "value": "Know Your Lineage Tree"
+        },
+        {
+          "kind": "list:services",
+          "line": 36,
+          "value": "Map an unbroken family tree across multiple generations, ancestor names, and traditional lineage entries."
+        },
+        {
+          "kind": "list:services",
+          "line": 37,
+          "value": "Preserve for the Future"
+        },
+        {
+          "kind": "list:services",
+          "line": 37,
+          "value": "Help preserve date of ritual history, family memories, and traditional roots for upcoming generations."
+        },
+        {
+          "kind": "list:services",
+          "line": 38,
+          "value": "Place of Origin & Native Place"
+        },
+        {
+          "kind": "list:services",
+          "line": 38,
+          "value": "Identify and verify native village, district, state, country, and historical family migration paths."
+        },
+        {
+          "kind": "list:services",
+          "line": 39,
+          "value": "Find Ritual History"
+        },
+        {
+          "kind": "list:services",
+          "line": 39,
+          "value": "Locate preserved dates and entries of previous pilgrimages and ancestral Pind Daan rituals."
+        },
+        {
+          "kind": "list:services",
+          "line": 40,
+          "value": "Interpretation & Translation Support"
+        },
+        {
+          "kind": "list:services",
+          "line": 40,
+          "value": "Help explain traditional handwritten entries and terminology in a form the family can understand."
+        },
+        {
+          "kind": "list:services",
+          "line": 41,
+          "value": "NRI & Remote Family Assistance"
+        },
+        {
+          "kind": "list:services",
+          "line": 41,
+          "value": "Provide inquiry and coordination support for families who cannot initially visit Gaya Ji in person."
+        },
+        {
+          "kind": "list:services",
+          "line": 42,
+          "value": "Vahi-linked Ritual Guidance"
+        },
+        {
+          "kind": "list:services",
+          "line": 42,
+          "value": "Explain how available lineage or pilgrimage references may support a related PitruMoksha Gaya inquiry, without treating the Vahi search as ritual performance."
+        },
+        {
+          "kind": "list:services",
+          "line": 43,
+          "value": "Digital Access"
+        },
+        {
+          "kind": "list:services",
+          "line": 43,
+          "value": "Support families in responsibly viewing, receiving, and understanding available ancestral record entries."
+        },
+        {
+          "kind": "list:services",
+          "line": 44,
+          "value": "Authentic & Verified"
+        },
+        {
+          "kind": "list:services",
+          "line": 44,
+          "value": "Assist in identifying and coordinating with relevant traditional record custodians through verified Religious Partners."
+        },
+        {
+          "kind": "list:initialReviewChecklist",
+          "line": 56,
+          "value": "Family Surname"
+        },
+        {
+          "kind": "list:initialReviewChecklist",
+          "line": 56,
+          "value": "Primary family surname used across generations."
+        },
+        {
+          "kind": "list:initialReviewChecklist",
+          "line": 57,
+          "value": "Alternative Spellings"
+        },
+        {
+          "kind": "list:initialReviewChecklist",
+          "line": 57,
+          "value": "Regional, historical, or phonetic spelling variations."
+        },
+        {
+          "kind": "list:initialReviewChecklist",
+          "line": 58,
+          "value": "Gotra, if Known"
+        },
+        {
+          "kind": "list:initialReviewChecklist",
+          "line": 58,
+          "value": "Paternal or family Gotra lineage."
+        },
+        {
+          "kind": "list:initialReviewChecklist",
+          "line": 59,
+          "value": "Family Branch / Traditional Identifier"
+        },
+        {
+          "kind": "list:initialReviewChecklist",
+          "line": 59,
+          "value": "Sub-caste, lineage title, or family branch name."
+        },
+        {
+          "kind": "list:initialReviewChecklist",
+          "line": 60,
+          "value": "Previous Pilgrimage Details"
+        },
+        {
+          "kind": "list:initialReviewChecklist",
+          "line": 60,
+          "value": "Known past visits to Gaya Ji."
+        },
+        {
+          "kind": "list:initialReviewChecklist",
+          "line": 61,
+          "value": "Approximate Years or Generations"
+        },
+        {
+          "kind": "list:initialReviewChecklist",
+          "line": 61,
+          "value": "Historical timelines or generation counts."
+        },
+        {
+          "kind": "list:initialReviewChecklist",
+          "line": 62,
+          "value": "If Known Panda Contact Reference"
+        },
+        {
+          "kind": "list:initialReviewChecklist",
+          "line": 62,
+          "value": "Names, references, or ledger notes from prior visits."
+        },
+        {
+          "kind": "list:initialReviewChecklist",
+          "line": 63,
+          "value": "Current Family Contact Details"
+        },
+        {
+          "kind": "list:initialReviewChecklist",
+          "line": 63,
+          "value": "Contact details of the person requesting guidance."
+        },
+        {
+          "kind": "list:initialReviewChecklist",
+          "line": 64,
+          "value": "Special Clarification Notes"
+        },
+        {
+          "kind": "list:initialReviewChecklist",
+          "line": 64,
+          "value": "Specific lineage questions, adoption, or family history notes."
+        },
+        {
+          "kind": "list:availabilityLimitations",
+          "line": 68,
+          "value": "Not Every Family Has an Identifiable Record"
+        },
+        {
+          "kind": "list:availabilityLimitations",
+          "line": 68,
+          "value": "Matching depends on past family visits and physical ledger preservation. Unrecorded historical migrations or missing visits mean that not every family record exists or can be identified."
+        },
+        {
+          "kind": "list:availabilityLimitations",
+          "line": 69,
+          "value": "Multiple Name & Place Spellings"
+        },
+        {
+          "kind": "list:availabilityLimitations",
+          "line": 69,
+          "value": "Historical ledgers contain regional scripts and phonetic variations. Reassuring human review helps evaluate multiple spellings of surnames, ancestor names, and villages."
+        },
+        {
+          "kind": "list:availabilityLimitations",
+          "line": 70,
+          "value": "Incomplete Family Details Require Review"
+        },
+        {
+          "kind": "list:availabilityLimitations",
+          "line": 70,
+          "value": "When key details (such as Gotra or native district) are partial, initial completeness review helps organize what information is available before proceeding."
+        },
+        {
+          "kind": "list:availabilityLimitations",
+          "line": 71,
+          "value": "Location-Specific Ledgers"
+        },
+        {
+          "kind": "list:availabilityLimitations",
+          "line": 71,
+          "value": "Registers are not combined in a single central repository."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 79,
+          "value": "CONNECT HUB CO."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 79,
+          "value": "Unearth Your Ancestral Lineage"
+        },
+        {
+          "kind": "attribute:aria-label",
+          "line": 80,
+          "value": "Vahi ancestral record imagery"
+        },
+        {
+          "kind": "attribute:alt",
+          "line": 81,
+          "value": "Traditional Vahi ancestral records"
+        },
+        {
+          "kind": "attribute:alt",
+          "line": 82,
+          "value": "Historic handwritten Vahi ledger"
+        },
+        {
+          "kind": "attribute:alt",
+          "line": 83,
+          "value": "Vahi lineage record detail"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 89,
+          "value": "About Vahi (Panji) Records"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 90,
+          "value": "Vahi (Panji) are centuries-old, handwritten sacred genealogical records that document ancestral family lineages, pilgrimage histories, and sacred ritual timelines. Historically preserved on Tamra Patra (copper plates) or Bhojpatra (birch bark), modern records are maintained meticulously on paper, typically spanning up to six generations or more. This uninterrupted custom has been preserved continuously since around 1700 CE by the Gayawal Pandas, a hereditary Brahmin community centered in the holy city of Gaya Ji, Bihar, India."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 91,
+          "value": "Connect Hub Co. provides dedicated guidance, technology-enabled coordination, and facilitation through verified traditional Pandas. Our mission is to bridge age-old tradition with modern accessibility—helping families transparently explore their ancestral roots, map their heritage, and pass down invaluable lineage clarity to future generations, while completely honoring established religious customs and the absolute authority of the original custodians."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 95,
+          "value": "Service Scope, Limitations &amp; Disclaimers"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 97,
+          "value": "No Legal/Property Standing:"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 97,
+          "value": "The lineage history and records discovered within the Vahi are for personal, historical, and spiritual awareness only. They do not constitute legally binding evidence and cannot be used to claim lineage rights, titles, or settle property disputes."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 98,
+          "value": "No Guarantee of Discovery:"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 98,
+          "value": "We do not guarantee that every search will locate a matching record. Successful discovery depends entirely on whether a family record exists, its physical condition, and the historical accuracy of the details provided."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 99,
+          "value": "Nature of Traditional Archives:"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 99,
+          "value": "Vahi records are not official government identity documents. Some volumes may be incomplete, partial, or permanently damaged due to the passage of time. Search durations vary, and older entries frequently present spelling variations that require careful interpretation."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 104,
+          "value": "Understanding Vahi Records"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 105,
+          "value": "Role Definition:"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 105,
+          "value": "Connect Hub Co. operates purely as a logistics and coordination facilitator. We respect the absolute ownership of the original traditional custodians. We do not alter, create, recreate, certify, or authenticate these historical records for any purpose."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 106,
+          "value": "Where records are unavailable, incomplete, damaged, or cannot be verified, this is communicated honestly."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 108,
+          "value": "Information is presented only as available from the original sources."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 109,
+          "value": "Verification depends on the records maintained by traditional custodians."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 110,
+          "value": "Where information cannot be confirmed, customers will be informed transparently."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 111,
+          "value": "The company does not guarantee that every search will locate an ancestral record."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 113,
+          "value": "Detailed obligations regarding collection, storage, sharing, retention, and customer rights are governed by the company&apos;s Privacy Policy."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 117,
+          "value": "What the Records Hold"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 118,
+          "value": "Customers can trace an unbroken family tree and can fulfill the informational details that may have been lost over time."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 119,
+          "value": "These records can be considered as connecting the present with the past: after tracing years-old entries, the actual signature/thumb impressions of the great-grandfather connect you to a deeply emotional link."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 120,
+          "value": "Reflects cultural continuity path, family memory, and religious heritage."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 121,
+          "value": "A verified search unlocks access to"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 123,
+          "value": "Comprehensive Family Genealogy:"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 123,
+          "value": "Map an unbroken family tree across multiple generations, identify the ancestor&apos;s name and Gotra of the returning pilgrim, and connect families with their preserved ancestral heritage, customs, and traditional roots."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 124,
+          "value": "Pilgrimage &amp; Ritual Timelines:"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 124,
+          "value": "Preserve dates from ritual history, identify ancestors for whom Pind Daan was performed during pilgrimage, and identify the presiding priests."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 125,
+          "value": "Identity Verification:"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 125,
+          "value": "The exact names, Gotras, native villages, districts, and regions of origin documented from the time of the original journey."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 126,
+          "value": "Authentic Signatures &amp; Validation:"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 126,
+          "value": "Physical signatures, marks, or thumbprints of the visiting ancestor alongside the validation stamp or signature of the presiding Gayawal Panda."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 131,
+          "value": "Discover Before It Gets Lost"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 154,
+          "value": "Vahi Search Participation Workflow"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 171,
+          "value": "Mandatory Protocol Clarifications"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 173,
+          "value": "Ask GenZ AI may help collect and organize initial information only."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 174,
+          "value": "Human review by qualified coordinators."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 175,
+          "value": "Authorized custodians are mandatory."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 176,
+          "value": "Scope, Schedule, and Quotation Confirmation"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 176,
+          "value": "Receive an official quotation stating the approved service scope and charges before booking."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 177,
+          "value": "Completion Update and Further Guidance"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 177,
+          "value": "Receive structured status updates, confirmed record notes (where matched)."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 178,
+          "value": "Guidance for recording new family rites."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 183,
+          "value": "Checklist for Initial Review"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 195,
+          "value": "AVAILABILITY &amp; LIMITATIONS"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 196,
+          "value": "Reassuring, realistic guidance regarding physical ledgers, spelling variations, and custodian verification."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 1,
+  "ownership": "MASTER_CONTENT_LIBRARY",
+  "runtimeReference": "UNCHANGED_COPY_FIRST",
+  "sources": [
+    {
+      "source": "apps/web/src/app/ritual-services/offline/page.tsx",
+      "sha256": "9dd06a8c58f764648f475783765a2126216e75265f98aff9989b86a9f6e50713",
+      "entries": [
+        {
+          "kind": "field:title",
+          "line": 5,
+          "value": "Offline On-Site Ritual Services | Connect Hub Co."
+        },
+        {
+          "kind": "field:description",
+          "line": 6,
+          "value": "In-person Vedic pujas, homams, Griha Pravesh, and sacred ceremonies coordinated at your home or pilgrimage destinations across India & Nepal."
+        },
+        {
+          "kind": "field:label",
+          "line": 11,
+          "value": "Connect Hub Co."
+        },
+        {
+          "kind": "field:label",
+          "line": 12,
+          "value": "Ritual Services"
+        },
+        {
+          "kind": "field:label",
+          "line": 13,
+          "value": "Offline Ritual Services"
+        },
+        {
+          "kind": "field:eyebrow",
+          "line": 15,
+          "value": "ON-SITE & SACRED DESTINATION PUJAS"
+        },
+        {
+          "kind": "field:title",
+          "line": 16,
+          "value": "Offline On-Site Ritual Services"
+        },
+        {
+          "kind": "field:introduction",
+          "line": 17,
+          "value": "In-person traditional Vedic ceremonies conducted at your residence, venue, or sacred temple destinations across India and Nepal."
+        },
+        {
+          "kind": "field:supportingLine",
+          "line": 18,
+          "value": "Coordinated with verified local Religious Partners, pure Samagri procurement, and complete ground support."
+        },
+        {
+          "kind": "field:title",
+          "line": 22,
+          "value": "Home & Residence Pujas"
+        },
+        {
+          "kind": "field:supportingLine",
+          "line": 23,
+          "value": "Griha Pravesh, Vastu & Family Pujas"
+        },
+        {
+          "kind": "field:description",
+          "line": 24,
+          "value": "Verified priests visit your home with pre-arranged pure Sastra samagri for inauguration and family ceremonies."
+        },
+        {
+          "kind": "field:cta",
+          "line": 26,
+          "value": "Book Home Ritual"
+        },
+        {
+          "kind": "field:title",
+          "line": 30,
+          "value": "Sacred Destination Pujas"
+        },
+        {
+          "kind": "field:supportingLine",
+          "line": 31,
+          "value": "Ayodhya, Kashi, Nashik, Gaya & Nepal"
+        },
+        {
+          "kind": "field:description",
+          "line": 32,
+          "value": "Conduct specialized pujas at sacred pilgrimage temples with verified local priests and local logistics assistance."
+        },
+        {
+          "kind": "field:cta",
+          "line": 34,
+          "value": "Explore Destination Pujas"
+        },
+        {
+          "kind": "field:overviewTitle",
+          "line": 38,
+          "value": "Why Choose On-Site Coordination With Connect Hub Co."
+        },
+        {
+          "kind": "field:overviewCopy",
+          "line": 39,
+          "value": "We take complete responsibility for priest verification, sacred ingredient purity, venue arrangement, and transparent Dakshina."
+        },
+        {
+          "kind": "list:overviewPoints",
+          "line": 41,
+          "value": "Available across 15+ major sacred destinations and cities."
+        },
+        {
+          "kind": "list:overviewPoints",
+          "line": 42,
+          "value": "Verified lineage priests experienced in regional Sastras and Sampradayas."
+        },
+        {
+          "kind": "list:overviewPoints",
+          "line": 43,
+          "value": "Complete pure Samagri care—descriptive, unadulterated items."
+        },
+        {
+          "kind": "list:overviewPoints",
+          "line": 44,
+          "value": "Zero unexpected cash demands on ritual day."
+        },
+        {
+          "kind": "list:overviewPoints",
+          "line": 45,
+          "value": "Dedicated support manager for venue and logistics coordination."
+        },
+        {
+          "kind": "field:title",
+          "line": 48,
+          "value": "Share Event Details & Location"
+        },
+        {
+          "kind": "field:description",
+          "line": 48,
+          "value": "Specify your preferred puja, date, Gotra, and residence or destination city."
+        },
+        {
+          "kind": "field:title",
+          "line": 49,
+          "value": "Receive Complete Service Scope"
+        },
+        {
+          "kind": "field:description",
+          "line": 49,
+          "value": "Our team confirms priest availability and issues a transparent quotation."
+        },
+        {
+          "kind": "field:title",
+          "line": 50,
+          "value": "In-Person Sacred Execution"
+        },
+        {
+          "kind": "field:description",
+          "line": 50,
+          "value": "The priest conducts the ritual with Vedic precision and live family Sankalp."
+        },
+        {
+          "kind": "field:title",
+          "line": 51,
+          "value": "Completion Confirmation"
+        },
+        {
+          "kind": "field:description",
+          "line": 51,
+          "value": "Receive completion proof, photo highlights, and ongoing assistance."
+        },
+        {
+          "kind": "list:trustItems",
+          "line": 54,
+          "value": "Verified Local Lineage Priests"
+        },
+        {
+          "kind": "list:trustItems",
+          "line": 55,
+          "value": "Pure Vaidik Samagri Care"
+        },
+        {
+          "kind": "list:trustItems",
+          "line": 56,
+          "value": "15+ Hub Locations in India & Nepal"
+        },
+        {
+          "kind": "list:trustItems",
+          "line": 57,
+          "value": "Transparent Upfront Scope"
+        },
+        {
+          "kind": "field:question",
+          "line": 60,
+          "value": "Which cities and sacred locations are covered?"
+        },
+        {
+          "kind": "field:answer",
+          "line": 60,
+          "value": "Ayodhya, Pune, Hyderabad, Nashik, Kashi/Varanasi, Patna, Mathura, Vrindavan, Delhi NCR, Lucknow, Gorakhpur, Gaya Ji, Bengaluru, Mumbai, and Nepal."
+        },
+        {
+          "kind": "field:question",
+          "line": 61,
+          "value": "Is samagri brought by the priest?"
+        },
+        {
+          "kind": "field:answer",
+          "line": 61,
+          "value": "Yes! All essential Sastra-compliant samagri and pure items are pre-arranged and included in your confirmed service scope."
+        },
+        {
+          "kind": "field:label",
+          "line": 64,
+          "value": "All Ritual Services"
+        },
+        {
+          "kind": "field:label",
+          "line": 65,
+          "value": "Online Remote Rituals"
+        },
+        {
+          "kind": "field:label",
+          "line": 66,
+          "value": "Travel Assistance"
+        }
+      ]
+    }
+  ]
+}

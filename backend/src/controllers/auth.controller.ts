@@ -3,6 +3,8 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
 import { prisma } from "../lib/prisma";
+import { AuthenticatedRequest } from "../middleware/auth.middleware";
+import { getJwtConfig } from "../lib/jwt.config";
 
 export async function registerUser(
   req: Request,
@@ -95,6 +97,13 @@ export async function loginUser(
       });
     }
 
+    if (!user.isActive) {
+      return res.status(403).json({
+        success: false,
+        message: "This account is not active.",
+      });
+    }
+
     const validPassword =
       await bcrypt.compare(
         password,
@@ -108,15 +117,28 @@ export async function loginUser(
       });
     }
 
+    let jwtConfig;
+    try {
+      jwtConfig = getJwtConfig();
+    } catch {
+      console.error("Required JWT configuration is missing.");
+      return res.status(500).json({
+        success: false,
+        message: "Authentication service is unavailable.",
+      });
+    }
+
     const token = jwt.sign(
       {
         id: user.id,
         email: user.email,
         role: user.role,
       },
-      process.env.JWT_SECRET as string,
+      jwtConfig.secret,
       {
         expiresIn: "7d",
+        issuer: jwtConfig.issuer,
+        audience: jwtConfig.audience,
       }
     );
 
@@ -142,4 +164,19 @@ export async function loginUser(
     });
 
   }
+}
+
+export async function getCurrentUser(req: AuthenticatedRequest, res: Response) {
+  const user = await prisma.user.findUnique({
+    where: { id: req.auth!.id },
+    select: { id: true, fullName: true, email: true, role: true, isActive: true },
+  });
+  if (!user?.isActive) {
+    return res.status(401).json({ success: false, message: "Authentication session is no longer active." });
+  }
+  return res.json({ user: { id: user.id, fullName: user.fullName, email: user.email, role: user.role } });
+}
+
+export function logoutUser(_req: Request, res: Response) {
+  return res.status(204).send();
 }

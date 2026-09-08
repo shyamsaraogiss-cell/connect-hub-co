@@ -1,0 +1,1188 @@
+{
+  "schemaVersion": 1,
+  "ownership": "MASTER_CONTENT_LIBRARY",
+  "runtimeReference": "UNCHANGED_COPY_FIRST",
+  "sources": [
+    {
+      "source": "apps/web/src/components/partner/ReligiousPartnerApplicationForm.tsx",
+      "sha256": "ea27633cc2773ca2f5d0856ee2e0054a4b2e106f73e951533f5e3f38f06a2ab9",
+      "entries": [
+        {
+          "kind": "list:serviceOptions",
+          "line": 12,
+          "value": "Ancestral Rites"
+        },
+        {
+          "kind": "list:serviceOptions",
+          "line": 12,
+          "value": "Vedic Puja / Homam"
+        },
+        {
+          "kind": "list:serviceOptions",
+          "line": 12,
+          "value": "Temple Services"
+        },
+        {
+          "kind": "list:serviceOptions",
+          "line": 12,
+          "value": "Life-Cycle Ceremonies"
+        },
+        {
+          "kind": "list:serviceOptions",
+          "line": 12,
+          "value": "Religious Guidance"
+        },
+        {
+          "kind": "list:serviceOptions",
+          "line": 12,
+          "value": "Online / Remote Ritual Services"
+        },
+        {
+          "kind": "list:serviceOptions",
+          "line": 12,
+          "value": "Other"
+        },
+        {
+          "kind": "field:title",
+          "line": 50,
+          "value": "professionalTitle"
+        },
+        {
+          "kind": "field:title",
+          "line": 50,
+          "value": "Applicant"
+        },
+        {
+          "kind": "field:description",
+          "line": 51,
+          "value": "professionalBackground"
+        },
+        {
+          "kind": "field:description",
+          "line": 51,
+          "value": "Religious Partner registration application"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 64,
+          "value": "Partner application submitted"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 64,
+          "value": "Keep this Partner Registration Reference ID for tracking and future communication."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 64,
+          "value": "Track Registration ID"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 69,
+          "value": "Religious Partner Registration Application"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 71,
+          "value": "Tell us about your religious background, experience, and service capabilities so we can review your application appropriately.\n        "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 74,
+          "value": "PLEASE MAKE SURE -"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 74,
+          "value": "No immediate payment required. Fields marked * are mandatory.\n            "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 77,
+          "value": "After successful application submission, the system auto-generates your Partner Registration Reference ID. Please keep this ID for tracking and future communication.\n        "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 82,
+          "value": "1. Applicant Details"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 84,
+          "value": "Application Type *"
+        },
+        {
+          "kind": "field:name",
+          "line": 84,
+          "value": "applicationType"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 84,
+          "value": "Select application type"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 84,
+          "value": "Individual Practitioner"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 84,
+          "value": "Temple / Institution / Organisation"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 85,
+          "value": "Application Date"
+        },
+        {
+          "kind": "field:name",
+          "line": 85,
+          "value": "applicationDate"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 87,
+          "value": "First Name *"
+        },
+        {
+          "kind": "field:name",
+          "line": 87,
+          "value": "firstName"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 87,
+          "value": "Enter first name"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 87,
+          "value": "Middle Name"
+        },
+        {
+          "kind": "field:name",
+          "line": 87,
+          "value": "middleName"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 87,
+          "value": "Enter middle name"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 87,
+          "value": "Last Name *"
+        },
+        {
+          "kind": "field:name",
+          "line": 87,
+          "value": "lastName"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 87,
+          "value": "Enter last name"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 88,
+          "value": "Religious Title *"
+        },
+        {
+          "kind": "field:name",
+          "line": 88,
+          "value": "professionalTitle"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 88,
+          "value": "e.g. Pandit, Purohit, Acharya"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 88,
+          "value": "Organisation / Institution Name"
+        },
+        {
+          "kind": "field:name",
+          "line": 88,
+          "value": "organisationName"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 88,
+          "value": "Temple / institution name, if applicable"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 89,
+          "value": "Mobile Number *"
+        },
+        {
+          "kind": "field:name",
+          "line": 89,
+          "value": "mobileNumber"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 89,
+          "value": "+91 9876543210"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 89,
+          "value": "WhatsApp Number"
+        },
+        {
+          "kind": "field:name",
+          "line": 89,
+          "value": "whatsappNumber"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 89,
+          "value": "WhatsApp number, if different"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 89,
+          "value": "Email Address *"
+        },
+        {
+          "kind": "field:name",
+          "line": 89,
+          "value": "email"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 89,
+          "value": "name@example.com"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 89,
+          "value": "Date of Birth *"
+        },
+        {
+          "kind": "field:name",
+          "line": 89,
+          "value": "dateOfBirth"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 89,
+          "value": "Gender *"
+        },
+        {
+          "kind": "field:name",
+          "line": 89,
+          "value": "gender"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 89,
+          "value": "Select gender"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 89,
+          "value": "Male"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 89,
+          "value": "Female"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 89,
+          "value": "Other"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 93,
+          "value": "2. Address Details"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 94,
+          "value": "A. Permanent Address *"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 95,
+          "value": "Address *"
+        },
+        {
+          "kind": "field:name",
+          "line": 95,
+          "value": "permanentAddress"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 95,
+          "value": "Enter complete address"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 96,
+          "value": "City / Village *"
+        },
+        {
+          "kind": "field:name",
+          "line": 96,
+          "value": "permanentCityVillage"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 96,
+          "value": "City / Village"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 96,
+          "value": "District *"
+        },
+        {
+          "kind": "field:name",
+          "line": 96,
+          "value": "permanentDistrict"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 96,
+          "value": "District"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 96,
+          "value": "State *"
+        },
+        {
+          "kind": "field:name",
+          "line": 96,
+          "value": "permanentState"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 96,
+          "value": "State"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 96,
+          "value": "PIN Code *"
+        },
+        {
+          "kind": "field:name",
+          "line": 96,
+          "value": "permanentPinCode"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 96,
+          "value": "PIN Code"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 96,
+          "value": "Country *"
+        },
+        {
+          "kind": "field:name",
+          "line": 96,
+          "value": "permanentCountry"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 96,
+          "value": "Country"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 97,
+          "value": "B. Present Service Base Address *"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 98,
+          "value": "Address *"
+        },
+        {
+          "kind": "field:name",
+          "line": 98,
+          "value": "currentAddress"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 98,
+          "value": "Enter complete address"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 98,
+          "value": "City / Village *"
+        },
+        {
+          "kind": "field:name",
+          "line": 98,
+          "value": "currentCityVillage"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 98,
+          "value": "City / Village"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 98,
+          "value": "District *"
+        },
+        {
+          "kind": "field:name",
+          "line": 98,
+          "value": "currentDistrict"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 98,
+          "value": "District"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 98,
+          "value": "State *"
+        },
+        {
+          "kind": "field:name",
+          "line": 98,
+          "value": "currentState"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 98,
+          "value": "State"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 98,
+          "value": "PIN Code *"
+        },
+        {
+          "kind": "field:name",
+          "line": 98,
+          "value": "currentPinCode"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 98,
+          "value": "PIN Code"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 98,
+          "value": "Country *"
+        },
+        {
+          "kind": "field:name",
+          "line": 98,
+          "value": "currentCountry"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 98,
+          "value": "Country"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 102,
+          "value": "3. Religious &amp; Professional Identity"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 103,
+          "value": "Practitioner Type *"
+        },
+        {
+          "kind": "field:name",
+          "line": 103,
+          "value": "practitionerType"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 103,
+          "value": "Select practitioner type"
+        },
+        {
+          "kind": "list:content",
+          "line": 103,
+          "value": "Pandit"
+        },
+        {
+          "kind": "list:content",
+          "line": 103,
+          "value": "Purohit"
+        },
+        {
+          "kind": "list:content",
+          "line": 103,
+          "value": "Panda"
+        },
+        {
+          "kind": "list:content",
+          "line": 103,
+          "value": "Acharya"
+        },
+        {
+          "kind": "list:content",
+          "line": 103,
+          "value": "Vaidik Scholar"
+        },
+        {
+          "kind": "list:content",
+          "line": 103,
+          "value": "Ritual Specialist"
+        },
+        {
+          "kind": "list:content",
+          "line": 103,
+          "value": "Other"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 103,
+          "value": "Tradition / Sampradaya *"
+        },
+        {
+          "kind": "field:name",
+          "line": 103,
+          "value": "tradition"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 103,
+          "value": "Enter tradition / sampradaya"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 103,
+          "value": "Gotra"
+        },
+        {
+          "kind": "field:name",
+          "line": 103,
+          "value": "gotra"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 103,
+          "value": "Enter gotra, if applicable"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 103,
+          "value": "Temple / Institution Affiliation"
+        },
+        {
+          "kind": "field:name",
+          "line": 103,
+          "value": "institutionAffiliation"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 103,
+          "value": "Enter affiliation, if applicable"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 103,
+          "value": "Languages Spoken *"
+        },
+        {
+          "kind": "field:name",
+          "line": 103,
+          "value": "languagesSpoken"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 103,
+          "value": "e.g. Hindi, Sanskrit, English"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 104,
+          "value": "Guru / Lineage Information"
+        },
+        {
+          "kind": "field:name",
+          "line": 104,
+          "value": "lineageInformation"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 104,
+          "value": "Enter guru / lineage details, if applicable"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 108,
+          "value": "4. Education cum Experience"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 109,
+          "value": "Practicing Since / Year Started *"
+        },
+        {
+          "kind": "field:name",
+          "line": 109,
+          "value": "practicingSince"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 109,
+          "value": "e.g. 2008"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 109,
+          "value": "Total Years of Delivered Service Experience *"
+        },
+        {
+          "kind": "field:name",
+          "line": 109,
+          "value": "totalYearsExperience"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 109,
+          "value": "e.g. 12 years"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 110,
+          "value": "Qualification / Religious Education *"
+        },
+        {
+          "kind": "field:name",
+          "line": 110,
+          "value": "religiousEducation"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 110,
+          "value": "Enter religious / academic qualification"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 111,
+          "value": "Qualification / Certification Details"
+        },
+        {
+          "kind": "field:name",
+          "line": 111,
+          "value": "qualificationDetails"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 111,
+          "value": "Enter certification details, if applicable"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 112,
+          "value": "Religious / Professional Background *"
+        },
+        {
+          "kind": "field:name",
+          "line": 112,
+          "value": "professionalBackground"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 112,
+          "value": "Briefly describe your religious/professional background"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 116,
+          "value": "5. Service Interested In"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 117,
+          "value": "Primary Specialisation *"
+        },
+        {
+          "kind": "field:name",
+          "line": 117,
+          "value": "primarySpecialisation"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 117,
+          "value": "Enter primary specialisation"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 117,
+          "value": "Other Specialisations (optional)"
+        },
+        {
+          "kind": "field:name",
+          "line": 117,
+          "value": "otherSpecialisations"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 117,
+          "value": "Other specialisations, if applicable"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 121,
+          "value": "6. Service Interest"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 121,
+          "value": "Services the applicant is interested in accepting through Connect Hub Co."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 122,
+          "value": "Services / Rituals Interested in Accepting through Connect Hub Co. *"
+        },
+        {
+          "kind": "field:name",
+          "line": 122,
+          "value": "serviceInterest"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 123,
+          "value": "Preferred Choice 1 *"
+        },
+        {
+          "kind": "field:name",
+          "line": 123,
+          "value": "preferredChoice1"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 123,
+          "value": "Enter first preference"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 123,
+          "value": "Preferred Choice 2"
+        },
+        {
+          "kind": "field:name",
+          "line": 123,
+          "value": "preferredChoice2"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 123,
+          "value": "Enter second preference"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 123,
+          "value": "Preferred Choice 3"
+        },
+        {
+          "kind": "field:name",
+          "line": 123,
+          "value": "preferredChoice3"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 123,
+          "value": "Enter third preference"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 127,
+          "value": "7. Service Location &amp; Mobility"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 128,
+          "value": "Primary Service Location *"
+        },
+        {
+          "kind": "field:name",
+          "line": 128,
+          "value": "primaryServiceLocation"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 128,
+          "value": "City / District / State"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 128,
+          "value": "Other Service Locations (optional)"
+        },
+        {
+          "kind": "field:name",
+          "line": 128,
+          "value": "otherServiceLocations"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 128,
+          "value": "Other locations, if applicable"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 128,
+          "value": "Service Mobility *"
+        },
+        {
+          "kind": "field:name",
+          "line": 128,
+          "value": "serviceMobility"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 128,
+          "value": "Select service mobility"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 128,
+          "value": "Local Only"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 128,
+          "value": "Outstation Only"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 128,
+          "value": "Local + Outstation"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 128,
+          "value": "Anywhere / Pan-India"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 128,
+          "value": "International / NRI Service Travel Willingness"
+        },
+        {
+          "kind": "field:name",
+          "line": 128,
+          "value": "internationalTravel"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 128,
+          "value": "Select option"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 128,
+          "value": "Yes"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 128,
+          "value": "No"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 128,
+          "value": "Online / Remote Service Availability"
+        },
+        {
+          "kind": "field:name",
+          "line": 128,
+          "value": "remoteAvailability"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 128,
+          "value": "Select availability"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 128,
+          "value": "Where Applicable"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 128,
+          "value": "General Availability *"
+        },
+        {
+          "kind": "field:name",
+          "line": 128,
+          "value": "generalAvailability"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 128,
+          "value": "Enter available days / timings"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 132,
+          "value": "8. Identity &amp; Verification"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 133,
+          "value": "Government ID Type *"
+        },
+        {
+          "kind": "field:name",
+          "line": 133,
+          "value": "governmentIdType"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 133,
+          "value": "Select ID type"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 133,
+          "value": "Aadhaar Card"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 133,
+          "value": "Passport"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 133,
+          "value": "Driving Licence"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 133,
+          "value": "Voter ID"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 133,
+          "value": "Other Government ID"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 133,
+          "value": "Government ID Number *"
+        },
+        {
+          "kind": "field:name",
+          "line": 133,
+          "value": "governmentIdNumber"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 133,
+          "value": "Enter government ID number"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 133,
+          "value": "Government ID Document"
+        },
+        {
+          "kind": "field:name",
+          "line": 133,
+          "value": "governmentIdDocument"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 133,
+          "value": "Proof Of Address"
+        },
+        {
+          "kind": "field:name",
+          "line": 133,
+          "value": "addressProof"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 133,
+          "value": "Profile Photograph"
+        },
+        {
+          "kind": "field:name",
+          "line": 133,
+          "value": "profilePhotograph"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 133,
+          "value": "Qualification / Certification Document"
+        },
+        {
+          "kind": "field:name",
+          "line": 133,
+          "value": "qualificationDocument"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 133,
+          "value": "Temple / Institution Supporting Credential"
+        },
+        {
+          "kind": "field:name",
+          "line": 133,
+          "value": "institutionCredential"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 134,
+          "value": "Document fields are provided for application preparation. File-storage integration is not currently enabled."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 138,
+          "value": "9. Operational Suitability"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 139,
+          "value": "Preferred Service Language(s) *"
+        },
+        {
+          "kind": "field:name",
+          "line": 139,
+          "value": "preferredServiceLanguages"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 139,
+          "value": "e.g. Hindi, Sanskrit, English"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 139,
+          "value": "Availability / Preferred Service Schedule"
+        },
+        {
+          "kind": "field:name",
+          "line": 139,
+          "value": "preferredSchedule"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 139,
+          "value": "Enter preferred days / timings, if applicable"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 140,
+          "value": "Accessibility / Travel Constraints (optional)"
+        },
+        {
+          "kind": "field:name",
+          "line": 140,
+          "value": "travelConstraints"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 140,
+          "value": "Mention any constraints, if applicable"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 140,
+          "value": "Additional Remarks (optional)"
+        },
+        {
+          "kind": "field:name",
+          "line": 140,
+          "value": "additionalRemarks"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 140,
+          "value": "Add any relevant information, if applicable"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 144,
+          "value": "10. Declaration &amp; Consent"
+        },
+        {
+          "kind": "field:name",
+          "line": 145,
+          "value": "accuracyDeclaration"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 145,
+          "value": "I confirm that the information and documents provided in this application are accurate. *"
+        },
+        {
+          "kind": "field:name",
+          "line": 146,
+          "value": "verificationConsent"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 146,
+          "value": "I consent to verification of the information, identity, qualifications and documents submitted. *"
+        },
+        {
+          "kind": "field:name",
+          "line": 147,
+          "value": "policyConsent"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 147,
+          "value": "I agree to the "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 147,
+          "value": "Privacy Policy"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 147,
+          "value": "and "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 147,
+          "value": "Terms &amp; Conditions"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 147,
+          "value": ". *"
+        },
+        {
+          "kind": "field:name",
+          "line": 151,
+          "value": "applicationAcknowledgement"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 151,
+          "value": "I understand that submission is only an application and does not guarantee approval, activation, public listing, customer assignment, or service allocation. *"
+        }
+      ]
+    }
+  ]
+}

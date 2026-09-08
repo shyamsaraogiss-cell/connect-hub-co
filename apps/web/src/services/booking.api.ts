@@ -1,5 +1,5 @@
 import { api } from "@/lib/api";
-import { Booking, BookingInput } from "@/types/booking";
+import { Booking, BookingInput, PublicBookingInput, PublicBookingResponse } from "@/types/booking";
 const endpoint = "/bookings";
 export const getBookings = () => api<Booking[]>(endpoint);
 export const getBooking = (id: string) => api<Booking>(`${endpoint}/${id}`);
@@ -8,3 +8,4 @@ export const updateBooking = (id: string, value: Partial<BookingInput>) => api<B
 export const updateBookingStatus = (id: string, status: Booking["status"]) => api<Booking>(`${endpoint}/${id}/status`, { method: "PATCH", body: JSON.stringify({ status }) });
 export const cancelBooking = (id: string) => api<Booking>(`${endpoint}/${id}/cancel`, { method: "PATCH" });
 export const deleteBooking = (id: string) => api<Booking>(`${endpoint}/${id}`, { method: "DELETE" });
+export const createPublicBookingRequest = (v: PublicBookingInput) => api<PublicBookingResponse>("/urms/universal-requests/public", { method: "POST", body: JSON.stringify({ requestType: "BOOKING", serviceDomain: v.serviceId, guestName: v.fullName.trim(), guestPhone: v.mobile.trim(), guestEmail: v.email.trim(), title: `Booking: ${v.serviceName} — ${v.serviceCategory}`, description: `Location: ${v.preferredLocation}; Date: ${v.preferredDate}; Participation: ${v.participationFormat}; Participants: ${v.participants}; Notes: ${v.message || "None"}`, sourceChannel: "WEBSITE_FORM", metadata: { country: v.country, whatsappNumber: v.whatsappNumber?.trim() || undefined, serviceName: v.serviceName, serviceCategory: v.serviceCategory, participationFormat: v.participationFormat, preferredLocation: v.preferredLocation, preferredDate: v.preferredDate, participants: v.participants, contactMethod: v.contactMethod, consent: v.consent } }) });

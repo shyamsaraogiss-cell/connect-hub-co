@@ -1,35 +1,29 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import { AuthProvider } from "@/components/auth/AuthProvider";
-import { SessionHeader } from "@/components/auth/SessionHeader";
+import '@/app/globals.css';
+import React from 'react';
+import { AuthProvider } from '@/components/auth/AuthProvider';
+import { PublicHeader } from '@/components/auth/PublicHeader';
+import { BusinessFooter } from '@/components/auth/BusinessFooter';
+import { PageContent } from '@/components/common/PageContent';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-export const metadata: Metadata = {
-  title: "Connect Hub Co ERP",
-  description: "Connect Hub Co management platform",
+export const metadata = {
+  title: 'Connect Hub Co. | Religious Services',
+  description: 'The Authentic Ancestral Rites | Verified Lineage | Vedic Precision',
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col"><AuthProvider><SessionHeader />{children}</AuthProvider></body>
+    <html lang="en">
+      <body className="min-h-full flex flex-col" style={{ margin: 0, padding: 0, backgroundColor: '#054B52' }}>
+        <AuthProvider>
+          <PublicHeader />
+          <PageContent>{children}</PageContent>
+          <BusinessFooter />
+        </AuthProvider>
+      </body>
     </html>
   );
 }

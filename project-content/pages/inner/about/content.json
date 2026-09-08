@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "ownership": "MASTER_CONTENT_LIBRARY",
+  "runtimeReference": "UNCHANGED_COPY_FIRST",
+  "sources": [
+    {
+      "source": "apps/web/src/app/about/page.tsx",
+      "sha256": "72618db8a5774b9be78b8d1b550c3acf51517aa17f8fc7de867752c1a40e9757",
+      "entries": [
+        {
+          "kind": "field:title",
+          "line": 6,
+          "value": "About Us | Connect Hub Co."
+        },
+        {
+          "kind": "field:description",
+          "line": 7,
+          "value": "Learn how Connect Hub Co. coordinates sacred services and pilgrim travel assistance in Gaya Ji and pan-India with verified Religious Partners."
+        }
+      ]
+    },
+    {
+      "source": "apps/web/src/components/common/BusinessAbout.tsx",
+      "sha256": "6ad1637adedae7f048a25cb64a67bde7ae50d946495cd07d8ab4f3ee9de745e0",
+      "entries": [
+        {
+          "kind": "list:principles",
+          "line": 2,
+          "value": "Dharma before profit"
+        },
+        {
+          "kind": "list:principles",
+          "line": 2,
+          "value": "Trust before revenue"
+        },
+        {
+          "kind": "list:principles",
+          "line": 2,
+          "value": "Transparency before marketing"
+        },
+        {
+          "kind": "list:principles",
+          "line": 2,
+          "value": "Service before technology"
+        },
+        {
+          "kind": "list:principles",
+          "line": 2,
+          "value": "Long-term brand before short-term income"
+        },
+        {
+          "kind": "list:principles",
+          "line": 2,
+          "value": "AI assists humans; it does not replace ritual authority"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 3,
+          "value": "About Connect Hub Co"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 3,
+          "value": "Built for service, trust, and responsible coordination"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 3,
+          "value": "Our mission is to connect families with verified Hindu religious partners and practical pilgrimage support through clear, respectful, auditable workflows."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 3,
+          "value": "Our vision"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 3,
+          "value": "A trusted digital platform where customers, religious partners, travel providers, and operations teams can coordinate without compromising religious authenticity or customer privacy."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 3,
+          "value": "Why Gaya"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 3,
+          "value": "Gaya is a deeply significant destination for ancestral rites. Connect Hub Co focuses on dependable local coordination while leaving ritual guidance and correctness with qualified religious partners."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 3,
+          "value": "Founder principles"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 3,
+          "value": "Human-first, AI-assisted"
+        },
+        {
+          "kind": "list:content",
+          "line": 3,
+          "value": "Religious authenticity"
+        },
+        {
+          "kind": "list:content",
+          "line": 3,
+          "value": "Sensitive ritual decisions require qualified human review."
+        },
+        {
+          "kind": "list:content",
+          "line": 3,
+          "value": "Operational transparency"
+        },
+        {
+          "kind": "list:content",
+          "line": 3,
+          "value": "Requests, assignments, dates, and statuses remain traceable."
+        },
+        {
+          "kind": "list:content",
+          "line": 3,
+          "value": "Responsible AI"
+        },
+        {
+          "kind": "list:content",
+          "line": 3,
+          "value": "Zen G explains and navigates; it does not claim spiritual authority."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 3,
+          "value": "Explore our services"
+        }
+      ]
+    }
+  ]
+}

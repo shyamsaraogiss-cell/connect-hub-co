@@ -1,0 +1,2751 @@
+﻿{
+    "enums": [
+        {
+            "enum_name": "GovernanceAction",
+            "enum_value": "CREATE",
+            "sort_order": 1
+        },
+        {
+            "enum_name": "GovernanceAction",
+            "enum_value": "EDIT",
+            "sort_order": 2
+        },
+        {
+            "enum_name": "GovernanceAction",
+            "enum_value": "FOUNDER_APPROVE",
+            "sort_order": 3
+        },
+        {
+            "enum_name": "GovernanceAction",
+            "enum_value": "ERP_LOCK",
+            "sort_order": 4
+        },
+        {
+            "enum_name": "GovernanceAction",
+            "enum_value": "PUBLISH",
+            "sort_order": 5
+        },
+        {
+            "enum_name": "GovernanceAction",
+            "enum_value": "SUPERSEDE",
+            "sort_order": 6
+        },
+        {
+            "enum_name": "GovernanceAction",
+            "enum_value": "ROLLBACK",
+            "sort_order": 7
+        },
+        {
+            "enum_name": "GovernanceAction",
+            "enum_value": "ARCHIVE",
+            "sort_order": 8
+        },
+        {
+            "enum_name": "GovernanceStatus",
+            "enum_value": "DRAFT",
+            "sort_order": 1
+        },
+        {
+            "enum_name": "GovernanceStatus",
+            "enum_value": "FOUNDER_APPROVED",
+            "sort_order": 2
+        },
+        {
+            "enum_name": "GovernanceStatus",
+            "enum_value": "ERP_LOCKED",
+            "sort_order": 3
+        },
+        {
+            "enum_name": "GovernanceStatus",
+            "enum_value": "PUBLISHED",
+            "sort_order": 4
+        },
+        {
+            "enum_name": "GovernanceStatus",
+            "enum_value": "SUPERSEDED",
+            "sort_order": 5
+        },
+        {
+            "enum_name": "GovernanceStatus",
+            "enum_value": "ARCHIVED",
+            "sort_order": 6
+        },
+        {
+            "enum_name": "UserRole",
+            "enum_value": "FOUNDER",
+            "sort_order": 1
+        },
+        {
+            "enum_name": "UserRole",
+            "enum_value": "ADMIN",
+            "sort_order": 2
+        },
+        {
+            "enum_name": "UserRole",
+            "enum_value": "CUSTOMER",
+            "sort_order": 3
+        },
+        {
+            "enum_name": "UserRole",
+            "enum_value": "RELIGIOUS_PARTNER",
+            "sort_order": 4
+        }
+    ],
+    "columns": [
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "Customer",
+            "column_name": "id",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 1
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "Customer",
+            "column_name": "email",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 3
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "Customer",
+            "column_name": "country",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 5
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "Customer",
+            "column_name": "city",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 6
+        },
+        {
+            "udt_name": "timestamp",
+            "data_type": "timestamp without time zone",
+            "table_name": "Customer",
+            "column_name": "createdAt",
+            "is_nullable": "NO",
+            "column_default": "CURRENT_TIMESTAMP",
+            "ordinal_position": 8
+        },
+        {
+            "udt_name": "timestamp",
+            "data_type": "timestamp without time zone",
+            "table_name": "Customer",
+            "column_name": "updatedAt",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 9
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "Customer",
+            "column_name": "assignedTo",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 10
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "Customer",
+            "column_name": "fullName",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 11
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "Customer",
+            "column_name": "mobile",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 12
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "Customer",
+            "column_name": "purpose",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 13
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "Customer",
+            "column_name": "remarks",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 14
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "Customer",
+            "column_name": "serviceType",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 15
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "Customer",
+            "column_name": "state",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 16
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "Customer",
+            "column_name": "status",
+            "is_nullable": "NO",
+            "column_default": "'New'::text",
+            "ordinal_position": 17
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "Customer",
+            "column_name": "whatsapp",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 18
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "GovernanceAuditLog",
+            "column_name": "id",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 1
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "GovernanceAuditLog",
+            "column_name": "contentType",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 2
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "GovernanceAuditLog",
+            "column_name": "contentId",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 3
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "GovernanceAuditLog",
+            "column_name": "contentKey",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 4
+        },
+        {
+            "udt_name": "int4",
+            "data_type": "integer",
+            "table_name": "GovernanceAuditLog",
+            "column_name": "version",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 5
+        },
+        {
+            "udt_name": "GovernanceAction",
+            "data_type": "USER-DEFINED",
+            "table_name": "GovernanceAuditLog",
+            "column_name": "action",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 6
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "GovernanceAuditLog",
+            "column_name": "actorUserId",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 7
+        },
+        {
+            "udt_name": "UserRole",
+            "data_type": "USER-DEFINED",
+            "table_name": "GovernanceAuditLog",
+            "column_name": "actorRole",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 8
+        },
+        {
+            "udt_name": "jsonb",
+            "data_type": "jsonb",
+            "table_name": "GovernanceAuditLog",
+            "column_name": "metadata",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 9
+        },
+        {
+            "udt_name": "timestamp",
+            "data_type": "timestamp without time zone",
+            "table_name": "GovernanceAuditLog",
+            "column_name": "createdAt",
+            "is_nullable": "NO",
+            "column_default": "CURRENT_TIMESTAMP",
+            "ordinal_position": 10
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeArticle",
+            "column_name": "id",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 1
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeArticle",
+            "column_name": "category",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 2
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeArticle",
+            "column_name": "categoryTitle",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 3
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeArticle",
+            "column_name": "title",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 4
+        },
+        {
+            "udt_name": "_text",
+            "data_type": "ARRAY",
+            "table_name": "KnowledgeArticle",
+            "column_name": "keywords",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 5
+        },
+        {
+            "udt_name": "_text",
+            "data_type": "ARRAY",
+            "table_name": "KnowledgeArticle",
+            "column_name": "synonyms",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 6
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeArticle",
+            "column_name": "summary",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 7
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeArticle",
+            "column_name": "content",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 8
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeArticle",
+            "column_name": "link",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 9
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeArticle",
+            "column_name": "status",
+            "is_nullable": "NO",
+            "column_default": "'DRAFT'::text",
+            "ordinal_position": 10
+        },
+        {
+            "udt_name": "int4",
+            "data_type": "integer",
+            "table_name": "KnowledgeArticle",
+            "column_name": "version",
+            "is_nullable": "NO",
+            "column_default": "1",
+            "ordinal_position": 11
+        },
+        {
+            "udt_name": "timestamp",
+            "data_type": "timestamp without time zone",
+            "table_name": "KnowledgeArticle",
+            "column_name": "publishedAt",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 12
+        },
+        {
+            "udt_name": "timestamp",
+            "data_type": "timestamp without time zone",
+            "table_name": "KnowledgeArticle",
+            "column_name": "createdAt",
+            "is_nullable": "NO",
+            "column_default": "CURRENT_TIMESTAMP",
+            "ordinal_position": 13
+        },
+        {
+            "udt_name": "timestamp",
+            "data_type": "timestamp without time zone",
+            "table_name": "KnowledgeArticle",
+            "column_name": "updatedAt",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 14
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeArticle",
+            "column_name": "contentKey",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 15
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeArticle",
+            "column_name": "createdBy",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 16
+        },
+        {
+            "udt_name": "timestamp",
+            "data_type": "timestamp without time zone",
+            "table_name": "KnowledgeArticle",
+            "column_name": "erpLockedAt",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 17
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeArticle",
+            "column_name": "erpLockedBy",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 18
+        },
+        {
+            "udt_name": "timestamp",
+            "data_type": "timestamp without time zone",
+            "table_name": "KnowledgeArticle",
+            "column_name": "founderApprovedAt",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 19
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeArticle",
+            "column_name": "founderApprovedBy",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 20
+        },
+        {
+            "udt_name": "GovernanceStatus",
+            "data_type": "USER-DEFINED",
+            "table_name": "KnowledgeArticle",
+            "column_name": "governanceStatus",
+            "is_nullable": "NO",
+            "column_default": "'DRAFT'::\"GovernanceStatus\"",
+            "ordinal_position": 21
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeArticle",
+            "column_name": "lastEditedBy",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 22
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeArticle",
+            "column_name": "publishedVersionId",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 23
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeArticleHistory",
+            "column_name": "id",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 1
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeArticleHistory",
+            "column_name": "articleId",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 2
+        },
+        {
+            "udt_name": "int4",
+            "data_type": "integer",
+            "table_name": "KnowledgeArticleHistory",
+            "column_name": "version",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 3
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeArticleHistory",
+            "column_name": "title",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 4
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeArticleHistory",
+            "column_name": "summary",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 5
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeArticleHistory",
+            "column_name": "content",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 6
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeArticleHistory",
+            "column_name": "link",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 7
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeArticleHistory",
+            "column_name": "status",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 8
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeArticleHistory",
+            "column_name": "changedBy",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 9
+        },
+        {
+            "udt_name": "timestamp",
+            "data_type": "timestamp without time zone",
+            "table_name": "KnowledgeArticleHistory",
+            "column_name": "createdAt",
+            "is_nullable": "NO",
+            "column_default": "CURRENT_TIMESTAMP",
+            "ordinal_position": 10
+        },
+        {
+            "udt_name": "GovernanceAction",
+            "data_type": "USER-DEFINED",
+            "table_name": "KnowledgeArticleHistory",
+            "column_name": "action",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 11
+        },
+        {
+            "udt_name": "UserRole",
+            "data_type": "USER-DEFINED",
+            "table_name": "KnowledgeArticleHistory",
+            "column_name": "changedByRole",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 12
+        },
+        {
+            "udt_name": "jsonb",
+            "data_type": "jsonb",
+            "table_name": "KnowledgeArticleHistory",
+            "column_name": "metadata",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 13
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeFAQ",
+            "column_name": "id",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 1
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeFAQ",
+            "column_name": "category",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 2
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeFAQ",
+            "column_name": "question",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 3
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeFAQ",
+            "column_name": "answer",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 4
+        },
+        {
+            "udt_name": "_text",
+            "data_type": "ARRAY",
+            "table_name": "KnowledgeFAQ",
+            "column_name": "keywords",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 5
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeFAQ",
+            "column_name": "link",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 6
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeFAQ",
+            "column_name": "status",
+            "is_nullable": "NO",
+            "column_default": "'DRAFT'::text",
+            "ordinal_position": 7
+        },
+        {
+            "udt_name": "int4",
+            "data_type": "integer",
+            "table_name": "KnowledgeFAQ",
+            "column_name": "version",
+            "is_nullable": "NO",
+            "column_default": "1",
+            "ordinal_position": 8
+        },
+        {
+            "udt_name": "timestamp",
+            "data_type": "timestamp without time zone",
+            "table_name": "KnowledgeFAQ",
+            "column_name": "publishedAt",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 9
+        },
+        {
+            "udt_name": "timestamp",
+            "data_type": "timestamp without time zone",
+            "table_name": "KnowledgeFAQ",
+            "column_name": "createdAt",
+            "is_nullable": "NO",
+            "column_default": "CURRENT_TIMESTAMP",
+            "ordinal_position": 10
+        },
+        {
+            "udt_name": "timestamp",
+            "data_type": "timestamp without time zone",
+            "table_name": "KnowledgeFAQ",
+            "column_name": "updatedAt",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 11
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeFAQ",
+            "column_name": "contentKey",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 12
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeFAQ",
+            "column_name": "createdBy",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 13
+        },
+        {
+            "udt_name": "timestamp",
+            "data_type": "timestamp without time zone",
+            "table_name": "KnowledgeFAQ",
+            "column_name": "erpLockedAt",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 14
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeFAQ",
+            "column_name": "erpLockedBy",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 15
+        },
+        {
+            "udt_name": "timestamp",
+            "data_type": "timestamp without time zone",
+            "table_name": "KnowledgeFAQ",
+            "column_name": "founderApprovedAt",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 16
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeFAQ",
+            "column_name": "founderApprovedBy",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 17
+        },
+        {
+            "udt_name": "GovernanceStatus",
+            "data_type": "USER-DEFINED",
+            "table_name": "KnowledgeFAQ",
+            "column_name": "governanceStatus",
+            "is_nullable": "NO",
+            "column_default": "'DRAFT'::\"GovernanceStatus\"",
+            "ordinal_position": 18
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeFAQ",
+            "column_name": "lastEditedBy",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 19
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeFAQ",
+            "column_name": "publishedVersionId",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 20
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeFAQHistory",
+            "column_name": "id",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 1
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeFAQHistory",
+            "column_name": "faqId",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 2
+        },
+        {
+            "udt_name": "int4",
+            "data_type": "integer",
+            "table_name": "KnowledgeFAQHistory",
+            "column_name": "version",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 3
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeFAQHistory",
+            "column_name": "question",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 4
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeFAQHistory",
+            "column_name": "answer",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 5
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeFAQHistory",
+            "column_name": "link",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 6
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeFAQHistory",
+            "column_name": "status",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 7
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "KnowledgeFAQHistory",
+            "column_name": "changedBy",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 8
+        },
+        {
+            "udt_name": "timestamp",
+            "data_type": "timestamp without time zone",
+            "table_name": "KnowledgeFAQHistory",
+            "column_name": "createdAt",
+            "is_nullable": "NO",
+            "column_default": "CURRENT_TIMESTAMP",
+            "ordinal_position": 9
+        },
+        {
+            "udt_name": "GovernanceAction",
+            "data_type": "USER-DEFINED",
+            "table_name": "KnowledgeFAQHistory",
+            "column_name": "action",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 10
+        },
+        {
+            "udt_name": "UserRole",
+            "data_type": "USER-DEFINED",
+            "table_name": "KnowledgeFAQHistory",
+            "column_name": "changedByRole",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 11
+        },
+        {
+            "udt_name": "jsonb",
+            "data_type": "jsonb",
+            "table_name": "KnowledgeFAQHistory",
+            "column_name": "metadata",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 12
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "PitruMokshaRequest",
+            "column_name": "id",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 1
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "PitruMokshaRequest",
+            "column_name": "specialRequirements",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 14
+        },
+        {
+            "udt_name": "timestamp",
+            "data_type": "timestamp without time zone",
+            "table_name": "PitruMokshaRequest",
+            "column_name": "createdAt",
+            "is_nullable": "NO",
+            "column_default": "CURRENT_TIMESTAMP",
+            "ordinal_position": 15
+        },
+        {
+            "udt_name": "timestamp",
+            "data_type": "timestamp without time zone",
+            "table_name": "PitruMokshaRequest",
+            "column_name": "updatedAt",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 16
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "PitruMokshaRequest",
+            "column_name": "assignedPartner",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 17
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "PitruMokshaRequest",
+            "column_name": "city",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 18
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "PitruMokshaRequest",
+            "column_name": "country",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 19
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "PitruMokshaRequest",
+            "column_name": "customerName",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 20
+        },
+        {
+            "udt_name": "bool",
+            "data_type": "boolean",
+            "table_name": "PitruMokshaRequest",
+            "column_name": "documentationRequired",
+            "is_nullable": "NO",
+            "column_default": "false",
+            "ordinal_position": 21
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "PitruMokshaRequest",
+            "column_name": "email",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 22
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "PitruMokshaRequest",
+            "column_name": "founderRemarks",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 23
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "PitruMokshaRequest",
+            "column_name": "language",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 24
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "PitruMokshaRequest",
+            "column_name": "mobile",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 25
+        },
+        {
+            "udt_name": "timestamp",
+            "data_type": "timestamp without time zone",
+            "table_name": "PitruMokshaRequest",
+            "column_name": "preferredDate",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 26
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "PitruMokshaRequest",
+            "column_name": "preferredTime",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 27
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "PitruMokshaRequest",
+            "column_name": "quotationStatus",
+            "is_nullable": "NO",
+            "column_default": "'Pending'::text",
+            "ordinal_position": 28
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "PitruMokshaRequest",
+            "column_name": "ritualType",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 29
+        },
+        {
+            "udt_name": "bool",
+            "data_type": "boolean",
+            "table_name": "PitruMokshaRequest",
+            "column_name": "samagriRequired",
+            "is_nullable": "NO",
+            "column_default": "false",
+            "ordinal_position": 30
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "PitruMokshaRequest",
+            "column_name": "serviceMode",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 31
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "PitruMokshaRequest",
+            "column_name": "state",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 32
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "PitruMokshaRequest",
+            "column_name": "status",
+            "is_nullable": "NO",
+            "column_default": "'New'::text",
+            "ordinal_position": 33
+        },
+        {
+            "udt_name": "bool",
+            "data_type": "boolean",
+            "table_name": "PitruMokshaRequest",
+            "column_name": "travelAssistance",
+            "is_nullable": "NO",
+            "column_default": "false",
+            "ordinal_position": 34
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "PitruMokshaRequest",
+            "column_name": "whatsapp",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 35
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "ReligiousPartner",
+            "column_name": "id",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 1
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "ReligiousPartner",
+            "column_name": "email",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 5
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "ReligiousPartner",
+            "column_name": "city",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 7
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "ReligiousPartner",
+            "column_name": "country",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 8
+        },
+        {
+            "udt_name": "timestamp",
+            "data_type": "timestamp without time zone",
+            "table_name": "ReligiousPartner",
+            "column_name": "createdAt",
+            "is_nullable": "NO",
+            "column_default": "CURRENT_TIMESTAMP",
+            "ordinal_position": 11
+        },
+        {
+            "udt_name": "timestamp",
+            "data_type": "timestamp without time zone",
+            "table_name": "ReligiousPartner",
+            "column_name": "updatedAt",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 12
+        },
+        {
+            "udt_name": "bool",
+            "data_type": "boolean",
+            "table_name": "ReligiousPartner",
+            "column_name": "addressVerified",
+            "is_nullable": "NO",
+            "column_default": "false",
+            "ordinal_position": 13
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "ReligiousPartner",
+            "column_name": "category",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 14
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "ReligiousPartner",
+            "column_name": "fullName",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 15
+        },
+        {
+            "udt_name": "bool",
+            "data_type": "boolean",
+            "table_name": "ReligiousPartner",
+            "column_name": "identityVerified",
+            "is_nullable": "NO",
+            "column_default": "false",
+            "ordinal_position": 16
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "ReligiousPartner",
+            "column_name": "mobile",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 17
+        },
+        {
+            "udt_name": "bool",
+            "data_type": "boolean",
+            "table_name": "ReligiousPartner",
+            "column_name": "offlineAvailable",
+            "is_nullable": "NO",
+            "column_default": "true",
+            "ordinal_position": 18
+        },
+        {
+            "udt_name": "bool",
+            "data_type": "boolean",
+            "table_name": "ReligiousPartner",
+            "column_name": "onlineAvailable",
+            "is_nullable": "NO",
+            "column_default": "true",
+            "ordinal_position": 19
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "ReligiousPartner",
+            "column_name": "preferredServiceArea",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 20
+        },
+        {
+            "udt_name": "bool",
+            "data_type": "boolean",
+            "table_name": "ReligiousPartner",
+            "column_name": "qualificationVerified",
+            "is_nullable": "NO",
+            "column_default": "false",
+            "ordinal_position": 21
+        },
+        {
+            "udt_name": "bool",
+            "data_type": "boolean",
+            "table_name": "ReligiousPartner",
+            "column_name": "relocationAvailable",
+            "is_nullable": "NO",
+            "column_default": "false",
+            "ordinal_position": 22
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "ReligiousPartner",
+            "column_name": "remarks",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 23
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "ReligiousPartner",
+            "column_name": "state",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 24
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "ReligiousPartner",
+            "column_name": "status",
+            "is_nullable": "NO",
+            "column_default": "'Pending'::text",
+            "ordinal_position": 25
+        },
+        {
+            "udt_name": "timestamp",
+            "data_type": "timestamp without time zone",
+            "table_name": "ReligiousPartner",
+            "column_name": "verificationDate",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 26
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "ReligiousPartner",
+            "column_name": "whatsapp",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 27
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "ReligiousPartner",
+            "column_name": "userId",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 28
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "UniversalRequest",
+            "column_name": "id",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 1
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "UniversalRequest",
+            "column_name": "referenceId",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 2
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "UniversalRequest",
+            "column_name": "requestType",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 3
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "UniversalRequest",
+            "column_name": "serviceDomain",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 4
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "UniversalRequest",
+            "column_name": "customerId",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 5
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "UniversalRequest",
+            "column_name": "guestName",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 6
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "UniversalRequest",
+            "column_name": "guestPhone",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 7
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "UniversalRequest",
+            "column_name": "guestEmail",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 8
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "UniversalRequest",
+            "column_name": "title",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 9
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "UniversalRequest",
+            "column_name": "description",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 10
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "UniversalRequest",
+            "column_name": "currentStatus",
+            "is_nullable": "NO",
+            "column_default": "'SUBMITTED'::text",
+            "ordinal_position": 11
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "UniversalRequest",
+            "column_name": "currentStage",
+            "is_nullable": "NO",
+            "column_default": "'Submitted'::text",
+            "ordinal_position": 12
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "UniversalRequest",
+            "column_name": "assignedTeam",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 13
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "UniversalRequest",
+            "column_name": "assignedPartnerUserId",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 14
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "UniversalRequest",
+            "column_name": "priority",
+            "is_nullable": "NO",
+            "column_default": "'MEDIUM'::text",
+            "ordinal_position": 15
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "UniversalRequest",
+            "column_name": "sourceChannel",
+            "is_nullable": "NO",
+            "column_default": "'WEBSITE_FORM'::text",
+            "ordinal_position": 16
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "UniversalRequest",
+            "column_name": "publicNote",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 17
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "UniversalRequest",
+            "column_name": "internalNote",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 18
+        },
+        {
+            "udt_name": "jsonb",
+            "data_type": "jsonb",
+            "table_name": "UniversalRequest",
+            "column_name": "metadata",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 19
+        },
+        {
+            "udt_name": "timestamp",
+            "data_type": "timestamp without time zone",
+            "table_name": "UniversalRequest",
+            "column_name": "completedAt",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 20
+        },
+        {
+            "udt_name": "timestamp",
+            "data_type": "timestamp without time zone",
+            "table_name": "UniversalRequest",
+            "column_name": "createdAt",
+            "is_nullable": "NO",
+            "column_default": "CURRENT_TIMESTAMP",
+            "ordinal_position": 21
+        },
+        {
+            "udt_name": "timestamp",
+            "data_type": "timestamp without time zone",
+            "table_name": "UniversalRequest",
+            "column_name": "updatedAt",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 22
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "UniversalRequestStatusHistory",
+            "column_name": "id",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 1
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "UniversalRequestStatusHistory",
+            "column_name": "requestId",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 2
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "UniversalRequestStatusHistory",
+            "column_name": "previousStatus",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 3
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "UniversalRequestStatusHistory",
+            "column_name": "newStatus",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 4
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "UniversalRequestStatusHistory",
+            "column_name": "previousStage",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 5
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "UniversalRequestStatusHistory",
+            "column_name": "newStage",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 6
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "UniversalRequestStatusHistory",
+            "column_name": "changedByUserId",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 7
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "UniversalRequestStatusHistory",
+            "column_name": "changedByRole",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 8
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "UniversalRequestStatusHistory",
+            "column_name": "publicNote",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 9
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "UniversalRequestStatusHistory",
+            "column_name": "internalNote",
+            "is_nullable": "YES",
+            "column_default": null,
+            "ordinal_position": 10
+        },
+        {
+            "udt_name": "timestamp",
+            "data_type": "timestamp without time zone",
+            "table_name": "UniversalRequestStatusHistory",
+            "column_name": "createdAt",
+            "is_nullable": "NO",
+            "column_default": "CURRENT_TIMESTAMP",
+            "ordinal_position": 11
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "User",
+            "column_name": "id",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 1
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "User",
+            "column_name": "email",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 3
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "User",
+            "column_name": "password",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 4
+        },
+        {
+            "udt_name": "UserRole",
+            "data_type": "USER-DEFINED",
+            "table_name": "User",
+            "column_name": "role",
+            "is_nullable": "NO",
+            "column_default": "'CUSTOMER'::\"UserRole\"",
+            "ordinal_position": 5
+        },
+        {
+            "udt_name": "timestamp",
+            "data_type": "timestamp without time zone",
+            "table_name": "User",
+            "column_name": "createdAt",
+            "is_nullable": "NO",
+            "column_default": "CURRENT_TIMESTAMP",
+            "ordinal_position": 6
+        },
+        {
+            "udt_name": "timestamp",
+            "data_type": "timestamp without time zone",
+            "table_name": "User",
+            "column_name": "updatedAt",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 7
+        },
+        {
+            "udt_name": "text",
+            "data_type": "text",
+            "table_name": "User",
+            "column_name": "fullName",
+            "is_nullable": "NO",
+            "column_default": null,
+            "ordinal_position": 8
+        },
+        {
+            "udt_name": "bool",
+            "data_type": "boolean",
+            "table_name": "User",
+            "column_name": "isActive",
+            "is_nullable": "NO",
+            "column_default": "true",
+            "ordinal_position": 9
+        }
+    ],
+    "indexes": [
+        {
+            "indexdef": "CREATE UNIQUE INDEX \"Customer_pkey\" ON public.\"Customer\" USING btree (id)",
+            "indexname": "Customer_pkey",
+            "tablename": "Customer"
+        },
+        {
+            "indexdef": "CREATE INDEX \"GovernanceAuditLog_action_createdAt_idx\" ON public.\"GovernanceAuditLog\" USING btree (action, \"createdAt\")",
+            "indexname": "GovernanceAuditLog_action_createdAt_idx",
+            "tablename": "GovernanceAuditLog"
+        },
+        {
+            "indexdef": "CREATE INDEX \"GovernanceAuditLog_actorUserId_createdAt_idx\" ON public.\"GovernanceAuditLog\" USING btree (\"actorUserId\", \"createdAt\")",
+            "indexname": "GovernanceAuditLog_actorUserId_createdAt_idx",
+            "tablename": "GovernanceAuditLog"
+        },
+        {
+            "indexdef": "CREATE INDEX \"GovernanceAuditLog_contentType_contentId_createdAt_idx\" ON public.\"GovernanceAuditLog\" USING btree (\"contentType\", \"contentId\", \"createdAt\")",
+            "indexname": "GovernanceAuditLog_contentType_contentId_createdAt_idx",
+            "tablename": "GovernanceAuditLog"
+        },
+        {
+            "indexdef": "CREATE UNIQUE INDEX \"GovernanceAuditLog_pkey\" ON public.\"GovernanceAuditLog\" USING btree (id)",
+            "indexname": "GovernanceAuditLog_pkey",
+            "tablename": "GovernanceAuditLog"
+        },
+        {
+            "indexdef": "CREATE INDEX \"KnowledgeArticle_category_status_idx\" ON public.\"KnowledgeArticle\" USING btree (category, status)",
+            "indexname": "KnowledgeArticle_category_status_idx",
+            "tablename": "KnowledgeArticle"
+        },
+        {
+            "indexdef": "CREATE UNIQUE INDEX \"KnowledgeArticle_contentKey_governanceStatus_key\" ON public.\"KnowledgeArticle\" USING btree (\"contentKey\", \"governanceStatus\")",
+            "indexname": "KnowledgeArticle_contentKey_governanceStatus_key",
+            "tablename": "KnowledgeArticle"
+        },
+        {
+            "indexdef": "CREATE INDEX \"KnowledgeArticle_contentKey_idx\" ON public.\"KnowledgeArticle\" USING btree (\"contentKey\")",
+            "indexname": "KnowledgeArticle_contentKey_idx",
+            "tablename": "KnowledgeArticle"
+        },
+        {
+            "indexdef": "CREATE INDEX \"KnowledgeArticle_governanceStatus_contentKey_idx\" ON public.\"KnowledgeArticle\" USING btree (\"governanceStatus\", \"contentKey\")",
+            "indexname": "KnowledgeArticle_governanceStatus_contentKey_idx",
+            "tablename": "KnowledgeArticle"
+        },
+        {
+            "indexdef": "CREATE UNIQUE INDEX \"KnowledgeArticle_pkey\" ON public.\"KnowledgeArticle\" USING btree (id)",
+            "indexname": "KnowledgeArticle_pkey",
+            "tablename": "KnowledgeArticle"
+        },
+        {
+            "indexdef": "CREATE INDEX \"KnowledgeArticleHistory_articleId_createdAt_idx\" ON public.\"KnowledgeArticleHistory\" USING btree (\"articleId\", \"createdAt\")",
+            "indexname": "KnowledgeArticleHistory_articleId_createdAt_idx",
+            "tablename": "KnowledgeArticleHistory"
+        },
+        {
+            "indexdef": "CREATE INDEX \"KnowledgeArticleHistory_articleId_version_idx\" ON public.\"KnowledgeArticleHistory\" USING btree (\"articleId\", version)",
+            "indexname": "KnowledgeArticleHistory_articleId_version_idx",
+            "tablename": "KnowledgeArticleHistory"
+        },
+        {
+            "indexdef": "CREATE UNIQUE INDEX \"KnowledgeArticleHistory_pkey\" ON public.\"KnowledgeArticleHistory\" USING btree (id)",
+            "indexname": "KnowledgeArticleHistory_pkey",
+            "tablename": "KnowledgeArticleHistory"
+        },
+        {
+            "indexdef": "CREATE INDEX \"KnowledgeFAQ_category_status_idx\" ON public.\"KnowledgeFAQ\" USING btree (category, status)",
+            "indexname": "KnowledgeFAQ_category_status_idx",
+            "tablename": "KnowledgeFAQ"
+        },
+        {
+            "indexdef": "CREATE UNIQUE INDEX \"KnowledgeFAQ_contentKey_governanceStatus_key\" ON public.\"KnowledgeFAQ\" USING btree (\"contentKey\", \"governanceStatus\")",
+            "indexname": "KnowledgeFAQ_contentKey_governanceStatus_key",
+            "tablename": "KnowledgeFAQ"
+        },
+        {
+            "indexdef": "CREATE INDEX \"KnowledgeFAQ_contentKey_idx\" ON public.\"KnowledgeFAQ\" USING btree (\"contentKey\")",
+            "indexname": "KnowledgeFAQ_contentKey_idx",
+            "tablename": "KnowledgeFAQ"
+        },
+        {
+            "indexdef": "CREATE INDEX \"KnowledgeFAQ_governanceStatus_contentKey_idx\" ON public.\"KnowledgeFAQ\" USING btree (\"governanceStatus\", \"contentKey\")",
+            "indexname": "KnowledgeFAQ_governanceStatus_contentKey_idx",
+            "tablename": "KnowledgeFAQ"
+        },
+        {
+            "indexdef": "CREATE UNIQUE INDEX \"KnowledgeFAQ_pkey\" ON public.\"KnowledgeFAQ\" USING btree (id)",
+            "indexname": "KnowledgeFAQ_pkey",
+            "tablename": "KnowledgeFAQ"
+        },
+        {
+            "indexdef": "CREATE INDEX \"KnowledgeFAQHistory_faqId_createdAt_idx\" ON public.\"KnowledgeFAQHistory\" USING btree (\"faqId\", \"createdAt\")",
+            "indexname": "KnowledgeFAQHistory_faqId_createdAt_idx",
+            "tablename": "KnowledgeFAQHistory"
+        },
+        {
+            "indexdef": "CREATE INDEX \"KnowledgeFAQHistory_faqId_version_idx\" ON public.\"KnowledgeFAQHistory\" USING btree (\"faqId\", version)",
+            "indexname": "KnowledgeFAQHistory_faqId_version_idx",
+            "tablename": "KnowledgeFAQHistory"
+        },
+        {
+            "indexdef": "CREATE UNIQUE INDEX \"KnowledgeFAQHistory_pkey\" ON public.\"KnowledgeFAQHistory\" USING btree (id)",
+            "indexname": "KnowledgeFAQHistory_pkey",
+            "tablename": "KnowledgeFAQHistory"
+        },
+        {
+            "indexdef": "CREATE UNIQUE INDEX \"PitruMokshaRequest_pkey\" ON public.\"PitruMokshaRequest\" USING btree (id)",
+            "indexname": "PitruMokshaRequest_pkey",
+            "tablename": "PitruMokshaRequest"
+        },
+        {
+            "indexdef": "CREATE UNIQUE INDEX \"ReligiousPartner_pkey\" ON public.\"ReligiousPartner\" USING btree (id)",
+            "indexname": "ReligiousPartner_pkey",
+            "tablename": "ReligiousPartner"
+        },
+        {
+            "indexdef": "CREATE UNIQUE INDEX \"ReligiousPartner_userId_key\" ON public.\"ReligiousPartner\" USING btree (\"userId\")",
+            "indexname": "ReligiousPartner_userId_key",
+            "tablename": "ReligiousPartner"
+        },
+        {
+            "indexdef": "CREATE INDEX \"UniversalRequest_assignedPartnerUserId_currentStatus_idx\" ON public.\"UniversalRequest\" USING btree (\"assignedPartnerUserId\", \"currentStatus\")",
+            "indexname": "UniversalRequest_assignedPartnerUserId_currentStatus_idx",
+            "tablename": "UniversalRequest"
+        },
+        {
+            "indexdef": "CREATE INDEX \"UniversalRequest_customerId_createdAt_idx\" ON public.\"UniversalRequest\" USING btree (\"customerId\", \"createdAt\")",
+            "indexname": "UniversalRequest_customerId_createdAt_idx",
+            "tablename": "UniversalRequest"
+        },
+        {
+            "indexdef": "CREATE UNIQUE INDEX \"UniversalRequest_pkey\" ON public.\"UniversalRequest\" USING btree (id)",
+            "indexname": "UniversalRequest_pkey",
+            "tablename": "UniversalRequest"
+        },
+        {
+            "indexdef": "CREATE UNIQUE INDEX \"UniversalRequest_referenceId_key\" ON public.\"UniversalRequest\" USING btree (\"referenceId\")",
+            "indexname": "UniversalRequest_referenceId_key",
+            "tablename": "UniversalRequest"
+        },
+        {
+            "indexdef": "CREATE INDEX \"UniversalRequest_requestType_currentStatus_idx\" ON public.\"UniversalRequest\" USING btree (\"requestType\", \"currentStatus\")",
+            "indexname": "UniversalRequest_requestType_currentStatus_idx",
+            "tablename": "UniversalRequest"
+        },
+        {
+            "indexdef": "CREATE UNIQUE INDEX \"UniversalRequestStatusHistory_pkey\" ON public.\"UniversalRequestStatusHistory\" USING btree (id)",
+            "indexname": "UniversalRequestStatusHistory_pkey",
+            "tablename": "UniversalRequestStatusHistory"
+        },
+        {
+            "indexdef": "CREATE INDEX \"UniversalRequestStatusHistory_requestId_createdAt_idx\" ON public.\"UniversalRequestStatusHistory\" USING btree (\"requestId\", \"createdAt\")",
+            "indexname": "UniversalRequestStatusHistory_requestId_createdAt_idx",
+            "tablename": "UniversalRequestStatusHistory"
+        },
+        {
+            "indexdef": "CREATE UNIQUE INDEX \"User_email_key\" ON public.\"User\" USING btree (email)",
+            "indexname": "User_email_key",
+            "tablename": "User"
+        },
+        {
+            "indexdef": "CREATE UNIQUE INDEX \"User_pkey\" ON public.\"User\" USING btree (id)",
+            "indexname": "User_pkey",
+            "tablename": "User"
+        }
+    ],
+    "constraints": [
+        {
+            "table_name": "Customer",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16494_11_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "Customer",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16494_12_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "Customer",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16494_13_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "Customer",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16494_17_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "Customer",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16494_1_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "Customer",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16494_8_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "Customer",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16494_9_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "Customer",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "Customer_pkey",
+            "constraint_type": "PRIMARY KEY"
+        },
+        {
+            "table_name": "GovernanceAuditLog",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25249_10_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "GovernanceAuditLog",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25249_1_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "GovernanceAuditLog",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25249_2_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "GovernanceAuditLog",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25249_3_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "GovernanceAuditLog",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25249_5_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "GovernanceAuditLog",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25249_6_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "GovernanceAuditLog",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25249_8_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "GovernanceAuditLog",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "GovernanceAuditLog_pkey",
+            "constraint_type": "PRIMARY KEY"
+        },
+        {
+            "table_name": "KnowledgeArticle",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25104_10_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeArticle",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25104_11_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeArticle",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25104_13_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeArticle",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25104_14_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeArticle",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25104_1_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeArticle",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25104_21_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeArticle",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25104_2_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeArticle",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25104_3_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeArticle",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25104_4_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeArticle",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25104_7_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeArticle",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25104_8_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeArticle",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25104_9_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeArticle",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "KnowledgeArticle_pkey",
+            "constraint_type": "PRIMARY KEY"
+        },
+        {
+            "table_name": "KnowledgeArticleHistory",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25126_10_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeArticleHistory",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25126_1_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeArticleHistory",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25126_2_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeArticleHistory",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25126_3_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeArticleHistory",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25126_4_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeArticleHistory",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25126_5_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeArticleHistory",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25126_6_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeArticleHistory",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25126_7_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeArticleHistory",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25126_8_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeArticleHistory",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25126_9_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeArticleHistory",
+            "delete_rule": "CASCADE",
+            "update_rule": "CASCADE",
+            "constraint_name": "KnowledgeArticleHistory_articleId_fkey",
+            "constraint_type": "FOREIGN KEY"
+        },
+        {
+            "table_name": "KnowledgeArticleHistory",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "KnowledgeArticleHistory_pkey",
+            "constraint_type": "PRIMARY KEY"
+        },
+        {
+            "table_name": "KnowledgeFAQ",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25114_10_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeFAQ",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25114_11_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeFAQ",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25114_18_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeFAQ",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25114_1_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeFAQ",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25114_2_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeFAQ",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25114_3_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeFAQ",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25114_4_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeFAQ",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25114_6_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeFAQ",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25114_7_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeFAQ",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25114_8_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeFAQ",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "KnowledgeFAQ_pkey",
+            "constraint_type": "PRIMARY KEY"
+        },
+        {
+            "table_name": "KnowledgeFAQHistory",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25134_1_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeFAQHistory",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25134_2_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeFAQHistory",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25134_3_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeFAQHistory",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25134_4_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeFAQHistory",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25134_5_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeFAQHistory",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25134_6_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeFAQHistory",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25134_7_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeFAQHistory",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25134_8_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeFAQHistory",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25134_9_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "KnowledgeFAQHistory",
+            "delete_rule": "CASCADE",
+            "update_rule": "CASCADE",
+            "constraint_name": "KnowledgeFAQHistory_faqId_fkey",
+            "constraint_type": "FOREIGN KEY"
+        },
+        {
+            "table_name": "KnowledgeFAQHistory",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "KnowledgeFAQHistory_pkey",
+            "constraint_type": "PRIMARY KEY"
+        },
+        {
+            "table_name": "PitruMokshaRequest",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16775_15_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "PitruMokshaRequest",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16775_16_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "PitruMokshaRequest",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16775_1_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "PitruMokshaRequest",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16775_20_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "PitruMokshaRequest",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16775_21_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "PitruMokshaRequest",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16775_25_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "PitruMokshaRequest",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16775_28_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "PitruMokshaRequest",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16775_29_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "PitruMokshaRequest",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16775_30_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "PitruMokshaRequest",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16775_31_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "PitruMokshaRequest",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16775_33_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "PitruMokshaRequest",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16775_34_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "PitruMokshaRequest",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "PitruMokshaRequest_pkey",
+            "constraint_type": "PRIMARY KEY"
+        },
+        {
+            "table_name": "ReligiousPartner",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16503_11_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "ReligiousPartner",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16503_12_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "ReligiousPartner",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16503_13_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "ReligiousPartner",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16503_14_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "ReligiousPartner",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16503_15_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "ReligiousPartner",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16503_16_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "ReligiousPartner",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16503_17_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "ReligiousPartner",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16503_18_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "ReligiousPartner",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16503_19_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "ReligiousPartner",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16503_1_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "ReligiousPartner",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16503_21_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "ReligiousPartner",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16503_22_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "ReligiousPartner",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16503_25_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "ReligiousPartner",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "ReligiousPartner_pkey",
+            "constraint_type": "PRIMARY KEY"
+        },
+        {
+            "table_name": "ReligiousPartner",
+            "delete_rule": "SET NULL",
+            "update_rule": "CASCADE",
+            "constraint_name": "ReligiousPartner_userId_fkey",
+            "constraint_type": "FOREIGN KEY"
+        },
+        {
+            "table_name": "UniversalRequest",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25058_10_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "UniversalRequest",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25058_11_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "UniversalRequest",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25058_12_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "UniversalRequest",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25058_15_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "UniversalRequest",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25058_16_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "UniversalRequest",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25058_1_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "UniversalRequest",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25058_21_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "UniversalRequest",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25058_22_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "UniversalRequest",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25058_2_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "UniversalRequest",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25058_3_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "UniversalRequest",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25058_6_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "UniversalRequest",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25058_7_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "UniversalRequest",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25058_8_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "UniversalRequest",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25058_9_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "UniversalRequest",
+            "delete_rule": "SET NULL",
+            "update_rule": "CASCADE",
+            "constraint_name": "UniversalRequest_assignedPartnerUserId_fkey",
+            "constraint_type": "FOREIGN KEY"
+        },
+        {
+            "table_name": "UniversalRequest",
+            "delete_rule": "SET NULL",
+            "update_rule": "CASCADE",
+            "constraint_name": "UniversalRequest_customerId_fkey",
+            "constraint_type": "FOREIGN KEY"
+        },
+        {
+            "table_name": "UniversalRequest",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "UniversalRequest_pkey",
+            "constraint_type": "PRIMARY KEY"
+        },
+        {
+            "table_name": "UniversalRequestStatusHistory",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25084_11_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "UniversalRequestStatusHistory",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25084_1_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "UniversalRequestStatusHistory",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25084_2_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "UniversalRequestStatusHistory",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25084_4_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "UniversalRequestStatusHistory",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25084_6_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "UniversalRequestStatusHistory",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_25084_8_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "UniversalRequestStatusHistory",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "UniversalRequestStatusHistory_pkey",
+            "constraint_type": "PRIMARY KEY"
+        },
+        {
+            "table_name": "UniversalRequestStatusHistory",
+            "delete_rule": "CASCADE",
+            "update_rule": "CASCADE",
+            "constraint_name": "UniversalRequestStatusHistory_requestId_fkey",
+            "constraint_type": "FOREIGN KEY"
+        },
+        {
+            "table_name": "User",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16485_1_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "User",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16485_3_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "User",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16485_4_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "User",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16485_5_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "User",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16485_6_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "User",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16485_7_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "User",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16485_8_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "User",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "16459_16485_9_not_null",
+            "constraint_type": "CHECK"
+        },
+        {
+            "table_name": "User",
+            "delete_rule": null,
+            "update_rule": null,
+            "constraint_name": "User_pkey",
+            "constraint_type": "PRIMARY KEY"
+        }
+    ]
+}

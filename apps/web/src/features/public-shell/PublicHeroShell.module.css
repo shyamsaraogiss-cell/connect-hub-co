@@ -1,0 +1,330 @@
+.shell{--public-header-height:96px;--shell-gap:8px;--public-shell-max-width:1500px;--public-sidebar-min-width:230px;--public-sidebar-max-width:230px;--public-workspace-left-inset:24px;--public-workspace-right-inset:0px;--public-hero-main-height:480px;--public-hero-ai-width:324px;--public-hero-column-gap:12px;--public-hero-trust-height:34px;--public-hero-explore-height:56px;--public-hero-core-height:128px;--public-hero-radius:15px;--public-hero-section-gap:8px;--shell-gradient:linear-gradient(180deg,var(--shell-peacock-top) 0%,var(--shell-peacock) 55%,var(--shell-peacock-bottom) 100%);background:var(--shell-gradient);padding:10px 18px 12px;color:var(--text-on-peacock)}
+.layout{display:grid;grid-template-columns:var(--public-sidebar-min-width) minmax(0,1fr);align-items:start;gap:var(--shell-gap);max-width:var(--public-shell-max-width);margin:auto}
+.fullWidthLayout{max-width:none}
+.content{min-width:0;width:100%;display:block}
+.content :global(.business-inner-page){min-width:0;width:100%;margin-inline:0}
+.sidebar{position:sticky;top:calc(var(--public-header-height) + var(--shell-gap));display:flex;flex-direction:column;align-self:stretch;gap:4px;overscroll-behavior:contain;border:1px solid var(--border-soft);border-radius:14px;padding:12px 10px;background:var(--shell-gradient);box-shadow:0 12px 36px rgba(8,127,140,.28);scrollbar-width:thin;scrollbar-color:rgba(255,255,255,.65) transparent}
+.sidebar>div:not(.mobileHeading){display:block}
+.sidebar a{display:flex;align-items:center;gap:10px;min-height:51px;padding:14px 10px;border-radius:10px;color:var(--text-on-peacock);font-size:1.03125rem;line-height:1.15;transition:background-color .2s ease}
+.sidebar a:focus-visible{outline:2px solid transparent}
+.sidebar a span:first-child{flex:0 0 24px;width:24px;color:var(--ritual-gold);font-size:1.25rem;text-align:center}
+.groupHeading{display:flex!important;align-items:center;gap:10px;min-height:45px;padding:9px 10px;color:var(--text-on-peacock);font-size:1rem;line-height:1.15}.groupHeading span{flex:0 0 24px;width:24px;color:var(--ritual-gold);font-size:1.22rem;text-align:center}
+.linkLabel{min-width:0}.linkLabel small{display:block;margin-top:2px;color:var(--warm-ivory);font-size:.62rem;font-weight:700;line-height:1.35;letter-spacing:.05em;text-align:left;text-transform:uppercase;white-space:pre-line}
+.dividedItem{margin-top:10px;border-top:1px solid var(--border-soft);padding-top:10px}
+.spacedItem{margin-top:9px;border-top:1px solid var(--border-soft);padding-top:9px}.doubleSpacedItem{margin-top:8px}.whatsAppIcon{display:block;width:22px;height:22px}
+.mobileTrigger,.mobileHeading,.backdrop{display:none}
+.primaryServiceItem{padding-block:3px 6px}.primaryServiceItem>a:first-child{min-height:54px}.serviceModes{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:2px 8px 4px 44px}.sidebar .serviceModes a{min-width:0;min-height:35px;justify-content:center;border:1px solid var(--border-soft);padding:7px;color:var(--text-on-peacock);font-size:.75rem;font-weight:700;text-align:center}.sidebar .serviceModes a:hover,.sidebar .serviceModes a:focus-visible{background:var(--sidebar-active)}
+@media(min-width:1024px){.shell{--public-header-height:96px;--shell-gap:8px;--public-workspace-right-inset:0px;--public-hero-main-height:480px;--public-hero-ai-width:324px;--public-hero-trust-height:34px;--public-hero-explore-height:56px;--public-hero-core-height:128px;--public-hero-section-gap:8px;padding:2px 12px 10px 12px!important}.sidebar{gap:2px;padding:8px}.sidebar a{font-size:.92rem}.sidebar a span:first-child{flex-basis:22px;width:22px;font-size:1.12rem}.groupHeading{min-height:39px;gap:8px;padding:7px 8px;font-size:.92rem}.groupHeading span{flex-basis:22px;width:22px;font-size:1.1rem}.dividedItem{margin-top:6px;padding-top:6px}.spacedItem{margin-top:5px;padding-top:5px}.doubleSpacedItem{margin-top:4px}.primaryServiceItem{padding-block:1px 3px}.primaryServiceItem>a:first-child{min-height:47px}.serviceModes{gap:6px;margin:1px 6px 2px 38px}.sidebar .serviceModes a{min-height:31px;padding:5px;font-size:.7rem}}
+@media(min-width:1024px) and (max-width:1100px){.shell{padding:2px 12px 10px 12px!important}.sidebar a{font-size:.84rem}}
+@media(max-width:1023px){.shell{padding:10px 12px 14px}.layout{display:block}.mobileTrigger{display:flex;align-items:center;gap:9px;width:100%;margin-bottom:10px;border:1px solid var(--border-soft);border-radius:10px;background:var(--shell-gradient);padding:10px 13px;color:var(--text-on-peacock);font-weight:700}.backdrop{position:fixed;z-index:69;inset:0;display:block;border:0;background:rgba(8,127,140,.55)}.sidebar{position:fixed;z-index:70;top:0;bottom:0;left:0;width:min(84vw,330px);height:100dvh;max-height:100dvh;border-radius:0;transform:translateX(-105%);transition:transform .2s ease;background:var(--shell-gradient);padding:14px;box-shadow:12px 0 40px rgba(8,127,140,.32)}.sidebar.open{transform:translateX(0)}.mobileHeading{display:flex;align-items:center;justify-content:space-between;padding:5px 7px 14px;font-size:1.2rem}.mobileHeading button{border:1px solid var(--border-soft);border-radius:8px;background:transparent;padding:2px 10px;color:var(--text-on-peacock);font-size:1.5rem}}
+@media(max-width:680px){.shell{padding:8px}}
+@media(prefers-reduced-motion:reduce){.sidebar,.sidebar a{transition:none}}
+
+/* Peacock Blue & Sacred Gold Sidebar Theme Styling */
+.sidebar {
+  box-sizing: border-box;
+  position: sticky;
+  top: var(--public-header-height) !important;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  gap: 2px; /* Item Gap: 2px (subtle separator) */
+  height: 544px !important;
+  min-height: 544px !important;
+  max-height: 544px !important;
+  width: 230px !important; /* Width: 230px EXACT */
+  min-width: 230px !important;
+  max-width: 230px !important;
+  overflow-x: hidden;
+  overflow-y: hidden !important;
+  overscroll-behavior: contain;
+  border: 1px solid var(--border-soft);
+  border-radius: 8px; /* Border Radius: 8px */
+  padding: 12px 6px !important; /* Section Padding: reduced left/right/top/bottom */
+  background: #0A4F56; /* Background: #0A4F56 (Peacock Dark) */
+  box-shadow: 0 12px 36px rgba(10, 79, 86, 0.4);
+  scrollbar-width: none; /* Hide scrollbar on Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar on IE/Edge */
+  color: #FFFFFF; /* Text Color: #FFFFFF */
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none; /* Hide scrollbar on Chrome/Safari/Webkit */
+}
+
+/* Brand Header Area */
+.brandHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 8px;
+}
+
+.lotusLogo {
+  width: 44px;
+  height: 44px;
+  margin-bottom: 2px;
+}
+
+.brandTitle {
+  font-family: 'Lora', 'Playfair Display', Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.brandSubtitle {
+  font-size: 0.62rem;
+  color: #F4B942; /* Sacred Gold */
+  margin: 2px 0 0 0;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.brandLineage {
+  font-size: 0.55rem;
+  color: #F4B942; /* Sacred Gold */
+  margin: 2px 0 0 0;
+  font-weight: 500;
+  opacity: 0.9;
+  letter-spacing: 0.2px;
+}
+
+/* Golden Diamond Line Separator */
+.diamondSeparator {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 4px 0 2px 0 !important;
+}
+
+.separatorLine {
+  flex-grow: 1;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(244, 185, 66, 0) 0%, rgba(244, 185, 66, 0.6) 50%, rgba(244, 185, 66, 0) 100%);
+}
+
+.diamondSymbol {
+  color: #F4B942; /* Sacred Gold */
+  font-size: 0.7rem;
+  padding: 0 4px;
+  line-height: 1;
+}
+
+/* Navigation Container */
+.navContainer {
+  display: flex !important;
+  flex-direction: column;
+  gap: 4px !important; /* Main Main gap: 4px */
+}
+
+/* Navigation Items */
+.navItem {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  height: 36px !important;
+  min-height: 36px !important;
+  max-height: 36px !important;
+  padding: 0 4px 0 6px !important; /* Reduced vertical & horizontal padding */
+  border-radius: 8px !important;
+  color: #FFFFFF !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease !important;
+  font-family: system-ui, -apple-system, sans-serif !important;
+  font-size: 15px !important; /* Font size: 15px */
+  font-weight: 600 !important; /* weight 600 */
+  border-left: 3px solid transparent !important;
+  line-height: 1.15 !important;
+}
+
+/* Override/special styling for Religious Partner Registration to wrap to two lines */
+.navItem[href="/religious-partners"] {
+  height: auto !important;
+  min-height: 36px !important;
+  max-height: none !important;
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+}
+
+.navItem[href="/religious-partners"] .navLabel {
+  line-height: 1.08 !important;
+}
+
+.navItem:hover {
+  background: #1599A6 !important; /* Active/Hover Background: #1599A6 */
+  color: #FFFFFF !important;
+}
+
+.activeItem {
+  background: #1599A6 !important; /* Active Background: #1599A6 */
+  border-left: 3px solid #F4B942 !important; /* Active Indicator (Left Border): 3px solid #F4B942 */
+}
+
+.navIcon {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 24px !important; /* Icon Size: 24px */
+  height: 24px !important;
+  color: #FFFFFF !important;
+  flex-shrink: 0 !important;
+}
+
+.activeItem .navIcon {
+  color: #F4B942 !important;
+}
+
+.navIcon svg {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.navLabel {
+  white-space: normal !important;
+  word-break: normal !important;
+  line-height: 1.1 !important;
+  font-family: system-ui, -apple-system, sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+}
+
+/* Group wrapper and toggle tab rows */
+.groupWrapper {
+  display: flex;
+  flex-direction: column;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  gap: 3px;
+  margin-bottom: 0 !important;
+}
+
+.groupWrapper .mainLabelRow {
+  height: 36px !important;
+  min-height: 36px !important;
+  max-height: 36px !important;
+}
+
+.groupWrapper .subRow,
+.toggleTabContainer {
+  height: 30px !important;
+  min-height: 30px !important;
+  display: flex;
+  gap: 6px;
+}
+
+.sidebarFooter,
+.trustBlock {
+  flex-shrink: 0;
+}
+
+.toggleRow {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 4px !important;
+  margin-left: 14px !important; /* Slightly reduced left margin to fit better */
+  margin-bottom: 2px !important;
+  padding-right: 2px !important;
+}
+
+.toggleTab {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 3px !important; /* Reduced internal gap between icon and label */
+  height: 30px !important; /* Subtab height: 30px EXACT */
+  min-height: 30px !important;
+  max-height: 30px !important;
+  border-radius: 6px !important;
+  border: 1px solid #F4B942 !important;
+  color: #FFFFFF !important;
+  text-decoration: none !important;
+  font-family: system-ui, -apple-system, sans-serif !important;
+  font-size: 13px !important; /* Font size: 13px */
+  font-weight: 600 !important; /* Font weight: 600 */
+  background: transparent !important;
+  transition: all 0.2s ease !important;
+  padding: 0 4px !important; /* Reduced horizontal padding */
+  box-sizing: border-box !important;
+}
+
+.toggleTab svg {
+  width: 15px !important; /* Icon size: 15px consistent */
+  height: 15px !important;
+  color: #F4B942 !important;
+}
+
+.toggleTab:hover {
+  background: rgba(21, 153, 166, 0.4) !important;
+}
+
+.toggleTabActive {
+  background: #1599A6 !important; /* Toggle Active Background: #1599A6 */
+}
+
+/* Brand Footer Area */
+.brandFooter {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  padding-top: 4px !important;
+  margin-top: auto !important;
+}
+
+.trustBadge {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px !important;
+  color: #F4B942 !important;
+  font-family: system-ui, -apple-system, sans-serif !important;
+  font-size: 13px !important; /* title: 13px */
+  font-weight: 600 !important; /* title weight: 600 */
+  margin-bottom: 2px !important;
+}
+
+.trustBadge svg {
+  color: #F4B942 !important;
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.trustDescription {
+  font-family: system-ui, -apple-system, sans-serif !important;
+  font-size: 11px !important; /* subtitle: 11px */
+  font-weight: 500 !important;
+  color: #FFFFFF !important;
+  opacity: 0.85 !important;
+  margin: 0 !important;
+}
+
+/* Mobile responsive drawer fixes */
+@media(max-width: 1023px) {
+  .sidebar {
+    position: fixed !important;
+    z-index: 70 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    height: 100dvh !important;
+    max-height: 100dvh !important;
+    border-radius: 0 !important;
+    transform: translateX(-105%) !important;
+    transition: transform .2s ease !important;
+    box-shadow: 12px 0 40px rgba(10, 79, 86, 0.4) !important;
+    overflow-y: auto !important; /* Allow scroll on mobile */
+  }
+  .sidebar.open {
+    transform: translateX(0) !important;
+  }
+}
+
+
+.sidebarDivider{display:block!important;width:calc(100% - 20px)!important;height:1px!important;margin:3px 10px!important;background:#F4B942!important;opacity:.55!important;flex:none!important}
+
+

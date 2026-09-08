@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "ownership": "MASTER_CONTENT_LIBRARY",
+  "runtimeReference": "UNCHANGED_COPY_FIRST",
+  "sources": [
+    {
+      "source": "apps/web/src/app/religious-partners/register/page.tsx",
+      "sha256": "c55e4a3f36965ccf26be6d6eaa2152ce16559c733648932138a61b919e4a0b29",
+      "entries": [
+        {
+          "kind": "field:title",
+          "line": 6,
+          "value": "Religious Partner Application | Connect Hub Co."
+        },
+        {
+          "kind": "field:description",
+          "line": 7,
+          "value": "Apply to register as a Religious Partner with Connect Hub Co."
+        }
+      ]
+    }
+  ]
+}

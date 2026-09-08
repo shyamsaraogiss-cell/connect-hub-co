@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "ownership": "MASTER_CONTENT_LIBRARY",
+  "runtimeReference": "UNCHANGED_COPY_FIRST",
+  "sources": [
+    {
+      "source": "apps/web/src/app/services/page.tsx",
+      "sha256": "0049b12ff8ce04a8ea7f498d7461bb12d49b2079c951a69d8591b52086fb21eb",
+      "entries": [
+        {
+          "kind": "field:title",
+          "line": 8,
+          "value": "Service Booking & Request Entry | Connect Hub Co."
+        },
+        {
+          "kind": "field:description",
+          "line": 9,
+          "value": "Begin a service request or booking for PitruMoksha Gaya, Vedic Ritual Services, Pilgrim Travel Assistance, and Vahi Lineage Records."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 19,
+          "value": "📅"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 21,
+          "value": "Official"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 22,
+          "value": "Booking"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 23,
+          "value": "Portal"
+        },
+        {
+          "kind": "attribute:aria-label",
+          "line": 30,
+          "value": "May I Help You?"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 33,
+          "value": "May I Help You?"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 38,
+          "value": "Begin Your Service Request"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 40,
+          "value": "Tell us what you need. We’ll help you choose the right service, participation format, and next steps.\n            "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 44,
+          "value": "After submission, the system automatically generates your "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 44,
+          "value": "Service Request ID"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 44,
+          "value": "."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 45,
+          "value": "NOTE —"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 47,
+          "value": "Please do not create the Service Request ID manually."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 48,
+          "value": "No immediate payment is required."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 49,
+          "value": "Fields marked with * are mandatory."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 58,
+          "value": "Service Booking Application"
+        }
+      ]
+    }
+  ]
+}

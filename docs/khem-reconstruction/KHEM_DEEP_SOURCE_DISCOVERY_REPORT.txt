@@ -1,0 +1,123 @@
+KHEM DEEP HISTORICAL SOURCE DISCOVERY REPORT
+Generated: 2026-08-12
+Scope: read-only discovery across five named roots, physical archives, Git refs/stashes/reflog and safely inspectable unreachable commits.
+
+1. EXECUTIVE RESULT
+
+No exact original MEM, AOM, KPL, WPB, DBB, DPB or BRS document was found as a readable artifact. Content-level searching materially improves the result: AOM, KPL, WPB, DBB, DPB and BRS all have distributed evidence in source, tests, schemas, routes and locked configuration. MEM remains reference-only through the Founder premise and later governance behavior.
+
+Only Phase 6 has an explicit content label: “Phase 6 — Ask GenZ AI + Knowledge Center + URMS Engine.” Phase 2 exists as a Git branch/stash label (`sitaram-phase-2`) but its decisions and scope are not established. Phases 1, 3–5 and 7–24 have no reliable numbered evidence.
+
+2. SEARCH COVERAGE
+
+Roots:
+- C:\Projects\connect-hub-co — 5,873 non-build/dependency files observed; 4,215 eligible by requested extension.
+- C:\Projects\connect-hub-co - Copy — one Office AutoRecovery file; no eligible project source.
+- C:\Projects\connect-hub-co-recovery-review — 218 files; 177 eligible.
+- C:\Projects\KHEM_MASTER_VAULT — 365 files; 310 eligible.
+- C:\Projects\master-vault — 15 files; 14 eligible.
+
+Searches covered exact and expanded core-document terms, Phase/Round 1–24, SHYAM/SITARAM/KHEM, approval/lock terminology, business pillars, AI/knowledge, operational acronyms and commercial/support terms. Generated reconstruction reports and dependency/build trees were excluded from evidence matching.
+
+3. STRONGEST MATCHES
+
+TERM: KHEM / Source of Truth / Founder Approval / Locked
+PATH: C:\Projects\connect-hub-co-recovery-review\stash-49106b-source\apps\web\src\config\khem-navigation.config.ts
+DATE: stash capture 2026-08-05; current/vault copies later
+TEXT: “KHEM NAVIGATION & VISUAL SHELL PROTECTED SOURCE OF TRUTH”; “DO NOT MODIFY WITHOUT EXPLICIT FOUNDER APPROVAL”; locked public/internal navigation; exact sidebar; approved footer; component/brand locks; AI shell pending Founder alignment; “Unlock -> Modify -> Founder Review -> Approval -> Re-freeze.”
+LIKELY DOCUMENT: distributed WPB/BRS/DPB governance content
+LIKELY PHASE: not established
+CONFIDENCE: HIGH for rules; NONE for phase association
+
+TERM: Phase 6 / GenZ Ritual AI / Knowledge Center / URMS
+PATHS: current apps/web/src/app/zen-g/page.tsx; KHEM_MASTER_VAULT/07_HERO_6_ASK_GENZ_AI/zen-g/page.tsx; KHEM_MASTER_VAULT/09_genz_ai_panels/zen-g/page.tsx
+TEXT: “Phase 6 — Ask GenZ AI + Knowledge Center + URMS Engine.”
+LIKELY DOCUMENT: AOM/KPL/WPB/DPB distributed evidence
+LIKELY PHASE: 6
+CONFIDENCE: HIGH for label; MEDIUM for scope; LOW for complete decision
+
+TERM: Golden Q&A / approved guidance / human review
+PATHS: recovery-review stash homepageHeroSlides.ts; current/vault AI knowledge, Hero prompts and GenZ engine
+TEXT: several responses state that detailed verified guidance “will be added”; Vahi/partner disclosures reserve final confirmation to authorized human review.
+LIKELY DOCUMENT: KPL/AOM/BRS distributed evidence
+LIKELY PHASE: Phase 6 possible, not proven question-by-question
+CONFIDENCE: HIGH for incomplete Q&A and human boundary
+
+TERM: URMS / CRM / RPN
+PATHS: current apps/web/src/services, types, AdminDashboard, CRMLeadManager, tracking page; f51 commit paths
+TEXT: universal tracking, CRM/inquiries, RPN verification and dashboard integration.
+LIKELY DOCUMENT: DPB/DBB/BRS/WPB distributed evidence
+LIKELY PHASE: unestablished except Phase 6 URMS label
+CONFIDENCE: HIGH for implemented architecture; LOW for original approval provenance
+
+TERM: Database / dashboard architecture
+PATHS: backend/prisma/schema.prisma; apps/web/src/types and services; dashboard components
+CONTEXT: backend schema models User, Customer, ReligiousPartner and PitruMokshaRequest, while web types model broader URMS/CRM/quote/payment/catalog operations.
+LIKELY DOCUMENT: DBB/DPB distributed evidence
+LIKELY PHASE: unestablished
+CONFIDENCE: HIGH for conflict; NONE for intended canonical blueprint
+
+TERM: SITARAM locks / approved Hero masters
+GIT OBJECT: 49106b4053ec0d49e292c254e0fba4b3a27946be (stash untracked tree)
+FILES: SITARAM_HERO1_MASTER_LOCK_v1.1.md; SITARAM_HERO_2_RITUAL_SERVICES_v1.1_FINAL_LOCK.md; approved visual masters and ZIPs
+LIKELY DOCUMENT: WPB/BRS visual/content sections
+LIKELY PHASE: not established
+CONFIDENCE: HIGH for Hero-specific locks
+
+4. ARCHIVES INSPECTED
+
+ARCHIVE: C:\Projects\connect-hub-co\KHEM_LAYOUT_SOURCE_CHECK_20260802-181522.zip
+DATE: 2026-08-02 18:15:24
+SIZE: 88,762 bytes
+FILE COUNT: 45
+TOP LEVEL: application component/config/route files (backslashes embedded in entry names)
+RELEVANT: header/footer/auth, business pages, navigation configuration, business routes
+CONTENT MATCH: khem-navigation.config.ts — “SOURCE OF TRUTH”
+NO MATCH: exact seven manuals or Phase/Round 1–24
+
+ARCHIVE: C:\Projects\connect-hub-co-recovery-review\stash-49106b-visual-source.zip
+DATE: 2026-08-06 09:14:30
+SIZE: 24,409,528 bytes
+FILE COUNT: 71
+TOP LEVEL: apps/
+RELEVANT: public assets, business shell, Hero/question/config source, approved Hero mockup
+CONTENT MATCH: khem-navigation.config.ts — “SOURCE OF TRUTH”
+NO MATCH: exact seven manuals or numbered phase ledger
+
+ARCHIVE-ONLY OBJECTS INDEXED IN GIT STASH 49106b40:
+- docs/approved-content/SITARAM_Hero_1_Approved_Master_Integration_v1.1.zip
+- docs/approved-content/SITARAM_Hero_1_Website_Master_Code_v1.1.zip
+- embedded Hero master-code ZIP under .codex-validation
+These are not physical working-tree archives and were not restored. Their indexed names indicate Hero content/locks, not core manuals.
+
+DOCX OBJECTS INDEXED IN GIT STASH 49106b40:
+- Connect_Hub_Co_Vahi_Records_Website_Spelling_Corrected.docx
+- Vahi_Hero_Cards_Spelling_Corrected.docx
+- archive-before-final/Connect_Hub_Co_Vahi_Records_Website_v2 (1).docx
+- archive-before-final/KHEM_Vahi_Hero4_Content_Consolidation_v1.0.docx
+- archive-before-final/Vahi_Records_Hero4_Main_Card_Display.docx
+These indicate Vahi content history, not a confirmed Phase 24 or core manual.
+
+5. GIT DISCOVERY
+
+Relevant refs:
+- main and origin/main: c8d45833 (2026-07-14 milestone)
+- sitaram-phase-2: c8d45833
+- khem-layout-phase: f51d9e8b (2026-08-08)
+- stash: afdcd580, with index 44471ebc and untracked tree 49106b40
+- additional unreachable stash/index commits: 882d49af and 3fb4fdc2
+
+No tags were found.
+
+Relevant commit/history matches: six distinct relevant commit objects/commits (490756b4, c8d45833, afdcd580, 44471ebc, 49106b40, f51d9e8b), plus two unreachable duplicate Aug-5 commits. Only Phase 2 appears in branch/stash metadata; only Phase 6 appears in source content.
+
+`git fsck --full --no-reflogs --unreachable` reported approximately 29,893 unreachable objects and two unreachable commits. Commit metadata yielded no additional manual/phase evidence. Exhaustive blob content recovery was not performed because it requires a separate controlled object-forensics pass and object-to-path attribution.
+
+6. CONCLUSION
+
+The original pre-trial planning manuals and phase ledger are not established in the visible/easily attributable source corpus. The strongest surviving governance artifact is the Aug-5 KHEM navigation configuration in stash object 49106b40 and recovery-review extraction. The strongest explicitly numbered planning artifact is Phase 6 in the Zen G page. The c8d45833 July milestone is the oldest strong implementation checkpoint but is not an original planning document.
+
+STRONGEST ORIGINAL PRE-TRIAL PLANNING SOURCE: NONE.
+STRONGEST DISTRIBUTED GOVERNANCE SOURCE: C:\Projects\connect-hub-co-recovery-review\stash-49106b-source\apps\web\src\config\khem-navigation.config.ts (Git object 49106b40 lineage).
+
+No code, route, database, archive or historical source was modified, restored or deleted.

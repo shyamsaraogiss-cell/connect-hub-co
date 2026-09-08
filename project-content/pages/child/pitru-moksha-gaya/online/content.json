@@ -1,0 +1,599 @@
+{
+  "schemaVersion": 1,
+  "ownership": "MASTER_CONTENT_LIBRARY",
+  "runtimeReference": "UNCHANGED_COPY_FIRST",
+  "sources": [
+    {
+      "source": "apps/web/src/app/pitru-moksha-gaya/online/page.tsx",
+      "sha256": "4f9ecc8094912ada63a0de7bf31ed9e2eede807bfe20b3a9316c8056b09d6edd",
+      "entries": [
+        {
+          "kind": "field:title",
+          "line": 4,
+          "value": "Online Ancestral Services | PitruMoksha Gaya"
+        },
+        {
+          "kind": "field:description",
+          "line": 4,
+          "value": "Explore guided online ancestral rituals, Virtual Shraddh participation and verified Religious Partner coordination."
+        }
+      ]
+    },
+    {
+      "source": "apps/web/src/components/business-pages/online/OnlineAncestralPage.tsx",
+      "sha256": "ada94fa79238c2fbf72d83005dc9aa5cc3b9468e8f22006b4198b19651b07a51",
+      "entries": [
+        {
+          "kind": "field:title",
+          "line": 11,
+          "value": "Virtual Shraddh"
+        },
+        {
+          "kind": "field:description",
+          "line": 11,
+          "value": "Participate remotely in a guided Shraddh ritual coordinated through a verified Religious Partner."
+        },
+        {
+          "kind": "field:title",
+          "line": 12,
+          "value": "Online Pind Daan Participation"
+        },
+        {
+          "kind": "field:description",
+          "line": 12,
+          "value": "Receive guided remote participation and ritual coordination when physical travel is not possible."
+        },
+        {
+          "kind": "field:title",
+          "line": 13,
+          "value": "Live Family Participation"
+        },
+        {
+          "kind": "field:description",
+          "line": 13,
+          "value": "Allow eligible family members to join the ritual through an arranged live video session."
+        },
+        {
+          "kind": "field:title",
+          "line": 14,
+          "value": "Online Sankalp Guidance"
+        },
+        {
+          "kind": "field:description",
+          "line": 14,
+          "value": "Receive step-by-step guidance for Sankalp and required family or ancestor details."
+        },
+        {
+          "kind": "field:title",
+          "line": 15,
+          "value": "Religious Partner Coordination"
+        },
+        {
+          "kind": "field:description",
+          "line": 15,
+          "value": "Coordinate ritual requirements, timing and preparation through verified Religious Partners."
+        },
+        {
+          "kind": "field:title",
+          "line": 16,
+          "value": "Photos and Video Documentation"
+        },
+        {
+          "kind": "field:description",
+          "line": 16,
+          "value": "Receive available ritual-completion photographs, videos or supporting documentation according to the service plan."
+        },
+        {
+          "kind": "field:title",
+          "line": 17,
+          "value": "Time-Zone Scheduling"
+        },
+        {
+          "kind": "field:description",
+          "line": 17,
+          "value": "Coordinate participation timing for NRI and international families where feasible."
+        },
+        {
+          "kind": "field:title",
+          "line": 18,
+          "value": "Online Consultation"
+        },
+        {
+          "kind": "field:description",
+          "line": 18,
+          "value": "Discuss the appropriate ritual, required information and service process before booking."
+        },
+        {
+          "kind": "field:title",
+          "line": 19,
+          "value": "Family Detail Collection"
+        },
+        {
+          "kind": "field:description",
+          "line": 19,
+          "value": "Submit ancestor names, Gotra, family details and preferred ritual date through a guided process."
+        },
+        {
+          "kind": "field:title",
+          "line": 20,
+          "value": "Completion and Follow-Up Support"
+        },
+        {
+          "kind": "field:description",
+          "line": 20,
+          "value": "Receive post-service communication, documentation and assistance with approved follow-up questions."
+        },
+        {
+          "kind": "field:title",
+          "line": 23,
+          "value": "Share Your Requirement"
+        },
+        {
+          "kind": "field:description",
+          "line": 23,
+          "value": "Tell us your purpose, location and preferred participation format."
+        },
+        {
+          "kind": "field:title",
+          "line": 24,
+          "value": "Provide Ancestor and Family Details"
+        },
+        {
+          "kind": "field:description",
+          "line": 24,
+          "value": "Share the requested names, Gotra and relevant family information privately."
+        },
+        {
+          "kind": "field:title",
+          "line": 25,
+          "value": "Receive Ritual Guidance"
+        },
+        {
+          "kind": "field:description",
+          "line": 25,
+          "value": "Understand suitable options based on tradition and Religious Partner guidance."
+        },
+        {
+          "kind": "field:title",
+          "line": 26,
+          "value": "Confirm Date and Religious Partner"
+        },
+        {
+          "kind": "field:description",
+          "line": 26,
+          "value": "Review the proposed timing, preparation and verified Religious Partner."
+        },
+        {
+          "kind": "field:title",
+          "line": 27,
+          "value": "Join the Guided Online Participation"
+        },
+        {
+          "kind": "field:description",
+          "line": 27,
+          "value": "Use the arranged live connection and follow the participation guidance."
+        },
+        {
+          "kind": "field:title",
+          "line": 28,
+          "value": "Receive Documentation and Follow-Up"
+        },
+        {
+          "kind": "field:description",
+          "line": 28,
+          "value": "Receive agreed documentation and approved follow-up assistance."
+        },
+        {
+          "kind": "list:virtualShraddhPoints",
+          "line": 31,
+          "value": "Virtual Shraddh is part of PitruMoksha Gaya Online services."
+        },
+        {
+          "kind": "list:virtualShraddhPoints",
+          "line": 32,
+          "value": "The family first raises an inquiry."
+        },
+        {
+          "kind": "list:virtualShraddhPoints",
+          "line": 33,
+          "value": "Required ancestor and family details are collected."
+        },
+        {
+          "kind": "list:virtualShraddhPoints",
+          "line": 34,
+          "value": "A verified Religious Partner is coordinated."
+        },
+        {
+          "kind": "list:virtualShraddhPoints",
+          "line": 35,
+          "value": "The ritual date and participation method are confirmed."
+        },
+        {
+          "kind": "list:virtualShraddhPoints",
+          "line": 36,
+          "value": "Eligible family members may join through a live online session."
+        },
+        {
+          "kind": "list:virtualShraddhPoints",
+          "line": 37,
+          "value": "Available photographs, video or completion documentation may be shared according to the selected service plan."
+        },
+        {
+          "kind": "list:beneficiaryGroups",
+          "line": 39,
+          "value": "NRIs and international families"
+        },
+        {
+          "kind": "list:beneficiaryGroups",
+          "line": 39,
+          "value": "Families unable to travel"
+        },
+        {
+          "kind": "list:beneficiaryGroups",
+          "line": 39,
+          "value": "Elderly participants"
+        },
+        {
+          "kind": "list:beneficiaryGroups",
+          "line": 39,
+          "value": "Participants with mobility constraints"
+        },
+        {
+          "kind": "list:beneficiaryGroups",
+          "line": 39,
+          "value": "Families located in different cities or countries"
+        },
+        {
+          "kind": "list:beneficiaryGroups",
+          "line": 39,
+          "value": "Users seeking guidance before choosing Online or Offline participation"
+        },
+        {
+          "kind": "list:trustItems",
+          "line": 40,
+          "value": "Verified Religious Partners"
+        },
+        {
+          "kind": "list:trustItems",
+          "line": 40,
+          "value": "Guided Participation"
+        },
+        {
+          "kind": "list:trustItems",
+          "line": 40,
+          "value": "Transparent Communication"
+        },
+        {
+          "kind": "list:trustItems",
+          "line": 40,
+          "value": "Confidentiality-First Support"
+        },
+        {
+          "kind": "list:trustItems",
+          "line": 40,
+          "value": "Family and Ancestor Detail Review"
+        },
+        {
+          "kind": "list:trustItems",
+          "line": 40,
+          "value": "Available Completion Documentation"
+        },
+        {
+          "kind": "list:trustItems",
+          "line": 40,
+          "value": "NRI-Friendly Coordination"
+        },
+        {
+          "kind": "list:trustItems",
+          "line": 40,
+          "value": "Post-Service Follow-Up"
+        },
+        {
+          "kind": "list:faqs",
+          "line": 42,
+          "value": "What is the difference between Online and Offline participation?"
+        },
+        {
+          "kind": "list:faqs",
+          "line": 42,
+          "value": "Online participation is remotely coordinated; Offline participation involves travelling to Gaya for in-person services. Suitability depends on the family’s circumstances and guidance."
+        },
+        {
+          "kind": "list:faqs",
+          "line": 43,
+          "value": "Is the ritual shown live?"
+        },
+        {
+          "kind": "list:faqs",
+          "line": 43,
+          "value": "A live session may be arranged when included in the confirmed service plan and practical conditions permit."
+        },
+        {
+          "kind": "list:faqs",
+          "line": 44,
+          "value": "Can multiple family members join?"
+        },
+        {
+          "kind": "list:faqs",
+          "line": 44,
+          "value": "Yes, eligible family members may join when access and participation arrangements are confirmed beforehand."
+        },
+        {
+          "kind": "list:faqs",
+          "line": 45,
+          "value": "Can NRIs book the service?"
+        },
+        {
+          "kind": "list:faqs",
+          "line": 45,
+          "value": "Yes. NRI and international families may request online coordination, subject to timing and service suitability."
+        },
+        {
+          "kind": "list:faqs",
+          "line": 46,
+          "value": "Which details are required before confirmation?"
+        },
+        {
+          "kind": "list:faqs",
+          "line": 46,
+          "value": "Common details include ancestor names, Gotra, family relationship, purpose, location and preferred date."
+        },
+        {
+          "kind": "list:faqs",
+          "line": 47,
+          "value": "Are photos and videos provided?"
+        },
+        {
+          "kind": "list:faqs",
+          "line": 47,
+          "value": "Available documentation is confirmed before booking and depends on the selected service plan."
+        },
+        {
+          "kind": "list:faqs",
+          "line": 48,
+          "value": "How is the Religious Partner selected?"
+        },
+        {
+          "kind": "list:faqs",
+          "line": 48,
+          "value": "Selection considers the requested service, tradition, timing, location and verified capability."
+        },
+        {
+          "kind": "list:faqs",
+          "line": 49,
+          "value": "How can I raise an inquiry?"
+        },
+        {
+          "kind": "list:faqs",
+          "line": 49,
+          "value": "Use the inquiry link on this page and provide your contact details and preferred online service."
+        },
+        {
+          "kind": "field:label",
+          "line": 53,
+          "value": "Connect Hub Co."
+        },
+        {
+          "kind": "field:label",
+          "line": 53,
+          "value": "PitruMoksha Gaya"
+        },
+        {
+          "kind": "field:label",
+          "line": 53,
+          "value": "Online"
+        },
+        {
+          "kind": "attribute:alt",
+          "line": 55,
+          "value": "Representative river and ghat scene with a Religious Partner performing ancestral rites while a family participates remotely"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 57,
+          "value": "ONLINE ANCESTRAL SERVICES"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 57,
+          "value": "Distance Never Stops Devotion."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 57,
+          "value": "Participate from Anywhere in the World."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 57,
+          "value": "Join guided ancestral rituals remotely through verified Religious Partners, live family participation, transparent coordination and documented completion."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 57,
+          "value": "Designed for NRIs, travelling families, elderly participants and families unable to visit Gaya in person."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 57,
+          "value": "Explore Online Services"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 57,
+          "value": "Raise an Inquiry"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 57,
+          "value": "Verified Religious Partners | Guided Participation | Completion Documentation"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 58,
+          "value": "Representative image — actual ritual and participation arrangements may vary."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 60,
+          "value": "ONLINE PATHWAYS"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 60,
+          "value": "Explore Online Ancestral Services"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 60,
+          "value": "Choose the service that best matches your family’s circumstances and participation needs."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 61,
+          "value": "FEATURED ONLINE SERVICE"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 61,
+          "value": "Virtual Shraddh"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 61,
+          "value": "Guided ancestral ritual participation when distance prevents physical presence."
+        },
+        {
+          "kind": "field:name",
+          "line": 61,
+          "value": "check"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 61,
+          "value": "Ritual suitability, procedure and participation method depend on tradition, family circumstances and Religious Partner guidance."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 61,
+          "value": "Learn About Virtual Shraddh"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 62,
+          "value": "PROCESS"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 62,
+          "value": "How Online Participation Works"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 63,
+          "value": "ACCESSIBLE PARTICIPATION"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 63,
+          "value": "Who May Benefit from Online Participation?"
+        },
+        {
+          "kind": "field:name",
+          "line": 63,
+          "value": "check"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 64,
+          "value": "TRUST AND DOCUMENTATION"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 64,
+          "value": "Guided, Verified and Documented"
+        },
+        {
+          "kind": "field:name",
+          "line": 64,
+          "value": "check"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 65,
+          "value": "GUIDED ANSWERS"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 65,
+          "value": "Ask GenZ AI"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 65,
+          "value": "Ask about online participation, Virtual Shraddh, required details, scheduling and documentation."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 66,
+          "value": "FAQ"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 66,
+          "value": "Frequently Asked Questions"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 67,
+          "value": "GUIDED ASSISTANCE"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 67,
+          "value": "Begin with Guided Assistance"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 67,
+          "value": "Share your family’s requirement and receive guidance on the appropriate Online or Offline service path."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 67,
+          "value": "Raise an Inquiry"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 67,
+          "value": "Explore Offline Services"
+        },
+        {
+          "kind": "attribute:aria-label",
+          "line": 68,
+          "value": "Related navigation"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 68,
+          "value": "Related navigation"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 68,
+          "value": "PitruMoksha Gaya Overview"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 68,
+          "value": "Offline Services"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 68,
+          "value": "Vahi Records"
+        }
+      ]
+    }
+  ]
+}

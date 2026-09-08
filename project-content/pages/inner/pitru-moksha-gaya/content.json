@@ -1,0 +1,1824 @@
+{
+  "schemaVersion": 1,
+  "ownership": "MASTER_CONTENT_LIBRARY",
+  "runtimeReference": "UNCHANGED_COPY_FIRST",
+  "sources": [
+    {
+      "source": "apps/web/src/app/pitru-moksha-gaya/page.tsx",
+      "sha256": "9b92df045a492f3c89ee70df62303b0874d3f401b438108611829e488231e3b3",
+      "entries": [
+        {
+          "kind": "field:title",
+          "line": 7,
+          "value": "PitruMoksha Gaya Sacred Coordination | Connect Hub Co."
+        },
+        {
+          "kind": "field:description",
+          "line": 9,
+          "value": "Explore PitruMoksha Gaya ancestral ritual guidance, verified Religious Partner coordination, online and offline service pathways, and Vahi Records assistance."
+        }
+      ]
+    },
+    {
+      "source": "apps/web/src/features/pitru-moksha-main/data/mainPageV15Content.ts",
+      "sha256": "f568a1179ced7a60a2670538b91051be95b5f33fce18c1c51342e9ac320cb23e",
+      "entries": [
+        {
+          "kind": "field:heading",
+          "line": 4,
+          "value": "heading"
+        },
+        {
+          "kind": "field:heading",
+          "line": 4,
+          "value": "Why Families Trust PitruMoksha Gaya"
+        },
+        {
+          "kind": "field:supportingLine",
+          "line": 5,
+          "value": "supportingLine"
+        },
+        {
+          "kind": "field:supportingLine",
+          "line": 5,
+          "value": "Sacred responsibility supported by privacy, human guidance and accountable coordination."
+        },
+        {
+          "kind": "field:title",
+          "line": 7,
+          "value": "title"
+        },
+        {
+          "kind": "field:title",
+          "line": 7,
+          "value": "Privacy & Sanctity"
+        },
+        {
+          "kind": "field:description",
+          "line": 7,
+          "value": "description"
+        },
+        {
+          "kind": "field:description",
+          "line": 7,
+          "value": "Ritual coordination respects family privacy, dignity and traditional sanctity."
+        },
+        {
+          "kind": "field:title",
+          "line": 8,
+          "value": "title"
+        },
+        {
+          "kind": "field:title",
+          "line": 8,
+          "value": "Confidentiality First"
+        },
+        {
+          "kind": "field:description",
+          "line": 8,
+          "value": "description"
+        },
+        {
+          "kind": "field:description",
+          "line": 8,
+          "value": "Personal and ancestral information is restricted to authorised service coordination."
+        },
+        {
+          "kind": "field:title",
+          "line": 9,
+          "value": "title"
+        },
+        {
+          "kind": "field:title",
+          "line": 9,
+          "value": "Respect Without Judgement"
+        },
+        {
+          "kind": "field:description",
+          "line": 9,
+          "value": "description"
+        },
+        {
+          "kind": "field:description",
+          "line": 9,
+          "value": "Sensitive family circumstances are handled privately, respectfully and without unnecessary questioning."
+        },
+        {
+          "kind": "field:title",
+          "line": 10,
+          "value": "title"
+        },
+        {
+          "kind": "field:title",
+          "line": 10,
+          "value": "Private Ancestral-Rites Declaration"
+        },
+        {
+          "kind": "field:description",
+          "line": 10,
+          "value": "description"
+        },
+        {
+          "kind": "field:description",
+          "line": 10,
+          "value": "Representative participation and confidential family relationships can be formally recorded where required."
+        },
+        {
+          "kind": "field:title",
+          "line": 11,
+          "value": "title"
+        },
+        {
+          "kind": "field:title",
+          "line": 11,
+          "value": "Protected Data Handling"
+        },
+        {
+          "kind": "field:description",
+          "line": 11,
+          "value": "description"
+        },
+        {
+          "kind": "field:description",
+          "line": 11,
+          "value": "Personal information is securely retained or sanitised according to the approved service and record policy."
+        },
+        {
+          "kind": "field:title",
+          "line": 12,
+          "value": "title"
+        },
+        {
+          "kind": "field:title",
+          "line": 12,
+          "value": "Human-Guided AI"
+        },
+        {
+          "kind": "field:description",
+          "line": 12,
+          "value": "description"
+        },
+        {
+          "kind": "field:description",
+          "line": 12,
+          "value": "Ask GenZ AI provides initial guidance; authorised teams, Gayawal Pandas and Founder/Admin handle final decisions and sensitive matters."
+        },
+        {
+          "kind": "field:title",
+          "line": 18,
+          "value": "title"
+        },
+        {
+          "kind": "field:title",
+          "line": 18,
+          "value": "Understand the Rite. Choose Your Path."
+        },
+        {
+          "kind": "field:text",
+          "line": 22,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 22,
+          "value": "Explore the Land of Moksha: PitruMoksha Gaya"
+        },
+        {
+          "kind": "field:text",
+          "line": 26,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 26,
+          "value": "Understand the rite. Choose how you wish to participate. Proceed with clarity."
+        },
+        {
+          "kind": "field:text",
+          "line": 30,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 30,
+          "value": "Distance Never Stops Devotion"
+        },
+        {
+          "kind": "field:text",
+          "line": 34,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 34,
+          "value": "PitruMoksha Gaya is a specialized ancestral-ritual coordination service platform powered by Connect Hub Co. We honor responsibility and bridge the miles by connecting you directly with the legitimate, historical custodians of Gaya’s sacred rites."
+        },
+        {
+          "kind": "field:text",
+          "line": 38,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 38,
+          "value": "Our platform makes sacred religious rituals accessible through online or physical modes and convenient through technology, while preserving tradition, the dignity of Sanatana Dharma, authenticity, respect, and customer data confidentiality."
+        },
+        {
+          "kind": "list:lines",
+          "line": 44,
+          "value": "Important Distinction"
+        },
+        {
+          "kind": "list:lines",
+          "line": 45,
+          "value": "Do not assume that every ritual follows the same procedure, duration, offerings, or route. The ritual and the participation mode are two separate decisions."
+        },
+        {
+          "kind": "field:text",
+          "line": 50,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 50,
+          "value": "Ritual Identity vs. Mode of Participation"
+        },
+        {
+          "kind": "field:text",
+          "line": 54,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 54,
+          "value": "Pind Daan, Sharadh, Tarpan, Narayan Bali, Nag Bali, Tripindi Sharadh, and other prescribed ancestral rites retain their own purpose, Vidhi, mantras, offerings, duration, and sacred locations. A family may participate in person, remotely, or through an approved and verified proxy representative. Customers receive clear guidance regarding what can and cannot be performed through online or proxy participation."
+        },
+        {
+          "kind": "field:text",
+          "line": 58,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 58,
+          "value": "Choose Your Pathway"
+        },
+        {
+          "kind": "list:cards",
+          "line": 65,
+          "value": "Pathway A: Online Services"
+        },
+        {
+          "kind": "list:cards",
+          "line": 66,
+          "value": "• Remote participation, Live Sankalp, or approved representative-led coordination.\n• Subject to ritual suitability and confirmed service scope."
+        },
+        {
+          "kind": "list:cards",
+          "line": 69,
+          "value": "Pathway B: Offline Services"
+        },
+        {
+          "kind": "list:cards",
+          "line": 70,
+          "value": "• In-person participation at Gaya Ji with local ritual coordination.\n• Includes specifically approved assistance on the ground."
+        },
+        {
+          "kind": "field:text",
+          "line": 76,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 76,
+          "value": "Need Guidance? Not sure which rite or pathway applies to your family? Ask GenZ AI for initial information or raise an inquiry for expert review. Guiding Families on the Path of Ancestral Peace and Moksha."
+        },
+        {
+          "kind": "field:label",
+          "line": 82,
+          "value": "label"
+        },
+        {
+          "kind": "field:label",
+          "line": 82,
+          "value": "Ask GenZ AI"
+        },
+        {
+          "kind": "field:label",
+          "line": 86,
+          "value": "label"
+        },
+        {
+          "kind": "field:label",
+          "line": 86,
+          "value": "Raise an Inquiry"
+        },
+        {
+          "kind": "field:title",
+          "line": 95,
+          "value": "title"
+        },
+        {
+          "kind": "field:title",
+          "line": 95,
+          "value": "Heritage & Sacred Context"
+        },
+        {
+          "kind": "field:text",
+          "line": 99,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 99,
+          "value": "1. The Heritage of the Gayawal Pandas"
+        },
+        {
+          "kind": "field:text",
+          "line": 103,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 103,
+          "value": "Gaya Ji’s Hereditary Custodians of Ancestral Rites"
+        },
+        {
+          "kind": "field:text",
+          "line": 107,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 107,
+          "value": "For over a thousand years, the Brahmkalpit Brahmans have served as the sole custodians of Gaya’s ancestral rites, performing Pind Daan, Sharadh, Tarpan, and other Vedic ancestral ceremonies with devotion, discipline, and respect for established traditions. Through this enduring tradition, the Gayawal Pandas have helped preserve the sanctity, authenticity, and spiritual significance of ancestral rituals."
+        },
+        {
+          "kind": "field:text",
+          "line": 111,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 111,
+          "value": "Specialized Ritual Significance: They hold the traditional rights to oversee holy sites and rituals associated with the Garuan Puran, according to which the ritual ceremony grants Moksha."
+        },
+        {
+          "kind": "field:text",
+          "line": 115,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 115,
+          "value": "The Vahi (Panji) Records"
+        },
+        {
+          "kind": "field:text",
+          "line": 119,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 119,
+          "value": "Operating under the Gayawal Panda Sabha, these families also maintain centuries-old, handwritten genealogical registers called Vahis or Panjis. These sacred records track the lineage of families, preserving valuable genealogical information and strengthening the bond between present and past."
+        },
+        {
+          "kind": "list:cards",
+          "line": 126,
+          "value": "Vahi Search Assistance"
+        },
+        {
+          "kind": "list:cards",
+          "line": 127,
+          "value": "PitruMoksha Gaya can coordinate an authorized request to explore relevant Vahi or Panji records. The service does not create, alter, or independently certify a historical entry. Availability depends on the information supplied by the family, the identification of a relevant custodian, and the condition and accessibility of the record."
+        },
+        {
+          "kind": "field:label",
+          "line": 135,
+          "value": "label"
+        },
+        {
+          "kind": "field:label",
+          "line": 135,
+          "value": "Explore Vahi Records →"
+        },
+        {
+          "kind": "field:text",
+          "line": 142,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 142,
+          "value": "Why Gaya Ji Holds a Special Place"
+        },
+        {
+          "kind": "field:text",
+          "line": 146,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 146,
+          "value": "Gaya Ji is traditionally revered as the Land of Moksha and as one of the principal destinations for Pind Daan, Sharadh, Tarpan, and related ancestral observances. Families come to remember departed ancestors, honor inherited duties, and perform rites connected with Daan, Dharma, and Moksha."
+        },
+        {
+          "kind": "field:text",
+          "line": 150,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 150,
+          "value": "Cosmic & Spiritual Context"
+        },
+        {
+          "kind": "field:text",
+          "line": 154,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 154,
+          "value": "Gaya Ji is a recognized center for ancestral rites. The importance attributed to these rites arises from longstanding customs, faith, traditions, and fear of its heavy subject matter associated with death rituals, the soul’s journey after death, karma and rebirth concepts, the afterlife, cosmic principles, and references in the Garuan Puran. These beliefs explain why families continue to regard Gaya Ji as sacred."
+        },
+        {
+          "kind": "list:lines",
+          "line": 160,
+          "value": "Notice"
+        },
+        {
+          "kind": "list:lines",
+          "line": 161,
+          "value": "They are traditional spiritual customs and not evidence-based guarantees of Moksha or any particular spiritual result."
+        },
+        {
+          "kind": "field:title",
+          "line": 168,
+          "value": "title"
+        },
+        {
+          "kind": "field:title",
+          "line": 168,
+          "value": "The Sacred Journey At Gaya Ji"
+        },
+        {
+          "kind": "field:text",
+          "line": 172,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 172,
+          "value": "Sacred Locations & Prescribed Rites"
+        },
+        {
+          "kind": "field:text",
+          "line": 176,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 176,
+          "value": "The sacred landscape of Gaya Ji includes the Falgu (Phalgu) River, Vishnupad Temple, Akshay Vat, Pretshila, Ramshila, and other Ghats, Vedis, and ritual locations associated with ancestral observances. Among them:"
+        },
+        {
+          "kind": "field:text",
+          "line": 180,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 180,
+          "value": "Vishnupad Temple: Stands as the spiritual center of devotion."
+        },
+        {
+          "kind": "field:text",
+          "line": 184,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 184,
+          "value": "Phalgu River, Akshay Vat, Pretshila, and Ramshila: Hold profound religious significance in the performance of traditional rites."
+        },
+        {
+          "kind": "list:cards",
+          "line": 191,
+          "value": "Execution Note"
+        },
+        {
+          "kind": "list:cards",
+          "line": 192,
+          "value": "Each location has a traditional role, but not every family or every ritual follows the same route. The selected rite, family tradition, Gotra, date, access conditions, local rules, and the judgment of the verified and trusted Gayawal Panda determine the applicable locations and sequence."
+        },
+        {
+          "kind": "list:cards",
+          "line": 195,
+          "value": "Important: Do not assume that every ritual follows the same procedure, duration, offerings, mantras, Vidhi or route."
+        },
+        {
+          "kind": "field:text",
+          "line": 201,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 201,
+          "value": "Illustrative Core 3-Ghat Sequence"
+        },
+        {
+          "kind": "list:rows",
+          "line": 207,
+          "value": "Stage & Location"
+        },
+        {
+          "kind": "list:rows",
+          "line": 208,
+          "value": "Core Rituals Performed"
+        },
+        {
+          "kind": "list:rows",
+          "line": 209,
+          "value": "Spiritual Significance"
+        },
+        {
+          "kind": "list:rows",
+          "line": 212,
+          "value": "1. Falgu River"
+        },
+        {
+          "kind": "list:rows",
+          "line": 213,
+          "value": "Sacred bath, formal Sankalp (reciting Name, Gotra, and 3 generations of ancestral names), and Tarpan (purification mantras)."
+        },
+        {
+          "kind": "list:rows",
+          "line": 214,
+          "value": "Prepares the spiritual energy for the Pinda acceptance. The first Pind offerings are made here."
+        },
+        {
+          "kind": "list:rows",
+          "line": 217,
+          "value": "2. Vishnupad Temple"
+        },
+        {
+          "kind": "list:rows",
+          "line": 218,
+          "value": "Rites performed directly before the sacred 40cm footprint of Lord Vishnu inside the inner sanctum."
+        },
+        {
+          "kind": "list:rows",
+          "line": 219,
+          "value": "Rice-flour Pindas are offered specifically dedicated to your ancestors' names."
+        },
+        {
+          "kind": "list:rows",
+          "line": 222,
+          "value": "3. Akshay Ghat / Vat"
+        },
+        {
+          "kind": "list:rows",
+          "line": 223,
+          "value": "Final Pinda offerings and prayers under the immortal Banyan tree."
+        },
+        {
+          "kind": "list:rows",
+          "line": 224,
+          "value": "The Suphala declaration is pronounced here, officially marking the successful completion of the rites."
+        },
+        {
+          "kind": "list:rows",
+          "line": 227,
+          "value": "4. Final Step: Visarjan"
+        },
+        {
+          "kind": "list:rows",
+          "line": 228,
+          "value": "Return to the Falgu River for the ritual immersion of all Pindas."
+        },
+        {
+          "kind": "list:rows",
+          "line": 229,
+          "value": "Releasing the physical offerings back to the element of water, symbolizing the soul's journey to final liberation."
+        },
+        {
+          "kind": "field:text",
+          "line": 235,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 235,
+          "value": "Different rites may use fewer, additional, or entirely different locations. Pretshila, Ramshila, and other Vedis may be relevant in specific circumstances. The confirmed ritual plan controls what the family will actually follow."
+        },
+        {
+          "kind": "field:title",
+          "line": 241,
+          "value": "title"
+        },
+        {
+          "kind": "field:title",
+          "line": 241,
+          "value": "Why Families Choose Pitrumoksha Gaya"
+        },
+        {
+          "kind": "field:text",
+          "line": 245,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 245,
+          "value": "One Trusted Point of Coordination"
+        },
+        {
+          "kind": "field:text",
+          "line": 249,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 249,
+          "value": "Families often know that they wish to honor an ancestor but remain uncertain about the appropriate rite, the authenticity of the Panda, the required pre- and post-ritual information, the sacred locations involved, the possibility of remote participation, and the real scope of a service quotation. PitruMoksha Gaya brings these decisions into one coordinated and trackable service journey."
+        },
+        {
+          "kind": "list:lines",
+          "line": 255,
+          "value": "EXPERT AUDITOR SECURITY SYSTEM & ON-GROUND ADVANTAGES"
+        },
+        {
+          "kind": "list:lines",
+          "line": 256,
+          "value": "• Background Screened – Every officiating priest is cross-checked against traditional Brahmin community records."
+        },
+        {
+          "kind": "list:lines",
+          "line": 257,
+          "value": "• Identity Verified – Independent Aadhaar and police verification is required for all onboarded Pandas."
+        },
+        {
+          "kind": "list:lines",
+          "line": 258,
+          "value": "• Gotra-Matched Booking – We assign the specific traditional priest family holding historic rights to your particular Gotra, ensuring family records are accurately traced and updated in ancient Vahis."
+        },
+        {
+          "kind": "list:lines",
+          "line": 259,
+          "value": "• Transparent Stewardship – We offer all-inclusive, price-protected Gaya ritual packages. Your focus remains entirely on your ancestors, not on hidden costs or unexpected demands."
+        },
+        {
+          "kind": "list:lines",
+          "line": 260,
+          "value": "• Homely Care – Wheelchair/seating arrangements and elderly support at the Ghats."
+        },
+        {
+          "kind": "list:lines",
+          "line": 261,
+          "value": "• Handles Safety & Logistics – Detailed route planning, confirmation regarding last-minute route changes, reporting time management, and family safety instructions."
+        },
+        {
+          "kind": "field:text",
+          "line": 266,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 266,
+          "value": "What the Family Receives"
+        },
+        {
+          "kind": "field:text",
+          "line": 270,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 270,
+          "value": "Verified and Trusted Gayawal Panda Coordination: The assignment is based on ritual suitability, approved capability, tradition, language, location, and availability."
+        },
+        {
+          "kind": "field:text",
+          "line": 274,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 274,
+          "value": "Clarity Before Commitment: The proposed rite, participation mode, inclusions, exclusions, charges, applicable taxes, validity, and deliverables are shared before payment."
+        },
+        {
+          "kind": "field:text",
+          "line": 278,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 278,
+          "value": "Online or In-Person Participation: The family may choose an available pathway without confusing the participation method with the identity of the ritual."
+        },
+        {
+          "kind": "field:text",
+          "line": 282,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 282,
+          "value": "Privacy-First Assistance: Personal, ancestral, and ritual information is used only for the authorized service journey and handled with dignity."
+        },
+        {
+          "kind": "field:text",
+          "line": 286,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 286,
+          "value": "Human and Virtual Support: Ask GenZ AI assists with approved introductory information and inquiry routing; religious judgments, assignments, and final decisions remain human-led."
+        },
+        {
+          "kind": "field:text",
+          "line": 290,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 290,
+          "value": "Universal Reference Tracking: The Universal Reference ID supports tracking, updates, complaints, and follow-up from inquiry through closure."
+        },
+        {
+          "kind": "field:text",
+          "line": 294,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 294,
+          "value": "Our Signature Support Pillars"
+        },
+        {
+          "kind": "list:cards",
+          "line": 301,
+          "value": "1. Ancestral Lineage Search"
+        },
+        {
+          "kind": "list:cards",
+          "line": 302,
+          "value": "Where requested, we help the family approach the relevant traditional Vahi or Panji custodian and organize the information needed to explore an ancestral record. A search is subject to record availability and does not guarantee that an entry will be found."
+        },
+        {
+          "kind": "list:cards",
+          "line": 305,
+          "value": "2. Trusted Ritual Proxy Facilitators"
+        },
+        {
+          "kind": "list:cards",
+          "line": 306,
+          "value": "Where travel or direct participation is not possible, an approved proxy representative (a person who has inherited custom rights eligible to perform rituals on behalf of family members) performs the rites under the direction of the assigned Gayawal Panda."
+        },
+        {
+          "kind": "list:cards",
+          "line": 309,
+          "value": "3. Independent Ritual Verification"
+        },
+        {
+          "kind": "list:cards",
+          "line": 310,
+          "value": "Connect Hub Co. verifies the service arrangement, assignment, agreed scope, and completion records through operational controls. This is an independent coordination and record-control function."
+        },
+        {
+          "kind": "list:cards",
+          "line": 313,
+          "value": "4. End-to-End Ritual Management"
+        },
+        {
+          "kind": "list:cards",
+          "line": 314,
+          "value": "The service journey includes inquiry handling, information collection, ritual assessment, Panda and date coordination, written quotation, payment confirmation, preparation instructions, execution support, and completion records."
+        },
+        {
+          "kind": "list:cards",
+          "line": 317,
+          "value": "5. Privacy and Sanctity Assurance"
+        },
+        {
+          "kind": "list:cards",
+          "line": 318,
+          "value": "Sensitive family circumstances are handled respectfully and without judgment. Customers may request additional discretion regarding identity or relationship, subject to lawful processing."
+        },
+        {
+          "kind": "field:title",
+          "line": 326,
+          "value": "title"
+        },
+        {
+          "kind": "field:title",
+          "line": 326,
+          "value": "Eligibility, Ritual Assessment & Timing"
+        },
+        {
+          "kind": "field:text",
+          "line": 330,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 330,
+          "value": "Who Can Perform the Rites?"
+        },
+        {
+          "kind": "field:text",
+          "line": 334,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 334,
+          "value": "The Vedic tradition is highly inclusive regarding who can honor their family. Rites can be successfully performed by:"
+        },
+        {
+          "kind": "field:text",
+          "line": 338,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 338,
+          "value": "Any sons, grandsons, or brothers."
+        },
+        {
+          "kind": "field:text",
+          "line": 342,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 342,
+          "value": "Wives alongside their husbands."
+        },
+        {
+          "kind": "field:text",
+          "line": 346,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 346,
+          "value": "Unmarried women."
+        },
+        {
+          "kind": "field:text",
+          "line": 350,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 350,
+          "value": "Proxy Facilitators (outsiders designated to perform rituals on behalf of family members unable to attend physically)."
+        },
+        {
+          "kind": "field:text",
+          "line": 354,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 354,
+          "value": "Proxy Facilitators Definition: We arrange the person who has inherited custom rights and can perform the rituals on behalf of family members who can't physically attend. If travel is impossible, an outsider or designated representative can perform the ritual through our 'Peace of Mind' / online Remote Ritual service."
+        },
+        {
+          "kind": "list:lines",
+          "line": 360,
+          "value": "Eligibility Note"
+        },
+        {
+          "kind": "list:lines",
+          "line": 361,
+          "value": "These references must not be treated as one universal eligibility rule. If uncertain about who may perform or participate, PitruMoksha Gaya will arrange an authorized assessment before confirmation."
+        },
+        {
+          "kind": "field:title",
+          "line": 366,
+          "value": "title"
+        },
+        {
+          "kind": "field:title",
+          "line": 366,
+          "value": "Sankalp & Ancestral Information"
+        },
+        {
+          "kind": "field:intro",
+          "line": 367,
+          "value": "intro"
+        },
+        {
+          "kind": "field:intro",
+          "line": 367,
+          "value": "Sankalp identifies the purpose of the ceremony and the family or ancestors for whom it is being performed. Depending on the rite, the family should be prepared to provide:"
+        },
+        {
+          "kind": "list:items",
+          "line": 370,
+          "value": "The Karta's or participant's name"
+        },
+        {
+          "kind": "list:items",
+          "line": 371,
+          "value": "Gotra"
+        },
+        {
+          "kind": "list:items",
+          "line": 372,
+          "value": "The names and relationships of departed ancestors"
+        },
+        {
+          "kind": "list:items",
+          "line": 373,
+          "value": "Three generations of ancestral names where prescribed"
+        },
+        {
+          "kind": "list:items",
+          "line": 374,
+          "value": "The preferred date or known Tithi"
+        },
+        {
+          "kind": "list:items",
+          "line": 375,
+          "value": "Preferred participation mode—online/live, in-person at Gaya Ji, or approved representative-led participation—subject to ritual suitability and the confirmed service scope."
+        },
+        {
+          "kind": "list:items",
+          "line": 376,
+          "value": "Relevant family circumstances, traditional instructions, and support needs"
+        },
+        {
+          "kind": "field:title",
+          "line": 381,
+          "value": "title"
+        },
+        {
+          "kind": "field:title",
+          "line": 381,
+          "value": "Virtual Sankalp—Sacred Commitment & Live Participation"
+        },
+        {
+          "kind": "field:cta",
+          "line": 383,
+          "value": "cta"
+        },
+        {
+          "kind": "field:label",
+          "line": 384,
+          "value": "label"
+        },
+        {
+          "kind": "field:label",
+          "line": 384,
+          "value": "View Online Participation & How It Works →"
+        },
+        {
+          "kind": "field:title",
+          "line": 389,
+          "value": "title"
+        },
+        {
+          "kind": "field:title",
+          "line": 389,
+          "value": "Courier Preparation—Hand-Touched Samagri"
+        },
+        {
+          "kind": "field:text",
+          "line": 397,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 397,
+          "value": "Ritual Timing & Peak Windows"
+        },
+        {
+          "kind": "field:text",
+          "line": 401,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 401,
+          "value": "Year-Round Performance: Rites are highly effective when performed during any Amavasya (New Moon), Purnima (Full Moon), or on the specific Tithi (Death Anniversary) of the departed."
+        },
+        {
+          "kind": "field:text",
+          "line": 405,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 405,
+          "value": "Peak Cosmic Window (2026): The ultimate period of spiritual potency is Pitra Paksha, which falls from September 26 to October 10, 2026. Slots for this period must be reserved well in advance due to high global demand."
+        },
+        {
+          "kind": "list:lines",
+          "line": 411,
+          "value": "Global Time Zones"
+        },
+        {
+          "kind": "list:lines",
+          "line": 412,
+          "value": "For families participating from outside India, the confirmed India date and time are shared so that they can prepare according to their local time zone. No date is final until it appears in the approved booking confirmation."
+        },
+        {
+          "kind": "field:text",
+          "line": 417,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 417,
+          "value": "Samagri & Pre-Booking Checklist"
+        },
+        {
+          "kind": "field:text",
+          "line": 421,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 421,
+          "value": "Indicative Samagri List: Ritual materials are specific to the selected rite. Items traditionally referenced include Rice Flour, Kush Grass, Milk, Ghee, Honey, New White Dhoti, Daan, Food offerings for Brahmins, etc. The final list is confirmed under the officiating priest's guidance."
+        },
+        {
+          "kind": "field:text",
+          "line": 425,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 425,
+          "value": "What is confirmed before ritual performance:"
+        },
+        {
+          "kind": "field:text",
+          "line": 429,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 429,
+          "value": "Ritual or service identity and purpose"
+        },
+        {
+          "kind": "field:text",
+          "line": 433,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 433,
+          "value": "Requester and participant eligibility"
+        },
+        {
+          "kind": "field:text",
+          "line": 437,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 437,
+          "value": "Required Vidhi, mantras, offerings, and locations as determined by the Panda"
+        },
+        {
+          "kind": "field:text",
+          "line": 441,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 441,
+          "value": "Available participation mode"
+        },
+        {
+          "kind": "field:text",
+          "line": 445,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 445,
+          "value": "Preferred date, Panda, and operational availability"
+        },
+        {
+          "kind": "field:text",
+          "line": 449,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 449,
+          "value": "Samagri, Daan, or Dakshina included in the service scope"
+        },
+        {
+          "kind": "field:text",
+          "line": 453,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 453,
+          "value": "Expected duration as an estimate, where approved"
+        },
+        {
+          "kind": "field:text",
+          "line": 457,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 457,
+          "value": "Quotation, applicable taxes, optional assistance, and deliverables"
+        },
+        {
+          "kind": "field:label",
+          "line": 463,
+          "value": "label"
+        },
+        {
+          "kind": "field:label",
+          "line": 463,
+          "value": "Request a Ritual Assessment"
+        },
+        {
+          "kind": "field:title",
+          "line": 472,
+          "value": "title"
+        },
+        {
+          "kind": "field:title",
+          "line": 472,
+          "value": "Messages From Leadership & Governance"
+        },
+        {
+          "kind": "field:text",
+          "line": 476,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 476,
+          "value": "A Message from the Founder / Admin"
+        },
+        {
+          "kind": "list:lines",
+          "line": 482,
+          "value": "Founder Statement"
+        },
+        {
+          "kind": "list:lines",
+          "line": 483,
+          "value": "\"Pind Daan and related ancestral rites are not ordinary transactions or standard checklists. For a family, they represent remembrance, duty, faith, and a deeply personal connection between the living and the departed. PitruMoksha Gaya was created to help families approach that responsibility without being left alone to navigate unknown intermediaries, conflicting information, or unclear service demands.\""
+        },
+        {
+          "kind": "list:lines",
+          "line": 484,
+          "value": "\"Our Master Card commitment is to organize a respectful path: understand the family's circumstances, connect the family with a verified and trusted Gayawal Panda, explain the approved service scope before commitment, protect sensitive information, coordinate the chosen Online or Offline pathway, and remain answerable through completion and follow-up.\""
+        },
+        {
+          "kind": "field:text",
+          "line": 489,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 489,
+          "value": "Founder Commitments & Operational Boundaries"
+        },
+        {
+          "kind": "field:text",
+          "line": 493,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 493,
+          "value": "We do not silently substitute the assigned Panda when the change affects agreed service."
+        },
+        {
+          "kind": "field:text",
+          "line": 497,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 497,
+          "value": "We do not support unconfirmed compulsory payments or unexplained cash demands."
+        },
+        {
+          "kind": "field:text",
+          "line": 501,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 501,
+          "value": "We follow applicable temple, sacred-site, and local-authority rules."
+        },
+        {
+          "kind": "field:text",
+          "line": 505,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 505,
+          "value": "Where an issue cannot be resolved through normal support, the matter can be escalated to authorized Admin or Founder Support."
+        },
+        {
+          "kind": "field:text",
+          "line": 509,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 509,
+          "value": "We coordinate the service; the Gayawal Panda retains religious judgment."
+        },
+        {
+          "kind": "field:text",
+          "line": 513,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 513,
+          "value": "Protected Boundary: Identity documents, background reports, findings, methods, bank records, contracts, complaints, investigations, and Admin notes never appear publicly."
+        },
+        {
+          "kind": "field:text",
+          "line": 517,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 517,
+          "value": "Who is Connect Hub Co. & What We Do"
+        },
+        {
+          "kind": "field:text",
+          "line": 521,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 521,
+          "value": "Introduction: Connect Hub Co. is a technology-enabled, human and virtual assisted service company. It provides structured guidance, coordination, customer support, and end-to-end assistance through verified partners."
+        },
+        {
+          "kind": "field:text",
+          "line": 525,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 525,
+          "value": "Mission: To make sacred religious rituals accessible either through online or physical mode, convenient through technology while preserving tradition, authenticity, respect, and confidential data."
+        },
+        {
+          "kind": "field:text",
+          "line": 529,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 529,
+          "value": "Purpose: Turn unstructured requirements into verified, traceable service journeys, eliminate hidden local pricing gouges, and secure exclusive coordination with legitimate custodians of Gaya Ji's sacred heritage. so that families worldwide can fulfill their cosmic duties with absolute peace of mind."
+        },
+        {
+          "kind": "field:text",
+          "line": 533,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 533,
+          "value": "Our Master Card Commitments"
+        },
+        {
+          "kind": "field:text",
+          "line": 537,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 537,
+          "value": "The journey of Moksha is a duty of love. Let us handle the logistics, you perform your duty"
+        },
+        {
+          "kind": "field:text",
+          "line": 541,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 541,
+          "value": "End-to-End Ritual Management"
+        },
+        {
+          "kind": "field:text",
+          "line": 545,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 545,
+          "value": "\"We handle the entire end-to-end process—from engaging the verified Gayawal Pandas to providing you with documented proof of completion. Your ancestral duties are fulfilled with total sanctity and privacy, exactly as if you were standing there yourself.\""
+        },
+        {
+          "kind": "list:lines",
+          "line": 551,
+          "value": "Corporate Policies & Safeguards"
+        },
+        {
+          "kind": "list:lines",
+          "line": 552,
+          "value": "Privacy & Sanctity Assurance: Family ancestral rites are conducted with total privacy and traditional sanctity. We act as your trusted proxy, ensuring your obligations are met with dignity and complete confidentiality.\""
+        },
+        {
+          "kind": "list:lines",
+          "line": 553,
+          "value": "Confidentiality-First Policy: We operate on a \"Confidentiality-First\" basis, ensuring the soul receives its due honor without any external involvement or disclosure. You receive the proof of completion, and the process remains exclusively between us."
+        },
+        {
+          "kind": "list:lines",
+          "line": 554,
+          "value": "No-Questions-Asked Policy: What this says: \"I am safe here. I won't be judged. My secret is kept.\" What this says to the Panda: \"This is a private matter. Perform the ritual with respect for the soul, and respect the privacy of the living family.\" Ensures customers feel safe without judgment while reminding Pandas to perform rituals with respect for the soul and privacy for the living."
+        },
+        {
+          "kind": "list:lines",
+          "line": 555,
+          "value": "Confidential & Private Ancestral Rites Declaration: \"I acknowledge that I am performing this ritual on behalf of [Name] and require full confidentiality regarding the identity and relationship.\" Customers formally acknowledge performing rituals on behalf of named individuals requiring full confidentiality."
+        },
+        {
+          "kind": "list:lines",
+          "line": 556,
+          "value": "Absolute Data Sanitization: All personal information is destroyed or archived in a private, encrypted vault immediately after completion."
+        },
+        {
+          "kind": "list:lines",
+          "line": 557,
+          "value": "Ask GenZ AI Boundaries: Ask GenZ AI provides initial guidance, collects relevant info, routes requirements, and escalates unresolved matters to Founder/Admin."
+        },
+        {
+          "kind": "field:text",
+          "line": 562,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 562,
+          "value": "Managed-Service Pricing Transparency"
+        },
+        {
+          "kind": "list:lines",
+          "line": 568,
+          "value": "THE PITRUMOKSHA SANCTITY MANDATE (FOR HIGH-VALUE FAMILIES)"
+        },
+        {
+          "kind": "list:lines",
+          "line": 569,
+          "value": "Important Mandate: We explicitly do not accept bookings for individuals seeking a rushed, formalistic, or short-cut checklist ritual. At PitruMoksha Gaya, an ancestral ceremony is approached strictly from the inner soul—unfolding step-by-step with complete spiritual devotion. Because we guarantee the complete traditional path—incorporating flawless, pure samagri elements, exact Vedic mantra chants, and appropriate traditional daan at every single veda across all four definitive ritual stages—our operational architecture is premium-priced. We serve elite clients / families who demand absolute authenticity and refuse compromise when honoring their ancestral lineage."
+        },
+        {
+          "kind": "field:text",
+          "line": 574,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 574,
+          "value": "Why Managed-Service Pricing May Be Higher: The service price may be higher than a Panda's ritual fee alone because we offer price protection & HASSLE FREE ASSISTANCE. Includes actual Samagri as per preferred rituals; Dakshina at every Vidhi/Veda; pre & post guidance through sacred sites; food offerings for Brahmins; Daan, local ground support, child and elderly support (wheelchair assistance), route planning, reporting time management, privacy controls, tracking, completion records, and follow-up."
+        },
+        {
+          "kind": "field:text",
+          "line": 578,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 578,
+          "value": "A higher price is presented as coverage for total coordination and support, not as proof that a Panda, ritual, or spiritual outcome is more authentic or powerful."
+        },
+        {
+          "kind": "field:label",
+          "line": 584,
+          "value": "label"
+        },
+        {
+          "kind": "field:label",
+          "line": 584,
+          "value": "Raise an Inquiry"
+        },
+        {
+          "kind": "field:label",
+          "line": 588,
+          "value": "label"
+        },
+        {
+          "kind": "field:label",
+          "line": 588,
+          "value": "Ask GenZ AI"
+        },
+        {
+          "kind": "field:title",
+          "line": 597,
+          "value": "title"
+        },
+        {
+          "kind": "field:title",
+          "line": 597,
+          "value": "Service Tier Frameworks"
+        },
+        {
+          "kind": "field:text",
+          "line": 601,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 601,
+          "value": "Principal Ancestral Rites"
+        },
+        {
+          "kind": "list:cards",
+          "line": 608,
+          "value": "1. Pind Daan, Sharadh & Tarpan"
+        },
+        {
+          "kind": "list:cards",
+          "line": 609,
+          "value": "Traditional ancestral offering ceremony performed with Sankalp and prescribed recitations under the Panda's direction."
+        },
+        {
+          "kind": "list:cards",
+          "line": 612,
+          "value": "2. Pitra Aatma Shanti"
+        },
+        {
+          "kind": "list:cards",
+          "line": 613,
+          "value": "Approved ancestral prayer or ritual arrangement for soul peace. Exact traditional terms are confirmed during assessment."
+        },
+        {
+          "kind": "list:cards",
+          "line": 616,
+          "value": "3. Special Service Plans"
+        },
+        {
+          "kind": "list:cards",
+          "line": 617,
+          "value": "Includes Narayan Bali (unnatural death), Nag Bali (snake bite), Tripindi Sharadh (missed Tithi/Pitra Dosh), Shared Sankalp (same Gotra, up to 3 families), Complete Gaya Sharadh, and other prescribed ceremonies."
+        },
+        {
+          "kind": "list:cards",
+          "line": 620,
+          "value": "4. Customized Service Plans"
+        },
+        {
+          "kind": "list:cards",
+          "line": 621,
+          "value": "Includes Mahalaya Sharadh, Karma Pind Daan, Ekoddishta Sharadh (Monthly), Parvana Sharadh, Sapindikarana Ritual, Samvatsarik Sharadh (Yearly), and customized planning. Families with unique traditions or special religious requirements may request customized ritual coordination. Service scope, eligibility, and ritual requirements are confirmed before booking Price: On Request."
+        },
+        {
+          "kind": "field:text",
+          "line": 627,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 627,
+          "value": "Premium Service Plans (NRI Focus)"
+        },
+        {
+          "kind": "field:text",
+          "line": 631,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 631,
+          "value": "Complete Gaya Sharadh is available as a Premium Service designed primarily for NRIs, including document handling, secure data management, pre- & post-ritual deliverables, and Vahi records assistance."
+        },
+        {
+          "kind": "field:text",
+          "line": 635,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 635,
+          "value": "Gold (Guided): Full logistics: Airport pickup, luxury stay in Gaya, dedicated escort, all ritual preparations handled."
+        },
+        {
+          "kind": "field:text",
+          "line": 639,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 639,
+          "value": "Platinum (Bespoke): Multi-day spiritual retreat, private Pandit/Panda, curated sattvic meals/dietary blueprint, local cultural immersion, all ritual documentation."
+        },
+        {
+          "kind": "field:text",
+          "line": 643,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 643,
+          "value": "Participation Modes"
+        },
+        {
+          "kind": "field:text",
+          "line": 647,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 647,
+          "value": "In-Person Participation: The family attends Gaya Ji and participates at the confirmed locations."
+        },
+        {
+          "kind": "field:text",
+          "line": 651,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 651,
+          "value": "Remote / Live Participation: The family joins from another location where the rite, sacred-site conditions, network availability, and Panda permit it."
+        },
+        {
+          "kind": "field:text",
+          "line": 655,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 655,
+          "value": "Approved Proxy Representative Participation: A confirmed person participates for the family where religious requirements and customer consent permit."
+        },
+        {
+          "kind": "field:text",
+          "line": 659,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 659,
+          "value": "Assistance Features"
+        },
+        {
+          "kind": "field:text",
+          "line": 663,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 663,
+          "value": "Depending on the approved service scope, assistance may include pre-ritual preparation, language or time-zone coordination, accessibility support, elderly or family assistance, local coordination, Live participation arrangements, approved photos or video, Prasad or document dispatch, completion records and post-service support"
+        },
+        {
+          "kind": "field:label",
+          "line": 669,
+          "value": "label"
+        },
+        {
+          "kind": "field:label",
+          "line": 669,
+          "value": "Explore Online Services"
+        },
+        {
+          "kind": "field:label",
+          "line": 673,
+          "value": "label"
+        },
+        {
+          "kind": "field:label",
+          "line": 673,
+          "value": "Explore Offline Services"
+        },
+        {
+          "kind": "field:label",
+          "line": 677,
+          "value": "label"
+        },
+        {
+          "kind": "field:label",
+          "line": 677,
+          "value": "Request a Custom Ritual Assessment"
+        },
+        {
+          "kind": "field:title",
+          "line": 686,
+          "value": "title"
+        },
+        {
+          "kind": "field:title",
+          "line": 686,
+          "value": "Booking Preparation & Customer Workflow"
+        },
+        {
+          "kind": "field:text",
+          "line": 690,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 690,
+          "value": "The 11-Step Customer Journey"
+        },
+        {
+          "kind": "field:text",
+          "line": 694,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 694,
+          "value": "Step 1 — Share the family requirement: Tell us the purpose of the inquiry, family circumstances, ancestor details, Gotra, preferred date, and participation pathway, whether the family wishes to participate Online, in person or through an approved representative."
+        },
+        {
+          "kind": "field:text",
+          "line": 698,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 698,
+          "value": "Step 2 — Information collection and consent: Minimum required customer, participant, and ancestral details are collected under strict consent controls. This may include contact details, country and language, Karta or participant name, Gotra, ancestor names and relationships, known Tithi, special family instructions, accessibility needs and confidentiality preferences."
+        },
+        {
+          "kind": "field:text",
+          "line": 702,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 702,
+          "value": "Step 3 — Ritual assessment: Requirement is reviewed for the appropriate ritual or service category, eligibility, Sankalp details, prescribed Vidhi, participation suitability, sacred locations and preparation needs. Religious questions and final ritual decisions remain with the verified and trusted Gayawal Panda."
+        },
+        {
+          "kind": "field:text",
+          "line": 706,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 706,
+          "value": "Step 4 — Panda, date and participation availability: Verification of Gayawal Panda availability, date, location, and operational capacity."
+        },
+        {
+          "kind": "field:text",
+          "line": 710,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 710,
+          "value": "Step 5 — Scope, quotation and approval: Customer reviews and approves formal quotation outlining charges, inclusions, exclusions, and deliverables before payment."
+        },
+        {
+          "kind": "field:text",
+          "line": 714,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 714,
+          "value": "Step 6 — Invoice, official payment and Universal Reference ID: Invoice issued and unique Universal Reference ID generated for tracking updates, booking, and support."
+        },
+        {
+          "kind": "field:text",
+          "line": 718,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 718,
+          "value": "Step 7 — Booking confirmation and correction: Recipient gets details on assigned Panda, India date/time, locations, and preparation lists. Immediate corrections reported if needed."
+        },
+        {
+          "kind": "field:text",
+          "line": 722,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 722,
+          "value": "Step 8 — Pre-ritual coordination: Final reporting instructions, online joining links, customer-prepared items, or courier needs are coordinated."
+        },
+        {
+          "kind": "field:text",
+          "line": 726,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 726,
+          "value": "Step 9 — Ritual execution: Officiating Gayawal Panda performs ceremony according to authorized scope while Connect Hub Co. manages operational support."
+        },
+        {
+          "kind": "field:text",
+          "line": 730,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 730,
+          "value": "Step 10 — Completion and deliverables: Customer receives completion status, summary, certificate, photos/videos (where permitted), Prasad dispatch, or Vahi updates."
+        },
+        {
+          "kind": "field:text",
+          "line": 734,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 734,
+          "value": "Step 11 — Support, modification and closure: Post-service support, modifications, and formal tracked closure."
+        },
+        {
+          "kind": "field:title",
+          "line": 740,
+          "value": "title"
+        },
+        {
+          "kind": "field:title",
+          "line": 740,
+          "value": "Complaints, Grievances & Escalations"
+        },
+        {
+          "kind": "field:text",
+          "line": 744,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 744,
+          "value": "Complaints, Grievances & Escalations"
+        },
+        {
+          "kind": "field:text",
+          "line": 748,
+          "value": "text"
+        },
+        {
+          "kind": "field:text",
+          "line": 748,
+          "value": "Ordinary questions begin with Customer Support. Complaints are acknowledged, assigned and tracked through the Universal Reference ID. Ritual questions are referred to the assigned Gayawal Panda. Unresolved, sensitive, safety, financial or conduct-related matters may be escalated to authorised Admin or Founder Support."
+        },
+        {
+          "kind": "field:label",
+          "line": 754,
+          "value": "label"
+        },
+        {
+          "kind": "field:label",
+          "line": 754,
+          "value": "Track Service Request"
+        },
+        {
+          "kind": "field:label",
+          "line": 758,
+          "value": "label"
+        },
+        {
+          "kind": "field:label",
+          "line": 758,
+          "value": "Raise a Complaint"
+        },
+        {
+          "kind": "field:label",
+          "line": 762,
+          "value": "label"
+        },
+        {
+          "kind": "field:label",
+          "line": 762,
+          "value": "Founder Support"
+        },
+        {
+          "kind": "field:label",
+          "line": 766,
+          "value": "label"
+        },
+        {
+          "kind": "field:label",
+          "line": 766,
+          "value": "View Policies"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+export interface ServiceCategory{id:string;name:string;slug:string;description:string|null;active:boolean;sortOrder:number;defaultLocale:string;serviceCount:number;createdAt:string;updatedAt:string;}
+export interface CatalogService{id:string;categoryId:string;name:string;slug:string;shortDescription:string|null;description:string|null;priceMinor:number;currency:string;durationMinutes:number|null;requiredMaterials:string|null;eligibility:string|null;active:boolean;featured:boolean;imageUrl:string|null;workflowKey:string|null;defaultLocale:string;categoryName:string;categorySlug:string;createdAt:string;updatedAt:string;}
+export interface CategoryInput{name:string;slug:string;description:string;active:boolean;sortOrder:number;defaultLocale:string;}
+export interface CatalogServiceInput{categoryId:string;name:string;slug:string;shortDescription:string;description:string;priceMinor:number;currency:string;durationMinutes:number|null;requiredMaterials:string;eligibility:string;active:boolean;featured:boolean;imageUrl:string;workflowKey:string;defaultLocale:string;}
+export interface CatalogPage{items:CatalogService[];total:number;page:number;pageSize:number;}

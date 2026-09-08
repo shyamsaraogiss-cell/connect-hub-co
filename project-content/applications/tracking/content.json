@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "ownership": "MASTER_CONTENT_LIBRARY",
+  "runtimeReference": "UNCHANGED_COPY_FIRST",
+  "sources": [
+    {
+      "source": "apps/web/src/app/tracking/page.tsx",
+      "sha256": "252a5cb659fea7579c5249a90b6d3fad350a832fab52b6326439449dfff00765",
+      "entries": [
+        {
+          "kind": "field:heading",
+          "line": 18,
+          "value": "Track Partner Registration"
+        },
+        {
+          "kind": "field:heading",
+          "line": 18,
+          "value": "Track Service Request"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 29,
+          "value": "*"
+        },
+        {
+          "kind": "field:name",
+          "line": 29,
+          "value": "referenceId"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 29,
+          "value": "CHC-YYYY-XXXXXX"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 30,
+          "value": "Registered Email or Mobile *"
+        },
+        {
+          "kind": "field:name",
+          "line": 30,
+          "value": "verification"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 36,
+          "value": "May I Help You?"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 41,
+          "value": "Raise Inquiry"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 94,
+          "value": "Track &amp; Status Support"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 95,
+          "value": "Track Your Request or Registration"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 97,
+          "value": "Track your service request or partner registration using the registered reference details below.\n            "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 100,
+          "value": "PLEASE MAKE SURE -"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 100,
+          "value": "Please use the same Registered Reference ID, Email or Mobile Number associated with it, for every purpose.\n            "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 117,
+          "value": "Last Updated"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 118,
+          "value": "Current Stage"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 119,
+          "value": "Next Step / Action Required"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 121,
+          "value": "Public Updates"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 122,
+          "value": "Tracking record not available"
+        }
+      ]
+    }
+  ]
+}

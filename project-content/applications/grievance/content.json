@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "ownership": "MASTER_CONTENT_LIBRARY",
+  "runtimeReference": "UNCHANGED_COPY_FIRST",
+  "sources": [
+    {
+      "source": "apps/web/src/app/grievance/page.tsx",
+      "sha256": "e0fd591f371c3c908d82d7c4b152189dff436352e2147e4ff2c6f6788cb7aac0",
+      "entries": [
+        {
+          "kind": "field:title",
+          "line": 5,
+          "value": "Grievance Form | Connect Hub Co."
+        },
+        {
+          "kind": "field:description",
+          "line": 5,
+          "value": "Escalate an existing complaint or service matter to Connect Hub Co."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 11,
+          "value": "Grievance Form"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 12,
+          "value": "Grievance Redressal"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 14,
+          "value": "Use this form to formally escalate an unresolved complaint or service issue that has already been raised through the normal support process. Provide the existing complaint/service reference, relevant dates, grievance category, and supporting details so the matter can be reviewed through the grievance process.\n        "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 16,
+          "value": "PLEASE MAKE SURE - Fields marked * are mandatory."
+        }
+      ]
+    }
+  ]
+}

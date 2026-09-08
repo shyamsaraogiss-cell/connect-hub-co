@@ -1,0 +1,438 @@
+{
+  "schemaVersion": 1,
+  "ownership": "MASTER_CONTENT_LIBRARY",
+  "runtimeReference": "UNCHANGED_COPY_FIRST",
+  "sources": [
+    {
+      "source": "apps/web/src/components/booking/BookingForm.tsx",
+      "sha256": "24f6bcc3e5b20515e571fb31ea9cc77e4922e03274661b3c51b29cf4545d5903",
+      "entries": [
+        {
+          "kind": "list:PENDING",
+          "line": 13,
+          "value": "PENDING"
+        },
+        {
+          "kind": "list:PENDING",
+          "line": 13,
+          "value": "CONFIRMED"
+        },
+        {
+          "kind": "list:PENDING",
+          "line": 13,
+          "value": "CANCELLED"
+        },
+        {
+          "kind": "list:CONFIRMED",
+          "line": 13,
+          "value": "CONFIRMED"
+        },
+        {
+          "kind": "list:CONFIRMED",
+          "line": 13,
+          "value": "COMPLETED"
+        },
+        {
+          "kind": "list:CONFIRMED",
+          "line": 13,
+          "value": "CANCELLED"
+        },
+        {
+          "kind": "list:COMPLETED",
+          "line": 13,
+          "value": "COMPLETED"
+        },
+        {
+          "kind": "list:CANCELLED",
+          "line": 13,
+          "value": "CANCELLED"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 24,
+          "value": "Customer"
+        },
+        {
+          "kind": "field:name",
+          "line": 24,
+          "value": "customerId"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 24,
+          "value": "Select customer"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 24,
+          "value": "Religious partner"
+        },
+        {
+          "kind": "field:name",
+          "line": 24,
+          "value": "religiousPartnerId"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 24,
+          "value": "Select religious partner"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 24,
+          "value": "Service"
+        },
+        {
+          "kind": "field:name",
+          "line": 24,
+          "value": "serviceName"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 24,
+          "value": "Scheduled at"
+        },
+        {
+          "kind": "field:name",
+          "line": 24,
+          "value": "scheduledAt"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 24,
+          "value": "Notes"
+        },
+        {
+          "kind": "field:name",
+          "line": 24,
+          "value": "notes"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 24,
+          "value": "Status"
+        },
+        {
+          "kind": "field:name",
+          "line": 24,
+          "value": "status"
+        },
+        {
+          "kind": "field:label",
+          "line": 28,
+          "value": "PitruMoksha Gaya"
+        },
+        {
+          "kind": "field:label",
+          "line": 29,
+          "value": "Ritual Services"
+        },
+        {
+          "kind": "field:label",
+          "line": 30,
+          "value": "Travel Assistance"
+        },
+        {
+          "kind": "field:label",
+          "line": 31,
+          "value": "Vahi Records"
+        },
+        {
+          "kind": "field:label",
+          "line": 32,
+          "value": "Customized Service"
+        },
+        {
+          "kind": "field:label",
+          "line": 33,
+          "value": "Other / Not Sure"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 52,
+          "value": "Booking request submitted"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 52,
+          "value": "Keep this Universal Reference ID to track your request."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 52,
+          "value": "Track request"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 52,
+          "value": "Submit another"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 56,
+          "value": "First Name *"
+        },
+        {
+          "kind": "field:name",
+          "line": 56,
+          "value": "firstName"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 56,
+          "value": "First name"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 57,
+          "value": "Middle Name"
+        },
+        {
+          "kind": "field:name",
+          "line": 57,
+          "value": "middleName"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 57,
+          "value": "Middle name"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 58,
+          "value": "Last Name *"
+        },
+        {
+          "kind": "field:name",
+          "line": 58,
+          "value": "lastName"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 58,
+          "value": "Last name"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 61,
+          "value": "Registered Mobile Number *"
+        },
+        {
+          "kind": "field:name",
+          "line": 61,
+          "value": "mobile"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 61,
+          "value": "+91 9876543210"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 62,
+          "value": "WhatsApp Number"
+        },
+        {
+          "kind": "field:name",
+          "line": 62,
+          "value": "whatsappNumber"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 62,
+          "value": "+91 9876543210"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 63,
+          "value": "Email Address *"
+        },
+        {
+          "kind": "field:name",
+          "line": 63,
+          "value": "email"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 63,
+          "value": "name@example.com"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 66,
+          "value": "Service *"
+        },
+        {
+          "kind": "attribute:aria-label",
+          "line": 66,
+          "value": "Service"
+        },
+        {
+          "kind": "field:name",
+          "line": 66,
+          "value": "serviceId"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 66,
+          "value": "Select a service"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 67,
+          "value": "Service Category *"
+        },
+        {
+          "kind": "attribute:aria-label",
+          "line": 67,
+          "value": "Service Category"
+        },
+        {
+          "kind": "field:name",
+          "line": 67,
+          "value": "serviceCategory"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 67,
+          "value": "e.g. Griha Pravesh / Pind Daan"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 68,
+          "value": "Participation Format *"
+        },
+        {
+          "kind": "attribute:aria-label",
+          "line": 68,
+          "value": "Participation Format"
+        },
+        {
+          "kind": "field:name",
+          "line": 68,
+          "value": "participationFormat"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 68,
+          "value": "Select a participation format"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 68,
+          "value": "Online / Remote Live"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 68,
+          "value": "Offline / On-Site In-Person"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 68,
+          "value": "Hybrid / Travel &amp; Ritual"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 68,
+          "value": "Not Sure / Please Guide Me"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 70,
+          "value": "Preferred Location *"
+        },
+        {
+          "kind": "field:name",
+          "line": 70,
+          "value": "preferredLocation"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 70,
+          "value": "Gaya, Home City, Destination..."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 70,
+          "value": "Preferred Date *"
+        },
+        {
+          "kind": "field:name",
+          "line": 70,
+          "value": "preferredDate"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 70,
+          "value": "Participants *"
+        },
+        {
+          "kind": "field:name",
+          "line": 70,
+          "value": "participants"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 71,
+          "value": "Message / Requirements"
+        },
+        {
+          "kind": "field:name",
+          "line": 71,
+          "value": "message"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 72,
+          "value": "Preferred Contact Method *"
+        },
+        {
+          "kind": "list:content",
+          "line": 72,
+          "value": "WHATSAPP"
+        },
+        {
+          "kind": "list:content",
+          "line": 72,
+          "value": "WhatsApp"
+        },
+        {
+          "kind": "list:content",
+          "line": 72,
+          "value": "EMAIL"
+        },
+        {
+          "kind": "list:content",
+          "line": 72,
+          "value": "Email"
+        },
+        {
+          "kind": "list:content",
+          "line": 72,
+          "value": "PHONE"
+        },
+        {
+          "kind": "list:content",
+          "line": 72,
+          "value": "Phone Call"
+        },
+        {
+          "kind": "field:name",
+          "line": 72,
+          "value": "contactMethod"
+        },
+        {
+          "kind": "field:name",
+          "line": 73,
+          "value": "consent"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 73,
+          "value": "I consent to Connect Hub Co. reviewing this request and contacting me under the Privacy Policy and Booking Terms."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,879 @@
+{
+  "schemaVersion": 1,
+  "ownership": "MASTER_CONTENT_LIBRARY",
+  "runtimeReference": "UNCHANGED_COPY_FIRST",
+  "sources": [
+    {
+      "source": "apps/web/src/app/travel-assistance/page.tsx",
+      "sha256": "c70e4f8bd95808cb8de050d32b8c72c04c90282a806ac0387fe39889ad4a9cff",
+      "entries": [
+        {
+          "kind": "field:title",
+          "line": 4,
+          "value": "Travel Assistance Across India & Nepal | Connect Hub Co."
+        },
+        {
+          "kind": "field:description",
+          "line": 4,
+          "value": "Explore verified travel coordination, shadow assistance, emergency family support, and local ground assistance across India and Nepal."
+        }
+      ]
+    },
+    {
+      "source": "apps/web/src/components/business-pages/travel-assistance/TravelAssistanceContent.tsx",
+      "sha256": "472639684a61dee5d95ef737b3776c5bcc44815cbe92a1e4ec4d8072377b7026",
+      "entries": [
+        {
+          "kind": "field:title",
+          "line": 21,
+          "value": "1. Shadow Assistance"
+        },
+        {
+          "kind": "field:subtitle",
+          "line": 22,
+          "value": "Your Shadow Traveler"
+        },
+        {
+          "kind": "field:description",
+          "line": 23,
+          "value": "Discreet, continuous background or side-by-side companion support—always with you, always for you throughout your journey."
+        },
+        {
+          "kind": "field:badge",
+          "line": 25,
+          "value": "Signature"
+        },
+        {
+          "kind": "field:title",
+          "line": 29,
+          "value": "2. Emergency Family & Personal Support"
+        },
+        {
+          "kind": "field:subtitle",
+          "line": 30,
+          "value": "Immediate Priority Assistance"
+        },
+        {
+          "kind": "field:description",
+          "line": 31,
+          "value": "Round-the-clock safety monitoring, emergency family coordination, medical standby, and priority traveler support."
+        },
+        {
+          "kind": "field:badge",
+          "line": 33,
+          "value": "247 Emergency"
+        },
+        {
+          "kind": "field:title",
+          "line": 37,
+          "value": "3. 247 On-Trip Support"
+        },
+        {
+          "kind": "field:subtitle",
+          "line": 38,
+          "value": "Live Round-the-Clock Help"
+        },
+        {
+          "kind": "field:description",
+          "line": 39,
+          "value": "Immediate live communication and helpline assistance for schedule changes, unexpected delays, or special on-trip requests."
+        },
+        {
+          "kind": "field:badge",
+          "line": 41,
+          "value": "247 Active"
+        },
+        {
+          "kind": "field:title",
+          "line": 45,
+          "value": "4. Safari Assistance"
+        },
+        {
+          "kind": "field:subtitle",
+          "line": 46,
+          "value": "Outdoor & Wildlife Excursions"
+        },
+        {
+          "kind": "field:description",
+          "line": 47,
+          "value": "Specialized coordination for wildlife safaris, sanctuary permits, local guides, and regional transport in eco-destination hubs."
+        },
+        {
+          "kind": "field:title",
+          "line": 52,
+          "value": "5. Beach Assistance"
+        },
+        {
+          "kind": "field:subtitle",
+          "line": 53,
+          "value": "Coastal Destination Support"
+        },
+        {
+          "kind": "field:description",
+          "line": 54,
+          "value": "Assistance for coastal and beach destinations, covering local transfers, stay arrangements, and coastal activity guidance."
+        },
+        {
+          "kind": "field:title",
+          "line": 59,
+          "value": "6. Local Ground Assistance"
+        },
+        {
+          "kind": "field:subtitle",
+          "line": 60,
+          "value": "Station, Airport & City Transfers"
+        },
+        {
+          "kind": "field:description",
+          "line": 61,
+          "value": "Pre-arranged pickup from airports/railway stations, verified local vehicles, and ground escort for peace of mind."
+        },
+        {
+          "kind": "field:title",
+          "line": 66,
+          "value": "7. Customized Travel Planning"
+        },
+        {
+          "kind": "field:subtitle",
+          "line": 67,
+          "value": "Tailored Itinerary Execution"
+        },
+        {
+          "kind": "field:description",
+          "line": 68,
+          "value": "Personalized travel planning for domestic families, NRIs, and international visitors across pilgrimage and cultural hubs."
+        },
+        {
+          "kind": "field:title",
+          "line": 73,
+          "value": "8. Nepal Jungle Ride & Stay"
+        },
+        {
+          "kind": "field:subtitle",
+          "line": 74,
+          "value": "Nepal Eco & Wildlife Excursions"
+        },
+        {
+          "kind": "field:description",
+          "line": 75,
+          "value": "Exclusive assistance for Chitwan and Nepal eco-tourism, safari bookings, jungle lodge stays, and cross-border transport."
+        },
+        {
+          "kind": "field:badge",
+          "line": 77,
+          "value": "Nepal Hub"
+        },
+        {
+          "kind": "field:title",
+          "line": 81,
+          "value": "9. Customized & Others"
+        },
+        {
+          "kind": "field:subtitle",
+          "line": 82,
+          "value": "Bespoke Travel Assistance"
+        },
+        {
+          "kind": "field:description",
+          "line": 83,
+          "value": "Custom travel requests, special mobility assistance for seniors/children, and tailored travel support for unique itineraries."
+        },
+        {
+          "kind": "field:name",
+          "line": 89,
+          "value": "Gaya Ji"
+        },
+        {
+          "kind": "field:name",
+          "line": 90,
+          "value": "Kashi / Varanasi"
+        },
+        {
+          "kind": "field:name",
+          "line": 91,
+          "value": "Ayodhya"
+        },
+        {
+          "kind": "field:name",
+          "line": 92,
+          "value": "Mathura"
+        },
+        {
+          "kind": "field:name",
+          "line": 93,
+          "value": "Vrindavan"
+        },
+        {
+          "kind": "field:name",
+          "line": 94,
+          "value": "Delhi NCR"
+        },
+        {
+          "kind": "field:name",
+          "line": 95,
+          "value": "Lucknow"
+        },
+        {
+          "kind": "field:name",
+          "line": 96,
+          "value": "Gorakhpur"
+        },
+        {
+          "kind": "field:name",
+          "line": 97,
+          "value": "Pune"
+        },
+        {
+          "kind": "field:name",
+          "line": 98,
+          "value": "Hyderabad"
+        },
+        {
+          "kind": "field:name",
+          "line": 99,
+          "value": "Nashik"
+        },
+        {
+          "kind": "field:name",
+          "line": 100,
+          "value": "Bengaluru"
+        },
+        {
+          "kind": "field:name",
+          "line": 101,
+          "value": "Mumbai"
+        },
+        {
+          "kind": "field:name",
+          "line": 102,
+          "value": "Patna"
+        },
+        {
+          "kind": "field:name",
+          "line": 103,
+          "value": "Nepal"
+        },
+        {
+          "kind": "list:partnerTrustItems",
+          "line": 107,
+          "value": "Background Screened & Identity Verified Travel Partners"
+        },
+        {
+          "kind": "list:partnerTrustItems",
+          "line": 108,
+          "value": "Service Certified & Experience Verified Local Guides"
+        },
+        {
+          "kind": "list:partnerTrustItems",
+          "line": 109,
+          "value": "247 Complete Journey Management & On-Trip Monitoring"
+        },
+        {
+          "kind": "list:partnerTrustItems",
+          "line": 110,
+          "value": "Pre-Arranged Transparent Pricing without Hidden Demands"
+        },
+        {
+          "kind": "list:partnerTrustItems",
+          "line": 111,
+          "value": "Dedicated Support for NRIs, Senior Citizens & Families"
+        },
+        {
+          "kind": "list:partnerTrustItems",
+          "line": 112,
+          "value": "Seamless Integration with Ritual Services & Pilgrimage Stays"
+        },
+        {
+          "kind": "field:title",
+          "line": 117,
+          "value": "01. Share Your Travel Plan"
+        },
+        {
+          "kind": "field:description",
+          "line": 118,
+          "value": "Tell us your arrival city, dates, traveler count, mode of arrival, and specific stay or local assistance needs."
+        },
+        {
+          "kind": "field:title",
+          "line": 121,
+          "value": "02. Receive Custom Travel Scope"
+        },
+        {
+          "kind": "field:description",
+          "line": 122,
+          "value": "Our travel team reviews your route, verifies partner availability, and prepares a transparent service plan."
+        },
+        {
+          "kind": "field:title",
+          "line": 125,
+          "value": "03. On-Trip Shadow Assistance"
+        },
+        {
+          "kind": "field:description",
+          "line": 126,
+          "value": "Enjoy dedicated airport/station pickup, local ground transfers, hotel stay coordination, and Shadow Assist."
+        },
+        {
+          "kind": "field:title",
+          "line": 129,
+          "value": "04. Safe Departure & Support"
+        },
+        {
+          "kind": "field:description",
+          "line": 130,
+          "value": "Receive 247 live support throughout your stay until your safe departure and journey completion."
+        },
+        {
+          "kind": "field:question",
+          "line": 136,
+          "value": "What is the Shadow Traveler concept?"
+        },
+        {
+          "kind": "field:answer",
+          "line": 137,
+          "value": "Our Shadow Traveler approach means we act as your local ground companion—always with you, always for you. We manage pickups, stays, local navigation, and unexpected needs while you focus on your journey."
+        },
+        {
+          "kind": "field:question",
+          "line": 140,
+          "value": "Can you arrange airport or railway station pickups?"
+        },
+        {
+          "kind": "field:answer",
+          "line": 141,
+          "value": "Yes! Airport and railway station pickups can be coordinated after you share your arrival details, passenger count, destination, and timing."
+        },
+        {
+          "kind": "field:question",
+          "line": 144,
+          "value": "Is travel assistance available for NRIs and international visitors?"
+        },
+        {
+          "kind": "field:answer",
+          "line": 145,
+          "value": "Yes. We provide complete travel assistance for NRIs and international families visiting India and Nepal, including airport connection, multi-lingual coordination, and stay management."
+        },
+        {
+          "kind": "field:question",
+          "line": 148,
+          "value": "How are Travel Assistance Partners verified?"
+        },
+        {
+          "kind": "field:answer",
+          "line": 149,
+          "value": "All partners undergo mandatory background screening, identity verification, experience checks, and service certification before joining our network."
+        },
+        {
+          "kind": "field:question",
+          "line": 152,
+          "value": "Can travel assistance be combined with PitruMoksha or Ritual Services?"
+        },
+        {
+          "kind": "field:answer",
+          "line": 153,
+          "value": "Yes. Travel assistance can be seamlessly combined with your ancestral rites or puja ceremonies so that local transport, stay, and priest coordination are unified."
+        },
+        {
+          "kind": "field:question",
+          "line": 156,
+          "value": "What happens if my travel dates or arrival times change during the trip?"
+        },
+        {
+          "kind": "field:answer",
+          "line": 157,
+          "value": "Our 247 On-Trip Support team handles live itinerary adjustments, flight/train delay tracking, and rescheduled local pickups."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 167,
+          "value": "DEDICATED JOURNEY MANAGEMENT"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 168,
+          "value": "Travel with Confidence. Return with Peace of Mind."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 170,
+          "value": "Connect Hub Co. is not a traditional travel agency or tour operator selling packaged itineraries. At Connect Hub Co., we believe every traveler deserves more than just transportation and accommodation—they deserve confidence, reliable guidance, and a trusted helping hand throughout their journey. Through our verified network of partners and dedicated local coordinators, we help travelers navigate unfamiliar destinations across India and Nepal with ease, without compromising their independence.\r\n          "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 178,
+          "value": "SERVICE BOUNDARIES & STANDARDS"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 179,
+          "value": "Critical Engagement Framework & Boundaries"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 181,
+          "value": "Connect Hub Co. operates under strict operational boundaries, transparent service terms, and verified background screening.\r\n          "
+        },
+        {
+          "kind": "field:name",
+          "line": 186,
+          "value": "check"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 188,
+          "value": "Customer-Defined Boundaries:"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 189,
+          "value": "The customer establishes and explicitly defines the limitations, scope, and authorized boundaries of the assistant&apos;s role before the service plan is finalized."
+        },
+        {
+          "kind": "field:name",
+          "line": 193,
+          "value": "check"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 195,
+          "value": "Logistics & Arrangements:"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 196,
+          "value": "The customer is responsible for arranging, booking, and providing all meals, accommodation, and travel tickets for the assigned assistant throughout the trip."
+        },
+        {
+          "kind": "field:name",
+          "line": 200,
+          "value": "check"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 202,
+          "value": "Employment Status:"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 203,
+          "value": "Connect Hub Co. operates as an independent service provider. The assigned assistant is not an employee of the customer."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 212,
+          "value": "DEDICATED SUPPORT"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 213,
+          "value": "Why Choose Connect Hub Co.?"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 215,
+          "value": "Modern travel is highly accessible, yet unforeseen challenges such as missed connections, unfamiliar local regulations, language barriers, and sudden medical emergencies can disrupt a well-planned journey. Connect Hub Co. bridges this gap. Customers continue to book their preferred airlines, hotels, and tour operators, while our trained coordinators provide background management and ground assistance. Whether the customer is a newly married couple, senior citizen, NRI family visiting India, family traveler, or solo traveler, the framework ensures physical support is available when required. We act as Your Shadow Traveler—always nearby when needed and never intrusive when not required.\r\n          "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 219,
+          "value": "Important Note:"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 221,
+          "value": "Connect Hub Co. is not a traditional travel agency or tour operator selling packaged itineraries. We provide 247 journey management, Shadow Traveler assistance, local ground coordination, and emergency traveler support across major destinations in India and Nepal.\r\n          "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 229,
+          "value": "TAILORED TRAVEL ASSISTANCE"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 230,
+          "value": "Our Specialized Services"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 232,
+          "value": "Explore our specialized travel assistance services designed for high-touch, privacy-first, and emergency journey support.\r\n          "
+        },
+        {
+          "kind": "field:name",
+          "line": 237,
+          "value": "family"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 238,
+          "value": "1. Shadow Assistance"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 240,
+          "value": "Designed for travelers who value independence but also want reliable local backup. We coordinate logistics, remain ready to respond, respect customer privacy, and help keep family members reassured.\r\n            "
+        },
+        {
+          "kind": "field:name",
+          "line": 244,
+          "value": "check"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 245,
+          "value": "2. Emergency Family & Personal Support"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 247,
+          "value": "Provides compassionate on-site crisis coordination when a traveler or family member faces hospitalization or a medical emergency away from home. Representatives may assist with hospital formalities, medical-administration coordination, essential purchases, attendant logistics, family communication, and transparent status updates.\r\n            "
+        },
+        {
+          "kind": "field:name",
+          "line": 251,
+          "value": "followup"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 252,
+          "value": "3. 247 On-Trip Support"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 254,
+          "value": "Provides an active round-the-clock helpline and rapid-response mechanism for updates, urgent guidance, coordination, and emergency support throughout India and Nepal.\r\n            "
+        },
+        {
+          "kind": "field:name",
+          "line": 258,
+          "value": "guide"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 259,
+          "value": "4. Safari & Wildlife Assistance"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 261,
+          "value": "Supports wildlife journeys through permit coordination, local transport assistance, verified partner coordination, and ground-level execution.\r\n            "
+        },
+        {
+          "kind": "field:name",
+          "line": 265,
+          "value": "online"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 266,
+          "value": "5. Coastal & Beach Journey Assistance"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 268,
+          "value": "Provides localized coordination, destination guidance, and safety-focused activity planning for coastal and beach journeys.\r\n            "
+        },
+        {
+          "kind": "field:name",
+          "line": 272,
+          "value": "details"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 273,
+          "value": "6. Customized Theme-Based Travel Planning"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 275,
+          "value": "Offers tailored journey planning and execution for specific travel themes, pilgrimage circuits, and cultural itineraries across India &amp; Nepal. Support may be customized for:\r\n            "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 278,
+          "value": "Religious and spiritual journeys"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 279,
+          "value": "Heritage and cultural circuits"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 280,
+          "value": "Adventure travel"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 281,
+          "value": "Senior-citizen journeys"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 282,
+          "value": "Family holidays"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 283,
+          "value": "Educational or research visits"
+        },
+        {
+          "kind": "field:name",
+          "line": 287,
+          "value": "guide"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 288,
+          "value": "7. Nepal Jungle Ride &amp; Stay Coordination"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 290,
+          "value": "Provides specialized regional coordination for jungle rides, wilderness stays, and safari experiences across Nepal through verified partners.\r\n            "
+        },
+        {
+          "kind": "field:name",
+          "line": 294,
+          "value": "offline"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 295,
+          "value": "8. Bespoke Custom Solutions"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 297,
+          "value": "Travel requirements outside the standard offerings are reviewed and custom-coordinated with authorized team approval.\r\n            "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 306,
+          "value": "OUR CORE VALUES"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 307,
+          "value": "Our Core Commitments"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 309,
+          "value": "At Connect Hub Co., every journey is backed by structured coordination, strict standards, and transparent accountability.\r\n          "
+        },
+        {
+          "kind": "field:name",
+          "line": 314,
+          "value": "check"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 316,
+          "value": "Care &amp; Responsibility"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 317,
+          "value": "Coordinate every journey with care, accountability, and responsibility."
+        },
+        {
+          "kind": "field:name",
+          "line": 321,
+          "value": "check"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 323,
+          "value": "Verified Network"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 324,
+          "value": "Connect travelers with verified local partners and coordinators."
+        },
+        {
+          "kind": "field:name",
+          "line": 328,
+          "value": "check"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 330,
+          "value": "247 Responsiveness"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 331,
+          "value": "Respond during planned operations and unexpected situations."
+        },
+        {
+          "kind": "field:name",
+          "line": 335,
+          "value": "check"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 337,
+          "value": "Privacy &amp; Boundaries"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 338,
+          "value": "Respect customer privacy and authorized service boundaries."
+        },
+        {
+          "kind": "field:name",
+          "line": 342,
+          "value": "check"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 344,
+          "value": "Honesty &amp; Professionalism"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 345,
+          "value": "Provide clear, practical assistance with honesty and professionalism."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 354,
+          "value": "9 APPROVED TRAVEL ASSISTANCE SERVICES"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 355,
+          "value": "247 Complete Journey Management"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 357,
+          "value": "Explore our 9 verified travel assistance services designed to make your journey safe, comfortable, and completely hassle-free across India & Nepal.\r\n          "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 380,
+          "value": "SERVICE COVERAGE ACROSS INDIA & NEPAL"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 381,
+          "value": "Available Across 15+ Destinations"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 383,
+          "value": "Our travel assistance network supports domestic travelers, NRIs, and international visitors across major pilgrimage destinations and urban hubs.\r\n          "
+        },
+        {
+          "kind": "field:name",
+          "line": 392,
+          "value": "offline"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 394,
+          "value": "(International Hub)"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 403,
+          "value": "PARTNER VERIFICATION STANDARDS"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 404,
+          "value": "Background Screened & Certified Partners"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 406,
+          "value": "Every travel partner is thoroughly vetted to ensure total safety, reliability, and dedicated care.\r\n          "
+        },
+        {
+          "kind": "field:name",
+          "line": 412,
+          "value": "check"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 422,
+          "value": "TRANSPARENT PROCESS"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 423,
+          "value": "How Travel Assistance Works"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 439,
+          "value": "FAQ"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 440,
+          "value": "Frequently Asked Questions"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 455,
+          "value": "GUIDED ASSISTANCE"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 456,
+          "value": "Planning a Journey to India or Nepal?"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 458,
+          "value": "Share your itinerary and arrival details for custom travel planning and 247 Shadow Traveler assistance.\r\n          "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 462,
+          "value": "Raise a Travel Inquiry"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 463,
+          "value": "Browse All Services"
+        },
+        {
+          "kind": "attribute:aria-label",
+          "line": 468,
+          "value": "Related navigation"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 469,
+          "value": "Related navigation"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 471,
+          "value": "PitruMoksha Gaya"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 472,
+          "value": "Ritual Services"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 473,
+          "value": "Vahi Lineage Records"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 474,
+          "value": "Service Catalog"
+        }
+      ]
+    }
+  ]
+}

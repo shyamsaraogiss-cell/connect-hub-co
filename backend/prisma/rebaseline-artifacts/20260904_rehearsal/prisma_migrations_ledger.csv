@@ -1,0 +1,23 @@
+﻿id,checksum,finished_at,migration_name,logs,rolled_back_at,started_at,applied_steps_count
+68323c89-6b2d-4b1c-bdea-bfb0dec044c4,a31670ceaad9d8915168bf5c22bd27e2c99030379cefb6b44a8376ddea3fc39b,2026-07-13 10:31:44.23415+05:30,20260713050144_init_core_models,,,2026-07-13 10:31:44.132672+05:30,1
+d29853b4-ef7e-4e14-b87d-782548ae6206,e678c02b5df2a119a2aaf47a5e0a9b3bce20a5c563a173fd56901c640317a059,2026-07-14 10:06:47.15817+05:30,20260714000000_add_booking,,,2026-07-14 10:06:46.963719+05:30,1
+40e7c0d8-f3b4-41e4-b97c-0bbac417e6f7,5dd55235531df19778a1a18ffafda0716a260b025555e2d17d8c4f22e3ef6e3d,2026-07-14 11:32:29.384309+05:30,20260714010000_add_pitru_moksha_requests,,,2026-07-14 11:32:29.188051+05:30,1
+4c4bb245-e779-4b0f-8863-9330cffd002c,27e4b2fb3d2485cc5daae2b1a1ab1c1cecd0d52a7eb690e83d785e9fa715bbe1,2026-07-14 11:55:07.900725+05:30,20260714020000_add_travel_assistance,,,2026-07-14 11:55:07.702003+05:30,1
+928dd7a8-b9b2-4029-aa51-65fd53269784,40e884780a7e323439a60f7d3edf6dc3da5b1f65481a13c964426248ca81778c,2026-07-14 12:51:58.963631+05:30,20260714030000_add_service_catalog,,,2026-07-14 12:51:58.694769+05:30,1
+16af6c72-932a-4c3c-a458-fca7be7f635d,8c6b056e825a8f2c04a22c1ed1879d586b8536d1cfe9e77e0fec1fd0625fb6f9,,20260706135901_init,"A migration failed to apply. New migrations cannot be applied before the error is recovered from. Read more about how to resolve migration issues in a production database: https://pris.ly/d/migrate-resolve
+
+Migration name: 20260706135901_init
+
+Database error code: 42710
+
+Database error:
+ERROR: type ""UserRole"" already exists
+
+DbError { severity: ""ERROR"", parsed_severity: Some(Error), code: SqlState(E42710), message: ""type \""UserRole\"" already exists"", detail: None, hint: None, position: None, where_: None, schema: None, table: None, column: None, datatype: None, constraint: None, file: Some(""typecmds.c""), line: Some(1179), routine: Some(""DefineEnum"") }
+
+",2026-08-12 19:52:06.751069+05:30,2026-08-12 19:51:45.342665+05:30,0
+0e9be955-72d1-447d-b932-dbd67c70c348,8c6b056e825a8f2c04a22c1ed1879d586b8536d1cfe9e77e0fec1fd0625fb6f9,2026-08-12 19:52:06.767458+05:30,20260706135901_init,,,2026-08-12 19:52:06.767458+05:30,0
+b6f82a9c-5983-4086-89b9-3e395f11998c,c769954f7e325628f5e9760b9874a6e3a2f8c663450e8d7ec0654bb38c877abf,2026-08-12 19:52:23.534809+05:30,20260812193000_add_universal_request_backbone,,,2026-08-12 19:52:22.664357+05:30,1
+4ae71d62-ec09-4bea-a407-7c4c6606e85e,fb0620b25a5d70948cbec04ddfa92b84ce6c0b97eac9034a3256ef665ea3862c,2026-08-12 20:02:51.24317+05:30,20260812201500_add_universal_request_status_history,,,2026-08-12 20:02:51.046834+05:30,1
+2d955066-9a6d-427f-b441-26301bf6bed9,bb710d1d9d022e9dd14e9d6c83bbfe3d0d771f7594af506098448b49d2783218,2026-08-12 20:19:46.698177+05:30,20260812213000_link_partner_profile_user,,,2026-08-12 20:19:46.535868+05:30,1
+cb408eaa-0ad9-430f-89c3-edb57d19fc38,56805a1d9f01c05aeb9956f70ffac3f17d1115c190890c8df19f68d9864bc75a,2026-08-13 12:25:09.046489+05:30,20260813000000_g2_governance_schema_reconciliation,,,2026-08-13 12:25:09.046489+05:30,0

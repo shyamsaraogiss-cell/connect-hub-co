@@ -1,0 +1,151 @@
+import { ROUTES } from '@/config/navigation';
+import {
+  PITRU_MOKSHA_GAYA_ROUTE,
+  VAHI_RECORDS_ROUTE,
+} from '@/features/hero/data/heroRoutes';
+import type { HeroSlideData } from '@/features/hero/types/hero.types';
+
+export const homepageHeroSlides = [
+  {
+    id: 'pitru-moksha-gaya',
+    index: 1,
+    route: PITRU_MOKSHA_GAYA_ROUTE,
+    title: 'PitruMoksha Gaya',
+    brand: 'Connect Hub Co.',
+    philosophy: 'Explore the Land of Moksha',
+    promise: 'Distance Never Stops Devotion',
+    body:
+      'PitruMoksha Gaya is a specialized ancestral-ritual coordination service platform powered by Connect Hub Co.',
+    bullets: [
+      'Online Services — Remote participation, Live Sankalp, or approved representative-led coordination.',
+      'Offline Services — In-person participation at Gaya Ji with local ritual coordination.',
+    ],
+    closingLine: 'Guiding Families on the Path of Ancestral Peace and Moksha.',
+    representativeLabel: 'Approved representative-led coordination',
+    trustItems: [
+      'Privacy & Sanctity',
+      'Confidentiality First',
+      'Human-Guided AI',
+    ],
+    explore: {
+      label: 'Understand the Rite. Choose Your Path.',
+      description:
+        'Understand the rite. Choose how you wish to participate. Proceed with clarity.',
+      href: PITRU_MOKSHA_GAYA_ROUTE,
+    },
+    aiContextKey: 'pitru-moksha-gaya',
+    coreServicesActiveItem: 'PitruMoksha Gaya',
+    backgroundAsset: {
+      identity: 'Hero_1_PitruMoksha_Gaya_v2.0.png',
+      sourcePath:
+        'apps/web/public/images/heroes/hero-1/Hero_1_PitruMoksha_Gaya_v2.0.png',
+      runtimePath: '/images/heroes/hero-1/Hero_1_PitruMoksha_Gaya_v2.0.png',
+    },
+    accessibility: {
+      label: 'PitruMoksha Gaya hero',
+      backgroundAlt: 'PitruMoksha Gaya sacred coordination',
+    },
+  },
+  {
+    id: 'ritual-services',
+    index: 2,
+    route: ROUTES.RITUAL_SERVICES,
+    title: 'Ritual Services',
+    brand: null,
+    philosophy: null,
+    promise: null,
+    body: null,
+    bullets: [],
+    closingLine: null,
+    representativeLabel: null,
+    trustItems: [],
+    explore: null,
+    aiContextKey: 'ritual-services',
+    coreServicesActiveItem: 'Ritual Services',
+    backgroundAsset: null,
+    accessibility: {
+      label: 'Ritual Services hero',
+      backgroundAlt: null,
+    },
+  },
+  {
+    id: 'travel-assistance',
+    index: 3,
+    route: ROUTES.TRAVEL_ASSISTANCE,
+    title: 'Travel Assistance',
+    brand: null,
+    philosophy: null,
+    promise: null,
+    body: null,
+    bullets: [],
+    closingLine: null,
+    representativeLabel: null,
+    trustItems: [],
+    explore: null,
+    aiContextKey: 'travel-assistance',
+    coreServicesActiveItem: 'Travel Assistance',
+    backgroundAsset: null,
+    accessibility: {
+      label: 'Travel Assistance hero',
+      backgroundAlt: null,
+    },
+  },
+  {
+    id: 'vahi-records',
+    index: 4,
+    route: VAHI_RECORDS_ROUTE,
+    title: 'Vahi Records',
+    brand: 'Connect Hub Co.',
+    philosophy: 'Unearth Your Ancestral Lineage',
+    promise: null,
+    body:
+      'Guided ancestral lineage documentation, Gotra verification, and Vahi (Panji) record assistance coordinated through authorised traditional Panda custodians.',
+    bullets: [],
+    closingLine: null,
+    representativeLabel: null,
+    trustItems: [
+      'No Legal/Property Standing',
+      'No Guarantee of Discovery',
+      'Authorized custodians are mandatory',
+    ],
+    explore: {
+      label: 'About Vahi (Panji) Records',
+      description: null,
+      href: VAHI_RECORDS_ROUTE,
+    },
+    aiContextKey: 'vahi-records',
+    coreServicesActiveItem: 'Vahi Records',
+    backgroundAsset: {
+      identity: 'hero-4-vahi-records-background.png',
+      sourcePath:
+        'project-content/heroes/hero-4-vahi-records/hero-4-vahi-records-background.png',
+      runtimePath: null,
+    },
+    accessibility: {
+      label: 'Vahi Records hero',
+      backgroundAlt: 'Traditional Vahi ancestral records',
+    },
+  },
+  {
+    id: 'religious-partner-network',
+    index: 5,
+    route: ROUTES.RELIGIOUS_PARTNERS,
+    title: 'Religious Partner',
+    brand: null,
+    philosophy: null,
+    promise: null,
+    body: null,
+    bullets: [],
+    closingLine: null,
+    representativeLabel: null,
+    trustItems: [],
+    explore: null,
+    aiContextKey: 'religious-partners',
+    coreServicesActiveItem: 'Religious Partner Registration',
+    backgroundAsset: null,
+    accessibility: {
+      label: 'Religious Partner hero',
+      backgroundAlt: null,
+    },
+  },
+] as const satisfies readonly HeroSlideData[];

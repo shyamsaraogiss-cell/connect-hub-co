@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "ownership": "MASTER_CONTENT_LIBRARY",
+  "runtimeReference": "UNCHANGED_COPY_FIRST",
+  "sources": [
+    {
+      "source": "apps/web/src/app/travel-assistance/success/page.tsx",
+      "sha256": "91134a72c368f12591912b17028f3161360a120dcd9f4b617cbfa68304764deb",
+      "entries": [
+        {
+          "kind": "field:title",
+          "line": 1,
+          "value": "Travel request received | Connect Hub Co"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 1,
+          "value": "Travel request received"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 1,
+          "value": "Our team will review your itinerary and contact you with provider and coordination details."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 1,
+          "value": "Return to Travel Assistance"
+        }
+      ]
+    }
+  ]
+}

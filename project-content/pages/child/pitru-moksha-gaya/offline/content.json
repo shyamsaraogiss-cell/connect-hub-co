@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "ownership": "MASTER_CONTENT_LIBRARY",
+  "runtimeReference": "UNCHANGED_COPY_FIRST",
+  "sources": [
+    {
+      "source": "apps/web/src/app/pitru-moksha-gaya/offline/page.tsx",
+      "sha256": "b512f99b4c5e22c0e9ebcb6d5b95ed46b4c4b80976ed9464d35adaf5f9586555",
+      "entries": [
+        {
+          "kind": "field:title",
+          "line": 8,
+          "value": "Offline PitruMoksha Gaya Services"
+        },
+        {
+          "kind": "list:supportItems",
+          "line": 11,
+          "value": "Verified Religious Partner coordination"
+        },
+        {
+          "kind": "list:supportItems",
+          "line": 12,
+          "value": "Local ritual planning and preparation"
+        },
+        {
+          "kind": "list:supportItems",
+          "line": 13,
+          "value": "Arrival and on-ground assistance"
+        },
+        {
+          "kind": "list:supportItems",
+          "line": 14,
+          "value": "Travel and accommodation coordination"
+        },
+        {
+          "kind": "list:supportItems",
+          "line": 15,
+          "value": "Guidance at the relevant ritual locations"
+        },
+        {
+          "kind": "list:supportItems",
+          "line": 16,
+          "value": "Available completion documentation"
+        },
+        {
+          "kind": "list:steps",
+          "line": 19,
+          "value": "Share Your Requirement"
+        },
+        {
+          "kind": "list:steps",
+          "line": 19,
+          "value": "Tell us your family circumstances, preferred dates and assistance needs."
+        },
+        {
+          "kind": "list:steps",
+          "line": 20,
+          "value": "Receive Guided Assistance"
+        },
+        {
+          "kind": "list:steps",
+          "line": 20,
+          "value": "Review the appropriate in-person path and preparation requirements."
+        },
+        {
+          "kind": "list:steps",
+          "line": 21,
+          "value": "Confirm Your Journey"
+        },
+        {
+          "kind": "list:steps",
+          "line": 21,
+          "value": "Coordinate the Religious Partner, schedule, travel and local arrangements."
+        },
+        {
+          "kind": "list:steps",
+          "line": 22,
+          "value": "Participate in Gaya"
+        },
+        {
+          "kind": "list:steps",
+          "line": 22,
+          "value": "Attend the confirmed ritual with guided on-ground support."
+        },
+        {
+          "kind": "list:steps",
+          "line": 23,
+          "value": "Receive Follow-Up"
+        },
+        {
+          "kind": "list:steps",
+          "line": 23,
+          "value": "Receive agreed completion information and post-service coordination."
+        },
+        {
+          "kind": "field:eyebrow",
+          "line": 27,
+          "value": "OFFLINE ANCESTRAL SERVICES"
+        },
+        {
+          "kind": "attribute:title",
+          "line": 27,
+          "value": "In-Person PitruMoksha Gaya Services"
+        },
+        {
+          "kind": "field:title",
+          "line": 27,
+          "value": "In-Person PitruMoksha Gaya Services"
+        },
+        {
+          "kind": "field:description",
+          "line": 27,
+          "value": "The complete Offline service page is being prepared. Families may raise an inquiry now for Religious Partner coordination, ritual planning and local assistance in Gaya."
+        },
+        {
+          "kind": "field:label",
+          "line": 27,
+          "value": "Connect Hub Co."
+        },
+        {
+          "kind": "field:label",
+          "line": 27,
+          "value": "PitruMoksha Gaya"
+        },
+        {
+          "kind": "field:label",
+          "line": 27,
+          "value": "Offline"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 29,
+          "value": "THE IN-PERSON JOURNEY"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 29,
+          "value": "Guiding Families on the Path of Ancestral Peace and Moksha."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 29,
+          "value": "PitruMoksha Gaya provides end-to-end ancestral ritual guidance and local coordination for families travelling to Gaya, delivered through verified Religious Partners with respectful assistance from preparation through completion."
+        },
+        {
+          "kind": "field:name",
+          "line": 30,
+          "value": "check"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 33,
+          "value": "WHO SHOULD CHOOSE OFFLINE"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 33,
+          "value": "For Families Who Wish to Participate in Gaya"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 33,
+          "value": "The Offline path may suit families who prefer to be physically present, visit the relevant ritual locations and receive coordinated local assistance. Ritual suitability and preparation remain subject to family circumstances, tradition and Religious Partner guidance."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 36,
+          "value": "GUIDED COORDINATION"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 36,
+          "value": "How the Offline Journey Works"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 39,
+          "value": "BEGIN WITH GUIDANCE"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 39,
+          "value": "Plan Your In-Person Journey to Gaya"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 39,
+          "value": "Share your preferred dates, family requirement and travel-support needs for authorised review."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 39,
+          "value": "Raise an Offline Inquiry"
+        }
+      ]
+    }
+  ]
+}

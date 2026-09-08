@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 1,
+  "ownership": "MASTER_CONTENT_LIBRARY",
+  "runtimeReference": "UNCHANGED_COPY_FIRST",
+  "sources": [
+    {
+      "source": "apps/web/src/components/inquiry/GeneralInquiryForm.tsx",
+      "sha256": "c335e6c14adb407a31e6310decead45565f0063f3bf4beb7d022fd9fbb27c91b",
+      "entries": [
+        {
+          "kind": "jsx-text",
+          "line": 49,
+          "value": "Inquiry submitted"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 51,
+          "value": "Your inquiry has been recorded. Keep this Inquiry Reference ID for tracking.\n        "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 55,
+          "value": "Inquiry Reference ID\n          "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 75,
+          "value": "Full Name *"
+        },
+        {
+          "kind": "field:name",
+          "line": 76,
+          "value": "fullName"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 76,
+          "value": "Your full name"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 79,
+          "value": "Country *"
+        },
+        {
+          "kind": "field:name",
+          "line": 80,
+          "value": "country"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 80,
+          "value": "India, USA, UK, etc."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 86,
+          "value": "Mobile / WhatsApp Number *"
+        },
+        {
+          "kind": "field:name",
+          "line": 87,
+          "value": "phone"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 87,
+          "value": "+91 9876543210"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 90,
+          "value": "Email Address *"
+        },
+        {
+          "kind": "field:name",
+          "line": 91,
+          "value": "email"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 91,
+          "value": "name@example.com"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 97,
+          "value": "Inquiry Category *"
+        },
+        {
+          "kind": "field:name",
+          "line": 98,
+          "value": "inquiryCategory"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 99,
+          "value": "Select Category..."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 100,
+          "value": "General Information"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 101,
+          "value": "Service Question"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 102,
+          "value": "Pilgrim Travel Support"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 103,
+          "value": "Partner Network Inquiry"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 104,
+          "value": "Other Inquiry"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 109,
+          "value": "Related Service (Optional)"
+        },
+        {
+          "kind": "field:name",
+          "line": 110,
+          "value": "relatedService"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 111,
+          "value": "None / Not Applicable"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 112,
+          "value": "PitruMoksha Gaya"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 113,
+          "value": "Ritual Services"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 114,
+          "value": "Travel Assistance"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 115,
+          "value": "Vahi Records"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 116,
+          "value": "Religious Partner Registration"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 122,
+          "value": "Message / Question *"
+        },
+        {
+          "kind": "field:name",
+          "line": 123,
+          "value": "message"
+        },
+        {
+          "kind": "attribute:placeholder",
+          "line": 123,
+          "value": "Write your question or request in detail..."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 127,
+          "value": "Preferred Contact Method *"
+        },
+        {
+          "kind": "field:name",
+          "line": 129,
+          "value": "contactMethod"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 129,
+          "value": "WhatsApp"
+        },
+        {
+          "kind": "field:name",
+          "line": 130,
+          "value": "contactMethod"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 130,
+          "value": "Email"
+        },
+        {
+          "kind": "field:name",
+          "line": 131,
+          "value": "contactMethod"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 131,
+          "value": "Phone Call"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 138,
+          "value": "I agree to allow Connect Hub Co. to contact me regarding this inquiry in accordance with the Privacy Policy.\n        "
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "ownership": "MASTER_CONTENT_LIBRARY",
+  "runtimeReference": "UNCHANGED_COPY_FIRST",
+  "sources": [
+    {
+      "source": "apps/web/src/app/contact/page.tsx",
+      "sha256": "8322ca682b394759bde9d038f105d13fd2bd489f422b99267cb22df624333973",
+      "entries": [
+        {
+          "kind": "field:title",
+          "line": 9,
+          "value": "Inquiry & Support | Connect Hub Co."
+        },
+        {
+          "kind": "field:description",
+          "line": 10,
+          "value": "General inquiries, support requests, service questions, and mail assistance for Connect Hub Co."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 20,
+          "value": "General Support & Inquiries\r\n              "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 30,
+          "value": "May I Assist?"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 35,
+          "value": "Have a question about our services, tradition protocols, or pilgrim support? Use the approved email channel or review the inquiry form below.\r\n            "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 44,
+          "value": "Official Company Email"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 46,
+          "value": "support@connecthubco.com\r\n                  "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 56,
+          "value": "WhatsApp Contact"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 57,
+          "value": "+91-9334455665"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 64,
+          "value": "General Inquiry Form"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 65,
+          "value": "For service bookings, please use our dedicated Booking Page."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1514 @@
+{
+  "schemaVersion": 1,
+  "ownership": "MASTER_CONTENT_LIBRARY",
+  "runtimeReference": "UNCHANGED_COPY_FIRST",
+  "sources": [
+    {
+      "source": "apps/web/src/app/religious-partners/page.tsx",
+      "sha256": "f8f41f733ab60cc9b4a5bdb70aac5198a34f1541f5bbd00fb55539e2f02d4e87",
+      "entries": [
+        {
+          "kind": "field:title",
+          "line": 6,
+          "value": "Religious Partner Network | Connect Hub Co."
+        },
+        {
+          "kind": "field:description",
+          "line": 8,
+          "value": "Join a trusted network of verified religious service professionals. Register with Connect Hub Co. to connect with seeking families across India and worldwide."
+        }
+      ]
+    },
+    {
+      "source": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+      "sha256": "3f12828168baaf4d8bc07a0cc282803b6e004d7e7ee098df91188e7665ae7312",
+      "entries": [
+        {
+          "kind": "field:title",
+          "line": 25,
+          "value": "Ritual and Puja Partner"
+        },
+        {
+          "kind": "field:subtitle",
+          "line": 26,
+          "value": "Vaidik Rites & Home Ceremonies"
+        },
+        {
+          "kind": "field:description",
+          "line": 27,
+          "value": "For qualified ritual practitioners seeking to provide approved ritual services according to their tradition, competence, location, and experience."
+        },
+        {
+          "kind": "field:ctaText",
+          "line": 28,
+          "value": "Apply as Ritual Partner"
+        },
+        {
+          "kind": "field:title",
+          "line": 35,
+          "value": "PitruMoksha Gaya Partner"
+        },
+        {
+          "kind": "field:subtitle",
+          "line": 36,
+          "value": "Gaya Ji Ancestral Coordination"
+        },
+        {
+          "kind": "field:description",
+          "line": 37,
+          "value": "For eligible Religious Partners providing ancestral ritual guidance and coordination in Gaya Ji under approved processes."
+        },
+        {
+          "kind": "field:ctaText",
+          "line": 38,
+          "value": "Apply as Gaya Partner"
+        },
+        {
+          "kind": "field:title",
+          "line": 45,
+          "value": "Location-Based Religious Partner"
+        },
+        {
+          "kind": "field:subtitle",
+          "line": 46,
+          "value": "Sacred City & Venue Practice"
+        },
+        {
+          "kind": "field:description",
+          "line": 47,
+          "value": "For practitioners serving approved temples, sacred cities, homes, venues, or selected service locations."
+        },
+        {
+          "kind": "field:ctaText",
+          "line": 48,
+          "value": "Apply as Location Partner"
+        },
+        {
+          "kind": "field:title",
+          "line": 55,
+          "value": "Online Ritual Partner"
+        },
+        {
+          "kind": "field:subtitle",
+          "line": 56,
+          "value": "Virtual & Hybrid Ceremonies"
+        },
+        {
+          "kind": "field:description",
+          "line": 57,
+          "value": "For qualified practitioners capable of conducting approved online participation with clear communication and appropriate technical readiness."
+        },
+        {
+          "kind": "field:ctaText",
+          "line": 58,
+          "value": "Apply as Online Partner"
+        },
+        {
+          "kind": "field:title",
+          "line": 65,
+          "value": "Vahi Records and Lineage Guidance Partner"
+        },
+        {
+          "kind": "field:subtitle",
+          "line": 66,
+          "value": "Traditional Ledger Coordination"
+        },
+        {
+          "kind": "field:description",
+          "line": 67,
+          "value": "For relevant traditional custodians or Religious Partners associated with lineage-record guidance, where applicable and verified."
+        },
+        {
+          "kind": "field:ctaText",
+          "line": 68,
+          "value": "Apply as Lineage Partner"
+        },
+        {
+          "kind": "field:title",
+          "line": 75,
+          "value": "Travel and Local Coordination Partner"
+        },
+        {
+          "kind": "field:subtitle",
+          "line": 76,
+          "value": "Ground & Logistics Coordination"
+        },
+        {
+          "kind": "field:description",
+          "line": 77,
+          "value": "For Religious Partners participating in local ritual-linked coordination and ground support at sacred destinations."
+        },
+        {
+          "kind": "field:ctaText",
+          "line": 78,
+          "value": "Apply as Local Partner"
+        },
+        {
+          "kind": "field:title",
+          "line": 92,
+          "value": "Structured Customer Inquiries"
+        },
+        {
+          "kind": "field:description",
+          "line": 93,
+          "value": "Receive serious, pre-screened ritual inquiries matched according to your tradition, location, and specialization."
+        },
+        {
+          "kind": "field:title",
+          "line": 97,
+          "value": "Technology-Assisted Coordination"
+        },
+        {
+          "kind": "field:description",
+          "line": 98,
+          "value": "Access digital scheduling tools and communication platforms to streamline ritual logistics and client updates."
+        },
+        {
+          "kind": "field:title",
+          "line": 102,
+          "value": "Transparent Communication"
+        },
+        {
+          "kind": "field:description",
+          "line": 103,
+          "value": "Clear service terms, confirmed scopes, and transparent guidelines established prior to every booking."
+        },
+        {
+          "kind": "field:title",
+          "line": 107,
+          "value": "Wider Digital Reach"
+        },
+        {
+          "kind": "field:description",
+          "line": 108,
+          "value": "Connect with seeking families across India and overseas NRI communities seeking authentic Vaidik services."
+        },
+        {
+          "kind": "field:title",
+          "line": 112,
+          "value": "Respect for Tradition and Expertise"
+        },
+        {
+          "kind": "field:description",
+          "line": 113,
+          "value": "Your traditional knowledge, scriptural training, and ceremonial experience are recognized and respected."
+        },
+        {
+          "kind": "field:title",
+          "line": 117,
+          "value": "Administrative Support"
+        },
+        {
+          "kind": "field:description",
+          "line": 118,
+          "value": "Focus entirely on performing sacred rites while Connect Hub Co. handles scheduling, logistics, and client support."
+        },
+        {
+          "kind": "field:title",
+          "line": 122,
+          "value": "Long-Term Network Opportunity"
+        },
+        {
+          "kind": "field:description",
+          "line": 123,
+          "value": "Build a verified professional presence within an expanding nation-wide network of traditional Religious Partners."
+        },
+        {
+          "kind": "field:title",
+          "line": 127,
+          "value": "Clear Service Requirements"
+        },
+        {
+          "kind": "field:description",
+          "line": 128,
+          "value": "Upfront transparency regarding service scope, ritual requirements, family preferences, and operational expectations."
+        },
+        {
+          "kind": "field:title",
+          "line": 135,
+          "value": "Relevant Ritual Knowledge or Traditional Practice"
+        },
+        {
+          "kind": "field:description",
+          "line": 136,
+          "value": "Demonstrated training and competence in performing authentic Vaidik mantras, pujas, or ancestral rites according to established tradition."
+        },
+        {
+          "kind": "field:title",
+          "line": 139,
+          "value": "Proven Experience in Offered Services"
+        },
+        {
+          "kind": "field:description",
+          "line": 140,
+          "value": "Verified track record of conducting sacred ceremonies, home pujas, or destination rituals with care and integrity."
+        },
+        {
+          "kind": "field:title",
+          "line": 143,
+          "value": "Ability to Explain Service Scope Clearly"
+        },
+        {
+          "kind": "field:description",
+          "line": 144,
+          "value": "Clear, transparent communication explaining ritual steps, samagri preparation, and family participation expectations."
+        },
+        {
+          "kind": "field:title",
+          "line": 147,
+          "value": "Respectful Conduct & Timely Communication"
+        },
+        {
+          "kind": "field:description",
+          "line": 148,
+          "value": "Punctuality, cleanliness, ceremonial decorum, and responsive communication with seeking families."
+        },
+        {
+          "kind": "field:title",
+          "line": 151,
+          "value": "Accurate Availability & Location Details"
+        },
+        {
+          "kind": "field:description",
+          "line": 152,
+          "value": "Providing genuine operational locations, languages spoken, and accurate service schedule availability."
+        },
+        {
+          "kind": "field:title",
+          "line": 155,
+          "value": "Transparent Pricing & Inclusions"
+        },
+        {
+          "kind": "field:description",
+          "line": 156,
+          "value": "Adherence to fixed confirmed pricing and scope without unexpected demands or unauthorized charges."
+        },
+        {
+          "kind": "field:title",
+          "line": 159,
+          "value": "Identity & Contact Verification"
+        },
+        {
+          "kind": "field:description",
+          "line": 160,
+          "value": "Willingness to complete basic identity, address, and contact verification prior to network participation."
+        },
+        {
+          "kind": "field:title",
+          "line": 163,
+          "value": "Required References & Supporting Info"
+        },
+        {
+          "kind": "field:description",
+          "line": 164,
+          "value": "Providing traditional training references or supporting information relevant to your ritual domain."
+        },
+        {
+          "kind": "field:title",
+          "line": 167,
+          "value": "Willingness to Follow Service Standards"
+        },
+        {
+          "kind": "field:description",
+          "line": 168,
+          "value": "Commitment to maintaining approved quality, cleanliness, and ethical service guidelines across all engagements."
+        },
+        {
+          "kind": "field:title",
+          "line": 171,
+          "value": "Confidentiality & Information Handling"
+        },
+        {
+          "kind": "field:description",
+          "line": 172,
+          "value": "Responsible, privacy-first handling of customer family details, Gotra information, and ritual records."
+        },
+        {
+          "kind": "field:title",
+          "line": 175,
+          "value": "Online & Offline Coordination Ability"
+        },
+        {
+          "kind": "field:description",
+          "line": 176,
+          "value": "Capability to conduct in-person physical rites or participate in approved live-streamed online formats where applicable."
+        },
+        {
+          "kind": "field:title",
+          "line": 183,
+          "value": "Select Partner Category"
+        },
+        {
+          "kind": "field:description",
+          "line": 184,
+          "value": "Choose the approved Religious Partner pathway matching your traditional training, service format, and practice location."
+        },
+        {
+          "kind": "field:title",
+          "line": 188,
+          "value": "Submit Basic Profile"
+        },
+        {
+          "kind": "field:description",
+          "line": 189,
+          "value": "Provide your full name, traditional title, contact details, primary location, and languages spoken."
+        },
+        {
+          "kind": "field:title",
+          "line": 193,
+          "value": "Provide Service and Location Details"
+        },
+        {
+          "kind": "field:description",
+          "line": 194,
+          "value": "Detail your operational cities, sacred hubs, temples, home puja services, or online participation capabilities."
+        },
+        {
+          "kind": "field:title",
+          "line": 198,
+          "value": "Share Experience and Supporting Information"
+        },
+        {
+          "kind": "field:description",
+          "line": 199,
+          "value": "Provide details of your years of practice, ritual specializations, and traditional references or credentials."
+        },
+        {
+          "kind": "field:title",
+          "line": 203,
+          "value": "Initial Administrative Review"
+        },
+        {
+          "kind": "field:description",
+          "line": 204,
+          "value": "Our partner onboarding team reviews the submitted profile for clarity, completeness, and initial suitability."
+        },
+        {
+          "kind": "field:title",
+          "line": 208,
+          "value": "Verification and Clarification"
+        },
+        {
+          "kind": "field:description",
+          "line": 209,
+          "value": "Conduct identity verification, document check, and follow-up communication to clarify service scope."
+        },
+        {
+          "kind": "field:title",
+          "line": 213,
+          "value": "Service Scope and Terms Confirmation"
+        },
+        {
+          "kind": "field:description",
+          "line": 214,
+          "value": "Confirm approved ritual service categories, transparent pricing guidelines, and ethical conduct standards."
+        },
+        {
+          "kind": "field:title",
+          "line": 218,
+          "value": "Approval, Onboarding, or Further Review"
+        },
+        {
+          "kind": "field:description",
+          "line": 219,
+          "value": "Receive official network approval, complete profile orientation, or receive guidance on pending review requirements."
+        },
+        {
+          "kind": "field:title",
+          "line": 224,
+          "value": "Full Name & Title"
+        },
+        {
+          "kind": "field:description",
+          "line": 224,
+          "value": "Official full name and traditional title (Pandit, Acharya, Purohit, Panda)."
+        },
+        {
+          "kind": "field:title",
+          "line": 225,
+          "value": "Phone Number"
+        },
+        {
+          "kind": "field:description",
+          "line": 225,
+          "value": "Active phone number for scheduling and coordination updates."
+        },
+        {
+          "kind": "field:title",
+          "line": 226,
+          "value": "Email Address"
+        },
+        {
+          "kind": "field:description",
+          "line": 226,
+          "value": "Primary email address for official partner communication."
+        },
+        {
+          "kind": "field:title",
+          "line": 227,
+          "value": "Address & Service Location"
+        },
+        {
+          "kind": "field:description",
+          "line": 227,
+          "value": "Primary residential address and operational service base."
+        },
+        {
+          "kind": "field:title",
+          "line": 228,
+          "value": "City, State & Country"
+        },
+        {
+          "kind": "field:description",
+          "line": 228,
+          "value": "Operational city, state, and country of practice."
+        },
+        {
+          "kind": "field:title",
+          "line": 229,
+          "value": "Languages Spoken"
+        },
+        {
+          "kind": "field:description",
+          "line": 229,
+          "value": "Hindi, Sanskrit, English, or regional language capabilities."
+        },
+        {
+          "kind": "field:title",
+          "line": 230,
+          "value": "Partner Category"
+        },
+        {
+          "kind": "field:description",
+          "line": 230,
+          "value": "Selected partner pathway (Ritual, Gaya, Location, Online, Vahi, Local)."
+        },
+        {
+          "kind": "field:title",
+          "line": 231,
+          "value": "Rituals / Services Offered"
+        },
+        {
+          "kind": "field:description",
+          "line": 231,
+          "value": "Specific Puja, Shraddh, Havan, or guidance capabilities."
+        },
+        {
+          "kind": "field:title",
+          "line": 232,
+          "value": "Years of Experience"
+        },
+        {
+          "kind": "field:description",
+          "line": 232,
+          "value": "Proven years of experience conducting Vaidik ceremonies."
+        },
+        {
+          "kind": "field:title",
+          "line": 233,
+          "value": "Preferred Service Mode"
+        },
+        {
+          "kind": "field:description",
+          "line": 233,
+          "value": "In-person physical presence, virtual live-stream, or hybrid format."
+        },
+        {
+          "kind": "field:title",
+          "line": 234,
+          "value": "Online / Offline Availability"
+        },
+        {
+          "kind": "field:description",
+          "line": 234,
+          "value": "Operational schedule and mode availability."
+        },
+        {
+          "kind": "field:title",
+          "line": 235,
+          "value": "Service Locations & Hubs"
+        },
+        {
+          "kind": "field:description",
+          "line": 235,
+          "value": "Cities, temples, or sacred pilgrim hubs served."
+        },
+        {
+          "kind": "field:title",
+          "line": 236,
+          "value": "Identity Details (Where Approved)"
+        },
+        {
+          "kind": "field:description",
+          "line": 236,
+          "value": "Government identity proof details for background verification."
+        },
+        {
+          "kind": "field:title",
+          "line": 237,
+          "value": "References (Where Approved)"
+        },
+        {
+          "kind": "field:description",
+          "line": 237,
+          "value": "Traditional references or credentials from verified priests."
+        },
+        {
+          "kind": "field:title",
+          "line": 238,
+          "value": "Bank / Payment Details (If Approved)"
+        },
+        {
+          "kind": "field:description",
+          "line": 238,
+          "value": "Disbursement account details collected only after formal onboarding approval."
+        },
+        {
+          "kind": "field:title",
+          "line": 239,
+          "value": "Photographs / Supporting Docs"
+        },
+        {
+          "kind": "field:description",
+          "line": 239,
+          "value": "Profile photograph and credential verification documents."
+        },
+        {
+          "kind": "field:title",
+          "line": 240,
+          "value": "Availability & Preferred Contact"
+        },
+        {
+          "kind": "field:description",
+          "line": 240,
+          "value": "Schedule availability and preferred contact method."
+        },
+        {
+          "kind": "field:title",
+          "line": 241,
+          "value": "Declaration & Consent"
+        },
+        {
+          "kind": "field:description",
+          "line": 241,
+          "value": "Agreement to follow approved ethical standards and application consent."
+        },
+        {
+          "kind": "field:title",
+          "line": 246,
+          "value": "Identity and Contact Review"
+        },
+        {
+          "kind": "field:description",
+          "line": 247,
+          "value": "Neutral review of submitted identity details, contact numbers, email address, and primary operational location."
+        },
+        {
+          "kind": "field:title",
+          "line": 250,
+          "value": "Service-Category Review"
+        },
+        {
+          "kind": "field:description",
+          "line": 251,
+          "value": "Evaluation of selected partner pathway against proven traditional experience, ritual capabilities, and location feasibility."
+        },
+        {
+          "kind": "field:title",
+          "line": 254,
+          "value": "Experience and Reference Checks"
+        },
+        {
+          "kind": "field:description",
+          "line": 255,
+          "value": "Background verification of traditional credentials, Gurukul training, and professional references where applicable."
+        },
+        {
+          "kind": "field:title",
+          "line": 258,
+          "value": "Location and Availability Confirmation"
+        },
+        {
+          "kind": "field:description",
+          "line": 259,
+          "value": "Cross-checking operational service locations, travel reach, and accurate schedule availability."
+        },
+        {
+          "kind": "field:title",
+          "line": 262,
+          "value": "Communication and Conduct Expectations"
+        },
+        {
+          "kind": "field:description",
+          "line": 263,
+          "value": "Alignment on professional decorum, punctuality, transparent pricing, and respectful family interaction."
+        },
+        {
+          "kind": "field:title",
+          "line": 266,
+          "value": "Document Clarification Where Required"
+        },
+        {
+          "kind": "field:description",
+          "line": 267,
+          "value": "Follow-up communication to clarify incomplete details or request additional supporting information where needed."
+        },
+        {
+          "kind": "field:title",
+          "line": 270,
+          "value": "Onboarding Guidance"
+        },
+        {
+          "kind": "field:description",
+          "line": 271,
+          "value": "Structured orientation covering platform coordination processes, customer communication protocols, and service standards."
+        },
+        {
+          "kind": "field:title",
+          "line": 274,
+          "value": "Ongoing Quality Review"
+        },
+        {
+          "kind": "field:description",
+          "line": 275,
+          "value": "Continuous feedback monitoring, service quality evaluations, and compliance reviews to maintain network excellence."
+        },
+        {
+          "kind": "field:title",
+          "line": 281,
+          "value": "Respectful Ritual Conduct"
+        },
+        {
+          "kind": "field:description",
+          "line": 282,
+          "value": "Conducting every sacred ceremony with deep reverence, purity, proper Vaidik mantras, and respectful family decorum."
+        },
+        {
+          "kind": "field:title",
+          "line": 285,
+          "value": "Accurate Representation of Services"
+        },
+        {
+          "kind": "field:description",
+          "line": 286,
+          "value": "Truthfully presenting traditional training, experience, service capabilities, and operational locations without exaggeration."
+        },
+        {
+          "kind": "field:title",
+          "line": 289,
+          "value": "No False Guarantees"
+        },
+        {
+          "kind": "field:description",
+          "line": 290,
+          "value": "Providing honest, traditional guidance without making unapproved, unverified, or unrealistic outcome guarantees."
+        },
+        {
+          "kind": "field:title",
+          "line": 293,
+          "value": "No Unauthorized Extra Charges"
+        },
+        {
+          "kind": "field:description",
+          "line": 294,
+          "value": "Adhering strictly to confirmed service scope and transparent pricing without demanding unexpected extra fees."
+        },
+        {
+          "kind": "field:title",
+          "line": 297,
+          "value": "Timely Communication"
+        },
+        {
+          "kind": "field:description",
+          "line": 298,
+          "value": "Maintaining prompt, clear, and courteous communication regarding schedules, preparations, and updates."
+        },
+        {
+          "kind": "field:title",
+          "line": 301,
+          "value": "Confidentiality & Privacy"
+        },
+        {
+          "kind": "field:description",
+          "line": 302,
+          "value": "Protecting family details, Gotra information, and ritual records under strict Privacy-First confidentiality standards."
+        },
+        {
+          "kind": "field:title",
+          "line": 305,
+          "value": "Customer Dignity & Compassion"
+        },
+        {
+          "kind": "field:description",
+          "line": 306,
+          "value": "Treating every family with empathy, cultural respect, and dignity during sacred and emotional moments."
+        },
+        {
+          "kind": "field:title",
+          "line": 309,
+          "value": "Adherence to Agreed Scope"
+        },
+        {
+          "kind": "field:description",
+          "line": 310,
+          "value": "Performing all included Vaidik steps, samagri arrangements, and duration commitments as specified in the service plan."
+        },
+        {
+          "kind": "field:title",
+          "line": 313,
+          "value": "Transparent Completion Updates"
+        },
+        {
+          "kind": "field:description",
+          "line": 314,
+          "value": "Providing clear, honest completion feedback, digital photos, or live-stream updates for remote family ceremonies."
+        },
+        {
+          "kind": "field:title",
+          "line": 317,
+          "value": "Responsible Use of Information"
+        },
+        {
+          "kind": "field:description",
+          "line": 318,
+          "value": "Using customer data exclusively for authorized ritual execution and never sharing or misusing platform records."
+        },
+        {
+          "kind": "field:title",
+          "line": 321,
+          "value": "Cooperation With Review & Resolution"
+        },
+        {
+          "kind": "field:description",
+          "line": 322,
+          "value": "Cooperating constructively with administrative quality reviews, feedback evaluations, and resolution processes."
+        },
+        {
+          "kind": "field:title",
+          "line": 325,
+          "value": "Compliance With Policies & Applicable Law"
+        },
+        {
+          "kind": "field:description",
+          "line": 326,
+          "value": "Strict adherence to applicable laws, ethical guidelines, and approved platform policies at all times."
+        },
+        {
+          "kind": "field:title",
+          "line": 331,
+          "value": "PitruMoksha Gaya"
+        },
+        {
+          "kind": "field:description",
+          "line": 331,
+          "value": "Pind Daan, Tarpan, and ancestral rites in Gaya Ji, Bihar."
+        },
+        {
+          "kind": "field:title",
+          "line": 332,
+          "value": "Ancestral Rituals"
+        },
+        {
+          "kind": "field:description",
+          "line": 332,
+          "value": "Annual Shraddh, Pitru Dosh Shanti, and riverbank Tarpan rites."
+        },
+        {
+          "kind": "field:title",
+          "line": 333,
+          "value": "Customized Puja"
+        },
+        {
+          "kind": "field:description",
+          "line": 333,
+          "value": "Tailored Vaidik pujas, Sankalp rites, and special devotion ceremonies."
+        },
+        {
+          "kind": "field:title",
+          "line": 334,
+          "value": "Graha Shanti"
+        },
+        {
+          "kind": "field:description",
+          "line": 334,
+          "value": "Navagraha Shanti, Dosha remedies, and planetary peace pujas."
+        },
+        {
+          "kind": "field:title",
+          "line": 335,
+          "value": "Hawan and Yagya"
+        },
+        {
+          "kind": "field:description",
+          "line": 335,
+          "value": "Sacred fire rituals, Homam, and Vaidik Yagyas for family well-being."
+        },
+        {
+          "kind": "field:title",
+          "line": 336,
+          "value": "Marriage and Family Rituals"
+        },
+        {
+          "kind": "field:description",
+          "line": 336,
+          "value": "Vivah Sanskar, Upanayan, Namkaran, and family milestone rites."
+        },
+        {
+          "kind": "field:title",
+          "line": 337,
+          "value": "Home Puja"
+        },
+        {
+          "kind": "field:description",
+          "line": 337,
+          "value": "Griha Pravesh, Vastu Shanti, Satyanarayan Katha, and domestic pujas."
+        },
+        {
+          "kind": "field:title",
+          "line": 338,
+          "value": "Preferred Location Puja"
+        },
+        {
+          "kind": "field:description",
+          "line": 338,
+          "value": "Pujas conducted at customer-selected homes, halls, or sacred venues."
+        },
+        {
+          "kind": "field:title",
+          "line": 339,
+          "value": "Online Ritual Participation"
+        },
+        {
+          "kind": "field:description",
+          "line": 339,
+          "value": "Virtual live-streamed ceremonies for remote and overseas NRI families."
+        },
+        {
+          "kind": "field:title",
+          "line": 340,
+          "value": "Asthi Visarjan"
+        },
+        {
+          "kind": "field:description",
+          "line": 340,
+          "value": "Sacred ash immersion rites performed across holy riverbanks."
+        },
+        {
+          "kind": "field:title",
+          "line": 341,
+          "value": "Memorial and Annual Rituals"
+        },
+        {
+          "kind": "field:description",
+          "line": 341,
+          "value": "Annual death anniversary rites, Barsi, and remembrance ceremonies."
+        },
+        {
+          "kind": "field:title",
+          "line": 342,
+          "value": "Vahi Records Coordination"
+        },
+        {
+          "kind": "field:description",
+          "line": 342,
+          "value": "Guidance and updates with traditional Panda record custodians."
+        },
+        {
+          "kind": "field:title",
+          "line": 343,
+          "value": "Temple and Venue Puja"
+        },
+        {
+          "kind": "field:description",
+          "line": 343,
+          "value": "Ceremonies performed at approved temples and sacred pilgrimage hubs."
+        },
+        {
+          "kind": "field:title",
+          "line": 344,
+          "value": "Language-Specific Ritual Assistance"
+        },
+        {
+          "kind": "field:description",
+          "line": 344,
+          "value": "Rituals conducted in Hindi, Sanskrit, English, or regional languages."
+        },
+        {
+          "kind": "field:title",
+          "line": 345,
+          "value": "Destination Ritual Coordination"
+        },
+        {
+          "kind": "field:description",
+          "line": 345,
+          "value": "Specialized coordination at major pilgrimage hubs across India."
+        },
+        {
+          "kind": "field:title",
+          "line": 346,
+          "value": "Others / Religious Partner Services"
+        },
+        {
+          "kind": "field:description",
+          "line": 346,
+          "value": "Specialized religious guidance and custom Vaidik partner services."
+        },
+        {
+          "kind": "field:title",
+          "line": 351,
+          "value": "Who can apply as a Religious Partner?"
+        },
+        {
+          "kind": "field:description",
+          "line": 352,
+          "value": "Qualified Pandits, Purohits, Pandas, Acharyas, Vaidik Scholars, and traditional specialists with verified background credentials and traditional experience."
+        },
+        {
+          "kind": "field:title",
+          "line": 355,
+          "value": "How verification works"
+        },
+        {
+          "kind": "field:description",
+          "line": 356,
+          "value": "Identity checks, document verification, background screening, and reference checks conducted neutrally by our partner onboarding team."
+        },
+        {
+          "kind": "field:title",
+          "line": 359,
+          "value": "Information required before registration"
+        },
+        {
+          "kind": "field:description",
+          "line": 360,
+          "value": "Basic contact details, service locations, languages spoken, ritual specializations, experience years, and identity details."
+        },
+        {
+          "kind": "field:title",
+          "line": 363,
+          "value": "Online versus offline service readiness"
+        },
+        {
+          "kind": "field:description",
+          "line": 364,
+          "value": "Guidelines for conducting physical in-person rites vs technical readiness required for live-streamed remote family participation."
+        },
+        {
+          "kind": "field:title",
+          "line": 367,
+          "value": "Partner responsibilities"
+        },
+        {
+          "kind": "field:description",
+          "line": 368,
+          "value": "Maintaining authentic Vaidik Vidhi, punctuality, transparent pricing, respectful conduct, customer confidentiality, and ethical service standards."
+        },
+        {
+          "kind": "field:title",
+          "line": 371,
+          "value": "How customer inquiries are coordinated"
+        },
+        {
+          "kind": "field:description",
+          "line": 372,
+          "value": "Matching algorithms based on tradition, location, language preference, Gotra requirement (for Panda Vahi ledgers), and partner availability."
+        },
+        {
+          "kind": "field:title",
+          "line": 375,
+          "value": "Pricing and service-scope transparency"
+        },
+        {
+          "kind": "field:description",
+          "line": 376,
+          "value": "Fixed confirmed pricing established upfront without unauthorized extra demands, hidden fees, or high-pressure tactics."
+        },
+        {
+          "kind": "field:title",
+          "line": 379,
+          "value": "What happens after application"
+        },
+        {
+          "kind": "field:description",
+          "line": 380,
+          "value": "Administrative review, credential verification, profile orientation, service terms confirmation, and active network onboarding."
+        },
+        {
+          "kind": "field:question",
+          "line": 386,
+          "value": "Does registration guarantee approval?"
+        },
+        {
+          "kind": "field:answer",
+          "line": 387,
+          "value": "No. Registration is an initial application process. Network membership and service assignments depend on verified credentials, location feasibility, and adherence to approved ethical standards."
+        },
+        {
+          "kind": "field:question",
+          "line": 390,
+          "value": "Who can apply as a Religious Partner?"
+        },
+        {
+          "kind": "field:answer",
+          "line": 391,
+          "value": "Qualified Pandits, Purohits, Pandas, Acharyas, and Vaidik Scholars who possess verified traditional training, proven ritual experience, and valid identity documentation."
+        },
+        {
+          "kind": "field:question",
+          "line": 394,
+          "value": "What information is required to begin?"
+        },
+        {
+          "kind": "field:answer",
+          "line": 395,
+          "value": "Basic details including full name, traditional title, phone number, email, service locations, languages spoken, ritual specializations, experience years, and identity proof details."
+        },
+        {
+          "kind": "field:question",
+          "line": 398,
+          "value": "Can I offer multiple ritual services?"
+        },
+        {
+          "kind": "field:answer",
+          "line": 399,
+          "value": "Yes. Partners may list all ritual domains in which they possess verified traditional competence—such as Pind Daan, Havan, Griha Pravesh, or Vahi Records guidance."
+        },
+        {
+          "kind": "field:question",
+          "line": 402,
+          "value": "Can I serve more than one city?"
+        },
+        {
+          "kind": "field:answer",
+          "line": 403,
+          "value": "Yes. Partners can indicate all operational cities, states, or sacred pilgrimage hubs where they can travel or maintain physical service capabilities."
+        },
+        {
+          "kind": "field:question",
+          "line": 406,
+          "value": "Can I provide online rituals?"
+        },
+        {
+          "kind": "field:answer",
+          "line": 407,
+          "value": "Yes. Qualified partners with appropriate technical readiness and clear communication skills can conduct approved live-streamed online ceremonies."
+        },
+        {
+          "kind": "field:question",
+          "line": 410,
+          "value": "How are customer inquiries assigned?"
+        },
+        {
+          "kind": "field:answer",
+          "line": 411,
+          "value": "Inquiries are matched objectively based on customer location, language preference, specific ritual specialization, Gotra requirements (for Panda Vahi ledgers), and partner availability."
+        },
+        {
+          "kind": "field:question",
+          "line": 414,
+          "value": "Is income or booking volume guaranteed?"
+        },
+        {
+          "kind": "field:answer",
+          "line": 415,
+          "value": "No. Connect Hub Co. does not promise guaranteed bookings, fixed income, commissions, or automatic customer assignments. Inquiries depend on customer demand and suitability."
+        },
+        {
+          "kind": "field:question",
+          "line": 418,
+          "value": "How are prices and inclusions handled?"
+        },
+        {
+          "kind": "field:answer",
+          "line": 419,
+          "value": "All service prices, samagri inclusions, and ritual steps are confirmed transparently with families upfront. Partners must adhere strictly to agreed terms without extra demands."
+        },
+        {
+          "kind": "field:question",
+          "line": 422,
+          "value": "What happens if documents are incomplete?"
+        },
+        {
+          "kind": "field:answer",
+          "line": 423,
+          "value": "Our partner onboarding team will contact you to request missing supporting details or clarify incomplete information before completing your review."
+        },
+        {
+          "kind": "field:question",
+          "line": 426,
+          "value": "Can an application be reviewed again?"
+        },
+        {
+          "kind": "field:answer",
+          "line": 427,
+          "value": "Yes. If an application requires additional credentials or location updates, partners may re-submit updated information for administrative review."
+        },
+        {
+          "kind": "field:question",
+          "line": 430,
+          "value": "How is partner performance evaluated?"
+        },
+        {
+          "kind": "field:answer",
+          "line": 431,
+          "value": "Partner evaluation is based on customer feedback, punctuality, adherence to Vaidik standards, transparent pricing compliance, and professional conduct."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 440,
+          "value": "CONNECT HUB CO."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 441,
+          "value": "Serve With Tradition. Grow With Trust."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 444,
+          "value": "Partner Registration Form"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 445,
+          "value": "Ask for Help"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 452,
+          "value": "SECTION 1 — BECOME A RELIGIOUS PARTNER"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 454,
+          "value": "Serve With Tradition. Grow With Trust."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 457,
+          "value": "The Religious Partner Network connects qualified Pandits, Purohits, Pandas, Acharyas, Vaidik Scholars, and traditional ritual specialists with seeking families across India and worldwide.\r\n          "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 463,
+          "value": "Who the Network is For"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 465,
+          "value": "Qualified ritual practitioners, tradition-guided priests, traditional Panda record custodians, and Vaidik scholars dedicated to sacred service, authentic mantras, and ceremonial integrity.\r\n              "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 469,
+          "value": "Role in Ritual Delivery"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 471,
+          "value": "Religious Partners conduct authentic Vaidik rites for seeking families while Connect Hub Co. manages scheduling, client communication, travel logistics, and administrative support.\r\n              "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 475,
+          "value": "Core Pillars of Service"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 477,
+          "value": "We uphold the importance of traditional Vaidik Vidhi, demonstrated competence, punctuality, respectful conduct, and clear, compassionate communication with every family.\r\n              "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 481,
+          "value": "Application & Verification Standard"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 483,
+          "value": "Submitting registration details constitutes an initial application. Final onboarding requires human review, background check, and document verification. No automatic approval or customer assignments are guaranteed.\r\n              "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 488,
+          "value": "Transparent Application Standard"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 490,
+          "value": "Registration is an initial application and review process. Network membership and service assignments depend on verified credentials, location feasibility, and adherence to approved ethical standards. No approval or customer assignment is promised prior to verification.\r\n            "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 499,
+          "value": "SECTION 2 — PARTNER PATHWAYS"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 501,
+          "value": "Who Can Register?"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 504,
+          "value": "Select the pathway that matches your traditional training, service format, and operational location.\r\n          "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 514,
+          "value": "Path "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 514,
+          "value": ": "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 527,
+          "value": "SECTION 3 — NETWORK BENEFITS"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 529,
+          "value": "Religious Partner Categories"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 532,
+          "value": "Built around tradition, technology-assisted coordination, transparent communication, and wider digital reach.\r\n          "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 551,
+          "value": "SECTION 4 — ELIGIBILITY & EXPECTATIONS"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 553,
+          "value": "How Onboarding Works"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 556,
+          "value": "Key standards for qualified practitioners seeking to join our verified network.\r\n          "
+        },
+        {
+          "kind": "field:name",
+          "line": 562,
+          "value": "check"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 575,
+          "value": "SECTION 5 — REGISTRATION PROCESS"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 577,
+          "value": "Documents & Details Required"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 580,
+          "value": "An 8-step structured onboarding pathway from initial application submission to active network participation.\r\n          "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 593,
+          "value": "Mandatory Onboarding Clarifications"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 595,
+          "value": "Application submission does not guarantee approval."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 596,
+          "value": "Incomplete profile details may require follow-up clarification."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 597,
+          "value": "Final approval requires human review and credential verification."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 598,
+          "value": "Service activation occurs exclusively after approved onboarding completion."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 599,
+          "value": "Future customer assignments depend on business need, partner availability, performance, and suitability."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 607,
+          "value": "SECTION 6 — CHECKLIST"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 609,
+          "value": "Verification & Governance Standards"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 612,
+          "value": "Prepare the following details using this 18-point checklist when submitting your partner registration application.\r\n          "
+        },
+        {
+          "kind": "field:name",
+          "line": 618,
+          "value": "check"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 631,
+          "value": "SECTION 7 — VERIFICATION & ONBOARDING"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 633,
+          "value": "Professional Code of Conduct"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 636,
+          "value": "A neutral, structured evaluation of partner credentials, operational reach, onboarding guidance, and ongoing quality review.\r\n          "
+        },
+        {
+          "kind": "field:name",
+          "line": 642,
+          "value": "partner"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 655,
+          "value": "SECTION 8 — PARTNER STANDARDS"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 657,
+          "value": "Technology & Operational Support"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 660,
+          "value": "Clear ethical and professional standards governing all network activities and family engagements.\r\n          "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 678,
+          "value": "SECTION 9 — PARTNER CATEGORIES"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 680,
+          "value": "Service Coverage Areas"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 683,
+          "value": "Explore the 16 approved, responsive partner categories supported across our service framework.\r\n          "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 699,
+          "value": "SECTION 10 — KNOWLEDGE CENTRE PREVIEW"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 701,
+          "value": "Partner Frequently Asked Questions"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 704,
+          "value": "Essential insights and guides for qualified practitioners considering network registration.\r\n          "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 720,
+          "value": "SECTION 11 — FAQ"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 722,
+          "value": "Register as a Religious Partner"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 725,
+          "value": "Factual and neutral answers to key questions regarding partner application, verification, inquiry assignment, and performance.\r\n          "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 749,
+          "value": "SECTION 12 — REGISTRATION APPLICATION"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 751,
+          "value": "Why Join Connect Hub Co.?"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 754,
+          "value": "Submit your profile, service expertise, locations, and availability for administrative review and verification.\r\n          "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 758,
+          "value": "Start Religious Partner Registration"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 759,
+          "value": "Review Eligibility"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 760,
+          "value": "Explore Partner Categories"
+        },
+        {
+          "kind": "attribute:aria-label",
+          "line": 765,
+          "value": "Related navigation"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 766,
+          "value": "Related navigation"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 768,
+          "value": "PitruMoksha Gaya"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 769,
+          "value": "Ritual Services"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 770,
+          "value": "Travel Assistance"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 771,
+          "value": "Vahi Records"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 772,
+          "value": "Service Catalog"
+        }
+      ]
+    }
+  ]
+}

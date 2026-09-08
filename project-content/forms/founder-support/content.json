@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "ownership": "MASTER_CONTENT_LIBRARY",
+  "runtimeReference": "UNCHANGED_COPY_FIRST",
+  "sources": [
+    {
+      "source": "apps/web/src/components/support/DedicatedSupportForm.tsx",
+      "sha256": "d948db23f2c32b50c0cb62d6667bd86e314dd3128432ad12d7675a6305a6658e",
+      "entries": [
+        {
+          "kind": "field:categoryLabel",
+          "line": 15,
+          "value": "Complaint Category"
+        },
+        {
+          "kind": "field:categoryPlaceholder",
+          "line": 16,
+          "value": "Select complaint category..."
+        },
+        {
+          "kind": "list:categories",
+          "line": 17,
+          "value": "service-quality"
+        },
+        {
+          "kind": "list:categories",
+          "line": 17,
+          "value": "Service Quality"
+        },
+        {
+          "kind": "list:categories",
+          "line": 17,
+          "value": "travel-logistics"
+        },
+        {
+          "kind": "list:categories",
+          "line": 17,
+          "value": "Travel or Logistics"
+        },
+        {
+          "kind": "list:categories",
+          "line": 17,
+          "value": "partner-conduct"
+        },
+        {
+          "kind": "list:categories",
+          "line": 17,
+          "value": "Religious Partner or Staff Conduct"
+        },
+        {
+          "kind": "list:categories",
+          "line": 17,
+          "value": "billing-scope"
+        },
+        {
+          "kind": "list:categories",
+          "line": 17,
+          "value": "Billing or Service Scope"
+        },
+        {
+          "kind": "list:categories",
+          "line": 17,
+          "value": "other"
+        },
+        {
+          "kind": "list:categories",
+          "line": 17,
+          "value": "Other"
+        },
+        {
+          "kind": "field:detailsLabel",
+          "line": 18,
+          "value": "Complaint Details"
+        },
+        {
+          "kind": "field:detailsPlaceholder",
+          "line": 19,
+          "value": "Describe the complaint, including relevant dates and context."
+        },
+        {
+          "kind": "field:categoryLabel",
+          "line": 28,
+          "value": "Reason for Founder Escalation"
+        },
+        {
+          "kind": "field:categoryPlaceholder",
+          "line": 29,
+          "value": "Select an escalation reason..."
+        },
+        {
+          "kind": "list:categories",
+          "line": 30,
+          "value": "unresolved-issue"
+        },
+        {
+          "kind": "list:categories",
+          "line": 30,
+          "value": "Unresolved Issue"
+        },
+        {
+          "kind": "list:categories",
+          "line": 30,
+          "value": "sensitive-matter"
+        },
+        {
+          "kind": "list:categories",
+          "line": 30,
+          "value": "Sensitive Matter"
+        },
+        {
+          "kind": "list:categories",
+          "line": 30,
+          "value": "partner-concern"
+        },
+        {
+          "kind": "list:categories",
+          "line": 30,
+          "value": "Religious Partner Concern"
+        },
+        {
+          "kind": "list:categories",
+          "line": 30,
+          "value": "service-concern"
+        },
+        {
+          "kind": "list:categories",
+          "line": 30,
+          "value": "Service Concern"
+        },
+        {
+          "kind": "list:categories",
+          "line": 30,
+          "value": "other"
+        },
+        {
+          "kind": "list:categories",
+          "line": 30,
+          "value": "Other"
+        },
+        {
+          "kind": "field:detailsLabel",
+          "line": 31,
+          "value": "Issue / Details"
+        },
+        {
+          "kind": "field:detailsPlaceholder",
+          "line": 32,
+          "value": "Describe the issue and why you are requesting Founder Support."
+        },
+        {
+          "kind": "list:verified",
+          "line": 60,
+          "value": "SERVICE_REQUEST"
+        },
+        {
+          "kind": "list:verified",
+          "line": 60,
+          "value": "BOOKING"
+        },
+        {
+          "kind": "field:title",
+          "line": 71,
+          "value": "complaint"
+        },
+        {
+          "kind": "field:title",
+          "line": 71,
+          "value": "Complaint"
+        },
+        {
+          "kind": "field:title",
+          "line": 71,
+          "value": "Founder Support"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 96,
+          "value": "Your submission has been recorded. Keep this reference ID for your records."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 98,
+          "value": "Track reference"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 104,
+          "value": "Name *"
+        },
+        {
+          "kind": "field:name",
+          "line": 104,
+          "value": "name"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 104,
+          "value": "Email *"
+        },
+        {
+          "kind": "field:name",
+          "line": 104,
+          "value": "email"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 105,
+          "value": "Phone *"
+        },
+        {
+          "kind": "field:name",
+          "line": 105,
+          "value": "phone"
+        },
+        {
+          "kind": "field:name",
+          "line": 105,
+          "value": "serviceReferenceId"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 106,
+          "value": "*"
+        },
+        {
+          "kind": "field:name",
+          "line": 106,
+          "value": "category"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 107,
+          "value": "*"
+        },
+        {
+          "kind": "field:name",
+          "line": 107,
+          "value": "details"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 108,
+          "value": "Supporting Document / Evidence (optional)"
+        },
+        {
+          "kind": "field:name",
+          "line": 108,
+          "value": "evidence"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 108,
+          "value": "PDF, PNG, or JPG."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 108,
+          "value": "File-storage integration is not currently available."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 109,
+          "value": "Preferred Contact Method *"
+        },
+        {
+          "kind": "field:name",
+          "line": 109,
+          "value": "preferredContactMethod"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 109,
+          "value": "Email"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 109,
+          "value": "Phone"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 109,
+          "value": "WhatsApp"
+        },
+        {
+          "kind": "field:name",
+          "line": 110,
+          "value": "consent"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 110,
+          "value": "I acknowledge the Privacy Policy and consent to the use of these details to review and respond to this submission."
+        }
+      ]
+    }
+  ]
+}

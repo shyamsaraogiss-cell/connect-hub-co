@@ -1,0 +1,694 @@
+{
+  "schemaVersion": 1,
+  "ownership": "MASTER_CONTENT_LIBRARY",
+  "runtimeReference": "UNCHANGED_COPY_FIRST",
+  "sources": [
+    {
+      "source": "apps/web/src/app/ritual-services/page.tsx",
+      "sha256": "0bac65d63f361dfe555ed99180e515c402e9c762084938438e31d89d879d53f2",
+      "entries": [
+        {
+          "kind": "field:title",
+          "line": 6,
+          "value": "Vedic Ritual Services & Sacred Coordination | Connect Hub Co."
+        },
+        {
+          "kind": "field:description",
+          "line": 8,
+          "value": "Explore authentic Vedic pujas, homams, Griha Pravesh, Navagraha Shanti, sacred samagri care, and NRI remote live Sankalp coordinated through verified Religious Partners across 15+ locations in India and Nepal."
+        }
+      ]
+    },
+    {
+      "source": "apps/web/src/components/business-pages/ritual-services/RitualServicesPage.tsx",
+      "sha256": "86e4dda49ae44b82c7a8fc7a77921ab718a8fafa7eb1e6f9eaaf3d7de919ee04",
+      "entries": [
+        {
+          "kind": "field:title",
+          "line": 22,
+          "value": "1. Griha Pravesh"
+        },
+        {
+          "kind": "field:subtitle",
+          "line": 23,
+          "value": "Housewarming & Vastu Shanti"
+        },
+        {
+          "kind": "field:description",
+          "line": 24,
+          "value": "Auspicious home inauguration rituals, Vastu Shanti, and Ganesha Pujan for peace, health, and prosperity in your new home."
+        },
+        {
+          "kind": "field:badge",
+          "line": 26,
+          "value": "Popular"
+        },
+        {
+          "kind": "field:title",
+          "line": 30,
+          "value": "2. Marriage Rituals"
+        },
+        {
+          "kind": "field:subtitle",
+          "line": 31,
+          "value": "Vedic Vivah Sanskar & Blessings"
+        },
+        {
+          "kind": "field:description",
+          "line": 32,
+          "value": "Traditional Vedic wedding ceremonies, Kanyadaan, Saptapadi, and pre-wedding pujas led by experienced lineage priests."
+        },
+        {
+          "kind": "field:badge",
+          "line": 34,
+          "value": "Sacred Sanskar"
+        },
+        {
+          "kind": "field:title",
+          "line": 38,
+          "value": "3. Customized Puja"
+        },
+        {
+          "kind": "field:subtitle",
+          "line": 39,
+          "value": "Family Traditions & Sankalpa"
+        },
+        {
+          "kind": "field:description",
+          "line": 40,
+          "value": "Tailored pujas performed strictly per your family Sastras, Sampradaya, preferred deity, and Gotra Sankalpa."
+        },
+        {
+          "kind": "field:badge",
+          "line": 42,
+          "value": "Bespoke"
+        },
+        {
+          "kind": "field:title",
+          "line": 46,
+          "value": "4. Upanayan Sanskar"
+        },
+        {
+          "kind": "field:subtitle",
+          "line": 47,
+          "value": "Sacred Thread Ceremony (Janeu)"
+        },
+        {
+          "kind": "field:description",
+          "line": 48,
+          "value": "Traditional rite of passage for young initiates, accompanied by Gayatri Upadesh and authentic Vedic mantle rites."
+        },
+        {
+          "kind": "field:title",
+          "line": 53,
+          "value": "5. Havan & Homam"
+        },
+        {
+          "kind": "field:subtitle",
+          "line": 54,
+          "value": "Sacred Fire Rituals"
+        },
+        {
+          "kind": "field:description",
+          "line": 55,
+          "value": "Powerful fire offerings including Chandi Homam, Mahamrityunjaya, Sudarshana, and Ganapathi Homam for protection and energy."
+        },
+        {
+          "kind": "field:badge",
+          "line": 57,
+          "value": "Vedic Fire"
+        },
+        {
+          "kind": "field:title",
+          "line": 61,
+          "value": "6. Preferred Location Puja"
+        },
+        {
+          "kind": "field:subtitle",
+          "line": 62,
+          "value": "Home, Temple, or Sacred Destination"
+        },
+        {
+          "kind": "field:description",
+          "line": 63,
+          "value": "Conduct sacred ceremonies at your residence, ancestral home, community venue, or designated pilgrimage temple."
+        },
+        {
+          "kind": "field:title",
+          "line": 68,
+          "value": "7. Navagraha Shanti"
+        },
+        {
+          "kind": "field:subtitle",
+          "line": 69,
+          "value": "Planetary Harmony & Graha Pujas"
+        },
+        {
+          "kind": "field:description",
+          "line": 70,
+          "value": "Specific planetary alignment pujas and Japam to harmonize malefic planetary influences and enhance wellbeing."
+        },
+        {
+          "kind": "field:title",
+          "line": 75,
+          "value": "8. Dosha Remedies"
+        },
+        {
+          "kind": "field:subtitle",
+          "line": 76,
+          "value": "Kaal Sarp, Pitra & Vedic Remedies"
+        },
+        {
+          "kind": "field:description",
+          "line": 77,
+          "value": "Sastra-prescribed remedial rites for Kaal Sarp Dosha, Pitra Dosha, Rahu-Ketu Shanti, and specific birth-chart remedies."
+        },
+        {
+          "kind": "field:badge",
+          "line": 79,
+          "value": "Specialized"
+        },
+        {
+          "kind": "field:title",
+          "line": 83,
+          "value": "9. Festival Rituals"
+        },
+        {
+          "kind": "field:subtitle",
+          "line": 84,
+          "value": "Diwali, Navratri & Seasonal Pujas"
+        },
+        {
+          "kind": "field:description",
+          "line": 85,
+          "value": "Grand seasonal and festive ceremonies including Lakshmi Pujan, Chandi Path, Maha Shivratri, and Ganesh Chaturthi."
+        },
+        {
+          "kind": "field:title",
+          "line": 90,
+          "value": "10. Others / Rituals"
+        },
+        {
+          "kind": "field:subtitle",
+          "line": 91,
+          "value": "Special Devotional & Ancestral Rites"
+        },
+        {
+          "kind": "field:description",
+          "line": 92,
+          "value": "Custom ancestral remembrance, Ayushya Homam, Nakshatra Shanti, Satyanarayan Katha, and specialized Vedic rites."
+        },
+        {
+          "kind": "field:name",
+          "line": 98,
+          "value": "Ayodhya"
+        },
+        {
+          "kind": "field:name",
+          "line": 99,
+          "value": "Pune"
+        },
+        {
+          "kind": "field:name",
+          "line": 100,
+          "value": "Hyderabad"
+        },
+        {
+          "kind": "field:name",
+          "line": 101,
+          "value": "Nashik"
+        },
+        {
+          "kind": "field:name",
+          "line": 102,
+          "value": "Kashi / Varanasi"
+        },
+        {
+          "kind": "field:name",
+          "line": 103,
+          "value": "Patna"
+        },
+        {
+          "kind": "field:name",
+          "line": 104,
+          "value": "Mathura"
+        },
+        {
+          "kind": "field:name",
+          "line": 105,
+          "value": "Vrindavan"
+        },
+        {
+          "kind": "field:name",
+          "line": 106,
+          "value": "Delhi NCR"
+        },
+        {
+          "kind": "field:name",
+          "line": 107,
+          "value": "Lucknow"
+        },
+        {
+          "kind": "field:name",
+          "line": 108,
+          "value": "Gorakhpur"
+        },
+        {
+          "kind": "field:name",
+          "line": 109,
+          "value": "Gaya Ji"
+        },
+        {
+          "kind": "field:name",
+          "line": 110,
+          "value": "Bengaluru"
+        },
+        {
+          "kind": "field:name",
+          "line": 111,
+          "value": "Mumbai"
+        },
+        {
+          "kind": "field:name",
+          "line": 112,
+          "value": "Nepal"
+        },
+        {
+          "kind": "list:nriRemoteFeatures",
+          "line": 116,
+          "value": "Scheduled live HD video streaming across global time zones (USA, UK, Gulf, Singapore, Australia)."
+        },
+        {
+          "kind": "list:nriRemoteFeatures",
+          "line": 117,
+          "value": "Direct live Sankalp guided by verified priests with family names and Gotra."
+        },
+        {
+          "kind": "list:nriRemoteFeatures",
+          "line": 118,
+          "value": "Complete venue setup, authentic Sastra-compliant Samagri, and sacred fire preparation."
+        },
+        {
+          "kind": "list:nriRemoteFeatures",
+          "line": 119,
+          "value": "Verified documentation: ritual completion proof, high-resolution photographs, and video clips."
+        },
+        {
+          "kind": "list:nriRemoteFeatures",
+          "line": 120,
+          "value": "Prasadam and sacred dry offerings dispatch advice to international or local Indian addresses."
+        },
+        {
+          "kind": "list:nriRemoteFeatures",
+          "line": 121,
+          "value": "247 multi-lingual coordination team (English, Hindi, Regional languages)."
+        },
+        {
+          "kind": "field:title",
+          "line": 126,
+          "value": "Unadulterated Samagri Procurement"
+        },
+        {
+          "kind": "field:description",
+          "line": 127,
+          "value": "Pure Desi Ghee, authentic herbs, dry fruits, sacred woods (Samidha), pure Gangajal, and unblemished puja items sourced from verified vendors."
+        },
+        {
+          "kind": "field:title",
+          "line": 130,
+          "value": "Sastra & Sampradaya Compliance"
+        },
+        {
+          "kind": "field:description",
+          "line": 131,
+          "value": "Every ingredient is checked against Vedic literature and specific puja guidelines to ensure complete ritual sanctity."
+        },
+        {
+          "kind": "field:title",
+          "line": 134,
+          "value": "Pre-Arranged Priest Dakshina"
+        },
+        {
+          "kind": "field:description",
+          "line": 135,
+          "value": "All priest offerings and samagri charges are transparently covered in your official quotation—no unexpected cash demands on ritual day."
+        },
+        {
+          "kind": "field:title",
+          "line": 138,
+          "value": "Sanitized & Sacred Venue Setup"
+        },
+        {
+          "kind": "field:description",
+          "line": 139,
+          "value": "Complete assistance with Yajna Kunda preparation, mandap arrangement, and ritual vessel cleaning."
+        },
+        {
+          "kind": "field:title",
+          "line": 145,
+          "value": "Select Ritual & Share Details"
+        },
+        {
+          "kind": "field:description",
+          "line": 146,
+          "value": "Choose your desired ritual category, preferred date, Gotra, location, or remote live participation preference."
+        },
+        {
+          "kind": "field:title",
+          "line": 149,
+          "value": "Receive Custom Scope & Pricing"
+        },
+        {
+          "kind": "field:description",
+          "line": 150,
+          "value": "Our team verifies Religious Partner availability, venue requirements, and issues a transparent upfront service scope."
+        },
+        {
+          "kind": "field:title",
+          "line": 153,
+          "value": "Sacred Ritual Execution"
+        },
+        {
+          "kind": "field:description",
+          "line": 154,
+          "value": "The ritual is conducted by verified lineage priests with live Sankalp, Vedic precision, and complete guidance."
+        },
+        {
+          "kind": "field:title",
+          "line": 157,
+          "value": "Completion & Prasadam Guidance"
+        },
+        {
+          "kind": "field:description",
+          "line": 158,
+          "value": "Receive completion confirmation, high-res photos/video, and guidance on prasadam and follow-up offerings."
+        },
+        {
+          "kind": "list:trustItems",
+          "line": 163,
+          "value": "Verified Lineage Priests & Religious Partners"
+        },
+        {
+          "kind": "list:trustItems",
+          "line": 164,
+          "value": "Vedic Sastra Precision & Authentic Recitation"
+        },
+        {
+          "kind": "list:trustItems",
+          "line": 165,
+          "value": "Transparent Scope & Upfront Clear Pricing"
+        },
+        {
+          "kind": "list:trustItems",
+          "line": 166,
+          "value": "NRI Remote Live Stream & Global Time-Zone Support"
+        },
+        {
+          "kind": "list:trustItems",
+          "line": 167,
+          "value": "Pure Samagri Care & Pure Ingredient Guarantee"
+        },
+        {
+          "kind": "list:trustItems",
+          "line": 168,
+          "value": "247 Guided Support via Ask GenZ AI & Human Team"
+        },
+        {
+          "kind": "field:question",
+          "line": 173,
+          "value": "How do I know which puja is appropriate for my family situation?"
+        },
+        {
+          "kind": "field:answer",
+          "line": 174,
+          "value": "You can select from our 10 Core Ritual Categories or consult Ask GenZ AI for guidance. Our human team and verified Religious Partners will review your family tradition, Gotra, and purpose to confirm the exact prescribed Vedic ritual."
+        },
+        {
+          "kind": "field:question",
+          "line": 177,
+          "value": "Can remote pujas be arranged for NRI & international families?"
+        },
+        {
+          "kind": "field:answer",
+          "line": 178,
+          "value": "Yes! Remote Sankalp and live virtual participation are available and scheduled across global time zones (USA, Canada, Europe, Gulf, Australia, Singapore). Family members join live via video link while the priest performs the rites."
+        },
+        {
+          "kind": "field:question",
+          "line": 181,
+          "value": "What is included in the ritual service quotation?"
+        },
+        {
+          "kind": "field:answer",
+          "line": 182,
+          "value": "Your official quotation includes priest Dakshina, pure Sastra-compliant Samagri procurement, venue preparation, live streaming setup (if remote), and completion documentation. There are no mandatory extra cash demands."
+        },
+        {
+          "kind": "field:question",
+          "line": 185,
+          "value": "Where can the physical rituals be performed?"
+        },
+        {
+          "kind": "field:answer",
+          "line": 186,
+          "value": "Physical rituals can be conducted at your home, a local venue, or at sacred temple locations across our 15 service hubs, including Ayodhya, Kashi, Nashik, Pune, Delhi NCR, Hyderabad, Gaya Ji, Bengaluru, Mumbai, and Nepal."
+        },
+        {
+          "kind": "field:question",
+          "line": 189,
+          "value": "How far in advance should I book an auspicious Muhurat ritual?"
+        },
+        {
+          "kind": "field:answer",
+          "line": 190,
+          "value": "We recommend booking 1 to 3 weeks in advance for major Muhurat dates (like Griha Pravesh or Marriage pujas). However, urgent or short-notice requests can also be accommodated based on priest availability."
+        },
+        {
+          "kind": "field:question",
+          "line": 193,
+          "value": "Will I receive proof of completion or photos/videos of the ritual?"
+        },
+        {
+          "kind": "field:answer",
+          "line": 194,
+          "value": "Yes. All confirmed service plans include ritual completion confirmation, high-resolution photographs, and video highlights of key Sankalp and Havan moments."
+        },
+        {
+          "kind": "field:label",
+          "line": 202,
+          "value": "Connect Hub Co."
+        },
+        {
+          "kind": "field:label",
+          "line": 203,
+          "value": "Ritual Services"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 210,
+          "value": "AUTHORED VEDIC PUJA & HOMAM SERVICES"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 211,
+          "value": "Vedic Ritual Services & Sacred Coordination"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 212,
+          "value": "Ancient Tradition with Modern Peace of Mind."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 214,
+          "value": "Traditional, authentic, and fully guided Vedic pujas, homams, and sacred ceremonies coordinated with verified Religious Partners. Arranged on-site at your home or sacred destinations across India & Nepal, or via live remote participation for families worldwide.\r\n          "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 222,
+          "value": "10 APPROVED CORE RITUAL CATEGORIES"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 223,
+          "value": "Prescribed Vedic Pujas & Sacred Ceremonies"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 225,
+          "value": "Every ritual carries its own purpose, tradition, and prescribed method. Choose from our 10 approved ritual categories for guided coordination.\r\n          "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 248,
+          "value": "SERVICE COVERAGE ACROSS SACRED DESTINATIONS"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 249,
+          "value": "Available Across 15+ Destinations in India & Nepal"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 251,
+          "value": "We connect your family with verified local Religious Partners, qualified lineage priests, and venue arrangements across major spiritual hubs.\r\n          "
+        },
+        {
+          "kind": "field:name",
+          "line": 260,
+          "value": "offline"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 262,
+          "value": "(Sacred Destination)"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 271,
+          "value": "GLOBAL FAMILY PARTICIPATION"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 272,
+          "value": "Remote Live Sankalp for NRIs & International Families"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 273,
+          "value": "Distance should never be a barrier to fulfilling sacred family vows."
+        },
+        {
+          "kind": "field:name",
+          "line": 277,
+          "value": "check"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 283,
+          "value": "Inquire for Remote Rituals"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 289,
+          "value": "VAIDIK SAMAGRI CARE"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 290,
+          "value": "Pure Ingredients & Sastra Compliance"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 292,
+          "value": "Ritual sanctity starts with pure offerings. We ensure end-to-end procurement of unadulterated items per Sastra guidelines.\r\n          "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 308,
+          "value": "TRANSPARENT PROCESS"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 309,
+          "value": "How the Service Works"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 325,
+          "value": "TRUST AND VERIFICATION"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 326,
+          "value": "Vedic Accuracy, Transparency & Dedicated Care"
+        },
+        {
+          "kind": "field:name",
+          "line": 331,
+          "value": "check"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 341,
+          "value": "GUIDED ASSISTANCE"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 342,
+          "value": "Ask GenZ AI"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 344,
+          "value": "Ask about ritual recommendations, Muhurat selection, samagri care, priest verification, location coverage, or remote participation.\r\n          "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 356,
+          "value": "FAQ"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 357,
+          "value": "Frequently Asked Questions"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 372,
+          "value": "GUIDED ASSISTANCE"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 373,
+          "value": "Ready to Begin Your Sacred Ceremony?"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 375,
+          "value": "Share your family’s requirement and receive a custom service scope with verified Religious Partner coordination.\r\n          "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 379,
+          "value": "Raise an Inquiry"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 380,
+          "value": "View Service Catalog"
+        },
+        {
+          "kind": "attribute:aria-label",
+          "line": 385,
+          "value": "Related navigation"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 386,
+          "value": "Related navigation"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 388,
+          "value": "PitruMoksha Gaya"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 389,
+          "value": "Travel Assistance"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 390,
+          "value": "Vahi Lineage Records"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 391,
+          "value": "Service Catalog"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "ownership": "MASTER_CONTENT_LIBRARY",
+  "runtimeReference": "UNCHANGED_COPY_FIRST",
+  "sources": [
+    {
+      "source": "apps/web/src/app/founder-support/page.tsx",
+      "sha256": "8a7d3fcaf72f8a3aba9867d05ca77561225c88897a63412757807061377e672a",
+      "entries": [
+        {
+          "kind": "field:title",
+          "line": 5,
+          "value": "Founder Support | Connect Hub Co."
+        },
+        {
+          "kind": "field:description",
+          "line": 5,
+          "value": "Submit a Founder Support escalation request to Connect Hub Co."
+        },
+        {
+          "kind": "jsx-text",
+          "line": 11,
+          "value": "Founder Escalation"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 12,
+          "value": "Founder Support"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 14,
+          "value": "Direct escalation for unresolved or serious service concerns. Use Founder Support when your issue requires direct Founder-level review.\n        "
+        },
+        {
+          "kind": "jsx-text",
+          "line": 17,
+          "value": "PLEASE MAKE SURE -"
+        },
+        {
+          "kind": "jsx-text",
+          "line": 17,
+          "value": "Please use the same name, email ID and Reference ID for every purpose.\n        "
+        }
+      ]
+    }
+  ]
+}

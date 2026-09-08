@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 1,
+  "ownership": "MASTER_CONTENT_LIBRARY",
+  "runtimeReference": "UNCHANGED_COPY_FIRST",
+  "sources": [
+    {
+      "source": "apps/web/src/app/ritual-services/online/page.tsx",
+      "sha256": "5cdff61c93499a12c78ae2e2c219ffb0a24677b8527d6cee289d1c4ebe105086",
+      "entries": [
+        {
+          "kind": "field:title",
+          "line": 5,
+          "value": "Online Ritual Services & Remote Live Sankalp | Connect Hub Co."
+        },
+        {
+          "kind": "field:description",
+          "line": 6,
+          "value": "Participate remotely in authentic Vedic pujas with live HD video streaming and guided Sankalp led by verified Religious Partners."
+        },
+        {
+          "kind": "field:label",
+          "line": 11,
+          "value": "Connect Hub Co."
+        },
+        {
+          "kind": "field:label",
+          "line": 12,
+          "value": "Ritual Services"
+        },
+        {
+          "kind": "field:label",
+          "line": 13,
+          "value": "Online Ritual Services"
+        },
+        {
+          "kind": "field:eyebrow",
+          "line": 15,
+          "value": "GLOBAL REMOTE PARTICIPATION"
+        },
+        {
+          "kind": "field:title",
+          "line": 16,
+          "value": "Online Ritual Services & Live Sankalp"
+        },
+        {
+          "kind": "field:introduction",
+          "line": 17,
+          "value": "Connect your family worldwide with live HD streaming and authentic Sastra-compliant Sankalp led by verified priests."
+        },
+        {
+          "kind": "field:supportingLine",
+          "line": 18,
+          "value": "Participate live across global time zones (USA, UK, Gulf, Australia, Singapore) with full ritual documentation."
+        },
+        {
+          "kind": "field:title",
+          "line": 22,
+          "value": "Scheduled Live Video Stream"
+        },
+        {
+          "kind": "field:supportingLine",
+          "line": 23,
+          "value": "Join Live with Family Members"
+        },
+        {
+          "kind": "field:description",
+          "line": 24,
+          "value": "HD live stream connection scheduled to suit your time zone, allowing all family members to participate together."
+        },
+        {
+          "kind": "field:cta",
+          "line": 26,
+          "value": "Inquire for Live Stream"
+        },
+        {
+          "kind": "field:title",
+          "line": 30,
+          "value": "Remote Sankalp & Gotra Recitation"
+        },
+        {
+          "kind": "field:supportingLine",
+          "line": 31,
+          "value": "Authentic Lineage Recitation"
+        },
+        {
+          "kind": "field:description",
+          "line": 32,
+          "value": "Priests recite your specific family names, Gotra, and intentions live during the sacred ceremony."
+        },
+        {
+          "kind": "field:cta",
+          "line": 34,
+          "value": "Request Remote Sankalp"
+        },
+        {
+          "kind": "field:overviewTitle",
+          "line": 38,
+          "value": "Why Families Choose Remote Ritual Coordination"
+        },
+        {
+          "kind": "field:overviewCopy",
+          "line": 39,
+          "value": "Distance never stops devotion. Our verified online ritual services ensure complete ritual purity, transparent Dakshina, and verified completion proof."
+        },
+        {
+          "kind": "list:overviewPoints",
+          "line": 41,
+          "value": "Live HD Video Stream across international time zones."
+        },
+        {
+          "kind": "list:overviewPoints",
+          "line": 42,
+          "value": "Verified Lineage Priests conducting Sastra-compliant Sankalp."
+        },
+        {
+          "kind": "list:overviewPoints",
+          "line": 43,
+          "value": "Pure Samagri Procurement and sanitized venue setup included."
+        },
+        {
+          "kind": "list:overviewPoints",
+          "line": 44,
+          "value": "Prasadam and sacred offerings dispatched to your address."
+        },
+        {
+          "kind": "list:overviewPoints",
+          "line": 45,
+          "value": "Completion confirmation and high-resolution photo/video highlights."
+        },
+        {
+          "kind": "field:title",
+          "line": 48,
+          "value": "Select Ritual & Preferred Date"
+        },
+        {
+          "kind": "field:description",
+          "line": 48,
+          "value": "Choose your desired ritual, Gotra, and convenient global time zone."
+        },
+        {
+          "kind": "field:title",
+          "line": 49,
+          "value": "Receive Service Scope & Confirmation"
+        },
+        {
+          "kind": "field:description",
+          "line": 49,
+          "value": "Receive full transparent scope including priest Dakshina and live connection link."
+        },
+        {
+          "kind": "field:title",
+          "line": 50,
+          "value": "Participate Live Online"
+        },
+        {
+          "kind": "field:description",
+          "line": 50,
+          "value": "Join the live video session as priests guide your family through the Sankalp."
+        },
+        {
+          "kind": "field:title",
+          "line": 51,
+          "value": "Receive Confirmation & Prasadam"
+        },
+        {
+          "kind": "field:description",
+          "line": 51,
+          "value": "Access ritual documentation and receive dispatched sacred prasadam."
+        },
+        {
+          "kind": "list:trustItems",
+          "line": 54,
+          "value": "Verified Lineage Priests"
+        },
+        {
+          "kind": "list:trustItems",
+          "line": 55,
+          "value": "Pure Sastra Samagri Guarantee"
+        },
+        {
+          "kind": "list:trustItems",
+          "line": 56,
+          "value": "Global Time Zone Live Video Stream"
+        },
+        {
+          "kind": "list:trustItems",
+          "line": 57,
+          "value": "Transparent Pricing without Hidden Cash Demands"
+        },
+        {
+          "kind": "field:question",
+          "line": 60,
+          "value": "Can family members from multiple countries join the live stream?"
+        },
+        {
+          "kind": "field:answer",
+          "line": 60,
+          "value": "Yes! Multiple family members can join the secure video link from different locations simultaneously."
+        },
+        {
+          "kind": "field:question",
+          "line": 61,
+          "value": "How is Sankalp performed remotely?"
+        },
+        {
+          "kind": "field:answer",
+          "line": 61,
+          "value": "The priest recites the Sankalp live over the video connection while guiding you through the spoken responses and intention."
+        },
+        {
+          "kind": "field:label",
+          "line": 64,
+          "value": "All Ritual Services"
+        },
+        {
+          "kind": "field:label",
+          "line": 65,
+          "value": "Offline On-Site Rituals"
+        },
+        {
+          "kind": "field:label",
+          "line": 66,
+          "value": "PitruMoksha Gaya Online"
+        }
+      ]
+    }
+  ]
+}
