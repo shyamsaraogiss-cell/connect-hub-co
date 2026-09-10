@@ -1,0 +1,3699 @@
+[
+  {
+    "width": 1024,
+    "height": 768,
+    "canvas": {
+      "x": 1,
+      "y": 149,
+      "width": 1007,
+      "height": 444.96875,
+      "bottom": 593.96875
+    },
+    "private": {
+      "x": 1,
+      "y": 150,
+      "width": 704.890625,
+      "height": 442.96875,
+      "bottom": 592.96875
+    },
+    "recognition": {
+      "x": 705.890625,
+      "y": 150,
+      "width": 302.09375,
+      "height": 442.96875,
+      "bottom": 592.96875
+    },
+    "cards": [
+      {
+        "text": "Adoptive & Biological Relationships",
+        "card": {
+          "x": 1,
+          "y": 199.390625,
+          "width": 220.921875,
+          "height": 44,
+          "bottom": 243.390625
+        },
+        "label": {
+          "x": 32,
+          "y": 205.40625,
+          "width": 186.921875,
+          "height": 31.96875,
+          "bottom": 237.375
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 120.25,
+            "height": 15,
+            "y": 205.40625
+          },
+          {
+            "width": 76.84375,
+            "height": 15,
+            "y": 221.390625
+          }
+        ]
+      },
+      {
+        "text": "Blended & Remarried Families",
+        "card": {
+          "x": 484.953125,
+          "y": 199.390625,
+          "width": 220.9375,
+          "height": 44,
+          "bottom": 243.390625
+        },
+        "label": {
+          "x": 515.953125,
+          "y": 213.390625,
+          "width": 173.59375,
+          "height": 15.984375,
+          "bottom": 229.375
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 173.59375,
+            "height": 15,
+            "y": 213.390625
+          }
+        ]
+      },
+      {
+        "text": "Separated or Divorced Families",
+        "card": {
+          "x": 1,
+          "y": 250.390625,
+          "width": 220.921875,
+          "height": 44,
+          "bottom": 294.390625
+        },
+        "label": {
+          "x": 32,
+          "y": 264.390625,
+          "width": 179.28125,
+          "height": 15.984375,
+          "bottom": 280.375
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 179.28125,
+            "height": 15,
+            "y": 264.390625
+          }
+        ]
+      },
+      {
+        "text": "Past Relationships & Break-ups",
+        "card": {
+          "x": 484.953125,
+          "y": 250.390625,
+          "width": 220.9375,
+          "height": 44,
+          "bottom": 294.390625
+        },
+        "label": {
+          "x": 515.953125,
+          "y": 264.390625,
+          "width": 180,
+          "height": 15.984375,
+          "bottom": 280.375
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 180,
+            "height": 15,
+            "y": 264.390625
+          }
+        ]
+      },
+      {
+        "text": "Relationships Outside Marriage",
+        "card": {
+          "x": 1,
+          "y": 301.390625,
+          "width": 220.921875,
+          "height": 44,
+          "bottom": 345.390625
+        },
+        "label": {
+          "x": 32,
+          "y": 315.390625,
+          "width": 178.578125,
+          "height": 15.984375,
+          "bottom": 331.375
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 178.578125,
+            "height": 15,
+            "y": 315.390625
+          }
+        ]
+      },
+      {
+        "text": "Estranged Family Relationships",
+        "card": {
+          "x": 484.953125,
+          "y": 301.390625,
+          "width": 220.9375,
+          "height": 44,
+          "bottom": 345.390625
+        },
+        "label": {
+          "x": 515.953125,
+          "y": 315.390625,
+          "width": 180,
+          "height": 15.984375,
+          "bottom": 331.375
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 180,
+            "height": 15,
+            "y": 315.390625
+          }
+        ]
+      },
+      {
+        "text": "A Person Whose Family You Cannot Approach",
+        "card": {
+          "x": 1,
+          "y": 352.390625,
+          "width": 220.921875,
+          "height": 44,
+          "bottom": 396.390625
+        },
+        "label": {
+          "x": 32,
+          "y": 358.40625,
+          "width": 186.921875,
+          "height": 31.96875,
+          "bottom": 390.375
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 161.515625,
+            "height": 15,
+            "y": 358.40625
+          },
+          {
+            "width": 98.921875,
+            "height": 15,
+            "y": 374.390625
+          }
+        ]
+      },
+      {
+        "text": "Someone You Loved, Cared For or Feel a Sacred Duty Toward",
+        "card": {
+          "x": 484.953125,
+          "y": 352.390625,
+          "width": 220.9375,
+          "height": 44,
+          "bottom": 396.390625
+        },
+        "label": {
+          "x": 515.953125,
+          "y": 358.40625,
+          "width": 186.9375,
+          "height": 31.96875,
+          "bottom": 390.375
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 182.890625,
+            "height": 15,
+            "y": 358.40625
+          },
+          {
+            "width": 169.09375,
+            "height": 15,
+            "y": 374.390625
+          }
+        ]
+      },
+      {
+        "text": "Other Sensitive Family or Personal Circumstances",
+        "card": {
+          "x": 1,
+          "y": 403.390625,
+          "width": 220.921875,
+          "height": 44,
+          "bottom": 447.390625
+        },
+        "label": {
+          "x": 32,
+          "y": 409.40625,
+          "width": 186.921875,
+          "height": 31.96875,
+          "bottom": 441.375
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 143.6875,
+            "height": 15,
+            "y": 409.40625
+          },
+          {
+            "width": 138.71875,
+            "height": 15,
+            "y": 425.390625
+          }
+        ]
+      },
+      {
+        "text": "Your Circumstance",
+        "card": {
+          "x": 228.421875,
+          "y": 199.390625,
+          "width": 250.03125,
+          "height": 44,
+          "bottom": 243.390625
+        },
+        "label": {
+          "x": 263.421875,
+          "y": 213.296875,
+          "width": 117.875,
+          "height": 16.1875,
+          "bottom": 229.484375
+        },
+        "font": "12.96px",
+        "lineHeight": "16.2px",
+        "lines": [
+          {
+            "width": 117.875,
+            "height": 15,
+            "y": 213.296875
+          }
+        ]
+      },
+      {
+        "text": "Confidential Pre-Guidance",
+        "card": {
+          "x": 228.421875,
+          "y": 250.390625,
+          "width": 250.03125,
+          "height": 44,
+          "bottom": 294.390625
+        },
+        "label": {
+          "x": 263.421875,
+          "y": 264.296875,
+          "width": 162.75,
+          "height": 16.1875,
+          "bottom": 280.484375
+        },
+        "font": "12.96px",
+        "lineHeight": "16.2px",
+        "lines": [
+          {
+            "width": 162.75,
+            "height": 15,
+            "y": 264.296875
+          }
+        ]
+      },
+      {
+        "text": "Mutual Confidentiality & Consent",
+        "card": {
+          "x": 228.421875,
+          "y": 301.390625,
+          "width": 250.03125,
+          "height": 44,
+          "bottom": 345.390625
+        },
+        "label": {
+          "x": 263.421875,
+          "y": 315.296875,
+          "width": 203.765625,
+          "height": 16.1875,
+          "bottom": 331.484375
+        },
+        "font": "12.96px",
+        "lineHeight": "16.2px",
+        "lines": [
+          {
+            "width": 203.765625,
+            "height": 15,
+            "y": 315.296875
+          }
+        ]
+      },
+      {
+        "text": "Only Ritual-Required Information Proceeds",
+        "card": {
+          "x": 228.421875,
+          "y": 352.390625,
+          "width": 250.03125,
+          "height": 44,
+          "bottom": 396.390625
+        },
+        "label": {
+          "x": 263.421875,
+          "y": 358.203125,
+          "width": 210.03125,
+          "height": 32.375,
+          "bottom": 390.578125
+        },
+        "font": "12.96px",
+        "lineHeight": "16.2px",
+        "lines": [
+          {
+            "width": 128.90625,
+            "height": 15,
+            "y": 358.203125
+          },
+          {
+            "width": 133.234375,
+            "height": 15,
+            "y": 374.390625
+          }
+        ]
+      },
+      {
+        "text": "Guided Ritual Path",
+        "card": {
+          "x": 228.421875,
+          "y": 403.390625,
+          "width": 250.03125,
+          "height": 44,
+          "bottom": 447.390625
+        },
+        "label": {
+          "x": 263.421875,
+          "y": 417.296875,
+          "width": 115.9375,
+          "height": 16.1875,
+          "bottom": 433.484375
+        },
+        "font": "12.96px",
+        "lineHeight": "16.2px",
+        "lines": [
+          {
+            "width": 115.9375,
+            "height": 15,
+            "y": 417.296875
+          }
+        ]
+      }
+    ],
+    "orbit": {
+      "x": 737.4375,
+      "y": 242.6875,
+      "width": 240,
+      "height": 240,
+      "bottom": 482.6875
+    },
+    "radialLabels": [
+      {
+        "text": "NRI & International Families",
+        "x": 816.640625,
+        "y": 258.7109375,
+        "width": 81.59375,
+        "height": 46.140625,
+        "bottom": 304.8515625,
+        "lines": [
+          {
+            "width": 31.359375,
+            "height": 12,
+            "y": 261.7109375
+          },
+          {
+            "width": 69.140625,
+            "height": 12,
+            "y": 275.7578125
+          },
+          {
+            "width": 46.109375,
+            "height": 12,
+            "y": 289.8046875
+          }
+        ]
+      },
+      {
+        "text": "Unable to Travel",
+        "x": 739.828125,
+        "y": 302.9375,
+        "width": 81.59375,
+        "height": 32.09375,
+        "bottom": 335.03125,
+        "lines": [
+          {
+            "width": 38.421875,
+            "height": 12,
+            "y": 305.9375
+          },
+          {
+            "width": 47.390625,
+            "height": 12,
+            "y": 319.984375
+          }
+        ]
+      },
+      {
+        "text": "Elderly Participants",
+        "x": 893.4375,
+        "y": 302.9375,
+        "width": 81.59375,
+        "height": 32.09375,
+        "bottom": 335.03125,
+        "lines": [
+          {
+            "width": 38.421875,
+            "height": 12,
+            "y": 305.9375
+          },
+          {
+            "width": 65.953125,
+            "height": 12,
+            "y": 319.984375
+          }
+        ]
+      },
+      {
+        "text": "Mobility Requirements",
+        "x": 720.640625,
+        "y": 385.734375,
+        "width": 81.59375,
+        "height": 32.09375,
+        "bottom": 417.828125,
+        "lines": [
+          {
+            "width": 43.515625,
+            "height": 12,
+            "y": 388.734375
+          },
+          {
+            "width": 76.828125,
+            "height": 12,
+            "y": 402.78125
+          }
+        ]
+      },
+      {
+        "text": "Families in Different Cities or Countries",
+        "x": 912.640625,
+        "y": 371.6875,
+        "width": 81.59375,
+        "height": 60.1875,
+        "bottom": 431.875,
+        "lines": [
+          {
+            "width": 59.546875,
+            "height": 12,
+            "y": 374.6875
+          },
+          {
+            "width": 47.375,
+            "height": 12,
+            "y": 388.734375
+          },
+          {
+            "width": 31.375,
+            "height": 12,
+            "y": 402.78125
+          },
+          {
+            "width": 68.484375,
+            "height": 12,
+            "y": 416.828125
+          }
+        ]
+      },
+      {
+        "text": "Hybrid Family Participation",
+        "x": 773.4375,
+        "y": 445.9140625,
+        "width": 81.59375,
+        "height": 46.140625,
+        "bottom": 492.0546875,
+        "lines": [
+          {
+            "width": 36.484375,
+            "height": 12,
+            "y": 448.9140625
+          },
+          {
+            "width": 36.5,
+            "height": 12,
+            "y": 462.9609375
+          },
+          {
+            "width": 69.78125,
+            "height": 12,
+            "y": 477.0078125
+          }
+        ]
+      },
+      {
+        "text": "Time-Zone Coordinated Participation",
+        "x": 859.828125,
+        "y": 445.9140625,
+        "width": 81.59375,
+        "height": 46.140625,
+        "bottom": 492.0546875,
+        "lines": [
+          {
+            "width": 58.046875,
+            "height": 12,
+            "y": 448.9140625
+          },
+          {
+            "width": 67.84375,
+            "height": 12,
+            "y": 462.9609375
+          },
+          {
+            "width": 69.78125,
+            "height": 12,
+            "y": 477.0078125
+          }
+        ]
+      }
+    ],
+    "rows": "44px 44px 44px 44px 44px",
+    "columns": "220.922px 243.031px 220.938px",
+    "privacy": {
+      "x": 1,
+      "y": 457.390625,
+      "width": 704.890625,
+      "height": 75.578125,
+      "bottom": 532.96875
+    },
+    "lock": {
+      "x": 341.4375,
+      "y": 458.390625,
+      "width": 24,
+      "height": 24,
+      "bottom": 482.390625
+    },
+    "headline": {
+      "x": 1,
+      "y": 489.390625,
+      "width": 704.890625,
+      "height": 18.546875,
+      "bottom": 507.9375
+    },
+    "support": {
+      "x": 1,
+      "y": 514.9375,
+      "width": 704.890625,
+      "height": 16.03125,
+      "bottom": 530.96875
+    },
+    "cta": {
+      "x": 231.71875,
+      "y": 538.96875,
+      "width": 243.453125,
+      "height": 42,
+      "bottom": 580.96875
+    }
+  },
+  {
+    "width": 1280,
+    "height": 720,
+    "canvas": {
+      "x": 1,
+      "y": 149,
+      "width": 1263,
+      "height": 445.515625,
+      "bottom": 594.515625
+    },
+    "private": {
+      "x": 1,
+      "y": 150,
+      "width": 884.09375,
+      "height": 443.515625,
+      "bottom": 593.515625
+    },
+    "recognition": {
+      "x": 885.09375,
+      "y": 150,
+      "width": 378.90625,
+      "height": 443.515625,
+      "bottom": 593.515625
+    },
+    "cards": [
+      {
+        "text": "Adoptive & Biological Relationships",
+        "card": {
+          "x": 1,
+          "y": 199.9375,
+          "width": 278.734375,
+          "height": 44,
+          "bottom": 243.9375
+        },
+        "label": {
+          "x": 36,
+          "y": 213.9375,
+          "width": 200.65625,
+          "height": 15.984375,
+          "bottom": 229.921875
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 200.65625,
+            "height": 15,
+            "y": 213.9375
+          }
+        ]
+      },
+      {
+        "text": "Blended & Remarried Families",
+        "card": {
+          "x": 606.34375,
+          "y": 199.9375,
+          "width": 278.75,
+          "height": 44,
+          "bottom": 243.9375
+        },
+        "label": {
+          "x": 641.34375,
+          "y": 213.9375,
+          "width": 173.59375,
+          "height": 15.984375,
+          "bottom": 229.921875
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 173.59375,
+            "height": 15,
+            "y": 213.9375
+          }
+        ]
+      },
+      {
+        "text": "Separated or Divorced Families",
+        "card": {
+          "x": 1,
+          "y": 250.9375,
+          "width": 278.734375,
+          "height": 44,
+          "bottom": 294.9375
+        },
+        "label": {
+          "x": 36,
+          "y": 264.9375,
+          "width": 179.28125,
+          "height": 15.984375,
+          "bottom": 280.921875
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 179.28125,
+            "height": 15,
+            "y": 264.9375
+          }
+        ]
+      },
+      {
+        "text": "Past Relationships & Break-ups",
+        "card": {
+          "x": 606.34375,
+          "y": 250.9375,
+          "width": 278.75,
+          "height": 44,
+          "bottom": 294.9375
+        },
+        "label": {
+          "x": 641.34375,
+          "y": 264.9375,
+          "width": 180,
+          "height": 15.984375,
+          "bottom": 280.921875
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 180,
+            "height": 15,
+            "y": 264.9375
+          }
+        ]
+      },
+      {
+        "text": "Relationships Outside Marriage",
+        "card": {
+          "x": 1,
+          "y": 301.9375,
+          "width": 278.734375,
+          "height": 44,
+          "bottom": 345.9375
+        },
+        "label": {
+          "x": 36,
+          "y": 315.9375,
+          "width": 178.578125,
+          "height": 15.984375,
+          "bottom": 331.921875
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 178.578125,
+            "height": 15,
+            "y": 315.9375
+          }
+        ]
+      },
+      {
+        "text": "Estranged Family Relationships",
+        "card": {
+          "x": 606.34375,
+          "y": 301.9375,
+          "width": 278.75,
+          "height": 44,
+          "bottom": 345.9375
+        },
+        "label": {
+          "x": 641.34375,
+          "y": 315.9375,
+          "width": 180,
+          "height": 15.984375,
+          "bottom": 331.921875
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 180,
+            "height": 15,
+            "y": 315.9375
+          }
+        ]
+      },
+      {
+        "text": "A Person Whose Family You Cannot Approach",
+        "card": {
+          "x": 1,
+          "y": 352.9375,
+          "width": 278.734375,
+          "height": 44,
+          "bottom": 396.9375
+        },
+        "label": {
+          "x": 36,
+          "y": 358.953125,
+          "width": 238.734375,
+          "height": 31.96875,
+          "bottom": 390.921875
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 161.515625,
+            "height": 15,
+            "y": 358.953125
+          },
+          {
+            "width": 98.921875,
+            "height": 15,
+            "y": 374.9375
+          }
+        ]
+      },
+      {
+        "text": "Someone You Loved, Cared For or Feel a Sacred Duty Toward",
+        "card": {
+          "x": 606.34375,
+          "y": 352.9375,
+          "width": 278.75,
+          "height": 44,
+          "bottom": 396.9375
+        },
+        "label": {
+          "x": 641.34375,
+          "y": 358.953125,
+          "width": 238.75,
+          "height": 31.96875,
+          "bottom": 390.921875
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 236.953125,
+            "height": 15,
+            "y": 358.953125
+          },
+          {
+            "width": 115.03125,
+            "height": 15,
+            "y": 374.9375
+          }
+        ]
+      },
+      {
+        "text": "Other Sensitive Family or Personal Circumstances",
+        "card": {
+          "x": 1,
+          "y": 403.9375,
+          "width": 278.734375,
+          "height": 44,
+          "bottom": 447.9375
+        },
+        "label": {
+          "x": 36,
+          "y": 409.953125,
+          "width": 238.734375,
+          "height": 31.96875,
+          "bottom": 441.921875
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 197.765625,
+            "height": 15,
+            "y": 409.953125
+          },
+          {
+            "width": 84.65625,
+            "height": 15,
+            "y": 425.9375
+          }
+        ]
+      },
+      {
+        "text": "Your Circumstance",
+        "card": {
+          "x": 285.3125,
+          "y": 199.9375,
+          "width": 315.453125,
+          "height": 44,
+          "bottom": 243.9375
+        },
+        "label": {
+          "x": 320.3125,
+          "y": 213.84375,
+          "width": 117.875,
+          "height": 16.1875,
+          "bottom": 230.03125
+        },
+        "font": "12.96px",
+        "lineHeight": "16.2px",
+        "lines": [
+          {
+            "width": 117.875,
+            "height": 15,
+            "y": 213.84375
+          }
+        ]
+      },
+      {
+        "text": "Confidential Pre-Guidance",
+        "card": {
+          "x": 285.3125,
+          "y": 250.9375,
+          "width": 315.453125,
+          "height": 44,
+          "bottom": 294.9375
+        },
+        "label": {
+          "x": 320.3125,
+          "y": 264.84375,
+          "width": 162.75,
+          "height": 16.1875,
+          "bottom": 281.03125
+        },
+        "font": "12.96px",
+        "lineHeight": "16.2px",
+        "lines": [
+          {
+            "width": 162.75,
+            "height": 15,
+            "y": 264.84375
+          }
+        ]
+      },
+      {
+        "text": "Mutual Confidentiality & Consent",
+        "card": {
+          "x": 285.3125,
+          "y": 301.9375,
+          "width": 315.453125,
+          "height": 44,
+          "bottom": 345.9375
+        },
+        "label": {
+          "x": 320.3125,
+          "y": 315.84375,
+          "width": 203.765625,
+          "height": 16.1875,
+          "bottom": 332.03125
+        },
+        "font": "12.96px",
+        "lineHeight": "16.2px",
+        "lines": [
+          {
+            "width": 203.765625,
+            "height": 15,
+            "y": 315.84375
+          }
+        ]
+      },
+      {
+        "text": "Only Ritual-Required Information Proceeds",
+        "card": {
+          "x": 285.3125,
+          "y": 352.9375,
+          "width": 315.453125,
+          "height": 44,
+          "bottom": 396.9375
+        },
+        "label": {
+          "x": 320.3125,
+          "y": 366.84375,
+          "width": 265.71875,
+          "height": 16.1875,
+          "bottom": 383.03125
+        },
+        "font": "12.96px",
+        "lineHeight": "16.2px",
+        "lines": [
+          {
+            "width": 265.71875,
+            "height": 15,
+            "y": 366.84375
+          }
+        ]
+      },
+      {
+        "text": "Guided Ritual Path",
+        "card": {
+          "x": 285.3125,
+          "y": 403.9375,
+          "width": 315.453125,
+          "height": 44,
+          "bottom": 447.9375
+        },
+        "label": {
+          "x": 320.3125,
+          "y": 417.84375,
+          "width": 115.9375,
+          "height": 16.1875,
+          "bottom": 434.03125
+        },
+        "font": "12.96px",
+        "lineHeight": "16.2px",
+        "lines": [
+          {
+            "width": 115.9375,
+            "height": 15,
+            "y": 417.84375
+          }
+        ]
+      }
+    ],
+    "orbit": {
+      "x": 955.046875,
+      "y": 243.234375,
+      "width": 240,
+      "height": 240,
+      "bottom": 483.234375
+    },
+    "radialLabels": [
+      {
+        "text": "NRI & International Families",
+        "x": 1034.25,
+        "y": 259.2578125,
+        "width": 81.59375,
+        "height": 46.140625,
+        "bottom": 305.3984375,
+        "lines": [
+          {
+            "width": 31.359375,
+            "height": 12,
+            "y": 262.2578125
+          },
+          {
+            "width": 69.140625,
+            "height": 12,
+            "y": 276.3046875
+          },
+          {
+            "width": 46.109375,
+            "height": 12,
+            "y": 290.3515625
+          }
+        ]
+      },
+      {
+        "text": "Unable to Travel",
+        "x": 957.4375,
+        "y": 303.484375,
+        "width": 81.59375,
+        "height": 32.09375,
+        "bottom": 335.578125,
+        "lines": [
+          {
+            "width": 38.421875,
+            "height": 12,
+            "y": 306.484375
+          },
+          {
+            "width": 47.390625,
+            "height": 12,
+            "y": 320.53125
+          }
+        ]
+      },
+      {
+        "text": "Elderly Participants",
+        "x": 1111.046875,
+        "y": 303.484375,
+        "width": 81.59375,
+        "height": 32.09375,
+        "bottom": 335.578125,
+        "lines": [
+          {
+            "width": 38.421875,
+            "height": 12,
+            "y": 306.484375
+          },
+          {
+            "width": 65.953125,
+            "height": 12,
+            "y": 320.53125
+          }
+        ]
+      },
+      {
+        "text": "Mobility Requirements",
+        "x": 938.25,
+        "y": 386.28125,
+        "width": 81.59375,
+        "height": 32.09375,
+        "bottom": 418.375,
+        "lines": [
+          {
+            "width": 43.515625,
+            "height": 12,
+            "y": 389.28125
+          },
+          {
+            "width": 76.828125,
+            "height": 12,
+            "y": 403.328125
+          }
+        ]
+      },
+      {
+        "text": "Families in Different Cities or Countries",
+        "x": 1130.25,
+        "y": 372.234375,
+        "width": 81.59375,
+        "height": 60.1875,
+        "bottom": 432.421875,
+        "lines": [
+          {
+            "width": 59.546875,
+            "height": 12,
+            "y": 375.234375
+          },
+          {
+            "width": 47.375,
+            "height": 12,
+            "y": 389.28125
+          },
+          {
+            "width": 31.375,
+            "height": 12,
+            "y": 403.328125
+          },
+          {
+            "width": 68.484375,
+            "height": 12,
+            "y": 417.375
+          }
+        ]
+      },
+      {
+        "text": "Hybrid Family Participation",
+        "x": 991.046875,
+        "y": 446.4609375,
+        "width": 81.59375,
+        "height": 46.140625,
+        "bottom": 492.6015625,
+        "lines": [
+          {
+            "width": 36.484375,
+            "height": 12,
+            "y": 449.4609375
+          },
+          {
+            "width": 36.5,
+            "height": 12,
+            "y": 463.5078125
+          },
+          {
+            "width": 69.78125,
+            "height": 12,
+            "y": 477.5546875
+          }
+        ]
+      },
+      {
+        "text": "Time-Zone Coordinated Participation",
+        "x": 1077.4375,
+        "y": 446.4609375,
+        "width": 81.59375,
+        "height": 46.140625,
+        "bottom": 492.6015625,
+        "lines": [
+          {
+            "width": 58.046875,
+            "height": 12,
+            "y": 449.4609375
+          },
+          {
+            "width": 67.84375,
+            "height": 12,
+            "y": 463.5078125
+          },
+          {
+            "width": 69.78125,
+            "height": 12,
+            "y": 477.5546875
+          }
+        ]
+      }
+    ],
+    "rows": "44px 44px 44px 44px 44px",
+    "columns": "278.734px 306.609px 278.75px",
+    "privacy": {
+      "x": 1,
+      "y": 457.9375,
+      "width": 884.09375,
+      "height": 75.578125,
+      "bottom": 533.515625
+    },
+    "lock": {
+      "x": 431.046875,
+      "y": 458.9375,
+      "width": 24,
+      "height": 24,
+      "bottom": 482.9375
+    },
+    "headline": {
+      "x": 1,
+      "y": 489.9375,
+      "width": 884.09375,
+      "height": 18.546875,
+      "bottom": 508.484375
+    },
+    "support": {
+      "x": 1,
+      "y": 515.484375,
+      "width": 884.09375,
+      "height": 16.03125,
+      "bottom": 531.515625
+    },
+    "cta": {
+      "x": 321.3125,
+      "y": 539.515625,
+      "width": 243.453125,
+      "height": 42,
+      "bottom": 581.515625
+    }
+  },
+  {
+    "width": 1366,
+    "height": 768,
+    "canvas": {
+      "x": 1,
+      "y": 149,
+      "width": 1349,
+      "height": 447.046875,
+      "bottom": 596.046875
+    },
+    "private": {
+      "x": 1,
+      "y": 150,
+      "width": 944.296875,
+      "height": 445.046875,
+      "bottom": 595.046875
+    },
+    "recognition": {
+      "x": 945.296875,
+      "y": 150,
+      "width": 404.6875,
+      "height": 445.046875,
+      "bottom": 595.046875
+    },
+    "cards": [
+      {
+        "text": "Adoptive & Biological Relationships",
+        "card": {
+          "x": 1,
+          "y": 201.46875,
+          "width": 298.15625,
+          "height": 44,
+          "bottom": 245.46875
+        },
+        "label": {
+          "x": 36,
+          "y": 215.46875,
+          "width": 200.65625,
+          "height": 15.984375,
+          "bottom": 231.453125
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 200.65625,
+            "height": 15,
+            "y": 215.46875
+          }
+        ]
+      },
+      {
+        "text": "Blended & Remarried Families",
+        "card": {
+          "x": 647.125,
+          "y": 201.46875,
+          "width": 298.171875,
+          "height": 44,
+          "bottom": 245.46875
+        },
+        "label": {
+          "x": 682.125,
+          "y": 215.46875,
+          "width": 173.59375,
+          "height": 15.984375,
+          "bottom": 231.453125
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 173.59375,
+            "height": 15,
+            "y": 215.46875
+          }
+        ]
+      },
+      {
+        "text": "Separated or Divorced Families",
+        "card": {
+          "x": 1,
+          "y": 252.46875,
+          "width": 298.15625,
+          "height": 44,
+          "bottom": 296.46875
+        },
+        "label": {
+          "x": 36,
+          "y": 266.46875,
+          "width": 179.28125,
+          "height": 15.984375,
+          "bottom": 282.453125
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 179.28125,
+            "height": 15,
+            "y": 266.46875
+          }
+        ]
+      },
+      {
+        "text": "Past Relationships & Break-ups",
+        "card": {
+          "x": 647.125,
+          "y": 252.46875,
+          "width": 298.171875,
+          "height": 44,
+          "bottom": 296.46875
+        },
+        "label": {
+          "x": 682.125,
+          "y": 266.46875,
+          "width": 180,
+          "height": 15.984375,
+          "bottom": 282.453125
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 180,
+            "height": 15,
+            "y": 266.46875
+          }
+        ]
+      },
+      {
+        "text": "Relationships Outside Marriage",
+        "card": {
+          "x": 1,
+          "y": 303.46875,
+          "width": 298.15625,
+          "height": 44,
+          "bottom": 347.46875
+        },
+        "label": {
+          "x": 36,
+          "y": 317.46875,
+          "width": 178.578125,
+          "height": 15.984375,
+          "bottom": 333.453125
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 178.578125,
+            "height": 15,
+            "y": 317.46875
+          }
+        ]
+      },
+      {
+        "text": "Estranged Family Relationships",
+        "card": {
+          "x": 647.125,
+          "y": 303.46875,
+          "width": 298.171875,
+          "height": 44,
+          "bottom": 347.46875
+        },
+        "label": {
+          "x": 682.125,
+          "y": 317.46875,
+          "width": 180,
+          "height": 15.984375,
+          "bottom": 333.453125
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 180,
+            "height": 15,
+            "y": 317.46875
+          }
+        ]
+      },
+      {
+        "text": "A Person Whose Family You Cannot Approach",
+        "card": {
+          "x": 1,
+          "y": 354.46875,
+          "width": 298.15625,
+          "height": 44,
+          "bottom": 398.46875
+        },
+        "label": {
+          "x": 36,
+          "y": 360.484375,
+          "width": 258.15625,
+          "height": 31.96875,
+          "bottom": 392.453125
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 161.515625,
+            "height": 15,
+            "y": 360.484375
+          },
+          {
+            "width": 98.921875,
+            "height": 15,
+            "y": 376.46875
+          }
+        ]
+      },
+      {
+        "text": "Someone You Loved, Cared For or Feel a Sacred Duty Toward",
+        "card": {
+          "x": 647.125,
+          "y": 354.46875,
+          "width": 298.171875,
+          "height": 44,
+          "bottom": 398.46875
+        },
+        "label": {
+          "x": 682.125,
+          "y": 360.484375,
+          "width": 258.171875,
+          "height": 31.96875,
+          "bottom": 392.453125
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 236.953125,
+            "height": 15,
+            "y": 360.484375
+          },
+          {
+            "width": 115.03125,
+            "height": 15,
+            "y": 376.46875
+          }
+        ]
+      },
+      {
+        "text": "Other Sensitive Family or Personal Circumstances",
+        "card": {
+          "x": 1,
+          "y": 405.46875,
+          "width": 298.15625,
+          "height": 44,
+          "bottom": 449.46875
+        },
+        "label": {
+          "x": 36,
+          "y": 411.484375,
+          "width": 258.15625,
+          "height": 31.96875,
+          "bottom": 443.453125
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 143.6875,
+            "height": 15,
+            "y": 411.484375
+          },
+          {
+            "width": 138.71875,
+            "height": 15,
+            "y": 427.46875
+          }
+        ]
+      },
+      {
+        "text": "Your Circumstance",
+        "card": {
+          "x": 304.421875,
+          "y": 201.46875,
+          "width": 337.4375,
+          "height": 44,
+          "bottom": 245.46875
+        },
+        "label": {
+          "x": 339.421875,
+          "y": 215.375,
+          "width": 117.875,
+          "height": 16.1875,
+          "bottom": 231.5625
+        },
+        "font": "12.96px",
+        "lineHeight": "16.2px",
+        "lines": [
+          {
+            "width": 117.875,
+            "height": 15,
+            "y": 215.375
+          }
+        ]
+      },
+      {
+        "text": "Confidential Pre-Guidance",
+        "card": {
+          "x": 304.421875,
+          "y": 252.46875,
+          "width": 337.4375,
+          "height": 44,
+          "bottom": 296.46875
+        },
+        "label": {
+          "x": 339.421875,
+          "y": 266.375,
+          "width": 162.75,
+          "height": 16.1875,
+          "bottom": 282.5625
+        },
+        "font": "12.96px",
+        "lineHeight": "16.2px",
+        "lines": [
+          {
+            "width": 162.75,
+            "height": 15,
+            "y": 266.375
+          }
+        ]
+      },
+      {
+        "text": "Mutual Confidentiality & Consent",
+        "card": {
+          "x": 304.421875,
+          "y": 303.46875,
+          "width": 337.4375,
+          "height": 44,
+          "bottom": 347.46875
+        },
+        "label": {
+          "x": 339.421875,
+          "y": 317.375,
+          "width": 203.765625,
+          "height": 16.1875,
+          "bottom": 333.5625
+        },
+        "font": "12.96px",
+        "lineHeight": "16.2px",
+        "lines": [
+          {
+            "width": 203.765625,
+            "height": 15,
+            "y": 317.375
+          }
+        ]
+      },
+      {
+        "text": "Only Ritual-Required Information Proceeds",
+        "card": {
+          "x": 304.421875,
+          "y": 354.46875,
+          "width": 337.4375,
+          "height": 44,
+          "bottom": 398.46875
+        },
+        "label": {
+          "x": 339.421875,
+          "y": 368.375,
+          "width": 265.71875,
+          "height": 16.1875,
+          "bottom": 384.5625
+        },
+        "font": "12.96px",
+        "lineHeight": "16.2px",
+        "lines": [
+          {
+            "width": 265.71875,
+            "height": 15,
+            "y": 368.375
+          }
+        ]
+      },
+      {
+        "text": "Guided Ritual Path",
+        "card": {
+          "x": 304.421875,
+          "y": 405.46875,
+          "width": 337.4375,
+          "height": 44,
+          "bottom": 449.46875
+        },
+        "label": {
+          "x": 339.421875,
+          "y": 419.375,
+          "width": 115.9375,
+          "height": 16.1875,
+          "bottom": 435.5625
+        },
+        "font": "12.96px",
+        "lineHeight": "16.2px",
+        "lines": [
+          {
+            "width": 115.9375,
+            "height": 15,
+            "y": 419.375
+          }
+        ]
+      }
+    ],
+    "orbit": {
+      "x": 1028.140625,
+      "y": 244.765625,
+      "width": 240,
+      "height": 240,
+      "bottom": 484.765625
+    },
+    "radialLabels": [
+      {
+        "text": "NRI & International Families",
+        "x": 1107.34375,
+        "y": 260.7890625,
+        "width": 81.59375,
+        "height": 46.140625,
+        "bottom": 306.9296875,
+        "lines": [
+          {
+            "width": 31.359375,
+            "height": 12,
+            "y": 263.7890625
+          },
+          {
+            "width": 69.140625,
+            "height": 12,
+            "y": 277.8359375
+          },
+          {
+            "width": 46.109375,
+            "height": 12,
+            "y": 291.8828125
+          }
+        ]
+      },
+      {
+        "text": "Unable to Travel",
+        "x": 1030.53125,
+        "y": 305.015625,
+        "width": 81.59375,
+        "height": 32.09375,
+        "bottom": 337.109375,
+        "lines": [
+          {
+            "width": 38.421875,
+            "height": 12,
+            "y": 308.015625
+          },
+          {
+            "width": 47.390625,
+            "height": 12,
+            "y": 322.0625
+          }
+        ]
+      },
+      {
+        "text": "Elderly Participants",
+        "x": 1184.140625,
+        "y": 305.015625,
+        "width": 81.59375,
+        "height": 32.09375,
+        "bottom": 337.109375,
+        "lines": [
+          {
+            "width": 38.421875,
+            "height": 12,
+            "y": 308.015625
+          },
+          {
+            "width": 65.953125,
+            "height": 12,
+            "y": 322.0625
+          }
+        ]
+      },
+      {
+        "text": "Mobility Requirements",
+        "x": 1011.34375,
+        "y": 387.8125,
+        "width": 81.59375,
+        "height": 32.09375,
+        "bottom": 419.90625,
+        "lines": [
+          {
+            "width": 43.515625,
+            "height": 12,
+            "y": 390.8125
+          },
+          {
+            "width": 76.828125,
+            "height": 12,
+            "y": 404.859375
+          }
+        ]
+      },
+      {
+        "text": "Families in Different Cities or Countries",
+        "x": 1203.34375,
+        "y": 373.765625,
+        "width": 81.59375,
+        "height": 60.1875,
+        "bottom": 433.953125,
+        "lines": [
+          {
+            "width": 59.546875,
+            "height": 12,
+            "y": 376.765625
+          },
+          {
+            "width": 47.375,
+            "height": 12,
+            "y": 390.8125
+          },
+          {
+            "width": 31.375,
+            "height": 12,
+            "y": 404.859375
+          },
+          {
+            "width": 68.484375,
+            "height": 12,
+            "y": 418.90625
+          }
+        ]
+      },
+      {
+        "text": "Hybrid Family Participation",
+        "x": 1064.140625,
+        "y": 447.9921875,
+        "width": 81.59375,
+        "height": 46.140625,
+        "bottom": 494.1328125,
+        "lines": [
+          {
+            "width": 36.484375,
+            "height": 12,
+            "y": 450.9921875
+          },
+          {
+            "width": 36.5,
+            "height": 12,
+            "y": 465.0390625
+          },
+          {
+            "width": 69.78125,
+            "height": 12,
+            "y": 479.0859375
+          }
+        ]
+      },
+      {
+        "text": "Time-Zone Coordinated Participation",
+        "x": 1150.53125,
+        "y": 447.9921875,
+        "width": 81.59375,
+        "height": 46.140625,
+        "bottom": 494.1328125,
+        "lines": [
+          {
+            "width": 58.046875,
+            "height": 12,
+            "y": 450.9921875
+          },
+          {
+            "width": 67.84375,
+            "height": 12,
+            "y": 465.0390625
+          },
+          {
+            "width": 69.78125,
+            "height": 12,
+            "y": 479.0859375
+          }
+        ]
+      }
+    ],
+    "rows": "44px 44px 44px 44px 44px",
+    "columns": "298.156px 327.969px 298.172px",
+    "privacy": {
+      "x": 1,
+      "y": 459.46875,
+      "width": 944.296875,
+      "height": 75.578125,
+      "bottom": 535.046875
+    },
+    "lock": {
+      "x": 461.140625,
+      "y": 460.46875,
+      "width": 24,
+      "height": 24,
+      "bottom": 484.46875
+    },
+    "headline": {
+      "x": 1,
+      "y": 491.46875,
+      "width": 944.296875,
+      "height": 18.546875,
+      "bottom": 510.015625
+    },
+    "support": {
+      "x": 1,
+      "y": 517.015625,
+      "width": 944.296875,
+      "height": 16.03125,
+      "bottom": 533.046875
+    },
+    "cta": {
+      "x": 351.421875,
+      "y": 541.046875,
+      "width": 243.453125,
+      "height": 42,
+      "bottom": 583.046875
+    }
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "canvas": {
+      "x": 1,
+      "y": 149,
+      "width": 1423,
+      "height": 448.390625,
+      "bottom": 597.390625
+    },
+    "private": {
+      "x": 1,
+      "y": 150,
+      "width": 996.09375,
+      "height": 446.390625,
+      "bottom": 596.390625
+    },
+    "recognition": {
+      "x": 997.09375,
+      "y": 150,
+      "width": 426.890625,
+      "height": 446.390625,
+      "bottom": 596.390625
+    },
+    "cards": [
+      {
+        "text": "Adoptive & Biological Relationships",
+        "card": {
+          "x": 1,
+          "y": 202.8125,
+          "width": 314.859375,
+          "height": 44,
+          "bottom": 246.8125
+        },
+        "label": {
+          "x": 36,
+          "y": 216.8125,
+          "width": 200.65625,
+          "height": 15.984375,
+          "bottom": 232.796875
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 200.65625,
+            "height": 15,
+            "y": 216.8125
+          }
+        ]
+      },
+      {
+        "text": "Blended & Remarried Families",
+        "card": {
+          "x": 682.21875,
+          "y": 202.8125,
+          "width": 314.875,
+          "height": 44,
+          "bottom": 246.8125
+        },
+        "label": {
+          "x": 717.21875,
+          "y": 216.8125,
+          "width": 173.59375,
+          "height": 15.984375,
+          "bottom": 232.796875
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 173.59375,
+            "height": 15,
+            "y": 216.8125
+          }
+        ]
+      },
+      {
+        "text": "Separated or Divorced Families",
+        "card": {
+          "x": 1,
+          "y": 253.8125,
+          "width": 314.859375,
+          "height": 44,
+          "bottom": 297.8125
+        },
+        "label": {
+          "x": 36,
+          "y": 267.8125,
+          "width": 179.28125,
+          "height": 15.984375,
+          "bottom": 283.796875
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 179.28125,
+            "height": 15,
+            "y": 267.8125
+          }
+        ]
+      },
+      {
+        "text": "Past Relationships & Break-ups",
+        "card": {
+          "x": 682.21875,
+          "y": 253.8125,
+          "width": 314.875,
+          "height": 44,
+          "bottom": 297.8125
+        },
+        "label": {
+          "x": 717.21875,
+          "y": 267.8125,
+          "width": 180,
+          "height": 15.984375,
+          "bottom": 283.796875
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 180,
+            "height": 15,
+            "y": 267.8125
+          }
+        ]
+      },
+      {
+        "text": "Relationships Outside Marriage",
+        "card": {
+          "x": 1,
+          "y": 304.8125,
+          "width": 314.859375,
+          "height": 44,
+          "bottom": 348.8125
+        },
+        "label": {
+          "x": 36,
+          "y": 318.8125,
+          "width": 178.578125,
+          "height": 15.984375,
+          "bottom": 334.796875
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 178.578125,
+            "height": 15,
+            "y": 318.8125
+          }
+        ]
+      },
+      {
+        "text": "Estranged Family Relationships",
+        "card": {
+          "x": 682.21875,
+          "y": 304.8125,
+          "width": 314.875,
+          "height": 44,
+          "bottom": 348.8125
+        },
+        "label": {
+          "x": 717.21875,
+          "y": 318.8125,
+          "width": 180,
+          "height": 15.984375,
+          "bottom": 334.796875
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 180,
+            "height": 15,
+            "y": 318.8125
+          }
+        ]
+      },
+      {
+        "text": "A Person Whose Family You Cannot Approach",
+        "card": {
+          "x": 1,
+          "y": 355.8125,
+          "width": 314.859375,
+          "height": 44,
+          "bottom": 399.8125
+        },
+        "label": {
+          "x": 36,
+          "y": 369.8125,
+          "width": 263.984375,
+          "height": 15.984375,
+          "bottom": 385.796875
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 263.984375,
+            "height": 15,
+            "y": 369.8125
+          }
+        ]
+      },
+      {
+        "text": "Someone You Loved, Cared For or Feel a Sacred Duty Toward",
+        "card": {
+          "x": 682.21875,
+          "y": 355.8125,
+          "width": 314.875,
+          "height": 44,
+          "bottom": 399.8125
+        },
+        "label": {
+          "x": 717.21875,
+          "y": 361.828125,
+          "width": 274.875,
+          "height": 31.96875,
+          "bottom": 393.796875
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 236.953125,
+            "height": 15,
+            "y": 361.828125
+          },
+          {
+            "width": 115.03125,
+            "height": 15,
+            "y": 377.8125
+          }
+        ]
+      },
+      {
+        "text": "Other Sensitive Family or Personal Circumstances",
+        "card": {
+          "x": 1,
+          "y": 406.8125,
+          "width": 314.859375,
+          "height": 44,
+          "bottom": 450.8125
+        },
+        "label": {
+          "x": 36,
+          "y": 412.828125,
+          "width": 274.859375,
+          "height": 31.96875,
+          "bottom": 444.796875
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 143.6875,
+            "height": 15,
+            "y": 412.828125
+          },
+          {
+            "width": 138.71875,
+            "height": 15,
+            "y": 428.8125
+          }
+        ]
+      },
+      {
+        "text": "Your Circumstance",
+        "card": {
+          "x": 320.859375,
+          "y": 202.8125,
+          "width": 356.359375,
+          "height": 44,
+          "bottom": 246.8125
+        },
+        "label": {
+          "x": 355.859375,
+          "y": 216.71875,
+          "width": 117.875,
+          "height": 16.1875,
+          "bottom": 232.90625
+        },
+        "font": "12.96px",
+        "lineHeight": "16.2px",
+        "lines": [
+          {
+            "width": 117.875,
+            "height": 15,
+            "y": 216.71875
+          }
+        ]
+      },
+      {
+        "text": "Confidential Pre-Guidance",
+        "card": {
+          "x": 320.859375,
+          "y": 253.8125,
+          "width": 356.359375,
+          "height": 44,
+          "bottom": 297.8125
+        },
+        "label": {
+          "x": 355.859375,
+          "y": 267.71875,
+          "width": 162.75,
+          "height": 16.1875,
+          "bottom": 283.90625
+        },
+        "font": "12.96px",
+        "lineHeight": "16.2px",
+        "lines": [
+          {
+            "width": 162.75,
+            "height": 15,
+            "y": 267.71875
+          }
+        ]
+      },
+      {
+        "text": "Mutual Confidentiality & Consent",
+        "card": {
+          "x": 320.859375,
+          "y": 304.8125,
+          "width": 356.359375,
+          "height": 44,
+          "bottom": 348.8125
+        },
+        "label": {
+          "x": 355.859375,
+          "y": 318.71875,
+          "width": 203.765625,
+          "height": 16.1875,
+          "bottom": 334.90625
+        },
+        "font": "12.96px",
+        "lineHeight": "16.2px",
+        "lines": [
+          {
+            "width": 203.765625,
+            "height": 15,
+            "y": 318.71875
+          }
+        ]
+      },
+      {
+        "text": "Only Ritual-Required Information Proceeds",
+        "card": {
+          "x": 320.859375,
+          "y": 355.8125,
+          "width": 356.359375,
+          "height": 44,
+          "bottom": 399.8125
+        },
+        "label": {
+          "x": 355.859375,
+          "y": 369.71875,
+          "width": 265.71875,
+          "height": 16.1875,
+          "bottom": 385.90625
+        },
+        "font": "12.96px",
+        "lineHeight": "16.2px",
+        "lines": [
+          {
+            "width": 265.71875,
+            "height": 15,
+            "y": 369.71875
+          }
+        ]
+      },
+      {
+        "text": "Guided Ritual Path",
+        "card": {
+          "x": 320.859375,
+          "y": 406.8125,
+          "width": 356.359375,
+          "height": 44,
+          "bottom": 450.8125
+        },
+        "label": {
+          "x": 355.859375,
+          "y": 420.71875,
+          "width": 115.9375,
+          "height": 16.1875,
+          "bottom": 436.90625
+        },
+        "font": "12.96px",
+        "lineHeight": "16.2px",
+        "lines": [
+          {
+            "width": 115.9375,
+            "height": 15,
+            "y": 420.71875
+          }
+        ]
+      }
+    ],
+    "orbit": {
+      "x": 1091.03125,
+      "y": 246.109375,
+      "width": 240,
+      "height": 240,
+      "bottom": 486.109375
+    },
+    "radialLabels": [
+      {
+        "text": "NRI & International Families",
+        "x": 1170.234375,
+        "y": 262.1328125,
+        "width": 81.59375,
+        "height": 46.140625,
+        "bottom": 308.2734375,
+        "lines": [
+          {
+            "width": 31.359375,
+            "height": 12,
+            "y": 265.1328125
+          },
+          {
+            "width": 69.140625,
+            "height": 12,
+            "y": 279.1796875
+          },
+          {
+            "width": 46.109375,
+            "height": 12,
+            "y": 293.2265625
+          }
+        ]
+      },
+      {
+        "text": "Unable to Travel",
+        "x": 1093.421875,
+        "y": 306.359375,
+        "width": 81.59375,
+        "height": 32.09375,
+        "bottom": 338.453125,
+        "lines": [
+          {
+            "width": 38.421875,
+            "height": 12,
+            "y": 309.359375
+          },
+          {
+            "width": 47.390625,
+            "height": 12,
+            "y": 323.40625
+          }
+        ]
+      },
+      {
+        "text": "Elderly Participants",
+        "x": 1247.03125,
+        "y": 306.359375,
+        "width": 81.59375,
+        "height": 32.09375,
+        "bottom": 338.453125,
+        "lines": [
+          {
+            "width": 38.421875,
+            "height": 12,
+            "y": 309.359375
+          },
+          {
+            "width": 65.953125,
+            "height": 12,
+            "y": 323.40625
+          }
+        ]
+      },
+      {
+        "text": "Mobility Requirements",
+        "x": 1074.234375,
+        "y": 389.15625,
+        "width": 81.59375,
+        "height": 32.09375,
+        "bottom": 421.25,
+        "lines": [
+          {
+            "width": 43.515625,
+            "height": 12,
+            "y": 392.15625
+          },
+          {
+            "width": 76.828125,
+            "height": 12,
+            "y": 406.203125
+          }
+        ]
+      },
+      {
+        "text": "Families in Different Cities or Countries",
+        "x": 1266.234375,
+        "y": 375.109375,
+        "width": 81.59375,
+        "height": 60.1875,
+        "bottom": 435.296875,
+        "lines": [
+          {
+            "width": 59.546875,
+            "height": 12,
+            "y": 378.109375
+          },
+          {
+            "width": 47.375,
+            "height": 12,
+            "y": 392.15625
+          },
+          {
+            "width": 31.375,
+            "height": 12,
+            "y": 406.203125
+          },
+          {
+            "width": 68.484375,
+            "height": 12,
+            "y": 420.25
+          }
+        ]
+      },
+      {
+        "text": "Hybrid Family Participation",
+        "x": 1127.03125,
+        "y": 449.3359375,
+        "width": 81.59375,
+        "height": 46.140625,
+        "bottom": 495.4765625,
+        "lines": [
+          {
+            "width": 36.484375,
+            "height": 12,
+            "y": 452.3359375
+          },
+          {
+            "width": 36.5,
+            "height": 12,
+            "y": 466.3828125
+          },
+          {
+            "width": 69.78125,
+            "height": 12,
+            "y": 480.4296875
+          }
+        ]
+      },
+      {
+        "text": "Time-Zone Coordinated Participation",
+        "x": 1213.421875,
+        "y": 449.3359375,
+        "width": 81.59375,
+        "height": 46.140625,
+        "bottom": 495.4765625,
+        "lines": [
+          {
+            "width": 58.046875,
+            "height": 12,
+            "y": 452.3359375
+          },
+          {
+            "width": 67.84375,
+            "height": 12,
+            "y": 466.3828125
+          },
+          {
+            "width": 69.78125,
+            "height": 12,
+            "y": 480.4296875
+          }
+        ]
+      }
+    ],
+    "rows": "44px 44px 44px 44px 44px",
+    "columns": "314.859px 346.359px 314.875px",
+    "privacy": {
+      "x": 1,
+      "y": 460.8125,
+      "width": 996.09375,
+      "height": 75.578125,
+      "bottom": 536.390625
+    },
+    "lock": {
+      "x": 487.046875,
+      "y": 461.8125,
+      "width": 24,
+      "height": 24,
+      "bottom": 485.8125
+    },
+    "headline": {
+      "x": 1,
+      "y": 492.8125,
+      "width": 996.09375,
+      "height": 18.546875,
+      "bottom": 511.359375
+    },
+    "support": {
+      "x": 1,
+      "y": 518.359375,
+      "width": 996.09375,
+      "height": 16.03125,
+      "bottom": 534.390625
+    },
+    "cta": {
+      "x": 377.3125,
+      "y": 542.390625,
+      "width": 243.453125,
+      "height": 42,
+      "bottom": 584.390625
+    }
+  },
+  {
+    "width": 1920,
+    "height": 1080,
+    "canvas": {
+      "x": 1,
+      "y": 149,
+      "width": 1903,
+      "height": 450.34375,
+      "bottom": 599.34375
+    },
+    "private": {
+      "x": 1,
+      "y": 150,
+      "width": 1332.09375,
+      "height": 448.34375,
+      "bottom": 598.34375
+    },
+    "recognition": {
+      "x": 1333.09375,
+      "y": 150,
+      "width": 570.90625,
+      "height": 448.34375,
+      "bottom": 598.34375
+    },
+    "cards": [
+      {
+        "text": "Adoptive & Biological Relationships",
+        "card": {
+          "x": 1,
+          "y": 204.765625,
+          "width": 423.25,
+          "height": 44,
+          "bottom": 248.765625
+        },
+        "label": {
+          "x": 36,
+          "y": 218.765625,
+          "width": 200.65625,
+          "height": 15.984375,
+          "bottom": 234.75
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 200.65625,
+            "height": 15,
+            "y": 218.765625
+          }
+        ]
+      },
+      {
+        "text": "Blended & Remarried Families",
+        "card": {
+          "x": 909.828125,
+          "y": 204.765625,
+          "width": 423.265625,
+          "height": 44,
+          "bottom": 248.765625
+        },
+        "label": {
+          "x": 944.828125,
+          "y": 218.765625,
+          "width": 173.59375,
+          "height": 15.984375,
+          "bottom": 234.75
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 173.59375,
+            "height": 15,
+            "y": 218.765625
+          }
+        ]
+      },
+      {
+        "text": "Separated or Divorced Families",
+        "card": {
+          "x": 1,
+          "y": 255.765625,
+          "width": 423.25,
+          "height": 44,
+          "bottom": 299.765625
+        },
+        "label": {
+          "x": 36,
+          "y": 269.765625,
+          "width": 179.28125,
+          "height": 15.984375,
+          "bottom": 285.75
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 179.28125,
+            "height": 15,
+            "y": 269.765625
+          }
+        ]
+      },
+      {
+        "text": "Past Relationships & Break-ups",
+        "card": {
+          "x": 909.828125,
+          "y": 255.765625,
+          "width": 423.265625,
+          "height": 44,
+          "bottom": 299.765625
+        },
+        "label": {
+          "x": 944.828125,
+          "y": 269.765625,
+          "width": 180,
+          "height": 15.984375,
+          "bottom": 285.75
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 180,
+            "height": 15,
+            "y": 269.765625
+          }
+        ]
+      },
+      {
+        "text": "Relationships Outside Marriage",
+        "card": {
+          "x": 1,
+          "y": 306.765625,
+          "width": 423.25,
+          "height": 44,
+          "bottom": 350.765625
+        },
+        "label": {
+          "x": 36,
+          "y": 320.765625,
+          "width": 178.578125,
+          "height": 15.984375,
+          "bottom": 336.75
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 178.578125,
+            "height": 15,
+            "y": 320.765625
+          }
+        ]
+      },
+      {
+        "text": "Estranged Family Relationships",
+        "card": {
+          "x": 909.828125,
+          "y": 306.765625,
+          "width": 423.265625,
+          "height": 44,
+          "bottom": 350.765625
+        },
+        "label": {
+          "x": 944.828125,
+          "y": 320.765625,
+          "width": 180,
+          "height": 15.984375,
+          "bottom": 336.75
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 180,
+            "height": 15,
+            "y": 320.765625
+          }
+        ]
+      },
+      {
+        "text": "A Person Whose Family You Cannot Approach",
+        "card": {
+          "x": 1,
+          "y": 357.765625,
+          "width": 423.25,
+          "height": 44,
+          "bottom": 401.765625
+        },
+        "label": {
+          "x": 36,
+          "y": 371.765625,
+          "width": 263.984375,
+          "height": 15.984375,
+          "bottom": 387.75
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 263.984375,
+            "height": 15,
+            "y": 371.765625
+          }
+        ]
+      },
+      {
+        "text": "Someone You Loved, Cared For or Feel a Sacred Duty Toward",
+        "card": {
+          "x": 909.828125,
+          "y": 357.765625,
+          "width": 423.265625,
+          "height": 44,
+          "bottom": 401.765625
+        },
+        "label": {
+          "x": 944.828125,
+          "y": 371.765625,
+          "width": 355.53125,
+          "height": 15.984375,
+          "bottom": 387.75
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 355.53125,
+            "height": 15,
+            "y": 371.765625
+          }
+        ]
+      },
+      {
+        "text": "Other Sensitive Family or Personal Circumstances",
+        "card": {
+          "x": 1,
+          "y": 408.765625,
+          "width": 423.25,
+          "height": 44,
+          "bottom": 452.765625
+        },
+        "label": {
+          "x": 36,
+          "y": 422.765625,
+          "width": 285.96875,
+          "height": 15.984375,
+          "bottom": 438.75
+        },
+        "font": "12.8px",
+        "lineHeight": "16px",
+        "lines": [
+          {
+            "width": 285.96875,
+            "height": 15,
+            "y": 422.765625
+          }
+        ]
+      },
+      {
+        "text": "Your Circumstance",
+        "card": {
+          "x": 427.53125,
+          "y": 204.765625,
+          "width": 479.015625,
+          "height": 44,
+          "bottom": 248.765625
+        },
+        "label": {
+          "x": 462.53125,
+          "y": 218.671875,
+          "width": 117.875,
+          "height": 16.1875,
+          "bottom": 234.859375
+        },
+        "font": "12.96px",
+        "lineHeight": "16.2px",
+        "lines": [
+          {
+            "width": 117.875,
+            "height": 15,
+            "y": 218.671875
+          }
+        ]
+      },
+      {
+        "text": "Confidential Pre-Guidance",
+        "card": {
+          "x": 427.53125,
+          "y": 255.765625,
+          "width": 479.015625,
+          "height": 44,
+          "bottom": 299.765625
+        },
+        "label": {
+          "x": 462.53125,
+          "y": 269.671875,
+          "width": 162.75,
+          "height": 16.1875,
+          "bottom": 285.859375
+        },
+        "font": "12.96px",
+        "lineHeight": "16.2px",
+        "lines": [
+          {
+            "width": 162.75,
+            "height": 15,
+            "y": 269.671875
+          }
+        ]
+      },
+      {
+        "text": "Mutual Confidentiality & Consent",
+        "card": {
+          "x": 427.53125,
+          "y": 306.765625,
+          "width": 479.015625,
+          "height": 44,
+          "bottom": 350.765625
+        },
+        "label": {
+          "x": 462.53125,
+          "y": 320.671875,
+          "width": 203.765625,
+          "height": 16.1875,
+          "bottom": 336.859375
+        },
+        "font": "12.96px",
+        "lineHeight": "16.2px",
+        "lines": [
+          {
+            "width": 203.765625,
+            "height": 15,
+            "y": 320.671875
+          }
+        ]
+      },
+      {
+        "text": "Only Ritual-Required Information Proceeds",
+        "card": {
+          "x": 427.53125,
+          "y": 357.765625,
+          "width": 479.015625,
+          "height": 44,
+          "bottom": 401.765625
+        },
+        "label": {
+          "x": 462.53125,
+          "y": 371.671875,
+          "width": 265.71875,
+          "height": 16.1875,
+          "bottom": 387.859375
+        },
+        "font": "12.96px",
+        "lineHeight": "16.2px",
+        "lines": [
+          {
+            "width": 265.71875,
+            "height": 15,
+            "y": 371.671875
+          }
+        ]
+      },
+      {
+        "text": "Guided Ritual Path",
+        "card": {
+          "x": 427.53125,
+          "y": 408.765625,
+          "width": 479.015625,
+          "height": 44,
+          "bottom": 452.765625
+        },
+        "label": {
+          "x": 462.53125,
+          "y": 422.671875,
+          "width": 115.9375,
+          "height": 16.1875,
+          "bottom": 438.859375
+        },
+        "font": "12.96px",
+        "lineHeight": "16.2px",
+        "lines": [
+          {
+            "width": 115.9375,
+            "height": 15,
+            "y": 422.671875
+          }
+        ]
+      }
+    ],
+    "orbit": {
+      "x": 1499.046875,
+      "y": 248.0625,
+      "width": 240,
+      "height": 240,
+      "bottom": 488.0625
+    },
+    "radialLabels": [
+      {
+        "text": "NRI & International Families",
+        "x": 1578.25,
+        "y": 264.0859375,
+        "width": 81.59375,
+        "height": 46.140625,
+        "bottom": 310.2265625,
+        "lines": [
+          {
+            "width": 31.359375,
+            "height": 12,
+            "y": 267.0859375
+          },
+          {
+            "width": 69.140625,
+            "height": 12,
+            "y": 281.1328125
+          },
+          {
+            "width": 46.109375,
+            "height": 12,
+            "y": 295.1796875
+          }
+        ]
+      },
+      {
+        "text": "Unable to Travel",
+        "x": 1501.4375,
+        "y": 308.3125,
+        "width": 81.59375,
+        "height": 32.09375,
+        "bottom": 340.40625,
+        "lines": [
+          {
+            "width": 38.421875,
+            "height": 12,
+            "y": 311.3125
+          },
+          {
+            "width": 47.390625,
+            "height": 12,
+            "y": 325.359375
+          }
+        ]
+      },
+      {
+        "text": "Elderly Participants",
+        "x": 1655.046875,
+        "y": 308.3125,
+        "width": 81.59375,
+        "height": 32.09375,
+        "bottom": 340.40625,
+        "lines": [
+          {
+            "width": 38.421875,
+            "height": 12,
+            "y": 311.3125
+          },
+          {
+            "width": 65.953125,
+            "height": 12,
+            "y": 325.359375
+          }
+        ]
+      },
+      {
+        "text": "Mobility Requirements",
+        "x": 1482.25,
+        "y": 391.109375,
+        "width": 81.59375,
+        "height": 32.09375,
+        "bottom": 423.203125,
+        "lines": [
+          {
+            "width": 43.515625,
+            "height": 12,
+            "y": 394.109375
+          },
+          {
+            "width": 76.828125,
+            "height": 12,
+            "y": 408.15625
+          }
+        ]
+      },
+      {
+        "text": "Families in Different Cities or Countries",
+        "x": 1674.25,
+        "y": 377.0625,
+        "width": 81.59375,
+        "height": 60.1875,
+        "bottom": 437.25,
+        "lines": [
+          {
+            "width": 59.546875,
+            "height": 12,
+            "y": 380.0625
+          },
+          {
+            "width": 47.375,
+            "height": 12,
+            "y": 394.109375
+          },
+          {
+            "width": 31.375,
+            "height": 12,
+            "y": 408.15625
+          },
+          {
+            "width": 68.484375,
+            "height": 12,
+            "y": 422.203125
+          }
+        ]
+      },
+      {
+        "text": "Hybrid Family Participation",
+        "x": 1535.046875,
+        "y": 451.2890625,
+        "width": 81.59375,
+        "height": 46.140625,
+        "bottom": 497.4296875,
+        "lines": [
+          {
+            "width": 36.484375,
+            "height": 12,
+            "y": 454.2890625
+          },
+          {
+            "width": 36.5,
+            "height": 12,
+            "y": 468.3359375
+          },
+          {
+            "width": 69.78125,
+            "height": 12,
+            "y": 482.3828125
+          }
+        ]
+      },
+      {
+        "text": "Time-Zone Coordinated Participation",
+        "x": 1621.4375,
+        "y": 451.2890625,
+        "width": 81.59375,
+        "height": 46.140625,
+        "bottom": 497.4296875,
+        "lines": [
+          {
+            "width": 58.046875,
+            "height": 12,
+            "y": 454.2890625
+          },
+          {
+            "width": 67.84375,
+            "height": 12,
+            "y": 468.3359375
+          },
+          {
+            "width": 69.78125,
+            "height": 12,
+            "y": 482.3828125
+          }
+        ]
+      }
+    ],
+    "rows": "44px 44px 44px 44px 44px",
+    "columns": "423.25px 465.578px 423.266px",
+    "privacy": {
+      "x": 1,
+      "y": 462.765625,
+      "width": 1332.09375,
+      "height": 75.578125,
+      "bottom": 538.34375
+    },
+    "lock": {
+      "x": 655.046875,
+      "y": 463.765625,
+      "width": 24,
+      "height": 24,
+      "bottom": 487.765625
+    },
+    "headline": {
+      "x": 1,
+      "y": 494.765625,
+      "width": 1332.09375,
+      "height": 18.546875,
+      "bottom": 513.3125
+    },
+    "support": {
+      "x": 1,
+      "y": 520.3125,
+      "width": 1332.09375,
+      "height": 16.03125,
+      "bottom": 536.34375
+    },
+    "cta": {
+      "x": 545.3125,
+      "y": 544.34375,
+      "width": 243.453125,
+      "height": 42,
+      "bottom": 586.34375
+    }
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "canvas": {
+      "x": 9,
+      "y": 183,
+      "width": 357,
+      "height": 2820.46875,
+      "bottom": 3003.46875
+    },
+    "private": {
+      "x": 9,
+      "y": 1345.078125,
+      "width": 357,
+      "height": 1657.390625,
+      "bottom": 3002.46875
+    },
+    "recognition": {
+      "x": 9,
+      "y": 184,
+      "width": 357,
+      "height": 1097.078125,
+      "bottom": 1281.078125
+    },
+    "cards": [
+      {
+        "text": "Adoptive & Biological Relationships",
+        "card": {
+          "x": 27,
+          "y": 1511.171875,
+          "width": 151.5,
+          "height": 121.25,
+          "bottom": 1632.421875
+        },
+        "label": {
+          "x": 30,
+          "y": 1579.171875,
+          "width": 145.5,
+          "height": 41.25,
+          "bottom": 1620.421875
+        },
+        "font": "14.24px",
+        "lineHeight": "20.648px",
+        "lines": [
+          {
+            "width": 133.78125,
+            "height": 16,
+            "y": 1581.171875
+          },
+          {
+            "width": 85.5,
+            "height": 16,
+            "y": 1601.796875
+          }
+        ]
+      },
+      {
+        "text": "Blended & Remarried Families",
+        "card": {
+          "x": 196.5,
+          "y": 1511.171875,
+          "width": 151.5,
+          "height": 121.25,
+          "bottom": 1632.421875
+        },
+        "label": {
+          "x": 199.5,
+          "y": 1579.171875,
+          "width": 145.5,
+          "height": 41.25,
+          "bottom": 1620.421875
+        },
+        "font": "14.24px",
+        "lineHeight": "20.648px",
+        "lines": [
+          {
+            "width": 136.15625,
+            "height": 16,
+            "y": 1581.171875
+          },
+          {
+            "width": 53.015625,
+            "height": 16,
+            "y": 1601.796875
+          }
+        ]
+      },
+      {
+        "text": "Separated or Divorced Families",
+        "card": {
+          "x": 27,
+          "y": 1640.421875,
+          "width": 151.5,
+          "height": 121.25,
+          "bottom": 1761.671875
+        },
+        "label": {
+          "x": 30,
+          "y": 1708.421875,
+          "width": 145.5,
+          "height": 41.25,
+          "bottom": 1749.671875
+        },
+        "font": "14.24px",
+        "lineHeight": "20.648px",
+        "lines": [
+          {
+            "width": 142.484375,
+            "height": 16,
+            "y": 1710.421875
+          },
+          {
+            "width": 53.015625,
+            "height": 16,
+            "y": 1731.046875
+          }
+        ]
+      },
+      {
+        "text": "Past Relationships & Break-ups",
+        "card": {
+          "x": 196.5,
+          "y": 1640.421875,
+          "width": 151.5,
+          "height": 121.25,
+          "bottom": 1761.671875
+        },
+        "label": {
+          "x": 199.5,
+          "y": 1708.421875,
+          "width": 145.5,
+          "height": 41.25,
+          "bottom": 1749.671875
+        },
+        "font": "14.24px",
+        "lineHeight": "20.648px",
+        "lines": [
+          {
+            "width": 131.40625,
+            "height": 16,
+            "y": 1710.421875
+          },
+          {
+            "width": 64.90625,
+            "height": 16,
+            "y": 1731.046875
+          }
+        ]
+      },
+      {
+        "text": "Relationships Outside Marriage",
+        "card": {
+          "x": 27,
+          "y": 1769.671875,
+          "width": 151.5,
+          "height": 121.25,
+          "bottom": 1890.921875
+        },
+        "label": {
+          "x": 30,
+          "y": 1837.671875,
+          "width": 145.5,
+          "height": 41.25,
+          "bottom": 1878.921875
+        },
+        "font": "14.24px",
+        "lineHeight": "20.648px",
+        "lines": [
+          {
+            "width": 138.53125,
+            "height": 16,
+            "y": 1839.671875
+          },
+          {
+            "width": 56.203125,
+            "height": 16,
+            "y": 1860.296875
+          }
+        ]
+      },
+      {
+        "text": "Estranged Family Relationships",
+        "card": {
+          "x": 196.5,
+          "y": 1769.671875,
+          "width": 151.5,
+          "height": 121.25,
+          "bottom": 1890.921875
+        },
+        "label": {
+          "x": 199.5,
+          "y": 1837.671875,
+          "width": 145.5,
+          "height": 41.25,
+          "bottom": 1878.921875
+        },
+        "font": "14.24px",
+        "lineHeight": "20.648px",
+        "lines": [
+          {
+            "width": 110.8125,
+            "height": 16,
+            "y": 1839.671875
+          },
+          {
+            "width": 85.5,
+            "height": 16,
+            "y": 1860.296875
+          }
+        ]
+      },
+      {
+        "text": "A Person Whose Family You Cannot Approach",
+        "card": {
+          "x": 27,
+          "y": 1898.921875,
+          "width": 151.5,
+          "height": 141.875,
+          "bottom": 2040.796875
+        },
+        "label": {
+          "x": 30,
+          "y": 1966.921875,
+          "width": 145.5,
+          "height": 61.875,
+          "bottom": 2028.796875
+        },
+        "font": "14.24px",
+        "lineHeight": "20.648px",
+        "lines": [
+          {
+            "width": 106.078125,
+            "height": 16,
+            "y": 1968.921875
+          },
+          {
+            "width": 119.53125,
+            "height": 16,
+            "y": 1989.546875
+          },
+          {
+            "width": 60.96875,
+            "height": 16,
+            "y": 2010.171875
+          }
+        ]
+      },
+      {
+        "text": "Someone You Loved, Cared For or Feel a Sacred Duty Toward",
+        "card": {
+          "x": 196.5,
+          "y": 1898.921875,
+          "width": 151.5,
+          "height": 141.875,
+          "bottom": 2040.796875
+        },
+        "label": {
+          "x": 199.5,
+          "y": 1966.921875,
+          "width": 145.5,
+          "height": 61.875,
+          "bottom": 2028.796875
+        },
+        "font": "14.24px",
+        "lineHeight": "20.648px",
+        "lines": [
+          {
+            "width": 135.40625,
+            "height": 16,
+            "y": 1968.921875
+          },
+          {
+            "width": 124.265625,
+            "height": 16,
+            "y": 1989.546875
+          },
+          {
+            "width": 127.96875,
+            "height": 16,
+            "y": 2010.171875
+          }
+        ]
+      },
+      {
+        "text": "Other Sensitive Family or Personal Circumstances",
+        "card": {
+          "x": 27,
+          "y": 2048.796875,
+          "width": 321,
+          "height": 68,
+          "bottom": 2116.796875
+        },
+        "label": {
+          "x": 86,
+          "y": 2062.171875,
+          "width": 259,
+          "height": 41.25,
+          "bottom": 2103.421875
+        },
+        "font": "14.24px",
+        "lineHeight": "20.648px",
+        "lines": [
+          {
+            "width": 220.015625,
+            "height": 16,
+            "y": 2064.171875
+          },
+          {
+            "width": 94.171875,
+            "height": 16,
+            "y": 2084.796875
+          }
+        ]
+      },
+      {
+        "text": "Your Circumstance",
+        "card": {
+          "x": 27,
+          "y": 2146.796875,
+          "width": 321,
+          "height": 76.375,
+          "bottom": 2223.171875
+        },
+        "label": {
+          "x": 90,
+          "y": 2173.390625,
+          "width": 145.53125,
+          "height": 23.1875,
+          "bottom": 2196.578125
+        },
+        "font": "16px",
+        "lineHeight": "23.2px",
+        "lines": [
+          {
+            "width": 145.53125,
+            "height": 17,
+            "y": 2176.390625
+          }
+        ]
+      },
+      {
+        "text": "Confidential Pre-Guidance",
+        "card": {
+          "x": 27,
+          "y": 2245.171875,
+          "width": 321,
+          "height": 76.375,
+          "bottom": 2321.546875
+        },
+        "label": {
+          "x": 90,
+          "y": 2271.765625,
+          "width": 200.921875,
+          "height": 23.1875,
+          "bottom": 2294.953125
+        },
+        "font": "16px",
+        "lineHeight": "23.2px",
+        "lines": [
+          {
+            "width": 200.921875,
+            "height": 17,
+            "y": 2274.765625
+          }
+        ]
+      },
+      {
+        "text": "Mutual Confidentiality & Consent",
+        "card": {
+          "x": 27,
+          "y": 2343.546875,
+          "width": 321,
+          "height": 76.375,
+          "bottom": 2419.921875
+        },
+        "label": {
+          "x": 90,
+          "y": 2358.546875,
+          "width": 243,
+          "height": 46.375,
+          "bottom": 2404.921875
+        },
+        "font": "16px",
+        "lineHeight": "23.2px",
+        "lines": [
+          {
+            "width": 167.109375,
+            "height": 17,
+            "y": 2361.546875
+          },
+          {
+            "width": 80,
+            "height": 17,
+            "y": 2384.734375
+          }
+        ]
+      },
+      {
+        "text": "Only Ritual-Required Information Proceeds",
+        "card": {
+          "x": 27,
+          "y": 2441.921875,
+          "width": 321,
+          "height": 76.375,
+          "bottom": 2518.296875
+        },
+        "label": {
+          "x": 90,
+          "y": 2456.921875,
+          "width": 243,
+          "height": 46.375,
+          "bottom": 2503.296875
+        },
+        "font": "16px",
+        "lineHeight": "23.2px",
+        "lines": [
+          {
+            "width": 159.125,
+            "height": 17,
+            "y": 2459.921875
+          },
+          {
+            "width": 164.484375,
+            "height": 17,
+            "y": 2483.109375
+          }
+        ]
+      },
+      {
+        "text": "Guided Ritual Path",
+        "card": {
+          "x": 27,
+          "y": 2540.296875,
+          "width": 321,
+          "height": 76.375,
+          "bottom": 2616.671875
+        },
+        "label": {
+          "x": 90,
+          "y": 2566.890625,
+          "width": 143.125,
+          "height": 23.1875,
+          "bottom": 2590.078125
+        },
+        "font": "16px",
+        "lineHeight": "23.2px",
+        "lines": [
+          {
+            "width": 143.125,
+            "height": 17,
+            "y": 2569.890625
+          }
+        ]
+      }
+    ],
+    "orbit": {
+      "x": 27,
+      "y": 312.828125,
+      "width": 321,
+      "height": 864.25,
+      "bottom": 1177.078125
+    },
+    "radialLabels": [
+      {
+        "text": "NRI & International Families",
+        "x": 27,
+        "y": 686.828125,
+        "width": 149.5,
+        "height": 45.125,
+        "bottom": 731.953125,
+        "lines": [
+          {
+            "width": 123.015625,
+            "height": 16,
+            "y": 689.828125
+          },
+          {
+            "width": 54.203125,
+            "height": 16,
+            "y": 712.390625
+          }
+        ]
+      },
+      {
+        "text": "Unable to Travel",
+        "x": 220.234375,
+        "y": 686.828125,
+        "width": 106.03125,
+        "height": 22.5625,
+        "bottom": 709.390625,
+        "lines": [
+          {
+            "width": 106.03125,
+            "height": 16,
+            "y": 689.828125
+          }
+        ]
+      },
+      {
+        "text": "Elderly Participants",
+        "x": 39.4375,
+        "y": 819.953125,
+        "width": 124.625,
+        "height": 22.5625,
+        "bottom": 842.515625,
+        "lines": [
+          {
+            "width": 124.625,
+            "height": 16,
+            "y": 822.953125
+          }
+        ]
+      },
+      {
+        "text": "Mobility Requirements",
+        "x": 201.21875,
+        "y": 819.953125,
+        "width": 144.046875,
+        "height": 22.5625,
+        "bottom": 842.515625,
+        "lines": [
+          {
+            "width": 144.046875,
+            "height": 16,
+            "y": 822.953125
+          }
+        ]
+      },
+      {
+        "text": "Families in Different Cities or Countries",
+        "x": 27,
+        "y": 943.953125,
+        "width": 149.5,
+        "height": 45.125,
+        "bottom": 989.078125,
+        "lines": [
+          {
+            "width": 128.390625,
+            "height": 16,
+            "y": 946.953125
+          },
+          {
+            "width": 119.765625,
+            "height": 16,
+            "y": 969.515625
+          }
+        ]
+      },
+      {
+        "text": "Hybrid Family Participation",
+        "x": 198.5,
+        "y": 943.953125,
+        "width": 149.5,
+        "height": 45.125,
+        "bottom": 989.078125,
+        "lines": [
+          {
+            "width": 89,
+            "height": 16,
+            "y": 946.953125
+          },
+          {
+            "width": 80.125,
+            "height": 16,
+            "y": 969.515625
+          }
+        ]
+      },
+      {
+        "text": "Time-Zone Coordinated Participation",
+        "x": 68.796875,
+        "y": 1077.078125,
+        "width": 237.390625,
+        "height": 22.5625,
+        "bottom": 1099.640625,
+        "lines": [
+          {
+            "width": 237.390625,
+            "height": 16,
+            "y": 1080.078125
+          }
+        ]
+      }
+    ],
+    "rows": "121.25px 121.25px 121.25px 141.875px 68px",
+    "columns": "151.5px 151.5px",
+    "privacy": {
+      "x": 27,
+      "y": 2654.671875,
+      "width": 321,
+      "height": 202.6875,
+      "bottom": 2857.359375
+    },
+    "lock": {
+      "x": 167.5,
+      "y": 2674.671875,
+      "width": 40,
+      "height": 40,
+      "bottom": 2714.671875
+    },
+    "headline": {
+      "x": 51,
+      "y": 2724.671875,
+      "width": 273,
+      "height": 56.125,
+      "bottom": 2780.796875
+    },
+    "support": {
+      "x": 51,
+      "y": 2788.796875,
+      "width": 273,
+      "height": 48.5625,
+      "bottom": 2837.359375
+    },
+    "cta": {
+      "x": 27,
+      "y": 2885.359375,
+      "width": 321,
+      "height": 55.109375,
+      "bottom": 2940.46875
+    }
+  }
+]

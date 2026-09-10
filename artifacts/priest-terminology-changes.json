@@ -1,0 +1,1057 @@
+[
+  {
+    "file": "apps/web/src/app/about/page.tsx",
+    "old": "Learn how Connect Hub Co. coordinates sacred services and pilgrim travel assistance in Gaya Ji and pan-India with verified Religious Partners.",
+    "new": "Learn how Connect Hub Co. coordinates sacred services and pilgrim travel assistance in Gaya Ji and pan-India with Verified Priests."
+  },
+  {
+    "file": "apps/web/src/app/bookings/page.tsx",
+    "old": "Partner",
+    "new": "Priest"
+  },
+  {
+    "file": "apps/web/src/app/bookings/[id]/page.tsx",
+    "old": "Partner: ",
+    "new": "Priest: "
+  },
+  {
+    "file": "apps/web/src/app/partners/new/page.tsx",
+    "old": "Unable to save partner.",
+    "new": "Unable to save Priest."
+  },
+  {
+    "file": "apps/web/src/app/partners/new/page.tsx",
+    "old": "\r\n          Register Religious Partner\r\n        ",
+    "new": "\r\n          Register Verified Priest\r\n        "
+  },
+  {
+    "file": "apps/web/src/app/partners/new/page.tsx",
+    "old": "Partner Name",
+    "new": "Priest Name"
+  },
+  {
+    "file": "apps/web/src/app/partners/new/page.tsx",
+    "old": "Save Partner",
+    "new": "Save Priest"
+  },
+  {
+    "file": "apps/web/src/app/partners/page.tsx",
+    "old": "Deactivate this partner?",
+    "new": "Deactivate this Priest?"
+  },
+  {
+    "file": "apps/web/src/app/partners/page.tsx",
+    "old": "Unable to deactivate partner.",
+    "new": "Unable to deactivate Priest."
+  },
+  {
+    "file": "apps/web/src/app/partners/page.tsx",
+    "old": "Religious Partners",
+    "new": "Verified Priests"
+  },
+  {
+    "file": "apps/web/src/app/partners/page.tsx",
+    "old": "\r\n            Religious Partners\r\n          ",
+    "new": "\r\n            Verified Priests\r\n          "
+  },
+  {
+    "file": "apps/web/src/app/partners/page.tsx",
+    "old": "\r\n            + New Partner\r\n          ",
+    "new": "\r\n            + New Priest\r\n          "
+  },
+  {
+    "file": "apps/web/src/app/partners/page.tsx",
+    "old": "No partners found.",
+    "new": "No Verified Priests found."
+  },
+  {
+    "file": "apps/web/src/app/partners/[id]/edit/page.tsx",
+    "old": "Unable to load partner.",
+    "new": "Unable to load Priest."
+  },
+  {
+    "file": "apps/web/src/app/partners/[id]/edit/page.tsx",
+    "old": "Back to partners",
+    "new": "Back to Verified Priests"
+  },
+  {
+    "file": "apps/web/src/app/partners/[id]/edit/page.tsx",
+    "old": "Edit Religious Partner",
+    "new": "Edit Verified Priest"
+  },
+  {
+    "file": "apps/web/src/app/partners/[id]/page.tsx",
+    "old": "\r\n        Partner not found.\r\n      ",
+    "new": "\r\n        Priest not found.\r\n      "
+  },
+  {
+    "file": "apps/web/src/app/partners/[id]/page.tsx",
+    "old": "\r\n            Partner Details\r\n          ",
+    "new": "\r\n            Priest Details\r\n          "
+  },
+  {
+    "file": "apps/web/src/app/pitru-moksha/requests/page.tsx",
+    "old": "Religious partner",
+    "new": "Verified Priest"
+  },
+  {
+    "file": "apps/web/src/app/pitru-moksha-gaya/offline/page.tsx",
+    "old": "Verified Religious Partner coordination",
+    "new": "Verified Priest coordination"
+  },
+  {
+    "file": "apps/web/src/app/pitru-moksha-gaya/offline/page.tsx",
+    "old": "Coordinate the Religious Partner, schedule, travel and local arrangements.",
+    "new": "Coordinate the Verified Priest, schedule, travel and local arrangements."
+  },
+  {
+    "file": "apps/web/src/app/pitru-moksha-gaya/offline/page.tsx",
+    "old": "PitruMoksha Gaya provides end-to-end ancestral ritual guidance and local coordination for families travelling to Gaya, delivered through verified Religious Partners with respectful assistance from preparation through completion.",
+    "new": "PitruMoksha Gaya provides end-to-end ancestral ritual guidance and local coordination for families travelling to Gaya, delivered through Verified Priests with respectful assistance from preparation through completion."
+  },
+  {
+    "file": "apps/web/src/app/pitru-moksha-gaya/offline/page.tsx",
+    "old": "The Offline path may suit families who prefer to be physically present, visit the relevant ritual locations and receive coordinated local assistance. Ritual suitability and preparation remain subject to family circumstances, tradition and Religious Partner guidance.",
+    "new": "The Offline path may suit families who prefer to be physically present, visit the relevant ritual locations and receive coordinated local assistance. Ritual suitability and preparation remain subject to family circumstances, tradition and Verified Priest guidance."
+  },
+  {
+    "file": "apps/web/src/app/pitru-moksha-gaya/online/page.tsx",
+    "old": "Explore guided online ancestral rituals, Virtual Shraddh participation and verified Religious Partner coordination.",
+    "new": "Explore guided online ancestral rituals, Virtual Shraddh participation and Verified Priest coordination."
+  },
+  {
+    "file": "apps/web/src/app/pitru-moksha-gaya/page.tsx",
+    "old": "Explore PitruMoksha Gaya ancestral ritual guidance, verified Religious Partner coordination, online and offline service pathways, and Vahi Records assistance.",
+    "new": "Explore PitruMoksha Gaya ancestral ritual guidance, Verified Priest coordination, online and offline service pathways, and Vahi Records assistance."
+  },
+  {
+    "file": "apps/web/src/app/register/page.tsx",
+    "old": "\r\n            Register as a Seeking Family Customer or verified Religious Partner\r\n          ",
+    "new": "\r\n            Register as a Seeking Family Customer or Verified Priest\r\n          "
+  },
+  {
+    "file": "apps/web/src/app/register/page.tsx",
+    "old": "\r\n            Religious Partner\r\n          ",
+    "new": "\r\n            Verified Priest\r\n          "
+  },
+  {
+    "file": "apps/web/src/app/register/page.tsx",
+    "old": "Religious Partner",
+    "new": "Verified Priest"
+  },
+  {
+    "file": "apps/web/src/app/religious-partners/page.tsx",
+    "old": "Religious Partner Network | Connect Hub Co.",
+    "new": "Verified Priest Network | Connect Hub Co."
+  },
+  {
+    "file": "apps/web/src/app/religious-partners/register/page.tsx",
+    "old": "Religious Partner Application | Connect Hub Co.",
+    "new": "Priest Application | Connect Hub Co."
+  },
+  {
+    "file": "apps/web/src/app/religious-partners/register/page.tsx",
+    "old": "Apply to register as a Religious Partner with Connect Hub Co.",
+    "new": "Apply to register as a Verified Priest with Connect Hub Co."
+  },
+  {
+    "file": "apps/web/src/app/reports/page.tsx",
+    "old": "Religious partners",
+    "new": "Verified Priests"
+  },
+  {
+    "file": "apps/web/src/app/requests/page.tsx",
+    "old": "A verified Religious Partner has been assigned.",
+    "new": "A Verified Priest has been assigned."
+  },
+  {
+    "file": "apps/web/src/app/requests/page.tsx",
+    "old": "Founder/Admin-only request review and verified-partner assignment.",
+    "new": "Founder/Admin-only request review and Verified Priest assignment."
+  },
+  {
+    "file": "apps/web/src/app/requests/page.tsx",
+    "old": "Assigned partner",
+    "new": "Assigned Verified Priest"
+  },
+  {
+    "file": "apps/web/src/app/requests/page.tsx",
+    "old": "Assign partner for ",
+    "new": "Assign Priest for "
+  },
+  {
+    "file": "apps/web/src/app/requests/page.tsx",
+    "old": "Select verified partner",
+    "new": "Select Verified Priest"
+  },
+  {
+    "file": "apps/web/src/app/ritual-services/offline/page.tsx",
+    "old": "Coordinated with verified local Religious Partners, pure Samagri procurement, and complete ground support.",
+    "new": "Coordinated with verified local Verified Priests, pure Samagri procurement, and complete ground support."
+  },
+  {
+    "file": "apps/web/src/app/ritual-services/online/page.tsx",
+    "old": "Participate remotely in authentic Vedic pujas with live HD video streaming and guided Sankalp led by verified Religious Partners.",
+    "new": "Participate remotely in authentic Vedic pujas with live HD video streaming and guided Sankalp led by Verified Priests."
+  },
+  {
+    "file": "apps/web/src/app/ritual-services/page.tsx",
+    "old": "Explore authentic Vedic pujas, homams, Griha Pravesh, Navagraha Shanti, sacred samagri care, and NRI remote live Sankalp coordinated through verified Religious Partners across 15+ locations in India and Nepal.",
+    "new": "Explore authentic Vedic pujas, homams, Griha Pravesh, Navagraha Shanti, sacred samagri care, and NRI remote live Sankalp coordinated through Verified Priests across 15+ locations in India and Nepal."
+  },
+  {
+    "file": "apps/web/src/app/route-index/page.tsx",
+    "old": "Religious Partner Network",
+    "new": "Verified Priest Network"
+  },
+  {
+    "file": "apps/web/src/app/route-index/page.tsx",
+    "old": "Religious Partners Management",
+    "new": "Verified Priests Management"
+  },
+  {
+    "file": "apps/web/src/app/tracking/page.tsx",
+    "old": "Track Partner Registration",
+    "new": "Track Priest Registration"
+  },
+  {
+    "file": "apps/web/src/app/tracking/page.tsx",
+    "old": "\n              Track your service request or partner registration using the registered reference details below.\n            ",
+    "new": "\n              Track your service request or Priest Registration using the registered reference details below.\n            "
+  },
+  {
+    "file": "apps/web/src/app/tracking/page.tsx",
+    "old": "Partner Registration Tracking Result",
+    "new": "Priest Registration Tracking Result"
+  },
+  {
+    "file": "apps/web/src/app/tracking/page.tsx",
+    "old": "No Religious Partner registration was found for those verified details.",
+    "new": "No Priest Registration was found for those verified details."
+  },
+  {
+    "file": "apps/web/src/components/admin/AdminDashboard.tsx",
+    "old": "\r\n               Religious Partners\r\n            ",
+    "new": "\r\n               Verified Priests\r\n            "
+  },
+  {
+    "file": "apps/web/src/components/admin/AdminDashboard.tsx",
+    "old": "Religious Partner Network",
+    "new": "Verified Priest Network"
+  },
+  {
+    "file": "apps/web/src/components/auth/BusinessFooter.tsx",
+    "old": "\n            Partner Registration\n          ",
+    "new": "\n            Priest Registration\n          "
+  },
+  {
+    "file": "apps/web/src/components/booking/BookingForm.tsx",
+    "old": "Religious partner",
+    "new": "Verified Priest"
+  },
+  {
+    "file": "apps/web/src/components/booking/BookingForm.tsx",
+    "old": "Select religious partner",
+    "new": "Select Verified Priest"
+  },
+  {
+    "file": "apps/web/src/components/business-pages/BusinessPageShell.tsx",
+    "old": "Use guided assistance to understand available pathways and prepare your request. Final coordination is reviewed by the authorised team and verified Religious Partners.",
+    "new": "Use guided assistance to understand available pathways and prepare your request. Final coordination is reviewed by the authorised team and Verified Priests."
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Ritual and Puja Partner",
+    "new": "Ritual and Puja Priest"
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Apply as Ritual Partner",
+    "new": "Apply as Ritual Priest"
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "PitruMoksha Gaya Partner",
+    "new": "PitruMoksha Gaya Priest"
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "For eligible Religious Partners providing ancestral ritual guidance and coordination in Gaya Ji under approved processes.",
+    "new": "For eligible Verified Priests providing ancestral ritual guidance and coordination in Gaya Ji under approved processes."
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Apply as Gaya Partner",
+    "new": "Apply as Gaya Priest"
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Location-Based Religious Partner",
+    "new": "Location-Based Verified Priest"
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Apply as Location Partner",
+    "new": "Apply as Location Priest"
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Online Ritual Partner",
+    "new": "Online Ritual Priest"
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Apply as Online Partner",
+    "new": "Apply as Online Priest"
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Vahi Records and Lineage Guidance Partner",
+    "new": "Vahi Records and Lineage Guidance Priest"
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "For relevant traditional custodians or Religious Partners associated with lineage-record guidance, where applicable and verified.",
+    "new": "For relevant traditional custodians or Verified Priests associated with lineage-record guidance, where applicable and verified."
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Apply as Lineage Partner",
+    "new": "Apply as Lineage Priest"
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Travel and Local Coordination Partner",
+    "new": "Travel and Local Coordination Priest"
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "For Religious Partners participating in local ritual-linked coordination and ground support at sacred destinations.",
+    "new": "For Verified Priests participating in local ritual-linked coordination and ground support at sacred destinations."
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Apply as Local Partner",
+    "new": "Apply as Local Priest"
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Build a verified professional presence within an expanding nation-wide network of traditional Religious Partners.",
+    "new": "Build a verified professional presence within an expanding nation-wide network of traditional Verified Priests."
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Select Partner Category",
+    "new": "Select Priest Category"
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Choose the approved Religious Partner pathway matching your traditional training, service format, and practice location.",
+    "new": "Choose the approved Priest Pathway matching your traditional training, service format, and practice location."
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Our partner onboarding team reviews the submitted profile for clarity, completeness, and initial suitability.",
+    "new": "Our Priest Onboarding team reviews the submitted profile for clarity, completeness, and initial suitability."
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Primary email address for official partner communication.",
+    "new": "Primary email address for official Priest Communication."
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Partner Category",
+    "new": "Priest Category"
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Selected partner pathway (Ritual, Gaya, Location, Online, Vahi, Local).",
+    "new": "Selected Priest Pathway (Ritual, Gaya, Location, Online, Vahi, Local)."
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Evaluation of selected partner pathway against proven traditional experience, ritual capabilities, and location feasibility.",
+    "new": "Evaluation of selected Priest Pathway against proven traditional experience, ritual capabilities, and location feasibility."
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Others / Religious Partner Services",
+    "new": "Others / Verified Priest Services"
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Specialized religious guidance and custom Vaidik partner services.",
+    "new": "Specialized religious guidance and custom Vaidik Priest services."
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Who can apply as a Religious Partner?",
+    "new": "Who can apply as a Verified Priest?"
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Identity checks, document verification, background screening, and reference checks conducted neutrally by our partner onboarding team.",
+    "new": "Identity checks, document verification, background screening, and reference checks conducted neutrally by our Priest Onboarding team."
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Partner responsibilities",
+    "new": "Priest Responsibilities"
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Matching algorithms based on tradition, location, language preference, Gotra requirement (for Panda Vahi ledgers), and partner availability.",
+    "new": "Matching algorithms based on tradition, location, language preference, Gotra requirement (for Panda Vahi ledgers), and Priest availability."
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Who can apply as a Religious Partner?",
+    "new": "Who can apply as a Verified Priest?"
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Yes. Partners may list all ritual domains in which they possess verified traditional competence—such as Pind Daan, Havan, Griha Pravesh, or Vahi Records guidance.",
+    "new": "Yes. Verified Priests may list all ritual domains in which they possess verified traditional competence—such as Pind Daan, Havan, Griha Pravesh, or Vahi Records guidance."
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Yes. Partners can indicate all operational cities, states, or sacred pilgrimage hubs where they can travel or maintain physical service capabilities.",
+    "new": "Yes. Verified Priests can indicate all operational cities, states, or sacred pilgrimage hubs where they can travel or maintain physical service capabilities."
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Yes. Qualified partners with appropriate technical readiness and clear communication skills can conduct approved live-streamed online ceremonies.",
+    "new": "Yes. Qualified Verified Priests with appropriate technical readiness and clear communication skills can conduct approved live-streamed online ceremonies."
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Inquiries are matched objectively based on customer location, language preference, specific ritual specialization, Gotra requirements (for Panda Vahi ledgers), and partner availability.",
+    "new": "Inquiries are matched objectively based on customer location, language preference, specific ritual specialization, Gotra requirements (for Panda Vahi ledgers), and Priest availability."
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "All service prices, samagri inclusions, and ritual steps are confirmed transparently with families upfront. Partners must adhere strictly to agreed terms without extra demands.",
+    "new": "All service prices, samagri inclusions, and ritual steps are confirmed transparently with families upfront. Verified Priests must adhere strictly to agreed terms without extra demands."
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Our partner onboarding team will contact you to request missing supporting details or clarify incomplete information before completing your review.",
+    "new": "Our Priest Onboarding team will contact you to request missing supporting details or clarify incomplete information before completing your review."
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Yes. If an application requires additional credentials or location updates, partners may re-submit updated information for administrative review.",
+    "new": "Yes. If an application requires additional credentials or location updates, Verified Priests may re-submit updated information for administrative review."
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "How is partner performance evaluated?",
+    "new": "How is Priest performance evaluated?"
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Partner evaluation is based on customer feedback, punctuality, adherence to Vaidik standards, transparent pricing compliance, and professional conduct.",
+    "new": "Priest evaluation is based on customer feedback, punctuality, adherence to Vaidik standards, transparent pricing compliance, and professional conduct."
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Partner Registration Form",
+    "new": "Priest Registration Form"
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "SECTION 1 — BECOME A RELIGIOUS PARTNER",
+    "new": "SECTION 1 — BECOME A VERIFIED PRIEST"
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "\r\n            The Religious Partner Network connects qualified Pandits, Purohits, Pandas, Acharyas, Vaidik Scholars, and traditional ritual specialists with seeking families across India and worldwide.\r\n          ",
+    "new": "\r\n            The Verified Priest Network connects qualified Pandits, Purohits, Pandas, Acharyas, Vaidik Scholars, and traditional ritual specialists with seeking families across India and worldwide.\r\n          "
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "\r\n                Religious Partners conduct authentic Vaidik rites for seeking families while Connect Hub Co. manages scheduling, client communication, travel logistics, and administrative support.\r\n              ",
+    "new": "\r\n                Verified Priests conduct authentic Vaidik rites for seeking families while Connect Hub Co. manages scheduling, client communication, travel logistics, and administrative support.\r\n              "
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "SECTION 2 — PARTNER PATHWAYS",
+    "new": "SECTION 2 — PRIEST PATHWAYS"
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Religious Partner Categories",
+    "new": "Priest Categories"
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Future customer assignments depend on business need, partner availability, performance, and suitability.",
+    "new": "Future customer assignments depend on business need, Priest availability, performance, and suitability."
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "\r\n            Prepare the following details using this 18-point checklist when submitting your partner registration application.\r\n          ",
+    "new": "\r\n            Prepare the following details using this 18-point checklist when submitting your Priest Registration application.\r\n          "
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "\r\n            A neutral, structured evaluation of partner credentials, operational reach, onboarding guidance, and ongoing quality review.\r\n          ",
+    "new": "\r\n            A neutral, structured evaluation of Priest credentials, operational reach, onboarding guidance, and ongoing quality review.\r\n          "
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "SECTION 8 — PARTNER STANDARDS",
+    "new": "SECTION 8 — PRIEST STANDARDS"
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "SECTION 9 — PARTNER CATEGORIES",
+    "new": "SECTION 9 — PRIEST CATEGORIES"
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "\r\n            Explore the 16 approved, responsive partner categories supported across our service framework.\r\n          ",
+    "new": "\r\n            Explore the 16 approved, responsive Priest Categories supported across our service framework.\r\n          "
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Partner Frequently Asked Questions",
+    "new": "Priest Frequently Asked Questions"
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Register as a Religious Partner",
+    "new": "Register as a Verified Priest"
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "\r\n            Factual and neutral answers to key questions regarding partner application, verification, inquiry assignment, and performance.\r\n          ",
+    "new": "\r\n            Factual and neutral answers to key questions regarding Priest Application, verification, inquiry assignment, and performance.\r\n          "
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Start Religious Partner Registration",
+    "new": "Start Priest Registration"
+  },
+  {
+    "file": "apps/web/src/components/business-pages/religious-partners/ReligiousPartnersContent.tsx",
+    "old": "Explore Partner Categories",
+    "new": "Explore Priest Categories"
+  },
+  {
+    "file": "apps/web/src/components/business-pages/ritual-services/RitualServicesPage.tsx",
+    "old": "Our team verifies Religious Partner availability, venue requirements, and issues a transparent upfront service scope.",
+    "new": "Our team verifies Verified Priest availability, venue requirements, and issues a transparent upfront service scope."
+  },
+  {
+    "file": "apps/web/src/components/business-pages/ritual-services/RitualServicesPage.tsx",
+    "old": "Verified Lineage Priests & Religious Partners",
+    "new": "Verified Lineage Priests & Verified Priests"
+  },
+  {
+    "file": "apps/web/src/components/business-pages/ritual-services/RitualServicesPage.tsx",
+    "old": "You can select from our 10 Core Ritual Categories or consult Ask GenZ AI for guidance. Our human team and verified Religious Partners will review your family tradition, Gotra, and purpose to confirm the exact prescribed Vedic ritual.",
+    "new": "You can select from our 10 Core Ritual Categories or consult Ask GenZ AI for guidance. Our human team and Verified Priests will review your family tradition, Gotra, and purpose to confirm the exact prescribed Vedic ritual."
+  },
+  {
+    "file": "apps/web/src/components/business-pages/ritual-services/RitualServicesPage.tsx",
+    "old": "\r\n            Traditional, authentic, and fully guided Vedic pujas, homams, and sacred ceremonies coordinated with verified Religious Partners. Arranged on-site at your home or sacred destinations across India & Nepal, or via live remote participation for families worldwide.\r\n          ",
+    "new": "\r\n            Traditional, authentic, and fully guided Vedic pujas, homams, and sacred ceremonies coordinated with Verified Priests. Arranged on-site at your home or sacred destinations across India & Nepal, or via live remote participation for families worldwide.\r\n          "
+  },
+  {
+    "file": "apps/web/src/components/business-pages/ritual-services/RitualServicesPage.tsx",
+    "old": "\r\n            We connect your family with verified local Religious Partners, qualified lineage priests, and venue arrangements across major spiritual hubs.\r\n          ",
+    "new": "\r\n            We connect your family with verified local Verified Priests, qualified lineage priests, and venue arrangements across major spiritual hubs.\r\n          "
+  },
+  {
+    "file": "apps/web/src/components/business-pages/ritual-services/RitualServicesPage.tsx",
+    "old": "\r\n            Share your family’s requirement and receive a custom service scope with verified Religious Partner coordination.\r\n          ",
+    "new": "\r\n            Share your family’s requirement and receive a custom service scope with Verified Priest coordination.\r\n          "
+  },
+  {
+    "file": "apps/web/src/components/business-pages/vahi-records/VahiApprovedContent.tsx",
+    "old": "Assist in identifying and coordinating with relevant traditional record custodians through verified Religious Partners.",
+    "new": "Assist in identifying and coordinating with relevant traditional record custodians through Verified Priests."
+  },
+  {
+    "file": "apps/web/src/components/common/BusinessAbout.tsx",
+    "old": "Our mission is to connect families with verified Hindu religious partners and practical pilgrimage support through clear, respectful, auditable workflows.",
+    "new": "Our mission is to connect families with verified Hindu Verified Priests and practical pilgrimage support through clear, respectful, auditable workflows."
+  },
+  {
+    "file": "apps/web/src/components/common/BusinessAbout.tsx",
+    "old": "A trusted digital platform where customers, religious partners, travel providers, and operations teams can coordinate without compromising religious authenticity or customer privacy.",
+    "new": "A trusted digital platform where customers, Verified Priests, travel providers, and operations teams can coordinate without compromising religious authenticity or customer privacy."
+  },
+  {
+    "file": "apps/web/src/components/common/BusinessAbout.tsx",
+    "old": "Gaya is a deeply significant destination for ancestral rites. Connect Hub Co focuses on dependable local coordination while leaving ritual guidance and correctness with qualified religious partners.",
+    "new": "Gaya is a deeply significant destination for ancestral rites. Connect Hub Co focuses on dependable local coordination while leaving ritual guidance and correctness with qualified Verified Priests."
+  },
+  {
+    "file": "apps/web/src/components/common/BusinessDashboard.tsx",
+    "old": "Total partners",
+    "new": "Total Verified Priests"
+  },
+  {
+    "file": "apps/web/src/components/common/BusinessDashboard.tsx",
+    "old": "Active partners",
+    "new": "Active Verified Priests"
+  },
+  {
+    "file": "apps/web/src/components/common/BusinessDashboard.tsx",
+    "old": "Recent partners",
+    "new": "Recent Verified Priests"
+  },
+  {
+    "file": "apps/web/src/components/common/BusinessDashboard.tsx",
+    "old": "New partner",
+    "new": "New Priest"
+  },
+  {
+    "file": "apps/web/src/components/crm/CRMLeadManager.tsx",
+    "old": "Religious Partners",
+    "new": "Verified Priests"
+  },
+  {
+    "file": "apps/web/src/components/dashboard/LimitedPartnerDashboard.tsx",
+    "old": "Only work explicitly assigned to this verified partner may appear here.",
+    "new": "Only work explicitly assigned to this Verified Priest may appear here."
+  },
+  {
+    "file": "apps/web/src/components/dashboard/LimitedPartnerDashboard.tsx",
+    "old": "Partner access is not authorized for this account.",
+    "new": "Priest Access is not authorized for this account."
+  },
+  {
+    "file": "apps/web/src/components/dashboard/LimitedPartnerDashboard.tsx",
+    "old": "Limited Religious Partner Portal",
+    "new": "Limited Verified Priest Portal"
+  },
+  {
+    "file": "apps/web/src/components/dashboard/LimitedPartnerDashboard.tsx",
+    "old": "No general ERP, URMS/database, unrestricted customer-record, other-partner, or administrative access is available. Operational data remains unavailable until server-side verification and assignment scope are confirmed.",
+    "new": "No general ERP, URMS/database, unrestricted customer-record, other-Priest, or administrative access is available. Operational data remains unavailable until server-side verification and assignment scope are confirmed."
+  },
+  {
+    "file": "apps/web/src/components/dashboard/LimitedPartnerDashboard.tsx",
+    "old": "Limited partner functions",
+    "new": "Limited Priest Functions"
+  },
+  {
+    "file": "apps/web/src/components/dashboard/LimitedPartnerDashboard.tsx",
+    "old": "Contact Partner Support",
+    "new": "Contact Priest Support"
+  },
+  {
+    "file": "apps/web/src/components/dashboard/PartnerDashboard.tsx",
+    "old": "RELIGIOUS PARTNER PORTAL",
+    "new": "VERIFIED PRIEST PORTAL"
+  },
+  {
+    "file": "apps/web/src/components/dashboard/PartnerDashboard.tsx",
+    "old": "Verified Religious Partner",
+    "new": "Verified Priest"
+  },
+  {
+    "file": "apps/web/src/components/dashboard/PartnerDashboard.tsx",
+    "old": "\r\n                    RELIGIOUS PARTNER HOME\r\n                  ",
+    "new": "\r\n                    VERIFIED PRIEST HOME\r\n                  "
+  },
+  {
+    "file": "apps/web/src/components/dashboard/PartnerDashboard.tsx",
+    "old": "\r\n                     VERIFIED PARTNER\r\n                  ",
+    "new": "\r\n                     VERIFIED PRIEST\r\n                  "
+  },
+  {
+    "file": "apps/web/src/components/dashboard/PartnerDashboard.tsx",
+    "old": "Religious Partner Profile Credentials",
+    "new": "Priest Profile Credentials"
+  },
+  {
+    "file": "apps/web/src/components/dashboard/PartnerDashboard.tsx",
+    "old": " Verified Partner",
+    "new": " Verified Priest"
+  },
+  {
+    "file": "apps/web/src/components/dashboard/PartnerDashboard.tsx",
+    "old": "\r\n                 Path A: Ritual and Puja Partner (Griha Pravesh, Satyanarayan Katha, Havan)\r\n              ",
+    "new": "\r\n                 Path A: Ritual and Puja Priest (Griha Pravesh, Satyanarayan Katha, Havan)\r\n              "
+  },
+  {
+    "file": "apps/web/src/components/dashboard/PartnerDashboard.tsx",
+    "old": "Partner Account Settings",
+    "new": "Priest Account Settings"
+  },
+  {
+    "file": "apps/web/src/components/inquiry/GeneralInquiryForm.tsx",
+    "old": "Religious Partner Registration",
+    "new": "Priest Registration"
+  },
+  {
+    "file": "apps/web/src/components/partner/PartnerForm.tsx",
+    "old": "Unable to save partner.",
+    "new": "Unable to save Priest."
+  },
+  {
+    "file": "apps/web/src/components/partner/PartnerForm.tsx",
+    "old": "Partner Name",
+    "new": "Priest Name"
+  },
+  {
+    "file": "apps/web/src/components/partner/ReligiousPartnerApplicationForm.tsx",
+    "old": "Religious Partner Registration: ",
+    "new": "Priest Registration: "
+  },
+  {
+    "file": "apps/web/src/components/partner/ReligiousPartnerApplicationForm.tsx",
+    "old": "Religious Partner registration application",
+    "new": "Priest Registration application"
+  },
+  {
+    "file": "apps/web/src/components/partner/ReligiousPartnerApplicationForm.tsx",
+    "old": "Unable to submit the partner application.",
+    "new": "Unable to submit the Priest Application."
+  },
+  {
+    "file": "apps/web/src/components/partner/ReligiousPartnerApplicationForm.tsx",
+    "old": "Partner application submitted",
+    "new": "Priest Application submitted"
+  },
+  {
+    "file": "apps/web/src/components/partner/ReligiousPartnerApplicationForm.tsx",
+    "old": "Keep this Partner Registration Reference ID for tracking and future communication.",
+    "new": "Keep this Priest Registration Reference ID for tracking and future communication."
+  },
+  {
+    "file": "apps/web/src/components/partner/ReligiousPartnerApplicationForm.tsx",
+    "old": "Religious Partner application information",
+    "new": "Priest Application information"
+  },
+  {
+    "file": "apps/web/src/components/partner/ReligiousPartnerApplicationForm.tsx",
+    "old": "Religious Partner Registration Application",
+    "new": "Priest Registration Application"
+  },
+  {
+    "file": "apps/web/src/components/partner/ReligiousPartnerApplicationForm.tsx",
+    "old": "\n            After successful application submission, the system auto-generates your Partner Registration Reference ID. Please keep this ID for tracking and future communication.\n          ",
+    "new": "\n            After successful application submission, the system auto-generates your Priest Registration Reference ID. Please keep this ID for tracking and future communication.\n          "
+  },
+  {
+    "file": "apps/web/src/components/partner/ReligiousPartnerApplicationForm.tsx",
+    "old": "Submit Partner Application",
+    "new": "Submit Priest Application"
+  },
+  {
+    "file": "apps/web/src/components/quote/QuoteGeneratorModal.tsx",
+    "old": "Religious Partners",
+    "new": "Verified Priests"
+  },
+  {
+    "file": "apps/web/src/components/service-catalog/BusinessServiceDetail.tsx",
+    "old": "A qualified religious partner will review your family requirements before confirmation.",
+    "new": "A qualified Verified Priest will review your family requirements before confirmation."
+  },
+  {
+    "file": "apps/web/src/components/support/DedicatedSupportForm.tsx",
+    "old": "Religious Partner or Staff Conduct",
+    "new": "Verified Priest or Staff Conduct"
+  },
+  {
+    "file": "apps/web/src/components/support/DedicatedSupportForm.tsx",
+    "old": "Religious Partner Concern",
+    "new": "Verified Priest Concern"
+  },
+  {
+    "file": "apps/web/src/config/khem-navigation.config.ts",
+    "old": "Partners",
+    "new": "Verified Priests"
+  },
+  {
+    "file": "apps/web/src/config/khem-navigation.config.ts",
+    "old": "Religious Partner Registration",
+    "new": "Priest Registration"
+  },
+  {
+    "file": "apps/web/src/config/khem-navigation.config.ts",
+    "old": "Religious Partner Registration",
+    "new": "Priest Registration"
+  },
+  {
+    "file": "apps/web/src/config/khem-navigation.config.ts",
+    "old": "Partner Registration",
+    "new": "Priest Registration"
+  },
+  {
+    "file": "apps/web/src/features/ai/components/GenZRitualAIEngine.tsx",
+    "old": "To register as a Religious Partner, please proceed through the existing Partner Registration application.",
+    "new": "To register as a Verified Priest, please proceed through the existing Priest Registration application."
+  },
+  {
+    "file": "apps/web/src/features/ai/components/GenZRitualAIEngine.tsx",
+    "old": "Partner Registration",
+    "new": "Priest Registration"
+  },
+  {
+    "file": "apps/web/src/features/ai/components/GenZRitualAIEngine.tsx",
+    "old": "Partner Registration",
+    "new": "Priest Registration"
+  },
+  {
+    "file": "apps/web/src/features/ai/knowledge/ai-knowledge.ts",
+    "old": "Religious Partner Network AI",
+    "new": "Verified Priest Network AI"
+  },
+  {
+    "file": "apps/web/src/features/ai/knowledge/semantic-search.ts",
+    "old": "Religious Partner Portal",
+    "new": "Verified Priest Portal"
+  },
+  {
+    "file": "apps/web/src/features/ai/knowledge/semantic-search.ts",
+    "old": "Our mission is to connect families with verified Hindu religious partners and practical pilgrimage support through clear, respectful, auditable workflows.",
+    "new": "Our mission is to connect families with verified Hindu Verified Priests and practical pilgrimage support through clear, respectful, auditable workflows."
+  },
+  {
+    "file": "apps/web/src/features/ai/knowledge/semantic-search.ts",
+    "old": "Traditional Vahi and Panji lineage records are strictly protected. They are never published for public online search, sold, or shared with unauthorized third parties. Access is restricted to assigned verified Religious Partners and Pandas.",
+    "new": "Traditional Vahi and Panji lineage records are strictly protected. They are never published for public online search, sold, or shared with unauthorized third parties. Access is restricted to assigned Verified Priests and Pandas."
+  },
+  {
+    "file": "apps/web/src/features/ai/knowledge/semantic-search.ts",
+    "old": "Connect Hub Co. acts as an authorized coordination platform connecting families with verified Religious Partners, qualified priests, and travel support providers. Final ritual formats and traditions are confirmed with verified priests.",
+    "new": "Connect Hub Co. acts as an authorized coordination platform connecting families with Verified Priests, qualified priests, and travel support providers. Final ritual formats and traditions are confirmed with verified priests."
+  },
+  {
+    "file": "apps/web/src/features/ai/knowledge/semantic-search.ts",
+    "old": "In-person traditional Vedic ceremonies are conducted at your residence, venue, or sacred temple destinations across India and Nepal, coordinated with verified local Religious Partners, pure Samagri procurement, and complete ground support.",
+    "new": "In-person traditional Vedic ceremonies are conducted at your residence, venue, or sacred temple destinations across India and Nepal, coordinated with verified local Verified Priests, pure Samagri procurement, and complete ground support."
+  },
+  {
+    "file": "apps/web/src/features/hero/data/homepageHeroSlides.ts",
+    "old": "Religious Partner",
+    "new": "Verified Priest"
+  },
+  {
+    "file": "apps/web/src/features/hero/data/homepageHeroSlides.ts",
+    "old": "Religious Partner Registration",
+    "new": "Priest Registration"
+  },
+  {
+    "file": "apps/web/src/features/hero/data/homepageHeroSlides.ts",
+    "old": "Religious Partner hero",
+    "new": "Verified Priest hero"
+  },
+  {
+    "file": "apps/web/src/features/knowledge-center/knowledge-guides.ts",
+    "old": "Religious Partner Registration Knowledge Guide",
+    "new": "Priest Registration Knowledge Guide"
+  },
+  {
+    "file": "apps/web/src/features/knowledge-center/knowledge-guides.ts",
+    "old": "Approved reference information about partner eligibility, registration, documentation, verification, and service capability.",
+    "new": "Approved reference information about Priest Eligibility, registration, documentation, verification, and service capability."
+  },
+  {
+    "file": "apps/web/src/features/knowledge-center/knowledge-guides.ts",
+    "old": "Explore Religious Partner Registration",
+    "new": "Explore Priest Registration"
+  },
+  {
+    "file": "apps/web/src/features/public-shell/components/PublicHeroSidebar.tsx",
+    "old": "Religious Partner Registration",
+    "new": "Priest Registration"
+  },
+  {
+    "file": "apps/web/src/services/urms.api.ts",
+    "old": "Religious Partner Network (RPN)",
+    "new": "Verified Priest Network (RPN)"
+  },
+  {
+    "file": "apps/web/src/services/urms.api.ts",
+    "old": "Religious Partner Network Application",
+    "new": "Verified Priest Network Application"
+  },
+  {
+    "file": "apps/web/src/services/urms.api.ts",
+    "old": "Partner Verification Desk",
+    "new": "Priest Verification Desk"
+  },
+  {
+    "file": "apps/web/src/__tests__/genz-ai-895-regression.test.ts",
+    "old": "How do religious partners register?",
+    "new": "How do Verified Priests register?"
+  },
+  {
+    "file": "apps/web/src/__tests__/genz-ai-895-regression.test.ts",
+    "old": "want to register as religious partner",
+    "new": "want to register as Verified Priest"
+  },
+  {
+    "file": "apps/web/src/__tests__/genz-ai-895-regression.test.ts",
+    "old": "What is Religious Partner registration?",
+    "new": "What is Priest Registration?"
+  },
+  {
+    "file": "apps/web/src/__tests__/genz-ai-895-regression.test.ts",
+    "old": "What is Religious Partner registration?",
+    "new": "What is Priest Registration?"
+  },
+  {
+    "file": "apps/web/src/__tests__/genz-ai-895-regression.test.ts",
+    "old": "Partner Registration",
+    "new": "Priest Registration"
+  },
+  {
+    "file": "apps/web/src/__tests__/genz-ai-895-regression.test.ts",
+    "old": "I want to register as a religious partner",
+    "new": "I want to register as a Verified Priest"
+  },
+  {
+    "file": "apps/web/src/__tests__/khem-navigation-shell.test.ts",
+    "old": "Partners",
+    "new": "Verified Priests"
+  },
+  {
+    "file": "apps/web/src/__tests__/khem-navigation-shell.test.ts",
+    "old": "ERP Route 2: Partners",
+    "new": "ERP Route 2: Verified Priests"
+  },
+  {
+    "file": "apps/web/src/__tests__/khem-navigation-shell.test.ts",
+    "old": "Divider after Religious Partner Registration verified",
+    "new": "Divider after Priest Registration verified"
+  },
+  {
+    "file": "apps/web/src/__tests__/khem-navigation-shell.test.ts",
+    "old": "Religious Partner Registration",
+    "new": "Priest Registration"
+  },
+  {
+    "file": "apps/web/src/__tests__/khem-navigation-shell.test.ts",
+    "old": "Religious Partner Registration removed from Footer",
+    "new": "Priest Registration removed from Footer"
+  },
+  {
+    "file": "apps/web/src/__tests__/urms.test.ts",
+    "old": "Partner Registration",
+    "new": "Priest Registration"
+  },
+  {
+    "file": "backend/src/controllers/religiousPartner.controller.ts",
+    "old": "Failed to fetch Religious Partners.",
+    "new": "Failed to fetch Verified Priests."
+  },
+  {
+    "file": "backend/src/controllers/religiousPartner.controller.ts",
+    "old": "Religious Partner registration fields are invalid.",
+    "new": "Priest Registration fields are invalid."
+  },
+  {
+    "file": "backend/src/controllers/religiousPartner.controller.ts",
+    "old": "Religious Partner created successfully.",
+    "new": "Verified Priest created successfully."
+  },
+  {
+    "file": "backend/src/controllers/religiousPartner.controller.ts",
+    "old": "Failed to create Religious Partner.",
+    "new": "Failed to create Verified Priest."
+  },
+  {
+    "file": "backend/src/controllers/religiousPartner.controller.ts",
+    "old": "Religious Partner not found.",
+    "new": "Verified Priest not found."
+  },
+  {
+    "file": "backend/src/controllers/religiousPartner.controller.ts",
+    "old": "Failed to fetch Religious Partner.",
+    "new": "Failed to fetch Verified Priest."
+  },
+  {
+    "file": "backend/src/controllers/religiousPartner.controller.ts",
+    "old": "Religious Partner update fields are invalid.",
+    "new": "Verified Priest update fields are invalid."
+  },
+  {
+    "file": "backend/src/controllers/religiousPartner.controller.ts",
+    "old": "Religious Partner update could not be completed.",
+    "new": "Verified Priest update could not be completed."
+  },
+  {
+    "file": "backend/src/controllers/religiousPartner.controller.ts",
+    "old": "Failed to update Religious Partner.",
+    "new": "Failed to update Verified Priest."
+  },
+  {
+    "file": "backend/src/controllers/religiousPartner.controller.ts",
+    "old": "Religious Partner not found.",
+    "new": "Verified Priest not found."
+  },
+  {
+    "file": "backend/src/controllers/religiousPartner.controller.ts",
+    "old": "Failed to deactivate Religious Partner.",
+    "new": "Failed to deactivate Verified Priest."
+  },
+  {
+    "file": "backend/src/controllers/religiousPartner.controller.ts",
+    "old": "Religious Partner user is required.",
+    "new": "Verified Priest user is required."
+  },
+  {
+    "file": "backend/src/controllers/religiousPartner.controller.ts",
+    "old": "Religious Partner link failed.",
+    "new": "Verified Priest link failed."
+  },
+  {
+    "file": "backend/src/controllers/religiousPartner.controller.ts",
+    "old": "Failed to link Religious Partner identity.",
+    "new": "Failed to link Verified Priest identity."
+  },
+  {
+    "file": "backend/src/controllers/universalRequest.controller.ts",
+    "old": "Assigned user is not an active Religious Partner.",
+    "new": "Assigned user is not an active Verified Priest."
+  },
+  {
+    "file": "backend/src/controllers/universalRequest.controller.ts",
+    "old": "Partner status is not permitted.",
+    "new": "Priest Status is not permitted."
+  },
+  {
+    "file": "backend/src/services/commercialWorkflow.service.ts",
+    "old": "Religious guidance and ritual decisions remain with appropriately qualified religious partners.",
+    "new": "Religious guidance and ritual decisions remain with appropriately qualified Verified Priests."
+  },
+  {
+    "file": "backend/src/services/religiousPartner.test.ts",
+    "old": "Failed to update Religious Partner.",
+    "new": "Failed to update Verified Priest."
+  },
+  {
+    "file": "backend/src/services/religiousPartner.test.ts",
+    "old": "link-user succeeds for an active Religious Partner account",
+    "new": "link-user succeeds for an active Priest Account"
+  },
+  {
+    "file": "backend/src/services/route-auth.test.ts",
+    "old": "Religious Partner registration remains public",
+    "new": "Priest Registration remains public"
+  },
+  {
+    "file": "backend/src/services/route-auth.test.ts",
+    "old": "Religious Partner management routes require authentication and role authorization",
+    "new": "Verified Priest management routes require authentication and role authorization"
+  },
+  {
+    "file": "backend/src/services/route-auth.test.ts",
+    "old": "unauthorized role cannot access Religious Partner management",
+    "new": "unauthorized role cannot access Verified Priest management"
+  },
+  {
+    "file": "backend/src/services/universalRequest.test.ts",
+    "old": "partner reads are constrained to the assigned partner id",
+    "new": "partner reads are constrained to the Assigned Verified Priest id"
+  }
+]

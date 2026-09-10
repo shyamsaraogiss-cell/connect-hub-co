@@ -1,0 +1,117 @@
+[
+  {
+    "file": "apps/web/src/app/requests/page.tsx",
+    "line": 35,
+    "text": "Religious Partner Team"
+  },
+  {
+    "file": "apps/web/src/app/requests/page.tsx",
+    "line": 37,
+    "text": "Religious Partner Assignment"
+  },
+  {
+    "file": "apps/web/src/components/business-pages/travel-assistance/TravelAssistanceContent.tsx",
+    "line": 107,
+    "text": "Background Screened & Identity Verified Travel Partners"
+  },
+  {
+    "file": "apps/web/src/components/business-pages/travel-assistance/TravelAssistanceContent.tsx",
+    "line": 122,
+    "text": "Our travel team reviews your route, verifies partner availability, and prepares a transparent service plan."
+  },
+  {
+    "file": "apps/web/src/components/business-pages/travel-assistance/TravelAssistanceContent.tsx",
+    "line": 148,
+    "text": "How are Travel Assistance Partners verified?"
+  },
+  {
+    "file": "apps/web/src/components/business-pages/travel-assistance/TravelAssistanceContent.tsx",
+    "line": 149,
+    "text": "All partners undergo mandatory background screening, identity verification, experience checks, and service certification before joining our network."
+  },
+  {
+    "file": "apps/web/src/components/business-pages/travel-assistance/TravelAssistanceContent.tsx",
+    "line": 170,
+    "text": "\r\n            Connect Hub Co. is not a traditional travel agency or tour operator selling packaged itineraries. At Connect Hub Co., we believe every traveler deserves more than just transportation and accommodation—they deserve confidence, reliable guidance, and a trusted helping hand throughout their journey. Through our verified network of partners and dedicated local coordinators, we help travelers navigate unfamiliar destinations across India and Nepal with ease, without compromising their independence.\r\n          "
+  },
+  {
+    "file": "apps/web/src/components/business-pages/travel-assistance/TravelAssistanceContent.tsx",
+    "line": 261,
+    "text": "\r\n              Supports wildlife journeys through permit coordination, local transport assistance, verified partner coordination, and ground-level execution.\r\n            "
+  },
+  {
+    "file": "apps/web/src/components/business-pages/travel-assistance/TravelAssistanceContent.tsx",
+    "line": 290,
+    "text": "\r\n              Provides specialized regional coordination for jungle rides, wilderness stays, and safari experiences across Nepal through verified partners.\r\n            "
+  },
+  {
+    "file": "apps/web/src/components/business-pages/travel-assistance/TravelAssistanceContent.tsx",
+    "line": 324,
+    "text": "Connect travelers with verified local partners and coordinators."
+  },
+  {
+    "file": "apps/web/src/components/business-pages/travel-assistance/TravelAssistanceContent.tsx",
+    "line": 403,
+    "text": "PARTNER VERIFICATION STANDARDS"
+  },
+  {
+    "file": "apps/web/src/components/business-pages/travel-assistance/TravelAssistanceContent.tsx",
+    "line": 404,
+    "text": "Background Screened & Certified Partners"
+  },
+  {
+    "file": "apps/web/src/components/business-pages/travel-assistance/TravelAssistanceContent.tsx",
+    "line": 406,
+    "text": "\r\n            Every travel partner is thoroughly vetted to ensure total safety, reliability, and dedicated care.\r\n          "
+  },
+  {
+    "file": "apps/web/src/components/support/ComplaintForm.tsx",
+    "line": 34,
+    "text": "Partner Registration ID"
+  },
+  {
+    "file": "apps/web/src/components/support/ComplaintForm.tsx",
+    "line": 60,
+    "text": "Partner Registration ID"
+  },
+  {
+    "file": "apps/web/src/components/support/ComplaintForm.tsx",
+    "line": 81,
+    "text": "Religious Partner / Service Provider"
+  },
+  {
+    "file": "apps/web/src/components/support/GrievanceForm.tsx",
+    "line": 40,
+    "text": "Religious Partner / Service Provider"
+  },
+  {
+    "file": "apps/web/src/services/urms.api.ts",
+    "line": 35,
+    "text": "Religious Partner Assignment"
+  },
+  {
+    "file": "apps/web/src/services/urms.api.ts",
+    "line": 74,
+    "text": "Religious Partner Assignment"
+  },
+  {
+    "file": "apps/web/src/services/urms.api.ts",
+    "line": 164,
+    "text": "Religious Partner Team"
+  },
+  {
+    "file": "apps/web/src/services/urms.api.ts",
+    "line": 338,
+    "text": "Religious Partner Team"
+  },
+  {
+    "file": "apps/web/src/types/urms.ts",
+    "line": 33,
+    "text": "Religious Partner Team"
+  },
+  {
+    "file": "backend/src/services/commercialWorkflow.service.ts",
+    "line": 23,
+    "text": "Coordinate the agreed service scope with the assigned service team or partner."
+  }
+]

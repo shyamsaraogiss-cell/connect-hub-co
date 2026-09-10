@@ -1,0 +1,126 @@
+[
+  {
+    "pattern": "\\b(?:verified\\s+)?religious\\s+partners?\\s+registration\\b",
+    "replacement": "Priest Registration"
+  },
+  {
+    "pattern": "\\b(?:religious\\s+)?partner\\s+registrations\\b",
+    "replacement": "Priest Registrations"
+  },
+  {
+    "pattern": "\\b(?:religious\\s+)?partner\\s+registration\\b",
+    "replacement": "Priest Registration"
+  },
+  {
+    "pattern": "\\b(?:religious\\s+)?partner\\s+applications\\b",
+    "replacement": "Priest Applications"
+  },
+  {
+    "pattern": "\\b(?:religious\\s+)?partner\\s+application\\b",
+    "replacement": "Priest Application"
+  },
+  {
+    "pattern": "\\b(?:religious\\s+)?partner\\s+applicants\\b",
+    "replacement": "Priest Applicants"
+  },
+  {
+    "pattern": "\\b(?:religious\\s+)?partner\\s+applicant\\b",
+    "replacement": "Priest Applicant"
+  },
+  {
+    "pattern": "\\b(?:religious\\s+)?partner\\s+dashboard\\b",
+    "replacement": "Priest Dashboard"
+  },
+  {
+    "pattern": "\\b(?:religious\\s+)?partner\\s+profile\\b",
+    "replacement": "Priest Profile"
+  },
+  {
+    "pattern": "\\b(?:religious\\s+)?partner\\s+approval\\b",
+    "replacement": "Priest Approval"
+  },
+  {
+    "pattern": "\\b(?:religious\\s+)?partner\\s+verification\\b",
+    "replacement": "Priest Verification"
+  },
+  {
+    "pattern": "\\b(?:religious\\s+)?partner\\s+onboarding\\b",
+    "replacement": "Priest Onboarding"
+  },
+  {
+    "pattern": "\\b(?:religious\\s+)?partner\\s+account\\b",
+    "replacement": "Priest Account"
+  },
+  {
+    "pattern": "\\b(?:religious\\s+)?partner\\s+categories\\b",
+    "replacement": "Priest Categories"
+  },
+  {
+    "pattern": "\\b(?:religious\\s+)?partner\\s+category\\b",
+    "replacement": "Priest Category"
+  },
+  {
+    "pattern": "\\b(?:religious\\s+)?partner\\s+support\\b",
+    "replacement": "Priest Support"
+  },
+  {
+    "pattern": "\\b(?:religious\\s+)?partner\\s+status\\b",
+    "replacement": "Priest Status"
+  },
+  {
+    "pattern": "\\b(?:religious\\s+)?partner\\s+access\\b",
+    "replacement": "Priest Access"
+  },
+  {
+    "pattern": "\\b(?:religious\\s+)?partner\\s+functions\\b",
+    "replacement": "Priest Functions"
+  },
+  {
+    "pattern": "\\b(?:religious\\s+)?partner\\s+name\\b",
+    "replacement": "Priest Name"
+  },
+  {
+    "pattern": "\\b(?:religious\\s+)?partner\\s+responsibilities\\b",
+    "replacement": "Priest Responsibilities"
+  },
+  {
+    "pattern": "\\b(?:religious\\s+)?partner\\s+pathway\\b",
+    "replacement": "Priest Pathway"
+  },
+  {
+    "pattern": "\\b(?:religious\\s+)?partner\\s+eligibility\\b",
+    "replacement": "Priest Eligibility"
+  },
+  {
+    "pattern": "\\b(?:religious\\s+)?partner\\s+communication\\b",
+    "replacement": "Priest Communication"
+  },
+  {
+    "pattern": "\\bassigned\\s+(?:verified\\s+)?partner\\b",
+    "replacement": "Assigned Verified Priest"
+  },
+  {
+    "pattern": "\\b(?:verified\\s+)?religious\\s+partners\\b",
+    "replacement": "Verified Priests"
+  },
+  {
+    "pattern": "\\b(?:verified\\s+)?religious\\s+partner\\b",
+    "replacement": "Verified Priest"
+  },
+  {
+    "pattern": "\\bverified[ -]+partners\\b",
+    "replacement": "Verified Priests"
+  },
+  {
+    "pattern": "\\bverified[ -]+partner\\b",
+    "replacement": "Verified Priest"
+  },
+  {
+    "pattern": "\\bpartner\\s+network\\b",
+    "replacement": "Verified Priest Network"
+  },
+  {
+    "pattern": "\\bcustomer, partner, service\\b",
+    "replacement": "customer, priest, service"
+  }
+]
