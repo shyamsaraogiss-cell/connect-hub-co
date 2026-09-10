@@ -1,5 +1,7 @@
 ﻿'use client';
 
+import { priestTerminology } from '@/lib/priest-terminology';
+
 import React, { useState, useEffect, type FormEvent } from 'react';
 import Link from 'next/link';
 import { BookIcon, CompassIcon, DiyaIcon, MandalaIcon, PartnerUserPlusIcon, QuestionCircleIcon, ScrollQuillIcon, ShieldIcon } from '@/features/public-shell/components/PublicHeroSidebar';
@@ -66,7 +68,7 @@ export function identifyServiceIntent(query: string): ServiceIntent | null {
   if (/\bfounder\s+support\b/i.test(query) && hasActionLanguage) return { guidance: 'Use the existing Founder Support channel for matters requiring authorised founder-level review.', actionLabel: 'Founder Support', actionHref: '/founder-support' };
 
   if (/\b(?:religious\s+partners?|purohit|pandit|priest)\b/i.test(query) && /\b(?:register|registration|join|apply)\b/i.test(query)) {
-    return { guidance: 'To register as a Religious Partner, please proceed through the existing Partner Registration application.', actionLabel: 'Partner Registration', actionHref: '/religious-partners/register', informationHref: '/religious-partners' };
+    return { guidance: 'To register as a Verified Priest, please proceed through the existing Priest Registration application.', actionLabel: 'Priest Registration', actionHref: '/religious-partners/register', informationHref: '/religious-partners' };
   }
   if (/\b(?:price|pricing|cost|quote|charges?)\b/i.test(query) && (hasActionLanguage || /\b(?:pind|ritual|puja|travel|vahi|service|booking)\b/i.test(query))) {
     return { guidance: 'For approved service scope and pricing guidance, please proceed through Book Now or raise an inquiry. The authorised team will confirm the applicable service options without requiring immediate payment.', actionLabel: 'Book Now', actionHref: '/services' };
@@ -136,7 +138,7 @@ const GUIDED_TOPIC_GROUPS: readonly { group: string; topics: readonly { label: s
   { group: 'Track Request', topics: [
     { label: 'Track Reference ID', icon: '⌕', category: 'tracking', href: '/tracking' },
     { label: 'Service Request', icon: '📅', category: 'tracking', href: '/tracking?type=service' },
-    { label: 'Partner Registration', icon: <PartnerUserPlusIcon />, category: 'religious-partners', href: '/religious-partners/register' },
+    { label: 'Priest Registration', icon: <PartnerUserPlusIcon />, category: 'religious-partners', href: '/religious-partners/register' },
   ] },
 ];
 
@@ -552,7 +554,7 @@ export function GenZRitualAIEngine({ category: initialCategory, compact = false 
   };
 
   if (compact) {
-    const compactAnswer = responseStatus === 'approved' ? activeResponse : responseMessage;
+    const compactAnswer = priestTerminology(responseStatus === 'approved' ? activeResponse : responseMessage);
     return (
       <div className="flex h-full w-full flex-col overflow-hidden bg-[#07162f] text-white" role="region" aria-label="Ask GenZ AI">
         <header
@@ -662,12 +664,12 @@ export function GenZRitualAIEngine({ category: initialCategory, compact = false 
                 <strong className="block font-serif font-bold text-orange-950">Universal Reference: {urmsQueryResult.referenceId}</strong>
                 <p className="text-stone-700">Title: {urmsQueryResult.title}</p>
                 <p className="text-stone-700">Status: <span className="font-bold text-emerald-800">{urmsQueryResult.currentStatus.replaceAll('_', ' ')}</span></p>
-                <p className="text-stone-700">Stage: {urmsQueryResult.currentStage}</p>
+                <p className="text-stone-700">Stage: {priestTerminology(urmsQueryResult.currentStage)}</p>
                 <Link href={`/tracking?ref=${urmsQueryResult.referenceId}`} className="mt-1 block text-xs font-bold text-[var(--peacock-dark,#087F8C)] underline">Open Tracking Portal</Link>
               </div>
             )}
             {responseStatus === 'failure' && !isFallbackState ? (
-              <div className="mt-4 rounded-xl border border-red-200 bg-red-50 p-3 text-xs text-red-900" role="status">{responseMessage}</div>
+              <div className="mt-4 rounded-xl border border-red-200 bg-red-50 p-3 text-xs text-red-900" role="status">{priestTerminology(responseMessage)}</div>
             ) : null}
           </div>
 
@@ -677,7 +679,7 @@ export function GenZRitualAIEngine({ category: initialCategory, compact = false 
               <div className="mt-3 grid gap-2.5">
                 <div className={`rounded-xl border px-4 py-3 shadow-sm ${responseStatus === 'service-intent' ? 'border-teal-300 bg-teal-50 text-teal-950' : responseStatus === 'clarification' ? 'border-cyan-300 bg-cyan-50 text-cyan-950' : responseStatus === 'escalated' ? 'border-emerald-300 bg-emerald-50 text-emerald-950' : responseStatus === 'failure' ? 'border-red-300 bg-red-50 text-red-950' : responseStatus === 'pending-review' ? 'border-amber-300 bg-amber-50 text-amber-950' : 'border-stone-200 bg-stone-50 text-stone-500'}`}>
                   <strong className="block text-xs font-bold uppercase tracking-wide">{responseStatus === 'service-intent' ? 'Service Guidance' : responseStatus === 'clarification' ? 'Clarification Needed' : 'Human Review Response'}</strong>
-                  {isAIResponse ? <p className="mt-1.5 whitespace-pre-wrap text-sm leading-6">{responseMessage}</p> : null}
+                  {isAIResponse ? <p className="mt-1.5 whitespace-pre-wrap text-sm leading-6">{priestTerminology(responseMessage)}</p> : null}
                   {responseStatus === 'service-intent' ? (
                     <div className="mt-3 flex flex-wrap gap-2 border-t border-teal-200 pt-3 text-xs">
                       <Link href={serviceActionHref} className="rounded-lg bg-[#064E59] px-3 py-2 font-bold text-white shadow-sm hover:opacity-95">{serviceActionLabel}</Link>
@@ -710,7 +712,7 @@ export function GenZRitualAIEngine({ category: initialCategory, compact = false 
 
                 <div className={`rounded-xl border px-4 py-3 shadow-sm ${isWarningResponse ? 'border-red-400 bg-red-50 text-red-950 ring-1 ring-red-200' : 'border-stone-200 bg-stone-50 text-stone-500'}`} role="alert">
                   <strong className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wide"><span aria-hidden="true">{isWarningResponse ? '⚠' : '○'}</span>Status / Warning</strong>
-                  {isWarningResponse ? <p className="mt-1.5 whitespace-pre-wrap text-sm leading-6">{responseMessage}</p> : null}
+                  {isWarningResponse ? <p className="mt-1.5 whitespace-pre-wrap text-sm leading-6">{priestTerminology(responseMessage)}</p> : null}
                 </div>
               </div>
             </section>
@@ -794,7 +796,7 @@ export function GenZRitualAIEngine({ category: initialCategory, compact = false 
               <h3 className="mb-2 font-serif text-base font-bold leading-6 text-orange-950">
                 {displayQuestion || currentPrompt?.label || 'Approved Guidance'}
               </h3>
-              <p className="whitespace-pre-wrap text-sm leading-6 text-stone-800">{activeResponse}</p>
+              <p className="whitespace-pre-wrap text-sm leading-6 text-stone-800">{priestTerminology(activeResponse)}</p>
             </div>
           )}
         </div>

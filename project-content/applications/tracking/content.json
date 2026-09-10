@@ -10,7 +10,7 @@
         {
           "kind": "field:heading",
           "line": 18,
-          "value": "Track Partner Registration"
+          "value": "Track Priest Registration"
         },
         {
           "kind": "field:heading",
@@ -65,7 +65,7 @@
         {
           "kind": "jsx-text",
           "line": 97,
-          "value": "Track your service request or partner registration using the registered reference details below.\n            "
+          "value": "Track your service request or Priest Registration using the registered reference details below.\n            "
         },
         {
           "kind": "jsx-text",

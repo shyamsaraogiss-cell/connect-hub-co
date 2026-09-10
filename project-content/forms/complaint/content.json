@@ -205,7 +205,7 @@
         {
           "kind": "jsx-text",
           "line": 58,
-          "value": "Partner Registration ID"
+          "value": "Priest Registration ID"
         },
         {
           "kind": "jsx-text",
@@ -285,7 +285,7 @@
         {
           "kind": "list:content",
           "line": 79,
-          "value": "Religious Partner / Service Provider"
+          "value": "Verified Priest / Service Provider"
         },
         {
           "kind": "list:content",

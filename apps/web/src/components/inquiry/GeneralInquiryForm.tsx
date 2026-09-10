@@ -100,7 +100,7 @@ export function GeneralInquiryForm() {
             <option value="general">General Information</option>
             <option value="service-question">Service Question</option>
             <option value="travel-support">Pilgrim Travel Support</option>
-            <option value="partner-inquiry">Partner Network Inquiry</option>
+            <option value="partner-inquiry">Verified Priest Network Inquiry</option>
             <option value="other">Other Inquiry</option>
           </select>
         </div>
@@ -113,7 +113,7 @@ export function GeneralInquiryForm() {
             <option value="ritual-services">Ritual Services</option>
             <option value="travel-assistance">Travel Assistance</option>
             <option value="vahi-records">Vahi Records</option>
-            <option value="religious-partners">Religious Partner Registration</option>
+            <option value="religious-partners">Priest Registration</option>
           </select>
         </div>
       </div>

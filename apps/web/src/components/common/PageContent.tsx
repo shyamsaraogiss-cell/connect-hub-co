@@ -30,6 +30,7 @@ export function PageContent({ children }: { children: React.ReactNode }) {
     path === "/complaint" ||
     path === "/grievance" ||
     path === "/policies-legal-terms" ||
+    path === "/policies-and-legal-terms" ||
     path === "/refund-policy" ||
     path === "/booking-terms" ||
     path === "/cancellation-policy" ||

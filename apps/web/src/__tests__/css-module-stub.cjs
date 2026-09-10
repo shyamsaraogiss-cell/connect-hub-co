@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
 // Node/tsx does not transform CSS modules. Regression tests exercise data and
 // routing exports only, so expose stable class-name strings during test loads.
 const { registerHooks } = require("node:module");

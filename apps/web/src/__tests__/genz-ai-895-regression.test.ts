@@ -252,7 +252,7 @@ const actionChecks = [
   ['Book Now', '/services', ['I need to book a ritual', 'help me make a booking', 'I want to book']],
   ['Track Request', '/tracking', ['I want to track my request', 'track my reference ID', 'check my request status']],
   ['Raise Inquiry', '/contact?topic=inquiry', ['I want to raise an inquiry', 'help me submit an enquiry', 'send an inquiry form']],
-  ['Partner Registration', '/religious-partners/register', ['I want to register as a religious partner', 'help a priest apply', 'purohit registration']],
+  ['Priest Registration', '/religious-partners/register', ['I want to register as a religious partner', 'help a priest apply', 'purohit registration']],
   ['Complaint', '/complaint', ['I want to raise a complaint', 'help me submit a complaint', 'make a service complaint']],
   ['Grievance', '/grievance', ['I want to raise a grievance', 'help me submit a grievance', 'make a grievance request']],
   ['Founder Support', '/founder-support', ['I need Founder Support', 'help me request Founder Support', 'raise a Founder Support request']],

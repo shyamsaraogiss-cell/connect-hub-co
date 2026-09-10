@@ -65,7 +65,7 @@
         {
           "kind": "jsx-text",
           "line": 24,
-          "value": "Religious partner"
+          "value": "Verified Priest"
         },
         {
           "kind": "field:name",
@@ -75,7 +75,7 @@
         {
           "kind": "jsx-text",
           "line": 24,
-          "value": "Select religious partner"
+          "value": "Select Verified Priest"
         },
         {
           "kind": "jsx-text",

@@ -147,7 +147,7 @@ const steps: readonly BusinessStep[] = [
   },
   {
     title: 'Receive Custom Scope & Pricing',
-    description: 'Our team verifies Religious Partner availability, venue requirements, and issues a transparent upfront service scope.',
+    description: 'Our team verifies Verified Priest availability, venue requirements, and issues a transparent upfront service scope.',
   },
   {
     title: 'Sacred Ritual Execution',
@@ -160,7 +160,7 @@ const steps: readonly BusinessStep[] = [
 ];
 
 const trustItems = [
-  'Verified Lineage Priests & Religious Partners',
+  'Verified Lineage Priests & Verified Priests',
   'Vedic Sastra Precision & Authentic Recitation',
   'Transparent Scope & Upfront Clear Pricing',
   'NRI Remote Live Stream & Global Time-Zone Support',
@@ -171,7 +171,7 @@ const trustItems = [
 const faqs = [
   {
     question: 'How do I know which puja is appropriate for my family situation?',
-    answer: 'You can select from our 10 Core Ritual Categories or consult Ask GenZ AI for guidance. Our human team and verified Religious Partners will review your family tradition, Gotra, and purpose to confirm the exact prescribed Vedic ritual.',
+    answer: 'You can select from our 10 Core Ritual Categories or consult Ask GenZ AI for guidance. Our human team and Verified Priests will review your family tradition, Gotra, and purpose to confirm the exact prescribed Vedic ritual.',
   },
   {
     question: 'Can remote pujas be arranged for NRI & international families?',
@@ -211,7 +211,7 @@ export function RitualServicesPage({ embedded = false }: { embedded?: boolean })
           <h1 id="ritual-page-title">Vedic Ritual Services & Sacred Coordination</h1>
           <h2>Ancient Tradition with Modern Peace of Mind.</h2>
           <span>
-            Traditional, authentic, and fully guided Vedic pujas, homams, and sacred ceremonies coordinated with verified Religious Partners. Arranged on-site at your home or sacred destinations across India & Nepal, or via live remote participation for families worldwide.
+            Traditional, authentic, and fully guided Vedic pujas, homams, and sacred ceremonies coordinated with Verified Priests. Arranged on-site at your home or sacred destinations across India & Nepal, or via live remote participation for families worldwide.
           </span>
         </header>
       </section>
@@ -248,7 +248,7 @@ export function RitualServicesPage({ embedded = false }: { embedded?: boolean })
           <p>SERVICE COVERAGE ACROSS SACRED DESTINATIONS</p>
           <h2 id="locations-title">Available Across 15+ Destinations in India & Nepal</h2>
           <span>
-            We connect your family with verified local Religious Partners, qualified lineage priests, and venue arrangements across major spiritual hubs.
+            We connect your family with local Verified Priests, qualified lineage priests, and venue arrangements across major spiritual hubs.
           </span>
         </header>
         <div className={styles.locationGrid}>
@@ -372,7 +372,7 @@ export function RitualServicesPage({ embedded = false }: { embedded?: boolean })
           <p>GUIDED ASSISTANCE</p>
           <h2 id="inquiry-title">Ready to Begin Your Sacred Ceremony?</h2>
           <span>
-            Share your family’s requirement and receive a custom service scope with verified Religious Partner coordination.
+            Share your family’s requirement and receive a custom service scope with Verified Priest coordination.
           </span>
         </div>
         <div className={styles.inquiryActions}>

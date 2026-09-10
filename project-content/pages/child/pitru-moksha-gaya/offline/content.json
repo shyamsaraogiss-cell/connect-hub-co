@@ -15,7 +15,7 @@
         {
           "kind": "list:supportItems",
           "line": 11,
-          "value": "Verified Religious Partner coordination"
+          "value": "Verified Priest coordination"
         },
         {
           "kind": "list:supportItems",
@@ -70,7 +70,7 @@
         {
           "kind": "list:steps",
           "line": 21,
-          "value": "Coordinate the Religious Partner, schedule, travel and local arrangements."
+          "value": "Coordinate the Verified Priest, schedule, travel and local arrangements."
         },
         {
           "kind": "list:steps",
@@ -110,7 +110,7 @@
         {
           "kind": "field:description",
           "line": 27,
-          "value": "The complete Offline service page is being prepared. Families may raise an inquiry now for Religious Partner coordination, ritual planning and local assistance in Gaya."
+          "value": "The complete Offline service page is being prepared. Families may raise an inquiry now for Verified Priest coordination, ritual planning and local assistance in Gaya."
         },
         {
           "kind": "field:label",
@@ -140,7 +140,7 @@
         {
           "kind": "jsx-text",
           "line": 29,
-          "value": "PitruMoksha Gaya provides end-to-end ancestral ritual guidance and local coordination for families travelling to Gaya, delivered through verified Religious Partners with respectful assistance from preparation through completion."
+          "value": "PitruMoksha Gaya provides end-to-end ancestral ritual guidance and local coordination for families travelling to Gaya, delivered through Verified Priests with respectful assistance from preparation through completion."
         },
         {
           "kind": "field:name",
@@ -160,7 +160,7 @@
         {
           "kind": "jsx-text",
           "line": 33,
-          "value": "The Offline path may suit families who prefer to be physically present, visit the relevant ritual locations and receive coordinated local assistance. Ritual suitability and preparation remain subject to family circumstances, tradition and Religious Partner guidance."
+          "value": "The Offline path may suit families who prefer to be physically present, visit the relevant ritual locations and receive coordinated local assistance. Ritual suitability and preparation remain subject to family circumstances, tradition and Verified Priest guidance."
         },
         {
           "kind": "jsx-text",

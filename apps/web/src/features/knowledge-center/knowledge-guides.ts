@@ -60,11 +60,11 @@ const GUIDE_DEFINITIONS: readonly GuideDefinition[] = [
   },
   {
     slug: 'religious-partner-registration',
-    title: 'Religious Partner Registration Knowledge Guide',
-    description: 'Approved reference information about partner eligibility, registration, documentation, verification, and service capability.',
+    title: 'Priest Registration Knowledge Guide',
+    description: 'Approved reference information about Priest Eligibility, registration, documentation, verification, and service capability.',
     articleIds: ['art_rpn_registration'],
     qaIds: ['rpn_eligibility', 'rpn_registration', 'rpn_documents', 'rpn_approval', 'rpn_services'],
-    action: { label: 'Explore Religious Partner Registration', href: '/religious-partners' },
+    action: { label: 'Explore Priest Registration', href: '/religious-partners' },
   },
   {
     slug: 'booking-and-inquiry-help',

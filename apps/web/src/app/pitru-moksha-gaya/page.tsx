@@ -7,7 +7,7 @@ import { VahiStyleTopInfoShell } from "@/components/business-pages/VahiStyleTopI
 export const metadata: Metadata = {
   title: "PitruMoksha Gaya Sacred Coordination | Connect Hub Co.",
   description:
-    "Explore PitruMoksha Gaya ancestral ritual guidance, verified Religious Partner coordination, online and offline service pathways, and Vahi Records assistance.",
+    "Explore PitruMoksha Gaya ancestral ritual guidance, Verified Priest coordination, online and offline service pathways, and Vahi Records assistance.",
 };
 
 export default function PitruMokshaGayaPage() {

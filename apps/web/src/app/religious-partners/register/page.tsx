@@ -3,8 +3,8 @@ import { ReligiousPartnerApplicationForm } from "@/components/partner/ReligiousP
 import { PublicHeroShell } from "@/features/public-shell";
 
 export const metadata: Metadata = {
-  title: "Religious Partner Application | Connect Hub Co.",
-  description: "Apply to register as a Religious Partner with Connect Hub Co.",
+  title: "Priest Application | Connect Hub Co.",
+  description: "Apply to register as a Verified Priest with Connect Hub Co.",
 };
 
 export default function ReligiousPartnerRegistrationPage() {

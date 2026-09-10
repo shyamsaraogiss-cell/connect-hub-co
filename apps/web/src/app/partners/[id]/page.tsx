@@ -61,7 +61,7 @@ export default function PartnerDetailsPage() {
   if (!partner) {
     return (
       <main className="p-8">
-        Partner not found.
+        Priest not found.
       </main>
     );
   }
@@ -75,7 +75,7 @@ export default function PartnerDetailsPage() {
         <div className="mb-6 flex justify-between">
 
           <h1 className="text-3xl font-bold">
-            Partner Details
+            Priest Details
           </h1>
 
           <Link

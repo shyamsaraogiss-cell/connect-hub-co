@@ -31,7 +31,7 @@ export const APPROVED_AI_KNOWLEDGE_TREES: Record<BusinessCategory, AIConversatio
   },
   'religious-partners': {
     categoryId: 'religious-partners',
-    title: 'Religious Partner Network AI',
+    title: 'Verified Priest Network AI',
     greeting: 'Namaste! Are you a Pandit Ji, Purohit, Acharya, or traditional Gaya Panda seeking to join our network?',
     initialPrompts: [],
     fallbackResponse: 'Approved public knowledge is currently being updated. Please use Raise Inquiry for assistance.',

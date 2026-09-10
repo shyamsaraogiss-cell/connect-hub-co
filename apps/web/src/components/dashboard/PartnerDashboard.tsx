@@ -29,7 +29,7 @@ export function PartnerDashboard() {
             <span className="text-xl font-bold text-amber-400"></span>
             <div>
               <h1 className="font-serif text-xl font-bold tracking-wide text-white">
-                Connect Hub Co. <span className="text-amber-300 font-sans text-xs font-normal">RELIGIOUS PARTNER PORTAL</span>
+                Connect Hub Co. <span className="text-amber-300 font-sans text-xs font-normal">VERIFIED PRIEST PORTAL</span>
               </h1>
               <p className="text-[11px] text-teal-200">
                 Verified Pandit, Purohit & Panda Service Network
@@ -40,7 +40,7 @@ export function PartnerDashboard() {
           <div className="flex items-center gap-4 text-xs">
             <div className="text-right">
               <div className="font-bold text-white">{user?.name || 'Acharya Pandit Ji'}</div>
-              <div className="text-[10px] text-amber-300 uppercase font-mono">Verified Religious Partner</div>
+              <div className="text-[10px] text-amber-300 uppercase font-mono">Verified Priest</div>
             </div>
             <button
               onClick={() => void logout()}
@@ -90,10 +90,10 @@ export function PartnerDashboard() {
               <div>
                 <div className="flex items-center gap-2">
                   <span className="text-xs font-black uppercase tracking-widest text-amber-600">
-                    RELIGIOUS PARTNER HOME
+                    VERIFIED PRIEST HOME
                   </span>
                   <span className="rounded-full bg-green-100 px-2 py-0.5 text-[10px] font-bold text-green-800 border border-green-300">
-                     VERIFIED PARTNER
+                     VERIFIED PRIEST
                   </span>
                 </div>
                 <h2 className="mt-1 font-serif text-3xl text-teal-900">Pranam, {user?.name || 'Acharya Pandit Ji'}</h2>
@@ -131,12 +131,12 @@ export function PartnerDashboard() {
         {/* 2. PROFILE MANAGEMENT */}
         {activeTab === 'profile' && (
           <div className="rounded-2xl border border-teal-900/20 bg-white p-6 shadow-sm space-y-4">
-            <h3 className="font-serif text-2xl text-teal-900">Religious Partner Profile Credentials</h3>
+            <h3 className="font-serif text-2xl text-teal-900">Priest Profile Credentials</h3>
             <div className="grid gap-3 sm:grid-cols-2 text-xs text-stone-800">
               <div><strong>Name:</strong> {user?.name || 'Acharya Pandit Vidyanand Ji'}</div>
               <div><strong>Title:</strong> Traditional Acharya / Panda</div>
               <div><strong>Years of Traditional Practice:</strong> 18 Years</div>
-              <div><strong>Verification Status:</strong> Verified Partner</div>
+              <div><strong>Verification Status:</strong> Verified Priest</div>
             </div>
           </div>
         )}
@@ -147,7 +147,7 @@ export function PartnerDashboard() {
             <h3 className="font-serif text-2xl text-teal-900">Registered Service Categories</h3>
             <div className="space-y-2 text-xs">
               <div className="rounded-xl border border-teal-200 bg-teal-50/60 p-3 font-semibold text-teal-900">
-                 Path A: Ritual and Puja Partner (Griha Pravesh, Satyanarayan Katha, Havan)
+                 Path A: Ritual and Puja Priest (Griha Pravesh, Satyanarayan Katha, Havan)
               </div>
               <div className="rounded-xl border border-teal-200 bg-teal-50/60 p-3 font-semibold text-teal-900">
                  Path B: PitruMoksha Gaya Sacred Coordination (Pind Daan, Phalgu Bath, Vishnupad Seva)
@@ -234,7 +234,7 @@ export function PartnerDashboard() {
         {/* 11. ACCOUNT SETTINGS */}
         {activeTab === 'settings' && (
           <div className="rounded-2xl border border-teal-900/20 bg-white p-6 shadow-sm space-y-4">
-            <h3 className="font-serif text-2xl text-teal-900">Partner Account Settings</h3>
+            <h3 className="font-serif text-2xl text-teal-900">Priest Account Settings</h3>
             <div className="space-y-3 text-xs">
               <div><strong>Password:</strong>  <button className="ml-2 font-bold text-amber-600 underline">Change</button></div>
               <div><strong>Contact Preference:</strong> WhatsApp Phone (+91 9123456789)</div>

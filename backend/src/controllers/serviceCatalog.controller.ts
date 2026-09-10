@@ -98,7 +98,7 @@ const SERVICES: CatalogService[] = [
     priceMinor: 0,
     currency: "INR",
     durationMinutes: 240,
-    requiredMaterials: "Samagri provided by verified partner. Family Gotra and ancestor details required.",
+    requiredMaterials: "Samagri provided by Verified Priest. Family Gotra and ancestor details required.",
     eligibility: "Available for all devotee families seeking ancestral peace and liberation.",
     active: true,
     featured: true,

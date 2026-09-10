@@ -37,20 +37,20 @@ export default function PartnersPage() {
   }, []);
 
   async function deactivate(id: string) {
-    if (!window.confirm("Deactivate this partner?")) return;
+    if (!window.confirm("Deactivate this Priest?")) return;
 
     try {
       await deactivatePartner(id);
       await loadPartners();
     } catch (error) {
-      alert(error instanceof Error ? error.message : "Unable to deactivate partner.");
+      alert(error instanceof Error ? error.message : "Unable to deactivate Priest.");
     }
   }
 
   if (loading) {
     return (
       <main className="p-10">
-        <h1 className="text-3xl font-bold">Religious Partners</h1>
+        <h1 className="text-3xl font-bold">Verified Priests</h1>
         <p className="mt-6">Loading...</p>
       </main>
     );
@@ -62,19 +62,19 @@ export default function PartnersPage() {
 
         <div className="mb-6 flex items-center justify-between">
           <h1 className="text-3xl font-bold">
-            Religious Partners
+            Verified Priests
           </h1>
 
           <Link
             href="/partners/new"
             className="rounded-lg bg-blue-600 px-5 py-3 font-medium text-white hover:bg-blue-700"
           >
-            + New Partner
+            + New Priest
           </Link>
         </div>
 
         {partners.length === 0 ? (
-          <p>No partners found.</p>
+          <p>No Verified Priests found.</p>
         ) : (
           <table className="w-full border-collapse">
             <thead>

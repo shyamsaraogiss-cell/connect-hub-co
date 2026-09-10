@@ -48,27 +48,27 @@ export function ReligiousPartnerApplicationForm() {
         guestName: [firstName, middleName, lastName].filter(Boolean).join(" "),
         guestPhone: String(data.get("mobileNumber") || "").trim(),
         guestEmail: String(data.get("email") || "").trim(),
-        title: `Religious Partner Registration: ${String(data.get("professionalTitle") || "Applicant")}`,
-        description: String(data.get("professionalBackground") || "Religious Partner registration application").trim(),
+        title: `Priest Registration: ${String(data.get("professionalTitle") || "Applicant")}`,
+        description: String(data.get("professionalBackground") || "Priest Registration application").trim(),
         sourceChannel: "WEBSITE_FORM",
         metadata: { ...applicationData, documentStorageAvailable: false },
       });
       setReferenceId(record.referenceId);
       form.reset();
     } catch (reason) {
-      setValidationError(reason instanceof Error ? reason.message : "Unable to submit the partner application.");
+      setValidationError(reason instanceof Error ? reason.message : "Unable to submit the Priest Application.");
     } finally {
       setSubmissionPending(false);
     }
   }
 
-  if (referenceId) return <div className="rounded-2xl border border-emerald-300 bg-emerald-50 p-8 text-center" role="status"><h2 className="font-serif text-2xl font-bold text-stone-900">Partner application submitted</h2><p className="mt-3 text-sm text-stone-700">Keep this Partner Registration Reference ID for tracking and future communication.</p><strong className="mt-4 block font-mono text-2xl text-emerald-800">{referenceId}</strong><Link className="mt-5 inline-block rounded-xl bg-orange-900 px-5 py-2.5 font-semibold text-white" href="/tracking?type=partner">Track Registration ID</Link></div>;
+  if (referenceId) return <div className="rounded-2xl border border-emerald-300 bg-emerald-50 p-8 text-center" role="status"><h2 className="font-serif text-2xl font-bold text-stone-900">Priest Application submitted</h2><p className="mt-3 text-sm text-stone-700">Keep this Priest Registration Reference ID for tracking and future communication.</p><strong className="mt-4 block font-mono text-2xl text-emerald-800">{referenceId}</strong><Link className="mt-5 inline-block rounded-xl bg-orange-900 px-5 py-2.5 font-semibold text-white" href="/tracking?type=partner">Track Registration ID</Link></div>;
 
   return (
     <>
-      <section className="mb-6 flex items-center gap-5 rounded-xl border border-[#D4AF37] bg-[#075E63] p-5" aria-label="Religious Partner application information">
+      <section className="mb-6 flex items-center gap-5 rounded-xl border border-[#D4AF37] bg-[#075E63] p-5" aria-label="Priest Application information">
         <div className="min-w-0 flex-1">
-          <h2 className="text-[14px] font-bold uppercase tracking-widest text-orange-200">Religious Partner Registration Application</h2>
+          <h2 className="text-[14px] font-bold uppercase tracking-widest text-orange-200">Priest Registration Application</h2>
           <p className="mt-2 text-sm leading-6 text-white">
             Tell us about your religious background, experience, and service capabilities so we can review your application appropriately.
           </p>
@@ -76,7 +76,7 @@ export function ReligiousPartnerApplicationForm() {
             <span className="font-semibold text-[#FFD84D]">PLEASE MAKE SURE -</span> No immediate payment required. Fields marked * are mandatory.
           </p>
           <p className="mt-2 text-sm text-white">
-            After successful application submission, the system auto-generates your Partner Registration Reference ID. Please keep this ID for tracking and future communication.
+            After successful application submission, the system auto-generates your Priest Registration Reference ID. Please keep this ID for tracking and future communication.
           </p>
         </div>
         <Link href="/contact?topic=inquiry" className="flex w-[96px] shrink-0 flex-col items-center justify-center rounded-xl border border-[#D4AF37] bg-[#B79A68] px-2 py-2.5 text-center shadow-inner" aria-label="Raise Inquiry">
@@ -160,7 +160,7 @@ export function ReligiousPartnerApplicationForm() {
 
       {validationError ? <p className="rounded-xl border border-red-200 bg-red-50 p-4 text-sm font-semibold text-red-800" role="alert">{validationError}</p> : null}
       <label className={`${checkboxClass} rounded-xl border border-stone-300 p-4`}><input className="mt-1" name="applicationAcknowledgement" type="checkbox" required />I understand that submission is only an application and does not guarantee approval, activation, public listing, customer assignment, or service allocation. *</label>
-      <button className="rounded-xl bg-orange-900 px-6 py-3 font-semibold text-white transition hover:bg-black disabled:opacity-50" disabled={submissionPending} type="submit">{submissionPending ? "Submitting Application..." : "Submit Partner Application"}</button>
+      <button className="rounded-xl bg-orange-900 px-6 py-3 font-semibold text-white transition hover:bg-black disabled:opacity-50" disabled={submissionPending} type="submit">{submissionPending ? "Submitting Application..." : "Submit Priest Application"}</button>
       </form>
     </>
   );

@@ -26,7 +26,7 @@ const CONNECT_HUB_RESPONSIBILITIES = [
 ];
 const IMPORTANT_DISCLOSURES = [
   "Service delivery is subject to availability, local conditions, and timely customer cooperation.",
-  "Religious guidance and ritual decisions remain with appropriately qualified religious partners.",
+  "Religious guidance and ritual decisions remain with appropriately qualified Verified Priests.",
   "Payment is completed externally; this website does not collect or process payment credentials.",
 ];
 const EXTERNAL_BANK_PAYMENT_MODES = new Set(["BANK_TRANSFER", "NEFT", "RTGS", "IMPS"]);

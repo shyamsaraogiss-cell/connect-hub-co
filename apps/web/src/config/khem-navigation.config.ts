@@ -40,7 +40,7 @@ export const KHEM_PUBLIC_NAVIGATION: readonly (readonly [string, string])[] = Ob
  */
 export const KHEM_INTERNAL_NAVIGATION: readonly (readonly [string, string])[] = Object.freeze([
   ['Dashboard', '/dashboard'],
-  ['Partners', '/partners'],
+  ['Verified Priests', '/partners'],
   ['Customers', '/customers'],
   ['Bookings', '/bookings'],
   ['Services', '/admin/services'],
@@ -71,7 +71,7 @@ const PRE_RECOVERY_SIDEBAR_HIERARCHY: readonly SidebarItem[] = Object.freeze([
   { label: 'Offline Ritual Services', href: '/ritual-services/offline', icon: 'ðŸ›ï¸', isChild: true },
   { label: 'Travel Assistance', href: '/travel-assistance', icon: 'ðŸš—' },
   { label: 'Vahi Records', href: '/vahi-records', icon: 'ðŸ“œ' },
-  { label: 'Religious Partner Registration', href: '/religious-partners', icon: 'ðŸ¤', isDividerAfter: true },
+  { label: 'Priest Registration', href: '/religious-partners', icon: 'ðŸ¤', isDividerAfter: true },
   { label: 'WhatsApp', href: '/contact?channel=whatsapp', icon: 'ðŸ’¬' },
   { label: 'Mail / Raise Inquiry', href: '/contact?topic=inquiry', icon: '✉️' },
   { label: 'Knowledge Center', href: '/knowledge-center', icon: 'ðŸ“š' },
@@ -80,7 +80,7 @@ const PRE_RECOVERY_SIDEBAR_HIERARCHY: readonly SidebarItem[] = Object.freeze([
 const recoveredSidebarItems = PRE_RECOVERY_SIDEBAR_HIERARCHY.filter(
   (item) => item.label !== 'Ask GenZ AI' && item.label !== 'WhatsApp',
 );
-const partnerIndex = recoveredSidebarItems.findIndex((item) => item.label === 'Religious Partner Registration');
+const partnerIndex = recoveredSidebarItems.findIndex((item) => item.label === 'Priest Registration');
 
 export const KHEM_EXACT_SIDEBAR_HIERARCHY: readonly SidebarItem[] = Object.freeze([
   { label: 'Home', href: '/', icon: '⌂' },
@@ -113,7 +113,7 @@ export const KHEM_FOOTER_NAVIGATION: readonly FooterColumn[] = Object.freeze([
     title: 'QUICK LINKS',
     links: [
       ['Track Service Request', '/tracking?type=service'] as const,
-      ['Partner Registration', '/religious-partners/register'] as const,
+      ['Priest Registration', '/religious-partners/register'] as const,
     ],
   },
   {

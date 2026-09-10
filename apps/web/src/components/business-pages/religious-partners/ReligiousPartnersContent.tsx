@@ -23,60 +23,60 @@ const pathwayCards: readonly RpnPathwayCard[] = [
   {
     id: 'ritual-puja-partner',
     letter: 'A',
-    title: 'Ritual and Puja Partner',
+    title: 'Ritual and Puja Priest',
     subtitle: 'Vaidik Rites & Home Ceremonies',
     description: 'For qualified ritual practitioners seeking to provide approved ritual services according to their tradition, competence, location, and experience.',
-    ctaText: 'Apply as Ritual Partner',
+    ctaText: 'Apply as Ritual Priest',
     ctaTopic: 'ritual-partner-apply',
     icon: 'offering',
   },
   {
     id: 'gaya-partner',
     letter: 'B',
-    title: 'PitruMoksha Gaya Partner',
+    title: 'PitruMoksha Gaya Priest',
     subtitle: 'Gaya Ji Ancestral Coordination',
-    description: 'For eligible Religious Partners providing ancestral ritual guidance and coordination in Gaya Ji under approved processes.',
-    ctaText: 'Apply as Gaya Partner',
+    description: 'For eligible Verified Priests providing ancestral ritual guidance and coordination in Gaya Ji under approved processes.',
+    ctaText: 'Apply as Gaya Priest',
     ctaTopic: 'gaya-partner-apply',
     icon: 'sankalp',
   },
   {
     id: 'location-partner',
     letter: 'C',
-    title: 'Location-Based Religious Partner',
+    title: 'Location-Based Verified Priest',
     subtitle: 'Sacred City & Venue Practice',
     description: 'For practitioners serving approved temples, sacred cities, homes, venues, or selected service locations.',
-    ctaText: 'Apply as Location Partner',
+    ctaText: 'Apply as Location Priest',
     ctaTopic: 'location-partner-apply',
     icon: 'offline',
   },
   {
     id: 'online-partner',
     letter: 'D',
-    title: 'Online Ritual Partner',
+    title: 'Online Ritual Priest',
     subtitle: 'Virtual & Hybrid Ceremonies',
     description: 'For qualified practitioners capable of conducting approved online participation with clear communication and appropriate technical readiness.',
-    ctaText: 'Apply as Online Partner',
+    ctaText: 'Apply as Online Priest',
     ctaTopic: 'online-partner-apply',
     icon: 'virtual',
   },
   {
     id: 'lineage-partner',
     letter: 'E',
-    title: 'Vahi Records and Lineage Guidance Partner',
+    title: 'Vahi Records and Lineage Guidance Priest',
     subtitle: 'Traditional Ledger Coordination',
-    description: 'For relevant traditional custodians or Religious Partners associated with lineage-record guidance, where applicable and verified.',
-    ctaText: 'Apply as Lineage Partner',
+    description: 'For relevant traditional custodians or Verified Priests associated with lineage-record guidance, where applicable and verified.',
+    ctaText: 'Apply as Lineage Priest',
     ctaTopic: 'lineage-partner-apply',
     icon: 'records',
   },
   {
     id: 'local-coordination-partner',
     letter: 'F',
-    title: 'Travel and Local Coordination Partner',
+    title: 'Travel and Local Coordination Priest',
     subtitle: 'Ground & Logistics Coordination',
-    description: 'For Religious Partners participating in local ritual-linked coordination and ground support at sacred destinations.',
-    ctaText: 'Apply as Local Partner',
+    description: 'For Verified Priests participating in local ritual-linked coordination and ground support at sacred destinations.',
+    ctaText: 'Apply as Local Priest',
     ctaTopic: 'local-partner-apply',
     icon: 'partner',
   },
@@ -121,7 +121,7 @@ const benefits: readonly RpnBenefit[] = [
   },
   {
     title: 'Long-Term Network Opportunity',
-    description: 'Build a verified professional presence within an expanding nation-wide network of traditional Religious Partners.',
+    description: 'Build a verified professional presence within an expanding nation-wide network of traditional Verified Priests.',
     icon: 'followup',
   },
   {
@@ -181,8 +181,8 @@ const eligibilityFactors = [
 const eightSteps = [
   {
     num: '01',
-    title: 'Select Partner Category',
-    description: 'Choose the approved Religious Partner pathway matching your traditional training, service format, and practice location.',
+    title: 'Select Priest Category',
+    description: 'Choose the approved Priest Pathway matching your traditional training, service format, and practice location.',
   },
   {
     num: '02',
@@ -202,7 +202,7 @@ const eightSteps = [
   {
     num: '05',
     title: 'Initial Administrative Review',
-    description: 'Our partner onboarding team reviews the submitted profile for clarity, completeness, and initial suitability.',
+    description: 'Our Priest Onboarding team reviews the submitted profile for clarity, completeness, and initial suitability.',
   },
   {
     num: '06',
@@ -224,11 +224,11 @@ const eightSteps = [
 const requirements = [
   { title: 'Full Name & Title', description: 'Official full name and traditional title (Pandit, Acharya, Purohit, Panda).' },
   { title: 'Phone Number', description: 'Active phone number for scheduling and coordination updates.' },
-  { title: 'Email Address', description: 'Primary email address for official partner communication.' },
+  { title: 'Email Address', description: 'Primary email address for official Priest Communication.' },
   { title: 'Address & Service Location', description: 'Primary residential address and operational service base.' },
   { title: 'City, State & Country', description: 'Operational city, state, and country of practice.' },
   { title: 'Languages Spoken', description: 'Hindi, Sanskrit, English, or regional language capabilities.' },
-  { title: 'Partner Category', description: 'Selected partner pathway (Ritual, Gaya, Location, Online, Vahi, Local).' },
+  { title: 'Priest Category', description: 'Selected Priest Pathway (Ritual, Gaya, Location, Online, Vahi, Local).' },
   { title: 'Rituals / Services Offered', description: 'Specific Puja, Shraddh, Havan, or guidance capabilities.' },
   { title: 'Years of Experience', description: 'Proven years of experience conducting Vaidik ceremonies.' },
   { title: 'Preferred Service Mode', description: 'In-person physical presence, virtual live-stream, or hybrid format.' },
@@ -249,7 +249,7 @@ const verificationPoints = [
   },
   {
     title: 'Service-Category Review',
-    description: 'Evaluation of selected partner pathway against proven traditional experience, ritual capabilities, and location feasibility.',
+    description: 'Evaluation of selected Priest Pathway against proven traditional experience, ritual capabilities, and location feasibility.',
   },
   {
     title: 'Experience and Reference Checks',
@@ -344,17 +344,17 @@ const categories = [
   { title: 'Temple and Venue Puja', description: 'Ceremonies performed at approved temples and sacred pilgrimage hubs.' },
   { title: 'Language-Specific Ritual Assistance', description: 'Rituals conducted in Hindi, Sanskrit, English, or regional languages.' },
   { title: 'Destination Ritual Coordination', description: 'Specialized coordination at major pilgrimage hubs across India.' },
-  { title: 'Others / Religious Partner Services', description: 'Specialized religious guidance and custom Vaidik partner services.' },
+  { title: 'Others / Verified Priest Services', description: 'Specialized religious guidance and custom Vaidik Priest services.' },
 ] as const;
 
 const knowledgeCards = [
   {
-    title: 'Who can apply as a Religious Partner?',
+    title: 'Who can apply as a Verified Priest?',
     description: 'Qualified Pandits, Purohits, Pandas, Acharyas, Vaidik Scholars, and traditional specialists with verified background credentials and traditional experience.',
   },
   {
     title: 'How verification works',
-    description: 'Identity checks, document verification, background screening, and reference checks conducted neutrally by our partner onboarding team.',
+    description: 'Identity checks, document verification, background screening, and reference checks conducted neutrally by our Priest Onboarding team.',
   },
   {
     title: 'Information required before registration',
@@ -365,12 +365,12 @@ const knowledgeCards = [
     description: 'Guidelines for conducting physical in-person rites vs technical readiness required for live-streamed remote family participation.',
   },
   {
-    title: 'Partner responsibilities',
+    title: 'Priest Responsibilities',
     description: 'Maintaining authentic Vaidik Vidhi, punctuality, transparent pricing, respectful conduct, customer confidentiality, and ethical service standards.',
   },
   {
     title: 'How customer inquiries are coordinated',
-    description: 'Matching algorithms based on tradition, location, language preference, Gotra requirement (for Panda Vahi ledgers), and partner availability.',
+    description: 'Matching algorithms based on tradition, location, language preference, Gotra requirement (for Panda Vahi ledgers), and Priest availability.',
   },
   {
     title: 'Pricing and service-scope transparency',
@@ -388,7 +388,7 @@ const faqs = [
     answer: 'No. Registration is an initial application process. Network membership and service assignments depend on verified credentials, location feasibility, and adherence to approved ethical standards.',
   },
   {
-    question: 'Who can apply as a Religious Partner?',
+    question: 'Who can apply as a Verified Priest?',
     answer: 'Qualified Pandits, Purohits, Pandas, Acharyas, and Vaidik Scholars who possess verified traditional training, proven ritual experience, and valid identity documentation.',
   },
   {
@@ -397,19 +397,19 @@ const faqs = [
   },
   {
     question: 'Can I offer multiple ritual services?',
-    answer: 'Yes. Partners may list all ritual domains in which they possess verified traditional competence—such as Pind Daan, Havan, Griha Pravesh, or Vahi Records guidance.',
+    answer: 'Yes. Verified Priests may list all ritual domains in which they possess verified traditional competence—such as Pind Daan, Havan, Griha Pravesh, or Vahi Records guidance.',
   },
   {
     question: 'Can I serve more than one city?',
-    answer: 'Yes. Partners can indicate all operational cities, states, or sacred pilgrimage hubs where they can travel or maintain physical service capabilities.',
+    answer: 'Yes. Verified Priests can indicate all operational cities, states, or sacred pilgrimage hubs where they can travel or maintain physical service capabilities.',
   },
   {
     question: 'Can I provide online rituals?',
-    answer: 'Yes. Qualified partners with appropriate technical readiness and clear communication skills can conduct approved live-streamed online ceremonies.',
+    answer: 'Yes. Qualified Verified Priests with appropriate technical readiness and clear communication skills can conduct approved live-streamed online ceremonies.',
   },
   {
     question: 'How are customer inquiries assigned?',
-    answer: 'Inquiries are matched objectively based on customer location, language preference, specific ritual specialization, Gotra requirements (for Panda Vahi ledgers), and partner availability.',
+    answer: 'Inquiries are matched objectively based on customer location, language preference, specific ritual specialization, Gotra requirements (for Panda Vahi ledgers), and Priest availability.',
   },
   {
     question: 'Is income or booking volume guaranteed?',
@@ -417,19 +417,19 @@ const faqs = [
   },
   {
     question: 'How are prices and inclusions handled?',
-    answer: 'All service prices, samagri inclusions, and ritual steps are confirmed transparently with families upfront. Partners must adhere strictly to agreed terms without extra demands.',
+    answer: 'All service prices, samagri inclusions, and ritual steps are confirmed transparently with families upfront. Verified Priests must adhere strictly to agreed terms without extra demands.',
   },
   {
     question: 'What happens if documents are incomplete?',
-    answer: 'Our partner onboarding team will contact you to request missing supporting details or clarify incomplete information before completing your review.',
+    answer: 'Our Priest Onboarding team will contact you to request missing supporting details or clarify incomplete information before completing your review.',
   },
   {
     question: 'Can an application be reviewed again?',
-    answer: 'Yes. If an application requires additional credentials or location updates, partners may re-submit updated information for administrative review.',
+    answer: 'Yes. If an application requires additional credentials or location updates, Verified Priests may re-submit updated information for administrative review.',
   },
   {
-    question: 'How is partner performance evaluated?',
-    answer: 'Partner evaluation is based on customer feedback, punctuality, adherence to Vaidik standards, transparent pricing compliance, and professional conduct.',
+    question: 'How is Priest performance evaluated?',
+    answer: 'Priest evaluation is based on customer feedback, punctuality, adherence to Vaidik standards, transparent pricing compliance, and professional conduct.',
   },
 ] as const;
 
@@ -442,7 +442,7 @@ export function ReligiousPartnersContent() {
           <h1 id="partner-master-title">Serve With Tradition. Grow With Trust.</h1>
         </div>
         <div className={styles.masterEntries}>
-          <Link className={styles.registrationEntry} href="/religious-partners/register">Partner Registration Form</Link>
+          <Link className={styles.registrationEntry} href="/religious-partners/register">Priest Registration Form</Link>
           <Link className={styles.aiEntry} href="/zen-g"><span className={styles.aiIcon}><MulticolourAiBrainIcon /></span>Ask for Help</Link>
         </div>
       </section>
@@ -450,12 +450,12 @@ export function ReligiousPartnersContent() {
       {/* SECTION 1: BECOME A RELIGIOUS PARTNER */}
       <section className={styles.section} id="become-partner" aria-labelledby="benefits-title">
         <header>
-          <p>SECTION 1 — BECOME A RELIGIOUS PARTNER</p>
+          <p>SECTION 1 — BECOME A VERIFIED PRIEST</p>
           <h2 id="benefits-title">
             <span>Serve With Tradition. Grow With Trust.</span>
           </h2>
           <span>
-            The Religious Partner Network connects qualified Pandits, Purohits, Pandas, Acharyas, Vaidik Scholars, and traditional ritual specialists with seeking families across India and worldwide.
+            The Verified Priest Network connects qualified Pandits, Purohits, Pandas, Acharyas, Vaidik Scholars, and traditional ritual specialists with seeking families across India and worldwide.
           </span>
         </header>
         <div className={styles.sectionBox}>
@@ -469,7 +469,7 @@ export function ReligiousPartnersContent() {
             <div className={styles.sectionItem}>
               <h3>Role in Ritual Delivery</h3>
               <p>
-                Religious Partners conduct authentic Vaidik rites for seeking families while Connect Hub Co. manages scheduling, client communication, travel logistics, and administrative support.
+                Verified Priests conduct authentic Vaidik rites for seeking families while Connect Hub Co. manages scheduling, client communication, travel logistics, and administrative support.
               </p>
             </div>
             <div className={styles.sectionItem}>
@@ -497,7 +497,7 @@ export function ReligiousPartnersContent() {
       {/* SECTION 2: CHOOSE YOUR PARTNER PATH (6 Responsive Pathway Cards) */}
       <section className={styles.section} id="partner-pathways" aria-labelledby="pathways-title">
         <header>
-          <p>SECTION 2 — PARTNER PATHWAYS</p>
+          <p>SECTION 2 — PRIEST PATHWAYS</p>
           <h2 id="who-can-join">
             <span>Who Can Register?</span>
           </h2>
@@ -527,7 +527,7 @@ export function ReligiousPartnersContent() {
         <header>
           <p>SECTION 3 — NETWORK BENEFITS</p>
           <h2 id="partner-categories">
-            <span>Religious Partner Categories</span>
+            <span>Priest Categories</span>
           </h2>
           <span>
             Built around tradition, technology-assisted coordination, transparent communication, and wider digital reach.
@@ -597,7 +597,7 @@ export function ReligiousPartnersContent() {
             <li>Incomplete profile details may require follow-up clarification.</li>
             <li>Final approval requires human review and credential verification.</li>
             <li>Service activation occurs exclusively after approved onboarding completion.</li>
-            <li>Future customer assignments depend on business need, partner availability, performance, and suitability.</li>
+            <li>Future customer assignments depend on business need, Priest availability, performance, and suitability.</li>
           </ul>
         </div>
       </section>
@@ -610,7 +610,7 @@ export function ReligiousPartnersContent() {
             <span>Verification & Governance Standards</span>
           </h2>
           <span>
-            Prepare the following details using this 18-point checklist when submitting your partner registration application.
+            Prepare the following details using this 18-point checklist when submitting your Priest Registration application.
           </span>
         </header>
         <div className={styles.reqGrid}>
@@ -634,7 +634,7 @@ export function ReligiousPartnersContent() {
             <span>Professional Code of Conduct</span>
           </h2>
           <span>
-            A neutral, structured evaluation of partner credentials, operational reach, onboarding guidance, and ongoing quality review.
+            A neutral, structured evaluation of Priest credentials, operational reach, onboarding guidance, and ongoing quality review.
           </span>
         </header>
         <div className={styles.verificationGrid}>
@@ -653,7 +653,7 @@ export function ReligiousPartnersContent() {
       {/* SECTION 8: RELIGIOUS PARTNER STANDARDS */}
       <section className={styles.section} id="partner-standards" aria-labelledby="standards-title">
         <header>
-          <p>SECTION 8 — PARTNER STANDARDS</p>
+          <p>SECTION 8 — PRIEST STANDARDS</p>
           <h2 id="technology-support">
             <span>Technology & Operational Support</span>
           </h2>
@@ -676,12 +676,12 @@ export function ReligiousPartnersContent() {
       {/* SECTION 9: PARTNER CATEGORIES */}
       <section className={styles.section} id="partner-categories" aria-labelledby="categories-title">
         <header>
-          <p>SECTION 9 — PARTNER CATEGORIES</p>
+          <p>SECTION 9 — PRIEST CATEGORIES</p>
           <h2 id="service-coverage">
             <span>Service Coverage Areas</span>
           </h2>
           <span>
-            Explore the 16 approved, responsive partner categories supported across our service framework.
+            Explore the 16 approved, responsive Priest Categories supported across our service framework.
           </span>
         </header>
         <div className={styles.categoriesGrid}>
@@ -699,7 +699,7 @@ export function ReligiousPartnersContent() {
         <header>
           <p>SECTION 10 — KNOWLEDGE CENTRE PREVIEW</p>
           <h2 id="partner-faqs">
-            <span>Partner Frequently Asked Questions</span>
+            <span>Priest Frequently Asked Questions</span>
           </h2>
           <span>
             Essential insights and guides for qualified practitioners considering network registration.
@@ -720,10 +720,10 @@ export function ReligiousPartnersContent() {
         <header>
           <p>SECTION 11 — FAQ</p>
           <h2 id="registration-form">
-            <span>Register as a Religious Partner</span>
+            <span>Register as a Verified Priest</span>
           </h2>
           <span>
-            Factual and neutral answers to key questions regarding partner application, verification, inquiry assignment, and performance.
+            Factual and neutral answers to key questions regarding Priest Application, verification, inquiry assignment, and performance.
           </span>
         </header>
         <div className={styles.faqs}>
@@ -756,9 +756,9 @@ export function ReligiousPartnersContent() {
           </span>
         </div>
         <div className={styles.inquiryActions}>
-          <Link href={inquiryHref}>Start Religious Partner Registration</Link>
+          <Link href={inquiryHref}>Start Priest Registration</Link>
           <Link href="#eligibility">Review Eligibility</Link>
-          <Link href="#partner-categories">Explore Partner Categories</Link>
+          <Link href="#partner-categories">Explore Priest Categories</Link>
         </div>
       </section>
 

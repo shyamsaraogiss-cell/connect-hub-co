@@ -86,7 +86,7 @@ test("unknown update errors are not translated as Prisma failures", { concurrenc
       const { response, state } = responseDouble();
       await controller.updateReligiousPartner(request({ status: "Active" }), response);
       assert.equal(state.status, 500);
-      assert.equal(state.body.message, "Failed to update Religious Partner.");
+      assert.equal(state.body.message, "Failed to update Verified Priest.");
     });
   });
 });

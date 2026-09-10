@@ -6,7 +6,7 @@ import { PublicHeroShell } from '@/features/public-shell';
 export const metadata: Metadata = {
   title: 'Vedic Ritual Services & Sacred Coordination | Connect Hub Co.',
   description:
-    'Explore authentic Vedic pujas, homams, Griha Pravesh, Navagraha Shanti, sacred samagri care, and NRI remote live Sankalp coordinated through verified Religious Partners across 15+ locations in India and Nepal.',
+    'Explore authentic Vedic pujas, homams, Griha Pravesh, Navagraha Shanti, sacred samagri care, and NRI remote live Sankalp coordinated through Verified Priests across 15+ locations in India and Nepal.',
 };
 
 export default function Page() {

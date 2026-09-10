@@ -1,5 +1,7 @@
 'use client';
 
+import { priestTerminology } from '@/lib/priest-terminology';
+
 import type { FormEvent } from 'react';
 import { useState } from 'react';
 import Link from 'next/link';
@@ -16,8 +18,8 @@ function TrackingForm({ mode, preferred, loading, onTrack }: { mode: TrackingMod
   const [referenceId, setReferenceId] = useState('');
   const [verification, setVerification] = useState('');
   const partner = mode === 'partner';
-  const heading = partner ? 'Track Partner Registration' : 'Track Service Request';
-  const idLabel = partner ? 'Partner Registration ID' : 'Service Request ID';
+  const heading = partner ? 'Track Priest Registration' : 'Track Service Request';
+  const idLabel = partner ? 'Priest Registration ID' : 'Service Request ID';
 
   function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -87,7 +89,7 @@ export default function TrackingPage() {
   }
 
   const partnerResult = resultMode === 'partner';
-  const idLabel = partnerResult ? 'Partner Registration ID' : 'Service Request ID';
+  const idLabel = partnerResult ? 'Priest Registration ID' : 'Service Request ID';
   const statusLabel = partnerResult ? 'Application Status' : 'Request Status';
 
   async function refreshCommercialWorkflow() {
@@ -104,7 +106,7 @@ export default function TrackingPage() {
             <p className="text-xs font-semibold uppercase tracking-widest text-orange-200">Track &amp; Status Support</p>
             <h1 className="mt-2 font-serif text-3xl font-bold">Track Your Request or Registration</h1>
             <p className="mt-2 max-w-3xl text-sm leading-6 text-orange-50">
-              Track your service request or partner registration using the registered reference details below.
+              Track your service request or Priest Registration using the registered reference details below.
             </p>
             <p className="mt-3 text-sm text-orange-50">
               <span className="font-semibold text-[var(--ritual-gold)]">PLEASE MAKE SURE -</span> Please use the same Registered Reference ID, Email or Mobile Number associated with it, for every purpose.
@@ -120,15 +122,15 @@ export default function TrackingPage() {
 
           {searchedReference ? <section className="rounded-2xl border border-stone-200 bg-white p-8 shadow-sm">
             {record ? <>
-              <h2 className="font-serif text-2xl font-bold text-stone-950">{partnerResult ? 'Partner Registration Tracking Result' : 'Service Request Tracking Result'}</h2>
+              <h2 className="font-serif text-2xl font-bold text-stone-950">{partnerResult ? 'Priest Registration Tracking Result' : 'Service Request Tracking Result'}</h2>
               <dl className="mt-6 grid gap-4 rounded-xl border border-stone-200 bg-stone-50 p-5 sm:grid-cols-2">
                 <div><dt className="text-xs font-semibold uppercase tracking-wider text-stone-500">{idLabel}</dt><dd className="mt-1 font-mono font-bold text-stone-900">{record.referenceId}</dd></div>
                 <div><dt className="text-xs font-semibold uppercase tracking-wider text-stone-500">{statusLabel}</dt><dd className="mt-1 font-bold text-orange-950">{record.currentStatus.replaceAll('_', ' ')}</dd></div>
                 <div><dt className="text-xs font-semibold uppercase tracking-wider text-stone-500">Last Updated</dt><dd className="mt-1 text-stone-900">{new Date(record.updatedAt).toLocaleString()}</dd></div>
-                <div><dt className="text-xs font-semibold uppercase tracking-wider text-stone-500">Current Stage</dt><dd className="mt-1 text-stone-900">{record.currentStage}</dd></div>
-                {record.expectedNextStep ? <div className="sm:col-span-2"><dt className="text-xs font-semibold uppercase tracking-wider text-stone-500">Next Step / Action Required</dt><dd className="mt-1 text-stone-900">{record.expectedNextStep}</dd></div> : null}
+                <div><dt className="text-xs font-semibold uppercase tracking-wider text-stone-500">Current Stage</dt><dd className="mt-1 text-stone-900">{priestTerminology(record.currentStage)}</dd></div>
+                {record.expectedNextStep ? <div className="sm:col-span-2"><dt className="text-xs font-semibold uppercase tracking-wider text-stone-500">Next Step / Action Required</dt><dd className="mt-1 text-stone-900">{priestTerminology(record.expectedNextStep)}</dd></div> : null}
               </dl>
-              {record.timeline.length ? <div className="mt-6"><h3 className="font-semibold text-stone-900">Public Updates</h3><div className="mt-3 space-y-3">{record.timeline.map((event) => <article className="rounded-xl border border-stone-200 bg-stone-50 p-4 text-sm" key={event.id}><div className="flex flex-wrap justify-between gap-2"><strong>{event.title}</strong><time className="text-xs text-stone-500">{new Date(event.timestamp).toLocaleString()}</time></div><p className="mt-1 text-stone-600">{event.description}</p></article>)}</div></div> : null}
+              {record.timeline.length ? <div className="mt-6"><h3 className="font-semibold text-stone-900">Public Updates</h3><div className="mt-3 space-y-3">{record.timeline.map((event) => <article className="rounded-xl border border-stone-200 bg-stone-50 p-4 text-sm" key={event.id}><div className="flex flex-wrap justify-between gap-2"><strong>{priestTerminology(event.title)}</strong><time className="text-xs text-stone-500">{new Date(event.timestamp).toLocaleString()}</time></div><p className="mt-1 text-stone-600">{priestTerminology(event.description)}</p></article>)}</div></div> : null}
               {!partnerResult && record.requestType === 'SERVICE_REQUEST' ? <CommercialWorkflowPanel referenceId={record.referenceId} verification={verifiedContact} workflow={record.commercialWorkflow ?? null} onRefresh={refreshCommercialWorkflow} /> : null}
             </> : <div className="text-center"><h2 className="font-serif text-xl font-bold text-stone-900">Tracking record not available</h2><p className="mx-auto mt-2 max-w-lg text-sm text-stone-600">{message}</p></div>}
           </section> : null}
@@ -141,6 +143,6 @@ export default function TrackingPage() {
 
 function partnerMessage(mode: TrackingMode) {
   return mode === 'partner'
-    ? 'No Religious Partner registration was found for those verified details.'
+    ? 'No Priest Registration was found for those verified details.'
     : 'No customer or service request was found for those verified details.';
 }

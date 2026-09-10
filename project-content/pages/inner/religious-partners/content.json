@@ -10,7 +10,7 @@
         {
           "kind": "field:title",
           "line": 6,
-          "value": "Religious Partner Network | Connect Hub Co."
+          "value": "Verified Priest Network | Connect Hub Co."
         },
         {
           "kind": "field:description",
@@ -26,7 +26,7 @@
         {
           "kind": "field:title",
           "line": 25,
-          "value": "Ritual and Puja Partner"
+          "value": "Ritual and Puja Priest"
         },
         {
           "kind": "field:subtitle",
@@ -41,12 +41,12 @@
         {
           "kind": "field:ctaText",
           "line": 28,
-          "value": "Apply as Ritual Partner"
+          "value": "Apply as Ritual Priest"
         },
         {
           "kind": "field:title",
           "line": 35,
-          "value": "PitruMoksha Gaya Partner"
+          "value": "PitruMoksha Gaya Priest"
         },
         {
           "kind": "field:subtitle",
@@ -56,17 +56,17 @@
         {
           "kind": "field:description",
           "line": 37,
-          "value": "For eligible Religious Partners providing ancestral ritual guidance and coordination in Gaya Ji under approved processes."
+          "value": "For eligible Verified Priests providing ancestral ritual guidance and coordination in Gaya Ji under approved processes."
         },
         {
           "kind": "field:ctaText",
           "line": 38,
-          "value": "Apply as Gaya Partner"
+          "value": "Apply as Gaya Priest"
         },
         {
           "kind": "field:title",
           "line": 45,
-          "value": "Location-Based Religious Partner"
+          "value": "Location-Based Verified Priest"
         },
         {
           "kind": "field:subtitle",
@@ -81,12 +81,12 @@
         {
           "kind": "field:ctaText",
           "line": 48,
-          "value": "Apply as Location Partner"
+          "value": "Apply as Location Priest"
         },
         {
           "kind": "field:title",
           "line": 55,
-          "value": "Online Ritual Partner"
+          "value": "Online Ritual Priest"
         },
         {
           "kind": "field:subtitle",
@@ -101,12 +101,12 @@
         {
           "kind": "field:ctaText",
           "line": 58,
-          "value": "Apply as Online Partner"
+          "value": "Apply as Online Priest"
         },
         {
           "kind": "field:title",
           "line": 65,
-          "value": "Vahi Records and Lineage Guidance Partner"
+          "value": "Vahi Records and Lineage Guidance Priest"
         },
         {
           "kind": "field:subtitle",
@@ -116,17 +116,17 @@
         {
           "kind": "field:description",
           "line": 67,
-          "value": "For relevant traditional custodians or Religious Partners associated with lineage-record guidance, where applicable and verified."
+          "value": "For relevant traditional custodians or Verified Priests associated with lineage-record guidance, where applicable and verified."
         },
         {
           "kind": "field:ctaText",
           "line": 68,
-          "value": "Apply as Lineage Partner"
+          "value": "Apply as Lineage Priest"
         },
         {
           "kind": "field:title",
           "line": 75,
-          "value": "Travel and Local Coordination Partner"
+          "value": "Travel and Local Coordination Priest"
         },
         {
           "kind": "field:subtitle",
@@ -136,12 +136,12 @@
         {
           "kind": "field:description",
           "line": 77,
-          "value": "For Religious Partners participating in local ritual-linked coordination and ground support at sacred destinations."
+          "value": "For Verified Priests participating in local ritual-linked coordination and ground support at sacred destinations."
         },
         {
           "kind": "field:ctaText",
           "line": 78,
-          "value": "Apply as Local Partner"
+          "value": "Apply as Local Priest"
         },
         {
           "kind": "field:title",
@@ -211,7 +211,7 @@
         {
           "kind": "field:description",
           "line": 123,
-          "value": "Build a verified professional presence within an expanding nation-wide network of traditional Religious Partners."
+          "value": "Build a verified professional presence within an expanding nation-wide network of traditional Verified Priests."
         },
         {
           "kind": "field:title",
@@ -336,12 +336,12 @@
         {
           "kind": "field:title",
           "line": 183,
-          "value": "Select Partner Category"
+          "value": "Select Priest Category"
         },
         {
           "kind": "field:description",
           "line": 184,
-          "value": "Choose the approved Religious Partner pathway matching your traditional training, service format, and practice location."
+          "value": "Choose the approved Priest Pathway matching your traditional training, service format, and practice location."
         },
         {
           "kind": "field:title",
@@ -381,7 +381,7 @@
         {
           "kind": "field:description",
           "line": 204,
-          "value": "Our partner onboarding team reviews the submitted profile for clarity, completeness, and initial suitability."
+          "value": "Our Priest Onboarding team reviews the submitted profile for clarity, completeness, and initial suitability."
         },
         {
           "kind": "field:title",
@@ -441,7 +441,7 @@
         {
           "kind": "field:description",
           "line": 226,
-          "value": "Primary email address for official partner communication."
+          "value": "Primary email address for official Priest Communication."
         },
         {
           "kind": "field:title",
@@ -476,12 +476,12 @@
         {
           "kind": "field:title",
           "line": 230,
-          "value": "Partner Category"
+          "value": "Priest Category"
         },
         {
           "kind": "field:description",
           "line": 230,
-          "value": "Selected partner pathway (Ritual, Gaya, Location, Online, Vahi, Local)."
+          "value": "Selected Priest Pathway (Ritual, Gaya, Location, Online, Vahi, Local)."
         },
         {
           "kind": "field:title",
@@ -611,7 +611,7 @@
         {
           "kind": "field:description",
           "line": 251,
-          "value": "Evaluation of selected partner pathway against proven traditional experience, ritual capabilities, and location feasibility."
+          "value": "Evaluation of selected Priest Pathway against proven traditional experience, ritual capabilities, and location feasibility."
         },
         {
           "kind": "field:title",
@@ -946,17 +946,17 @@
         {
           "kind": "field:title",
           "line": 346,
-          "value": "Others / Religious Partner Services"
+          "value": "Others / Verified Priest Services"
         },
         {
           "kind": "field:description",
           "line": 346,
-          "value": "Specialized religious guidance and custom Vaidik partner services."
+          "value": "Specialized religious guidance and custom Vaidik Priest services."
         },
         {
           "kind": "field:title",
           "line": 351,
-          "value": "Who can apply as a Religious Partner?"
+          "value": "Who can apply as a Verified Priest?"
         },
         {
           "kind": "field:description",
@@ -971,7 +971,7 @@
         {
           "kind": "field:description",
           "line": 356,
-          "value": "Identity checks, document verification, background screening, and reference checks conducted neutrally by our partner onboarding team."
+          "value": "Identity checks, document verification, background screening, and reference checks conducted neutrally by our Priest Onboarding team."
         },
         {
           "kind": "field:title",
@@ -996,7 +996,7 @@
         {
           "kind": "field:title",
           "line": 367,
-          "value": "Partner responsibilities"
+          "value": "Priest Responsibilities"
         },
         {
           "kind": "field:description",
@@ -1011,7 +1011,7 @@
         {
           "kind": "field:description",
           "line": 372,
-          "value": "Matching algorithms based on tradition, location, language preference, Gotra requirement (for Panda Vahi ledgers), and partner availability."
+          "value": "Matching algorithms based on tradition, location, language preference, Gotra requirement (for Panda Vahi ledgers), and Priest availability."
         },
         {
           "kind": "field:title",
@@ -1046,7 +1046,7 @@
         {
           "kind": "field:question",
           "line": 390,
-          "value": "Who can apply as a Religious Partner?"
+          "value": "Who can apply as a Verified Priest?"
         },
         {
           "kind": "field:answer",
@@ -1071,7 +1071,7 @@
         {
           "kind": "field:answer",
           "line": 399,
-          "value": "Yes. Partners may list all ritual domains in which they possess verified traditional competence—such as Pind Daan, Havan, Griha Pravesh, or Vahi Records guidance."
+          "value": "Yes. Verified Priests may list all ritual domains in which they possess verified traditional competence—such as Pind Daan, Havan, Griha Pravesh, or Vahi Records guidance."
         },
         {
           "kind": "field:question",
@@ -1081,7 +1081,7 @@
         {
           "kind": "field:answer",
           "line": 403,
-          "value": "Yes. Partners can indicate all operational cities, states, or sacred pilgrimage hubs where they can travel or maintain physical service capabilities."
+          "value": "Yes. Verified Priests can indicate all operational cities, states, or sacred pilgrimage hubs where they can travel or maintain physical service capabilities."
         },
         {
           "kind": "field:question",
@@ -1091,7 +1091,7 @@
         {
           "kind": "field:answer",
           "line": 407,
-          "value": "Yes. Qualified partners with appropriate technical readiness and clear communication skills can conduct approved live-streamed online ceremonies."
+          "value": "Yes. Qualified Verified Priests with appropriate technical readiness and clear communication skills can conduct approved live-streamed online ceremonies."
         },
         {
           "kind": "field:question",
@@ -1101,7 +1101,7 @@
         {
           "kind": "field:answer",
           "line": 411,
-          "value": "Inquiries are matched objectively based on customer location, language preference, specific ritual specialization, Gotra requirements (for Panda Vahi ledgers), and partner availability."
+          "value": "Inquiries are matched objectively based on customer location, language preference, specific ritual specialization, Gotra requirements (for Panda Vahi ledgers), and Priest availability."
         },
         {
           "kind": "field:question",
@@ -1121,7 +1121,7 @@
         {
           "kind": "field:answer",
           "line": 419,
-          "value": "All service prices, samagri inclusions, and ritual steps are confirmed transparently with families upfront. Partners must adhere strictly to agreed terms without extra demands."
+          "value": "All service prices, samagri inclusions, and ritual steps are confirmed transparently with families upfront. Verified Priests must adhere strictly to agreed terms without extra demands."
         },
         {
           "kind": "field:question",
@@ -1131,7 +1131,7 @@
         {
           "kind": "field:answer",
           "line": 423,
-          "value": "Our partner onboarding team will contact you to request missing supporting details or clarify incomplete information before completing your review."
+          "value": "Our Priest Onboarding team will contact you to request missing supporting details or clarify incomplete information before completing your review."
         },
         {
           "kind": "field:question",
@@ -1141,17 +1141,17 @@
         {
           "kind": "field:answer",
           "line": 427,
-          "value": "Yes. If an application requires additional credentials or location updates, partners may re-submit updated information for administrative review."
+          "value": "Yes. If an application requires additional credentials or location updates, Verified Priests may re-submit updated information for administrative review."
         },
         {
           "kind": "field:question",
           "line": 430,
-          "value": "How is partner performance evaluated?"
+          "value": "How is Priest performance evaluated?"
         },
         {
           "kind": "field:answer",
           "line": 431,
-          "value": "Partner evaluation is based on customer feedback, punctuality, adherence to Vaidik standards, transparent pricing compliance, and professional conduct."
+          "value": "Priest evaluation is based on customer feedback, punctuality, adherence to Vaidik standards, transparent pricing compliance, and professional conduct."
         },
         {
           "kind": "jsx-text",
@@ -1166,7 +1166,7 @@
         {
           "kind": "jsx-text",
           "line": 444,
-          "value": "Partner Registration Form"
+          "value": "Priest Registration Form"
         },
         {
           "kind": "jsx-text",
@@ -1176,7 +1176,7 @@
         {
           "kind": "jsx-text",
           "line": 452,
-          "value": "SECTION 1 — BECOME A RELIGIOUS PARTNER"
+          "value": "SECTION 1 — BECOME A VERIFIED PRIEST"
         },
         {
           "kind": "jsx-text",
@@ -1186,7 +1186,7 @@
         {
           "kind": "jsx-text",
           "line": 457,
-          "value": "The Religious Partner Network connects qualified Pandits, Purohits, Pandas, Acharyas, Vaidik Scholars, and traditional ritual specialists with seeking families across India and worldwide.\r\n          "
+          "value": "The Verified Priest Network connects qualified Pandits, Purohits, Pandas, Acharyas, Vaidik Scholars, and traditional ritual specialists with seeking families across India and worldwide.\r\n          "
         },
         {
           "kind": "jsx-text",
@@ -1206,7 +1206,7 @@
         {
           "kind": "jsx-text",
           "line": 471,
-          "value": "Religious Partners conduct authentic Vaidik rites for seeking families while Connect Hub Co. manages scheduling, client communication, travel logistics, and administrative support.\r\n              "
+          "value": "Verified Priests conduct authentic Vaidik rites for seeking families while Connect Hub Co. manages scheduling, client communication, travel logistics, and administrative support.\r\n              "
         },
         {
           "kind": "jsx-text",
@@ -1241,7 +1241,7 @@
         {
           "kind": "jsx-text",
           "line": 499,
-          "value": "SECTION 2 — PARTNER PATHWAYS"
+          "value": "SECTION 2 — Priest PATHWAYS"
         },
         {
           "kind": "jsx-text",
@@ -1271,7 +1271,7 @@
         {
           "kind": "jsx-text",
           "line": 529,
-          "value": "Religious Partner Categories"
+          "value": "Priest Categories"
         },
         {
           "kind": "jsx-text",
@@ -1341,7 +1341,7 @@
         {
           "kind": "jsx-text",
           "line": 599,
-          "value": "Future customer assignments depend on business need, partner availability, performance, and suitability."
+          "value": "Future customer assignments depend on business need, Priest availability, performance, and suitability."
         },
         {
           "kind": "jsx-text",
@@ -1356,7 +1356,7 @@
         {
           "kind": "jsx-text",
           "line": 612,
-          "value": "Prepare the following details using this 18-point checklist when submitting your partner registration application.\r\n          "
+          "value": "Prepare the following details using this 18-point checklist when submitting your Priest Registration application.\r\n          "
         },
         {
           "kind": "field:name",
@@ -1376,7 +1376,7 @@
         {
           "kind": "jsx-text",
           "line": 636,
-          "value": "A neutral, structured evaluation of partner credentials, operational reach, onboarding guidance, and ongoing quality review.\r\n          "
+          "value": "A neutral, structured evaluation of Priest credentials, operational reach, onboarding guidance, and ongoing quality review.\r\n          "
         },
         {
           "kind": "field:name",
@@ -1386,7 +1386,7 @@
         {
           "kind": "jsx-text",
           "line": 655,
-          "value": "SECTION 8 — PARTNER STANDARDS"
+          "value": "SECTION 8 — Priest STANDARDS"
         },
         {
           "kind": "jsx-text",
@@ -1401,7 +1401,7 @@
         {
           "kind": "jsx-text",
           "line": 678,
-          "value": "SECTION 9 — PARTNER CATEGORIES"
+          "value": "SECTION 9 — PRIEST CATEGORIES"
         },
         {
           "kind": "jsx-text",
@@ -1411,7 +1411,7 @@
         {
           "kind": "jsx-text",
           "line": 683,
-          "value": "Explore the 16 approved, responsive partner categories supported across our service framework.\r\n          "
+          "value": "Explore the 16 approved, responsive Priest Categories supported across our service framework.\r\n          "
         },
         {
           "kind": "jsx-text",
@@ -1421,7 +1421,7 @@
         {
           "kind": "jsx-text",
           "line": 701,
-          "value": "Partner Frequently Asked Questions"
+          "value": "Priest Frequently Asked Questions"
         },
         {
           "kind": "jsx-text",
@@ -1436,12 +1436,12 @@
         {
           "kind": "jsx-text",
           "line": 722,
-          "value": "Register as a Religious Partner"
+          "value": "Register as a Verified Priest"
         },
         {
           "kind": "jsx-text",
           "line": 725,
-          "value": "Factual and neutral answers to key questions regarding partner application, verification, inquiry assignment, and performance.\r\n          "
+          "value": "Factual and neutral answers to key questions regarding Priest Application, verification, inquiry assignment, and performance.\r\n          "
         },
         {
           "kind": "jsx-text",
@@ -1461,7 +1461,7 @@
         {
           "kind": "jsx-text",
           "line": 758,
-          "value": "Start Religious Partner Registration"
+          "value": "Start Priest Registration"
         },
         {
           "kind": "jsx-text",
@@ -1471,7 +1471,7 @@
         {
           "kind": "jsx-text",
           "line": 760,
-          "value": "Explore Partner Categories"
+          "value": "Explore Priest Categories"
         },
         {
           "kind": "attribute:aria-label",

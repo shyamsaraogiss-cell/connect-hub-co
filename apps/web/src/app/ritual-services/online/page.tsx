@@ -3,7 +3,7 @@ import { BusinessPageShell, type BusinessPageShellProps } from '@/components/bus
 
 export const metadata: Metadata = {
   title: 'Online Ritual Services & Remote Live Sankalp | Connect Hub Co.',
-  description: 'Participate remotely in authentic Vedic pujas with live HD video streaming and guided Sankalp led by verified Religious Partners.',
+  description: 'Participate remotely in authentic Vedic pujas with live HD video streaming and guided Sankalp led by Verified Priests.',
 };
 
 const onlineRitualData: BusinessPageShellProps = {

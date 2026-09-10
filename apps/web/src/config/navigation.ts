@@ -17,7 +17,7 @@ export const ROUTES = {
   COMPLAINT: '/complaint',
   GRIEVANCE: '/grievance',
   FOUNDER_SUPPORT: '/founder-support',
-  POLICIES_LEGAL_TERMS: '/policies-legal-terms',
+  POLICIES_LEGAL_TERMS: '/policies-and-legal-terms',
   REFUND_POLICY: '/refund-policy',
   PRIVACY_POLICY: '/privacy-policy',
   TERMS: '/terms',

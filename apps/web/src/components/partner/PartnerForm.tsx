@@ -1,4 +1,5 @@
 "use client";
+import { priestErrorMessage } from "@/lib/priest-terminology";
 
 import { useState } from "react";
 import Button from "@/components/common/Button";
@@ -31,15 +32,15 @@ export default function PartnerForm({ initialValue, submitLabel, onSubmit }: Par
     try {
       await onSubmit(form);
     } catch (submissionError) {
-      setError(submissionError instanceof Error ? submissionError.message : "Unable to save partner.");
+      setError(submissionError instanceof Error ? submissionError.message : "Unable to save Priest.");
     } finally {
       setLoading(false);
     }
   }
 
   return <form onSubmit={submit} className="space-y-4">
-    {error ? <p role="alert" className="rounded border border-red-200 bg-red-50 p-3 text-red-700">{error}</p> : null}
-    <input name="name" placeholder="Partner Name" className="w-full rounded border p-3" onChange={change} value={form.name} required />
+    {error ? <p role="alert" className="rounded border border-red-200 bg-red-50 p-3 text-red-700">{priestErrorMessage(error)}</p> : null}
+    <input name="name" placeholder="Priest Name" className="w-full rounded border p-3" onChange={change} value={form.name} required />
     <select name="partnerType" className="w-full rounded border p-3" onChange={change} value={form.partnerType}>
       <option value="PANDIT">Pandit</option><option value="TEMPLE">Temple</option><option value="ORGANIZATION">Organization</option>
     </select>

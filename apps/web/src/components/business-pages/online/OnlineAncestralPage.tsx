@@ -1,70 +1,268 @@
-import Image from 'next/image';
+'use client';
+
 import Link from 'next/link';
-import { BusinessPageFrame, type BusinessStep } from '../BusinessPageShell';
-import { BusinessPageIcon, type BusinessPageIconName } from '../BusinessPageIcon';
-import { HeroAssistantPanel } from '@/features/hero/components/HeroAssistantPanel';
+import { useEffect, useRef, useState } from 'react';
+import { BusinessPageFrame } from '../BusinessPageShell';
 import { PITRU_MOKSHA_GAYA_OFFLINE_ROUTE, PITRU_MOKSHA_GAYA_ROUTE, VAHI_RECORDS_ROUTE } from '@/features/hero/data/heroRoutes';
 import styles from './OnlineAncestralPage.module.css';
 
 const inquiryHref = '/contact?topic=online-ancestral-services';
-const services: readonly { title: string; description: string; icon: BusinessPageIconName }[] = [
-  { title: 'Virtual Shraddh', description: 'Participate remotely in a guided Shraddh ritual coordinated through a verified Religious Partner.', icon: 'virtual' },
-  { title: 'Online Pind Daan Participation', description: 'Receive guided remote participation and ritual coordination when physical travel is not possible.', icon: 'offering' },
-  { title: 'Live Family Participation', description: 'Allow eligible family members to join the ritual through an arranged live video session.', icon: 'family' },
-  { title: 'Online Sankalp Guidance', description: 'Receive step-by-step guidance for Sankalp and required family or ancestor details.', icon: 'sankalp' },
-  { title: 'Religious Partner Coordination', description: 'Coordinate ritual requirements, timing and preparation through verified Religious Partners.', icon: 'partner' },
-  { title: 'Photos and Video Documentation', description: 'Receive available ritual-completion photographs, videos or supporting documentation according to the service plan.', icon: 'camera' },
-  { title: 'Time-Zone Scheduling', description: 'Coordinate participation timing for NRI and international families where feasible.', icon: 'timezone' },
-  { title: 'Online Consultation', description: 'Discuss the appropriate ritual, required information and service process before booking.', icon: 'consultation' },
-  { title: 'Family Detail Collection', description: 'Submit ancestor names, Gotra, family details and preferred ritual date through a guided process.', icon: 'details' },
-  { title: 'Completion and Follow-Up Support', description: 'Receive post-service communication, documentation and assistance with approved follow-up questions.', icon: 'followup' },
+const privateHref = '/contact?topic=private-ritual';
+// Page-specific, three-colour symbols; independent of the shared sidebar icons.
+const desktopCircumstances = [
+  { label: 'Adoptive Families', paths: ['M3 13q0 8 9 8t9-8', 'M8 7a4 4 0 1 0 8 0a4 4 0 1 0-8 0', 'M8 16l4 3 4-3'] },
+  { label: 'Blended Families', paths: ['M3 5h7v7H3z', 'M14 12h7v7h-7z', 'M7 16h3q7 0 7-8V5'] },
+  { label: 'Remarried Families', paths: ['M9 7a6 6 0 1 0 0 10', 'M15 7a6 6 0 1 1 0 10', 'M8 12h8m-3-3 3 3-3 3'] },
+  { label: 'Biological Relationships', paths: ['M6 3c12 5 0 13 12 18', 'M18 3C6 8 18 16 6 21', 'M9 6h6M9 12h6M9 18h6'] },
+  { label: 'Divorced Family', paths: ['M8 4H3v16h5', 'M16 4h5v16h-5', 'M13 4l-3 6 4 4-3 6'] },
+  { label: 'Ex-Marriage Relations', paths: ['M8 8a5 5 0 1 0 0 10', 'M16 6a5 5 0 1 1 0 10', 'M8 4h7m-3-2 3 2-3 2'] },
+  { label: 'Live-in Relations', paths: ['M3 11l5-6 4 4', 'M12 9l4-4 5 6', 'M5 13v7h14v-7M10 20v-5h4v5'] },
+  { label: 'Break-up Relationships', paths: ['M10 5C3 0 0 10 9 17', 'M15 5c7-5 10 5 1 12', 'M13 3l-3 7 5 3-3 8'] },
+  { label: 'Others', paths: ['M4 5h5v5H4z', 'M15 14h5v5h-5z', 'M16 4v6m-3-3h6M4 17h6'] },
+  { label: 'Customized', paths: ['M3 6h18M3 18h18', 'M7 3v6M17 15v6', 'M3 12h18M13 9v6'] },
 ];
-const steps: readonly BusinessStep[] = [
-  { title: 'Share Your Requirement', description: 'Tell us your purpose, location and preferred participation format.' },
-  { title: 'Provide Ancestor and Family Details', description: 'Share the requested names, Gotra and relevant family information privately.' },
-  { title: 'Receive Ritual Guidance', description: 'Understand suitable options based on tradition and Religious Partner guidance.' },
-  { title: 'Confirm Date and Religious Partner', description: 'Review the proposed timing, preparation and verified Religious Partner.' },
-  { title: 'Join the Guided Online Participation', description: 'Use the arranged live connection and follow the participation guidance.' },
-  { title: 'Receive Documentation and Follow-Up', description: 'Receive agreed documentation and approved follow-up assistance.' },
+function CircumstanceIcon({ index }: { index: number }) {
+  const colors = ['#70e8ff', '#edc578', '#f078dc'];
+  return <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{desktopCircumstances[index].paths.map((path, part) => <path key={path} d={path} stroke={colors[(part + index) % colors.length]} />)}</svg>;
+}
+function NetworkIcon({ kind }: { kind: 'globe' | 'travel' | 'family' | 'lock' | 'cities' | 'hybrid' | 'mobility' | 'clock' }) {
+  const paths = {
+    globe: 'M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20M2 12h20M12 2c-5 5-5 15 0 20 5-5 5-15 0-20',
+    travel: 'M3 17h18M6 17V8l6-5 6 5v9M10 17v-5h4v5M3 21h18',
+    family: 'M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6M16 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6M2 20v-3a5 5 0 0 1 10 0v3M12 17a5 5 0 0 1 10 0v3M6 15l6 5 6-5',
+    lock: 'M7 10V7a5 5 0 0 1 10 0v3M5 10h14v11H5zM12 14v3',
+    cities: 'M2 21V8h7v13M15 21V3h7v18M5 11v2m0 3v2M18 6v2m0 3v2M9 17h6m-3-3 3 3-3 3',
+    hybrid: 'M2 3h20v13H2zM8 21h8m-4-5v5M8 7a2 2 0 1 0 0 4a2 2 0 1 0 0-4M4 15v-1a4 4 0 0 1 8 0v1M16 7l4 3-4 3z',
+    mobility: 'M12 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4M11 9v5h6l3 6 2-1M11 10H7M8 12a5 5 0 1 0 7 6',
+    clock: 'M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20M12 6v6l4 2M3 3l3 1M21 3l-3 1',
+  };
+  return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d={paths[kind]} /></svg>;
+}
+function AccessGlobe() { return <NetworkIcon kind="globe" />; }
+function AccessTravel() { return <NetworkIcon kind="travel" />; }
+function FamilyConnection() { return <NetworkIcon kind="family" />; }
+function PrivateLock() { return <NetworkIcon kind="lock" />; }
+function CitiesConnection() { return <NetworkIcon kind="cities" />; }
+function HybridParticipation() { return <NetworkIcon kind="hybrid" />; }
+function MobilityAccess() { return <NetworkIcon kind="mobility" />; }
+function TimeCoordination() { return <NetworkIcon kind="clock" />; }
+
+const remoteSituations = [
+  { label: 'NRI & International Families', Icon: AccessGlobe },
+  { label: 'Unable to Travel', Icon: AccessTravel },
+  { label: 'Elderly Participants', Icon: FamilyConnection },
+  { label: 'Mobility Requirements', Icon: MobilityAccess },
+  { label: 'Families in Different Cities or Countries', Icon: CitiesConnection },
+  { label: 'Hybrid Family Participation', Icon: HybridParticipation },
+  { label: 'Time-Zone Coordinated Participation', Icon: TimeCoordination },
 ];
-const virtualShraddhPoints = [
-  'Virtual Shraddh is part of PitruMoksha Gaya Online services.',
-  'The family first raises an inquiry.',
-  'Required ancestor and family details are collected.',
-  'A verified Religious Partner is coordinated.',
-  'The ritual date and participation method are confirmed.',
-  'Eligible family members may join through a live online session.',
-  'Available photographs, video or completion documentation may be shared according to the selected service plan.',
-] as const;
-const beneficiaryGroups = ['NRIs and international families', 'Families unable to travel', 'Elderly participants', 'Participants with mobility constraints', 'Families located in different cities or countries', 'Users seeking guidance before choosing Online or Offline participation'] as const;
-const trustItems = ['Verified Religious Partners', 'Guided Participation', 'Transparent Communication', 'Confidentiality-First Support', 'Family and Ancestor Detail Review', 'Available Completion Documentation', 'NRI-Friendly Coordination', 'Post-Service Follow-Up'] as const;
-const faqs = [
-  ['What is the difference between Online and Offline participation?', 'Online participation is remotely coordinated; Offline participation involves travelling to Gaya for in-person services. Suitability depends on the family’s circumstances and guidance.'],
-  ['Is the ritual shown live?', 'A live session may be arranged when included in the confirmed service plan and practical conditions permit.'],
-  ['Can multiple family members join?', 'Yes, eligible family members may join when access and participation arrangements are confirmed beforehand.'],
-  ['Can NRIs book the service?', 'Yes. NRI and international families may request online coordination, subject to timing and service suitability.'],
-  ['Which details are required before confirmation?', 'Common details include ancestor names, Gotra, family relationship, purpose, location and preferred date.'],
-  ['Are photos and videos provided?', 'Available documentation is confirmed before booking and depends on the selected service plan.'],
-  ['How is the Religious Partner selected?', 'Selection considers the requested service, tradition, timing, location and verified capability.'],
-  ['How can I raise an inquiry?', 'Use the inquiry link on this page and provide your contact details and preferred online service.'],
-] as const;
+const rituals = ['Pind Daan, Shraddha & Tarpan', 'Pitra Aatma Shanti', 'Narayan Bali', 'Nag Bali', 'Tripindi Shraddha', 'Shared Sankalp', 'Complete Gaya Shraddha', 'Customized Pitru Rituals'];
+const circumstances = ['Annual / Tithi Rite', 'Missed Ancestral Rites', 'Special Ancestral Circumstances', 'General Ancestral Prayer', 'Complete Gaya Ji Rite', 'Sensitive / Private Circumstance', 'Not Sure'];
+const preparation = [
+  { title: 'Tell Us', items: ['Person remembered', 'Relationship', 'Available ancestral details', 'Gotra where known', 'Tithi/date where applicable', 'Relevant ritual circumstances'] },
+  { title: 'Establish', items: ['Ritual', 'Karta / Participant', 'Participation mode', 'Sankalp', 'Ritual Proxy where required', 'Applicable Vedis'] },
+  { title: 'Prepare', items: ['Sankalp preparation', 'Tarpan preparation', 'Required items', 'Family participants', 'Joining instructions'] },
+  { title: 'Join', items: ['Confirmed date', 'Gaya Ji time', 'Your local time', 'Required live participation stages'] },
+];
+const homeOffering = [
+  { title: 'Prepare', text: 'Your family prepares the specified items, which may include a coin, raw rice and designated offerings.' },
+  { title: 'Touch', text: 'Personally touch or handle the items, creating a connection with your sacred intention.' },
+  { title: 'Send', text: 'After booking confirmation, send them to the shared receiving address supplied for your service.' },
+];
+const gayaOffering = [
+  { title: 'Receive', text: 'Your items are received for your confirmed Service Request.' },
+  { title: 'Incorporate', text: 'Applicable items are incorporated into the prescribed ritual in Gaya Ji.' },
+  { title: 'Offer', text: 'The applicable offerings are made where prescribed in your confirmed ritual.' },
+];
+const journey = [
+  { title: 'Raise Request', text: 'Begin with your sacred intention and preferred participation mode.' },
+  { title: 'Ritual Guidance', text: 'Establish the prescribed rite and participation requirements.' },
+  { title: 'Quotation', text: 'Accept / Request Change / Reject' },
+  { title: 'Client Service Agreement', text: 'Review / Accept' },
+  { title: 'External Payment', text: 'Payment takes place completely outside this website.' },
+  { title: 'Payment Confirmation', text: 'Founder/Admin records internal Payment Confirmation.' },
+  { title: 'Booking Confirmed', text: 'Your ritual is confirmed. Any hand-touched items may now be sent as instructed.' },
+  { title: 'Virtual Ritual', text: 'Virtual Sankalp → Traditional Tarpan → Live Participation → Physical Rites in Gaya Ji' },
+  { title: 'Completion', text: 'Your ritual concludes under the same Service Request ID.' },
+];
+
+function SectionHeading({ number, title, id, subtitle }: { number: string; title: string; id: string; subtitle?: string }) {
+  return <header className={styles.sectionHeading}><span className={styles.sectionNumber}>{number}</span><div><h2 id={id}>{title}</h2>{subtitle ? <p>{subtitle}</p> : null}</div></header>;
+}
+
+function Markers({ items }: { items: readonly string[] }) {
+  return <ul className={styles.markers}>{items.map(item => <li key={item}>{item}</li>)}</ul>;
+}
+
+function NeonOrbits() {
+  return <div className={styles.neonOrbits} aria-hidden="true"><span className={styles.neonHalo} /><span className={styles.neonPulse} /><span className={styles.neonOrbit} /><span className={styles.neonCounterOrbit} /></div>;
+}
+
+function PrivacyShield() {
+  return <svg className={styles.privacyShield} viewBox="0 0 120 136" fill="none" aria-hidden="true">
+    <path d="M60 5 109 23v39c0 32-23 54-49 68C34 116 11 94 11 62V23Z" fill="#08152c" stroke="#70e8ff" strokeWidth="2" />
+    <path d="M60 14 100 29v33c0 26-18 46-40 59-22-13-40-33-40-59V29Z" stroke="#9b92ff" strokeWidth="2" />
+    <path d="M45 61V48a15 15 0 0 1 30 0v13" stroke="#edc578" strokeWidth="4" strokeLinecap="round" />
+    <rect x="37" y="60" width="46" height="36" rx="6" fill="#142344" stroke="#edc578" strokeWidth="2" />
+    <path d="M60 74v10" stroke="#70e8ff" strokeWidth="4" strokeLinecap="round" />
+    <path d="m24 37 5-2m62 0 5 2M28 85l4 7m56 0 4-7" stroke="#70e8ff" strokeWidth="2" strokeLinecap="round" />
+  </svg>;
+}
+
+type FlowLine = { d: string; x: number; y: number; color: string };
+function PrivacyConnections() {
+  const ref = useRef<SVGSVGElement>(null);
+  const [flow, setFlow] = useState<{ width: number; height: number; lines: FlowLine[] }>({ width: 1, height: 1, lines: [] });
+  useEffect(() => {
+    const root = ref.current?.parentElement;
+    if (!root) return;
+    let frame = 0;
+    let disposed = false;
+    const measure = () => {
+      if (disposed) return;
+      const shield = root.querySelector(`.${styles.privacyShield}`)?.getBoundingClientRect();
+      const list = root.querySelector(`.${styles.desktopCircumstances}`)?.getBoundingClientRect();
+      if (!shield || !list) return;
+      const box = root.getBoundingClientRect();
+      const y = shield.top + shield.height / 2 - box.top;
+      const left = shield.left - box.left - 14;
+      const right = shield.right - box.left + 14;
+      const colors = ['#70e8ff', '#b59aff', '#edc578'];
+      const lines: FlowLine[] = [];
+      root.querySelectorAll(`.${styles.desktopCircumstances} > li`).forEach((item, index) => {
+        const rect = item.getBoundingClientRect();
+        const x = rect.left + 15 - box.left;
+        const rowY = rect.bottom + 5 - box.top;
+        const bend = list.right - box.left + 4;
+        lines.push({ x, y: rowY, color: colors[index % 3], d: `M${x} ${rowY} H${bend} C${bend + 12} ${rowY} ${left - 16} ${y} ${left} ${y}` });
+      });
+      root.querySelectorAll(`.${styles.remoteNodes} .${styles.nodeIcon}`).forEach((item, index) => {
+        const rect = item.getBoundingClientRect();
+        const x = rect.left + rect.width / 2 - box.left;
+        const nodeY = rect.top + rect.height / 2 - box.top;
+        lines.push({ x, y: nodeY, color: colors[index % 3], d: `M${right} ${y} C${right + 28} ${y} ${right + 35} ${nodeY} ${x} ${nodeY}` });
+      });
+      lines.push({ x: left, y, color: colors[0], d: `M${left} ${y} H${shield.left - box.left + 11}` });
+      lines.push({ x: right, y, color: colors[0], d: `M${shield.right - box.left - 11} ${y} H${right}` });
+      setFlow({ width: box.width, height: box.height, lines });
+    };
+    const schedule = () => { cancelAnimationFrame(frame); frame = requestAnimationFrame(measure); };
+    const observer = new ResizeObserver(schedule);
+    observer.observe(root);
+    root.querySelectorAll(`.${styles.desktopCircumstances}, .${styles.privacyShield}, .${styles.remoteNetwork}`).forEach(element => observer.observe(element));
+    window.addEventListener('resize', schedule);
+    void document.fonts.ready.then(schedule);
+    schedule();
+    return () => { disposed = true; cancelAnimationFrame(frame); observer.disconnect(); window.removeEventListener('resize', schedule); };
+  }, []);
+  return <svg ref={ref} className={styles.privacyConnections} viewBox={`0 0 ${flow.width} ${flow.height}`} aria-hidden="true">{flow.lines.map((line, index) => <g key={index} stroke={line.color}><path d={line.d} fill="none" /><circle cx={line.x} cy={line.y} r={index >= 17 ? 3 : 1.8} fill={line.color} /></g>)}</svg>;
+}
 
 export function OnlineAncestralPage() {
-  return <BusinessPageFrame breadcrumb={[{ label: 'Connect Hub Co.', href: '/' }, { label: 'PitruMoksha Gaya', href: PITRU_MOKSHA_GAYA_ROUTE }, { label: 'Online' }]} className={styles.onlinePage}>
-    <section className={styles.hero} aria-labelledby="online-page-title">
-      <Image src="/images/hero/Hero_1_PitruMoksha_Gaya_Final_v2.0.png" alt="Representative river and ghat scene with a Religious Partner performing ancestral rites while a family participates remotely" fill priority sizes="(max-width: 1023px) 100vw, 75vw" />
-      <div className={styles.heroOverlay} aria-hidden="true" />
-      <div className={styles.heroContent}><p className={styles.eyebrow}>ONLINE ANCESTRAL SERVICES</p><h1 id="online-page-title">Distance Never Stops Devotion.</h1><h2>Participate from Anywhere in the World.</h2><p>Join guided ancestral rituals remotely through verified Religious Partners, live family participation, transparent coordination and documented completion.</p><strong>Designed for NRIs, travelling families, elderly participants and families unable to visit Gaya in person.</strong><div className={styles.heroActions}><Link href="#online-services">Explore Online Services</Link><Link href="#inquiry">Raise an Inquiry</Link></div><small>Verified Religious Partners | Guided Participation | Completion Documentation</small></div>
-      <p className={styles.disclaimer}>Representative image — actual ritual and participation arrangements may vary.</p>
-    </section>
-    <section className={styles.section} id="online-services" aria-labelledby="services-title"><header><p>ONLINE PATHWAYS</p><h2 id="services-title">Explore Online Ancestral Services</h2><span>Choose the service that best matches your family’s circumstances and participation needs.</span></header><div className={styles.serviceGrid}>{services.map(service => <article key={service.title}><span className={styles.serviceIcon}><BusinessPageIcon name={service.icon} /></span><h3>{service.title}</h3><p>{service.description}</p></article>)}</div></section>
-    <section className={`${styles.section} ${styles.virtualFeature}`}><div><p>FEATURED ONLINE SERVICE</p><h2>Virtual Shraddh</h2><strong>Guided ancestral ritual participation when distance prevents physical presence.</strong><ul>{virtualShraddhPoints.map(point=><li key={point}><BusinessPageIcon name="check" /><span>{point}</span></li>)}</ul><p className={styles.featureNote}>Ritual suitability, procedure and participation method depend on tradition, family circumstances and Religious Partner guidance.</p></div><Link href="#inquiry">Learn About Virtual Shraddh</Link></section>
-    <section className={styles.section} aria-labelledby="process-title"><header><p>PROCESS</p><h2 id="process-title">How Online Participation Works</h2></header><ol className={styles.steps}>{steps.map((step,index)=><li key={step.title}><span>{index+1}</span><h3>{step.title}</h3><p>{step.description}</p></li>)}</ol></section>
-    <section className={`${styles.section} ${styles.benefit}`} aria-labelledby="benefit-title"><header><p>ACCESSIBLE PARTICIPATION</p><h2 id="benefit-title">Who May Benefit from Online Participation?</h2></header><ul>{beneficiaryGroups.map(item=><li key={item}><BusinessPageIcon name="check" /><span>{item}</span></li>)}</ul></section>
-    <section className={`${styles.section} ${styles.trust}`} aria-labelledby="trust-title"><header><p>TRUST AND DOCUMENTATION</p><h2 id="trust-title">Guided, Verified and Documented</h2></header><ul>{trustItems.map(item=><li key={item}><BusinessPageIcon name="check" /><span>{item}</span></li>)}</ul></section>
-    <section className={`${styles.section} ${styles.aiSection}`}><div><p>GUIDED ANSWERS</p><h2>Ask GenZ AI</h2><p>Ask about online participation, Virtual Shraddh, required details, scheduling and documentation.</p></div><HeroAssistantPanel standalone slide={{id:'pitru-moksha-online'}} /></section>
-    <section className={styles.section} id="faqs"><header><p>FAQ</p><h2>Frequently Asked Questions</h2></header><div className={styles.faqs}>{faqs.map(([question,answer])=><details key={question}><summary>{question}</summary><p>{answer}</p></details>)}</div></section>
-    <section className={styles.inquiry} id="inquiry" aria-labelledby="inquiry-title"><div><p>GUIDED ASSISTANCE</p><h2 id="inquiry-title">Begin with Guided Assistance</h2><span>Share your family’s requirement and receive guidance on the appropriate Online or Offline service path.</span></div><div className={styles.inquiryActions}><Link href={inquiryHref}>Raise an Inquiry</Link><Link href={PITRU_MOKSHA_GAYA_OFFLINE_ROUTE}>Explore Offline Services</Link></div></section>
-    <nav className={styles.related} aria-label="Related navigation"><strong>Related navigation</strong><div><Link href={PITRU_MOKSHA_GAYA_ROUTE}>PitruMoksha Gaya Overview</Link><Link href={PITRU_MOKSHA_GAYA_OFFLINE_ROUTE}>Offline Services</Link><Link href={VAHI_RECORDS_ROUTE}>Vahi Records</Link></div></nav>
-  </BusinessPageFrame>;
+  return (
+    <BusinessPageFrame breadcrumb={[{ label: 'Connect Hub Co.', href: '/' }, { label: 'PitruMoksha Gaya', href: PITRU_MOKSHA_GAYA_ROUTE }, { label: 'Online' }]} className={styles.onlinePage} showBreadcrumb={false} showSidebar={false}>
+      <div className={styles.neonJourney}>
+        <header className={styles.sharedPrivacyHeading}>
+          <h1 id="online-page-title">Your personal story remains private.</h1>
+          <p>Someone You Loved, Cared For You, or You Feel a Sacred Duty Towards</p>
+        </header>
+        <div className={styles.neonStars} aria-hidden="true">{Array.from({ length: 8 }, (_, index) => <span key={index} />)}</div>
+        <PrivacyConnections />
+        <section className={styles.neonPrivate} id="private-ritual" aria-label="Private service circumstances">
+          <span className={styles.neonCompatibilityAnchor} id="live-connection" aria-hidden="true" />
+          <ul className={styles.desktopCircumstances}>{desktopCircumstances.map(({ label }, index) => <li key={label}><span className={styles.circumstanceSymbol}><CircumstanceIcon index={index} /></span><span>{label}</span></li>)}</ul>
+        </section>
+        <section className={styles.privacyBridge} aria-labelledby="privacy-title">
+          <PrivacyShield />
+          <h2 id="privacy-title">PRIVACY</h2>
+          <p>Confidential Services</p>
+          <p>Your personal story remains private.<br />Only share required intention.</p>
+          <Link className={styles.neonCta} href={privateHref}>BEGIN PRIVATELY <span aria-hidden="true">&rarr;</span></Link>
+          <div className={styles.privacyActions}><Link href="/services">Book Now</Link><Link href={inquiryHref}>Raise Inquiry</Link></div>
+          <p className={styles.privacyPromise}>Your Trust. Our Responsibility.</p>
+        </section>
+        <section className={styles.neonRecognition} id="online-services" aria-label="Participation circumstances">
+          <div className={styles.remoteNetwork}>
+            <div className={styles.neonRays} aria-hidden="true">{remoteSituations.map(({ label }) => <span className={styles.neonRay} key={label} />)}<span className={styles.privateRay} /></div>
+            <div className={styles.remoteFocus}>
+              <NeonOrbits />
+              <div className={styles.neonCore} aria-hidden="true">
+                <span className={styles.hubAura} />
+                <span className={styles.hubParticles} />
+              </div>
+            </div>
+            <ul className={styles.remoteNodes}>{remoteSituations.map(({ label, Icon }) => <li className={styles.recognitionNode} key={label}><span className={styles.nodeIcon} aria-hidden="true"><Icon /></span><span>{label}</span></li>)}</ul>
+          </div>
+          <Link className={styles.privateGateway} href="#private-ritual" aria-label="Explore private and sensitive circumstances">
+            <span className={styles.gatewayIcon} aria-hidden="true"><PrivateLock /></span>
+            <strong>Private / Sensitive<br />Circumstances</strong>
+            <span className={styles.sectionEnergyLink} aria-hidden="true"><span /></span>
+          </Link>
+        </section>
+
+      </div>
+
+      <section className={`${styles.section} ${styles.choiceSection}`} aria-labelledby="choice-title">
+        <SectionHeading number="03" title="Choose the Rite for Your Sacred Intention" id="choice-title" />
+        <div className={styles.choicePanels}>
+          <div><h3>I Know My Ritual</h3><Link className={styles.textAction} href="#ritual-catalogue">Explore Rituals <span aria-hidden="true">→</span></Link></div>
+          <div><h3>Guide Me</h3><Link className={styles.textAction} href={inquiryHref}>Get Ritual Guidance <span aria-hidden="true">→</span></Link><p>Private situation? <Link href={privateHref}>Private Ritual</Link></p></div>
+        </div>
+        <div className={styles.catalogue} id="ritual-catalogue"><h3>Rituals for Your Sacred Intention</h3><ul>{rituals.map(ritual => <li key={ritual}>{ritual}</li>)}</ul></div>
+        <div className={styles.circumstances}><p>Not sure where to begin? Share what brings you here.</p><Markers items={circumstances} /></div>
+      </section>
+
+      <section className={`${styles.section} ${styles.preparation}`} aria-labelledby="preparation-title">
+        <SectionHeading number="04" title="Before We Begin" subtitle="Pre-Ritual Guidance & Preparation" id="preparation-title" />
+        <ol className={styles.preparationFlow}>{preparation.map((step, index) => <li key={step.title}><span className={styles.stepLabel}>0{index + 1}</span><h3>{step.title}</h3><ul>{step.items.map(item => <li key={item}>{item}</li>)}</ul></li>)}</ol>
+        <Markers items={['Time-Zone Coordination', 'Elderly Participation', 'Mobility Needs', 'Multiple Locations', 'Language Assistance', 'Private Participation']} />
+        <p className={styles.smallNote}>For Private Ritual, only ritual-required information proceeds after the confidentiality and consent stage.</p>
+      </section>
+
+      <section className={`${styles.section} ${styles.handConnection}`} aria-labelledby="hand-title">
+        <SectionHeading number="05" title="A Hand-Touched Sacred Connection" subtitle="From Your Hands to Your Offering in Gaya Ji" id="hand-title" />
+        <div className={styles.offeringJourney}>
+          <div><p className={styles.worldLabel}>YOUR HOME</p><ol className={styles.offeringSteps}>{homeOffering.map((step, index) => <li key={step.title}><span>0{index + 1}</span><div><h3>{step.title}</h3><p>{step.text}</p></div></li>)}</ol></div>
+          <div className={styles.offeringBridge}><span aria-hidden="true">→</span><strong>From Your Hands <br />to Gaya Ji</strong><span aria-hidden="true">→</span></div>
+          <div><p className={styles.worldLabel}>GAYA JI</p><ol className={styles.offeringSteps} start={4}>{gayaOffering.map((step, index) => <li key={step.title}><span>0{index + 4}</span><div><h3>{step.title}</h3><p>{step.text}</p></div></li>)}</ol></div>
+        </div>
+        <p className={styles.bookingNote}>Send only after booking confirmation, using the receiving address and preparation instructions supplied for your service.</p>
+        <Markers items={['Personally Touched', 'Service Request Linked', 'Received for Your Ritual', 'Incorporated Where Prescribed', 'Confidentiality-First Handling']} />
+      </section>
+
+      <section className={`${styles.section} ${styles.liveSection}`} aria-labelledby="live-title">
+        <SectionHeading number="06" title="Join the Ritual Live" subtitle="Virtual Sankalp · Traditional Tarpan · Guided Family Participation" id="live-title" />
+        <ol className={styles.liveProgress}>{['Join', 'Sankalp', 'Tarpan', 'Gaya Rites', 'Required Family Participation', 'Completion'].map(stage => <li key={stage}>{stage}</li>)}</ol>
+        <div className={styles.liveDetails}><p><strong>Virtual Sankalp</strong>Mandatory prescribed family ritual connection.</p><p><strong>Traditional Virtual Tarpan</strong>Your family performs the applicable Tarpan remotely under guidance.</p><p><strong>Gaya Ji</strong>Eligible Ritual Proxy + Gayawal Panda/Priest perform the physical rites requiring presence.</p></div>
+        <p className={styles.participateLine}>More Than Watching. You Participate.</p><p className={styles.smallNote}>Your family does not need to remain continuously on video when the selected ritual does not require it.</p>
+      </section>
+
+      <section className={`${styles.section} ${styles.assurance}`} aria-labelledby="assurance-title">
+        <SectionHeading number="07" title="Live. Private. Connected." id="assurance-title" />
+        <Markers items={['Live Participation', 'Time-Zone Coordinated', 'Multi-Location Family Participation', 'Private Participation', 'Strict Confidentiality', 'Documented Completion']} />
+        <p className={styles.smallNote}>Hybrid Participation Available Where Applicable</p>
+      </section>
+
+      <section className={`${styles.section} ${styles.sacredRoute}`} aria-labelledby="gaya-title">
+        <SectionHeading number="08" title="Your Ritual in Gaya Ji" id="gaya-title" />
+        <ol className={styles.routeStrip}>{['Falgu', 'Vishnupad', 'Akshay Vat', 'Visarjan'].map(place => <li key={place}>{place}</li>)}</ol>
+        <p className={styles.additionalVedis}>+ Applicable Additional Vedis Where Prescribed</p>
+        <p>Your confirmed ritual follows its prescribed Vidhi and applicable sacred Vedis in Gaya Ji.</p>
+        <Link className={styles.textAction} href={PITRU_MOKSHA_GAYA_ROUTE}>Explore the Sacred Journey <span aria-hidden="true">→</span></Link>
+      </section>
+
+      <section className={`${styles.section} ${styles.journeySection}`} id="inquiry" aria-labelledby="journey-title">
+        <SectionHeading number="09" title="One Service Request. One Continuous Journey." id="journey-title" />
+        <div className={styles.masterReference}><span>YOUR MASTER REFERENCE</span><strong>The Same Service Request ID</strong><p>From your first request through ritual completion, the same Service Request ID remains your customer-facing master reference.</p></div>
+        <div className={styles.commercialJourney}>
+          <aside className={styles.privateBranch} aria-labelledby="private-branch-title"><p className={styles.eyebrow}>A DISCREET BEGINNING</p><h3 id="private-branch-title">Private Ritual</h3><ol><li>Private Request</li><li>Confidential Pre-Guidance</li><li>Mutual Confidentiality &amp; Consent</li></ol><p className={styles.branchJoin}>Then join the same standard commercial journey <span aria-hidden="true">→</span></p><p>One Service Request ID continues with you.</p><Link className={styles.primaryAction} href={privateHref}>Begin Privately</Link></aside>
+          <ol className={styles.serviceTimeline}>{journey.map((step, index) => <li key={step.title} className={index === 6 ? styles.confirmedStep : undefined}><span className={styles.timelineNumber}>0{index + 1}</span><div><h3>{step.title}</h3><p>{step.text}</p></div></li>)}</ol>
+        </div>
+        <div className={styles.completion}><h3>Completion &amp; Follow-Up</h3><Markers items={['Ritual Completion Certificate', 'Private Documentation', 'Photos/Video where included/permitted', 'Prasad / applicable sacred materials', 'Dispatch/Tracking where applicable', 'Follow-Up']} /></div>
+        <div className={styles.journeyActions}><div><h3>Begin Your Sacred Intention</h3><p>Start with guidance for your family or a private conversation.</p></div><div className={styles.actions}><Link className={styles.primaryAction} href={inquiryHref}>Raise Request</Link><Link className={styles.outlineAction} href={privateHref}>Private Ritual</Link></div></div>
+      </section>
+
+      <nav className={styles.related} aria-label="Related navigation"><Link href={PITRU_MOKSHA_GAYA_ROUTE}>PitruMoksha Gaya Overview</Link><Link href={PITRU_MOKSHA_GAYA_OFFLINE_ROUTE}>Offline Services</Link><Link href={VAHI_RECORDS_ROUTE}>Vahi Records</Link></nav>
+    </BusinessPageFrame>
+  );
 }

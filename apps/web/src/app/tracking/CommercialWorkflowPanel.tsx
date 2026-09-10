@@ -1,5 +1,7 @@
 'use client';
 
+import { priestTerminology } from '@/lib/priest-terminology';
+
 import { useState } from 'react';
 import Link from 'next/link';
 import { ApiError } from '@/lib/api';
@@ -77,7 +79,7 @@ function DetailList({ title, items }: { title: string; items: string[] }) {
   return (
     <div>
       <h5 className="text-xs font-semibold uppercase tracking-wider text-stone-600">{title}</h5>
-      {items.length ? <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-stone-700">{items.map((item) => <li key={item}>{item}</li>)}</ul> : <p className="mt-1 text-sm text-stone-500">None specified.</p>}
+      {items.length ? <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-stone-700">{items.map((item) => <li key={item}>{priestTerminology(item)}</li>)}</ul> : <p className="mt-1 text-sm text-stone-500">None specified.</p>}
     </div>
   );
 }
@@ -222,13 +224,13 @@ export function CommercialWorkflowPanel({ referenceId, verification, workflow, o
           <dl className="mt-4 grid gap-4 sm:grid-cols-2">
             <div><dt className="text-xs font-semibold uppercase tracking-wider text-stone-500">Service</dt><dd className="mt-1 text-sm text-stone-900">{currentQuotation.serviceName}</dd></div>
             <div><dt className="text-xs font-semibold uppercase tracking-wider text-stone-500">Final Price</dt><dd className="mt-1 font-bold text-stone-900">{money(currentQuotation.finalPrice, currentQuotation.currency)}</dd></div>
-            <div className="sm:col-span-2"><dt className="text-xs font-semibold uppercase tracking-wider text-stone-500">Scope</dt><dd className="mt-1 whitespace-pre-wrap text-sm text-stone-700">{currentQuotation.serviceScope}</dd></div>
+            <div className="sm:col-span-2"><dt className="text-xs font-semibold uppercase tracking-wider text-stone-500">Scope</dt><dd className="mt-1 whitespace-pre-wrap text-sm text-stone-700">{priestTerminology(currentQuotation.serviceScope)}</dd></div>
             <DetailList title="Inclusions" items={currentQuotation.inclusions} />
             <DetailList title="Exclusions" items={currentQuotation.exclusions} />
             <div><dt className="text-xs font-semibold uppercase tracking-wider text-stone-500">Valid Until</dt><dd className="mt-1 text-sm text-stone-700">{currentQuotation.validUntil ? new Date(currentQuotation.validUntil).toLocaleString() : 'Not specified'}</dd></div>
             <div><dt className="text-xs font-semibold uppercase tracking-wider text-stone-500">Applicable Charges / Taxes</dt><dd className="mt-1 text-sm text-stone-700">{money(currentQuotation.applicableChargesTaxes, currentQuotation.currency)}</dd></div>
             <div className="sm:col-span-2"><dt className="text-xs font-semibold uppercase tracking-wider text-stone-500">Payment Terms</dt><dd className="mt-1 whitespace-pre-wrap text-sm text-stone-700">{customerPaymentTerms(currentQuotation.paymentTerms)}</dd></div>
-            {currentQuotation.notes ? <div className="sm:col-span-2"><dt className="text-xs font-semibold uppercase tracking-wider text-stone-500">Notes</dt><dd className="mt-1 whitespace-pre-wrap text-sm text-stone-700">{currentQuotation.notes}</dd></div> : null}
+            {currentQuotation.notes ? <div className="sm:col-span-2"><dt className="text-xs font-semibold uppercase tracking-wider text-stone-500">Notes</dt><dd className="mt-1 whitespace-pre-wrap text-sm text-stone-700">{priestTerminology(currentQuotation.notes)}</dd></div> : null}
           </dl>
           {currentQuotation.decision?.decision === 'REQUEST_CHANGE' ? <div className="mt-4 rounded-xl border border-orange-200 bg-orange-50 p-3 text-sm text-stone-700"><strong className="block text-orange-950">Change Requested</strong><p className="mt-1 whitespace-pre-wrap">Your request: {currentQuotation.decision.changeRequest}</p></div> : currentQuotation.decision?.decision === 'ACCEPT' ? <div className={`mt-4 rounded-xl border p-3 text-sm ${completedState}`}><strong className="block">Quotation Accepted</strong><p className="mt-1">Your decision: Accept</p></div> : currentQuotation.decision?.decision === 'REJECT' ? <div className="mt-4 rounded-xl border border-stone-200 bg-stone-50 p-3 text-sm text-stone-700"><strong className="block text-stone-900">Quotation Rejected</strong><p className="mt-1">Your decision: Reject</p></div> : null}
           {currentQuotation.status === 'RELEASED' && !currentQuotation.decision ? <div className="mt-4 space-y-3">
@@ -250,7 +252,7 @@ export function CommercialWorkflowPanel({ referenceId, verification, workflow, o
             <div className="lg:pr-6">
               <h5 className="text-sm font-bold uppercase tracking-wider text-stone-900">A. Agreed Service</h5>
               <dl className="mt-4 grid gap-4">
-                <div><dt className="text-xs font-semibold uppercase tracking-wider text-stone-500">Agreed Scope</dt><dd className="mt-1 whitespace-pre-wrap text-sm text-stone-700">{currentAgreement.agreedScope}</dd></div>
+                <div><dt className="text-xs font-semibold uppercase tracking-wider text-stone-500">Agreed Scope</dt><dd className="mt-1 whitespace-pre-wrap text-sm text-stone-700">{priestTerminology(currentAgreement.agreedScope)}</dd></div>
                 <DetailList title="Inclusions" items={currentAgreement.inclusions} />
                 <div><dt className="text-xs font-semibold uppercase tracking-wider text-stone-500">Final Agreed Price</dt><dd className="mt-1 font-bold text-stone-900">{money(currentAgreement.finalAgreedPrice, currentAgreement.currency)}</dd></div>
               </dl>

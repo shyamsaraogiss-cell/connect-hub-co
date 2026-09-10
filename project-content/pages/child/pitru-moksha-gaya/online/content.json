@@ -15,7 +15,7 @@
         {
           "kind": "field:description",
           "line": 4,
-          "value": "Explore guided online ancestral rituals, Virtual Shraddh participation and verified Religious Partner coordination."
+          "value": "Explore guided online ancestral rituals, Virtual Shraddh participation and Verified Priest coordination."
         }
       ]
     },
@@ -31,7 +31,7 @@
         {
           "kind": "field:description",
           "line": 11,
-          "value": "Participate remotely in a guided Shraddh ritual coordinated through a verified Religious Partner."
+          "value": "Participate remotely in a guided Shraddh ritual coordinated through a Verified Priest."
         },
         {
           "kind": "field:title",
@@ -66,12 +66,12 @@
         {
           "kind": "field:title",
           "line": 15,
-          "value": "Religious Partner Coordination"
+          "value": "Verified Priest Coordination"
         },
         {
           "kind": "field:description",
           "line": 15,
-          "value": "Coordinate ritual requirements, timing and preparation through verified Religious Partners."
+          "value": "Coordinate ritual requirements, timing and preparation through Verified Priests."
         },
         {
           "kind": "field:title",
@@ -151,17 +151,17 @@
         {
           "kind": "field:description",
           "line": 25,
-          "value": "Understand suitable options based on tradition and Religious Partner guidance."
+          "value": "Understand suitable options based on tradition and Verified Priest guidance."
         },
         {
           "kind": "field:title",
           "line": 26,
-          "value": "Confirm Date and Religious Partner"
+          "value": "Confirm Date and Verified Priest"
         },
         {
           "kind": "field:description",
           "line": 26,
-          "value": "Review the proposed timing, preparation and verified Religious Partner."
+          "value": "Review the proposed timing, preparation and Verified Priest."
         },
         {
           "kind": "field:title",
@@ -201,7 +201,7 @@
         {
           "kind": "list:virtualShraddhPoints",
           "line": 34,
-          "value": "A verified Religious Partner is coordinated."
+          "value": "A Verified Priest is coordinated."
         },
         {
           "kind": "list:virtualShraddhPoints",
@@ -251,7 +251,7 @@
         {
           "kind": "list:trustItems",
           "line": 40,
-          "value": "Verified Religious Partners"
+          "value": "Verified Priests"
         },
         {
           "kind": "list:trustItems",
@@ -351,7 +351,7 @@
         {
           "kind": "list:faqs",
           "line": 48,
-          "value": "How is the Religious Partner selected?"
+          "value": "How is the Verified Priest selected?"
         },
         {
           "kind": "list:faqs",
@@ -386,7 +386,7 @@
         {
           "kind": "attribute:alt",
           "line": 55,
-          "value": "Representative river and ghat scene with a Religious Partner performing ancestral rites while a family participates remotely"
+          "value": "Representative river and ghat scene with a Verified Priest performing ancestral rites while a family participates remotely"
         },
         {
           "kind": "jsx-text",
@@ -406,7 +406,7 @@
         {
           "kind": "jsx-text",
           "line": 57,
-          "value": "Join guided ancestral rituals remotely through verified Religious Partners, live family participation, transparent coordination and documented completion."
+          "value": "Join guided ancestral rituals remotely through Verified Priests, live family participation, transparent coordination and documented completion."
         },
         {
           "kind": "jsx-text",
@@ -426,7 +426,7 @@
         {
           "kind": "jsx-text",
           "line": 57,
-          "value": "Verified Religious Partners | Guided Participation | Completion Documentation"
+          "value": "Verified Priests | Guided Participation | Completion Documentation"
         },
         {
           "kind": "jsx-text",
@@ -471,7 +471,7 @@
         {
           "kind": "jsx-text",
           "line": 61,
-          "value": "Ritual suitability, procedure and participation method depend on tradition, family circumstances and Religious Partner guidance."
+          "value": "Ritual suitability, procedure and participation method depend on tradition, family circumstances and Verified Priest guidance."
         },
         {
           "kind": "jsx-text",

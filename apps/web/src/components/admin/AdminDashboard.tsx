@@ -142,7 +142,7 @@ export function AdminDashboard() {
                   : 'text-stone-700 hover:bg-amber-50 hover:text-teal-900'
               }`}
             >
-               Religious Partners
+               Verified Priests
             </button>
 
             <button
@@ -209,7 +209,7 @@ export function AdminDashboard() {
 
                   <div className="rounded-2xl border border-teal-900/20 bg-white p-5 shadow-sm">
                     <div className="text-xs font-bold uppercase tracking-wider text-stone-500">
-                      Verified Partners
+                      Verified Priests
                     </div>
                     <div className="mt-2 font-serif text-3xl font-bold text-teal-900">18</div>
                     <div className="mt-1 text-[11px] text-teal-700 font-semibold">
@@ -233,7 +233,7 @@ export function AdminDashboard() {
                   <h2 className="font-serif text-2xl text-teal-900">System Activity Overview</h2>
                   <p className="text-xs text-stone-600 leading-relaxed">
                     The Connect Hub Co. Unified Admin Dashboard manages end-to-end Operations across all 5 business modules: 
-                    <strong>PitruMoksha Gaya</strong>, <strong>Ritual Services</strong>, <strong>Sacred Travel</strong>, <strong>Vahi Records</strong>, and <strong>Religious Partner Network</strong>.
+                    <strong>PitruMoksha Gaya</strong>, <strong>Ritual Services</strong>, <strong>Sacred Travel</strong>, <strong>Vahi Records</strong>, and <strong>Verified Priest Network</strong>.
                   </p>
                   <div className="grid gap-4 sm:grid-cols-2 text-xs">
                     <div className="rounded-xl border border-stone-200 bg-amber-50/50 p-4">

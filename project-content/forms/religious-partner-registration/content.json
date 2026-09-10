@@ -60,17 +60,17 @@
         {
           "kind": "field:description",
           "line": 51,
-          "value": "Religious Partner registration application"
+          "value": "Priest Registration application"
         },
         {
           "kind": "jsx-text",
           "line": 64,
-          "value": "Partner application submitted"
+          "value": "Priest Application submitted"
         },
         {
           "kind": "jsx-text",
           "line": 64,
-          "value": "Keep this Partner Registration Reference ID for tracking and future communication."
+          "value": "Keep this Priest Registration Reference ID for tracking and future communication."
         },
         {
           "kind": "jsx-text",
@@ -80,7 +80,7 @@
         {
           "kind": "jsx-text",
           "line": 69,
-          "value": "Religious Partner Registration Application"
+          "value": "Priest Registration Application"
         },
         {
           "kind": "jsx-text",
@@ -100,7 +100,7 @@
         {
           "kind": "jsx-text",
           "line": 77,
-          "value": "After successful application submission, the system auto-generates your Partner Registration Reference ID. Please keep this ID for tracking and future communication.\n        "
+          "value": "After successful application submission, the system auto-generates your Priest Registration Reference ID. Please keep this ID for tracking and future communication.\n        "
         },
         {
           "kind": "jsx-text",

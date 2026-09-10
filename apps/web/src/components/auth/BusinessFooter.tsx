@@ -116,7 +116,7 @@ export function BusinessFooter() {
             aria-current={path === "/religious-partners/register" ? "page" : undefined}
             className="rounded-r-md border-l-[3px] border-l-transparent px-2 py-[2px] text-[14px] text-gray-300/90 transition-colors hover:text-white [&[aria-current=page]]:border-l-[#F4B942] [&[aria-current=page]]:bg-[#1599A6] [&[aria-current=page]]:text-white"
           >
-            Partner Registration
+            Priest Registration
           </Link>
 
         </div>
@@ -144,8 +144,8 @@ export function BusinessFooter() {
           </Link>
 
           <Link
-            href="/policies-legal-terms"
-            aria-current={path === "/policies-legal-terms" ? "page" : undefined}
+            href="/policies-and-legal-terms"
+            aria-current={path === "/policies-and-legal-terms" ? "page" : undefined}
             className="ml-[10px] whitespace-nowrap rounded-r-md border-l-[3px] border-l-transparent px-2 py-[2px] text-[14px] text-gray-300/90 transition-colors hover:text-white [&[aria-current=page]]:border-l-[#F4B942] [&[aria-current=page]]:bg-[#1599A6] [&[aria-current=page]]:text-white"
           >
             Policies &amp; Legal Terms

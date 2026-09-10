@@ -47,7 +47,7 @@ export async function getReligiousPartners(
 
     res.status(500).json({
       success: false,
-      message: "Failed to fetch Religious Partners.",
+      message: "Failed to fetch Verified Priests.",
     });
 
   }
@@ -63,7 +63,7 @@ export async function createReligiousPartner(
 
     const input = allowlistedBody(req.body, publicFields);
     if (!input || typeof input.fullName !== "string" || typeof input.category !== "string" || typeof input.mobile !== "string") {
-      res.status(400).json({ success: false, message: "Religious Partner registration fields are invalid." });
+      res.status(400).json({ success: false, message: "Priest Registration fields are invalid." });
       return;
     }
 
@@ -72,7 +72,7 @@ export async function createReligiousPartner(
 
     res.status(201).json({
       success: true,
-      message: "Religious Partner created successfully.",
+      message: "Verified Priest created successfully.",
       data: partner,
     });
 
@@ -82,7 +82,7 @@ export async function createReligiousPartner(
 
     res.status(500).json({
       success: false,
-      message: "Failed to create Religious Partner.",
+      message: "Failed to create Verified Priest.",
     });
 
   }
@@ -93,11 +93,11 @@ export async function getReligiousPartner(req: Request, res: Response): Promise<
   try {
     const id = Array.isArray(req.params.id) ? req.params.id[0] : req.params.id;
     const partner = await ReligiousPartnerService.getReligiousPartner(id);
-    if (!partner) { res.status(404).json({ success: false, message: "Religious Partner not found." }); return; }
+    if (!partner) { res.status(404).json({ success: false, message: "Verified Priest not found." }); return; }
     res.json({ success: true, data: partner });
   } catch (error) {
     console.error(error);
-    res.status(500).json({ success: false, message: "Failed to fetch Religious Partner." });
+    res.status(500).json({ success: false, message: "Failed to fetch Verified Priest." });
   }
 }
 
@@ -106,7 +106,7 @@ export async function updateReligiousPartner(req: Request, res: Response): Promi
     const id = Array.isArray(req.params.id) ? req.params.id[0] : req.params.id;
     const input = allowlistedBody(req.body, managementFields);
     if (!input || Object.keys(input).length === 0) {
-      res.status(400).json({ success: false, message: "Religious Partner update fields are invalid." });
+      res.status(400).json({ success: false, message: "Verified Priest update fields are invalid." });
       return;
     }
     if (typeof input.verificationDate === "string") {
@@ -118,9 +118,9 @@ export async function updateReligiousPartner(req: Request, res: Response): Promi
     res.json({ success: true, data: partner });
   } catch (error) {
     const status = partnerErrorStatus(error);
-    if (status) { res.status(status).json({ success: false, message: "Religious Partner update could not be completed." }); return; }
+    if (status) { res.status(status).json({ success: false, message: "Verified Priest update could not be completed." }); return; }
     console.error(error);
-    res.status(500).json({ success: false, message: "Failed to update Religious Partner." });
+    res.status(500).json({ success: false, message: "Failed to update Verified Priest." });
   }
 }
 
@@ -135,23 +135,23 @@ export async function deactivateReligiousPartner(req: Request, res: Response): P
       return;
     }
     if (error instanceof ReligiousPartnerService.PartnerServiceError && error.code === "PARTNER_NOT_FOUND") {
-      res.status(404).json({ success: false, message: "Religious Partner not found." }); return;
+      res.status(404).json({ success: false, message: "Verified Priest not found." }); return;
     }
     console.error(error);
-    res.status(500).json({ success: false, message: "Failed to deactivate Religious Partner." });
+    res.status(500).json({ success: false, message: "Failed to deactivate Verified Priest." });
   }
 }
 
 export async function linkReligiousPartnerUser(req: Request, res: Response): Promise<void> {
   try {
     const id = Array.isArray(req.params.id) ? req.params.id[0] : req.params.id;
-    if (!req.body?.userId) { res.status(400).json({ success: false, message: "Religious Partner user is required." }); return; }
+    if (!req.body?.userId) { res.status(400).json({ success: false, message: "Verified Priest user is required." }); return; }
     const partner = await ReligiousPartnerService.linkReligiousPartnerUser(id, req.body.userId);
     res.json({ success: true, data: partner });
   } catch (error) {
     const status = partnerErrorStatus(error);
-    if (status) { res.status(status).json({ success: false, message: error instanceof Error ? error.message : "Religious Partner link failed." }); return; }
+    if (status) { res.status(status).json({ success: false, message: error instanceof Error ? error.message : "Verified Priest link failed." }); return; }
     console.error(error);
-    res.status(500).json({ success: false, message: "Failed to link Religious Partner identity." });
+    res.status(500).json({ success: false, message: "Failed to link Verified Priest identity." });
   }
 }

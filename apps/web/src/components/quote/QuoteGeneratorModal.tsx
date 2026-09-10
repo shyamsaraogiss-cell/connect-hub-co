@@ -204,7 +204,7 @@ export function QuoteGeneratorModal({
                   <option value="ritual-services">Ritual Services</option>
                   <option value="travel-assistance">Travel Assistance</option>
                   <option value="vahi-records">Vahi Records</option>
-                  <option value="religious-partners">Religious Partners</option>
+                  <option value="religious-partners">Verified Priests</option>
                 </select>
               </div>
               <div>

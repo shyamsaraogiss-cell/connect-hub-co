@@ -17,7 +17,7 @@ export type BusinessPageShellProps = {
   relatedLinks: readonly BusinessRelatedLink[]; inquiryHref: string; embedded?: boolean;
 };
 
-export function BusinessPageFrame({ breadcrumb, children, className = '', embedded = false, showBreadcrumb = true }: { breadcrumb: BusinessPageShellProps['breadcrumb']; children: React.ReactNode; className?: string; embedded?: boolean; showBreadcrumb?: boolean }) {
+export function BusinessPageFrame({ breadcrumb, children, className = '', embedded = false, showBreadcrumb = true, showSidebar = true }: { breadcrumb: BusinessPageShellProps['breadcrumb']; children: React.ReactNode; className?: string; embedded?: boolean; showBreadcrumb?: boolean; showSidebar?: boolean }) {
   const content = (
       <main className={`${styles.page} business-inner-page ${className}`}>
         {showBreadcrumb ? <nav className={styles.breadcrumbs} aria-label="Breadcrumb">
@@ -33,7 +33,7 @@ export function BusinessPageFrame({ breadcrumb, children, className = '', embedd
         {children}
       </main>
   );
-  return embedded ? content : <PublicHeroShell>{content}</PublicHeroShell>;
+  return embedded ? content : <PublicHeroShell showSidebar={showSidebar} fullWidth={!showSidebar}>{content}</PublicHeroShell>;
 }
 
 export function BusinessPageShell(props: BusinessPageShellProps) {
@@ -49,7 +49,7 @@ export function BusinessPageShell(props: BusinessPageShellProps) {
       <section className={`${styles.section} ${styles.overview}`} aria-labelledby="overview-title"><div><p className={styles.sectionLabel}>OVERVIEW</p><h2 id="overview-title">{props.overviewTitle}</h2><p>{props.overviewCopy}</p></div><ul>{props.overviewPoints.map((point) => <li key={point}><BusinessPageIcon name="check" /><span>{point}</span></li>)}</ul></section>
       <section className={styles.section} aria-labelledby="process-title"><header className={styles.sectionHeading}><p>PROCESS</p><h2 id="process-title">How the Service Works</h2></header><ol className={styles.processGrid}>{props.steps.map((step, index) => <li key={step.title}><span>{String(index + 1).padStart(2, '0')}</span><h3>{step.title}</h3><p>{step.description}</p></li>)}</ol></section>
       <section className={`${styles.section} ${styles.trust}`} aria-labelledby="trust-title"><header className={styles.sectionHeading}><p>TRUST &amp; VERIFICATION</p><h2 id="trust-title">Support Built Around Care and Clarity</h2></header><ul>{props.trustItems.map((item) => <li key={item}><BusinessPageIcon name="check" /><span>{item}</span></li>)}</ul></section>
-      <section className={`${styles.section} ${styles.support}`} aria-labelledby="support-title"><div><p className={styles.sectionLabel}>GUIDED SUPPORT</p><h2 id="support-title">Ask GenZ AI or Raise an Inquiry</h2><p>Use guided assistance to understand available pathways and prepare your request. Final coordination is reviewed by the authorised team and verified Religious Partners.</p></div><div className={styles.supportActions}><Link href="/zen-g">Ask GenZ AI</Link><Link href={props.inquiryHref}>Raise an Inquiry</Link></div></section>
+      <section className={`${styles.section} ${styles.support}`} aria-labelledby="support-title"><div><p className={styles.sectionLabel}>GUIDED SUPPORT</p><h2 id="support-title">Ask GenZ AI or Raise an Inquiry</h2><p>Use guided assistance to understand available pathways and prepare your request. Final coordination is reviewed by the authorised team and Verified Priests.</p></div><div className={styles.supportActions}><Link href="/zen-g">Ask GenZ AI</Link><Link href={props.inquiryHref}>Raise an Inquiry</Link></div></section>
       <section className={styles.section} id="faqs" aria-labelledby="faq-title"><header className={styles.sectionHeading}><p>FAQ PREVIEW</p><h2 id="faq-title">Common Questions</h2></header><div className={styles.faqs}>{props.faqs.map((faq) => <details key={faq.question}><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}</div></section>
       <section className={styles.cta} aria-labelledby="cta-title"><div><p>READY TO BEGIN?</p><h2 id="cta-title">Choose the Right {pageOwner} Pathway</h2><p>Share your requirement for guided next steps and verified coordination.</p></div><Link href={props.inquiryHref}>Raise an Inquiry</Link></section>
       <nav className={styles.related} aria-label={`Related ${pageOwner} navigation`}><strong>Related navigation</strong><div>{props.relatedLinks.map((item) => <Link href={item.href} key={item.href}>{item.label}</Link>)}</div></nav>

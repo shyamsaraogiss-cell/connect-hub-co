@@ -48,7 +48,7 @@ export default function NewPartnerPage() {
       router.refresh();
     } catch (error) {
       console.error(error);
-      alert("Unable to save partner.");
+      alert("Unable to save Priest.");
     } finally {
       setSaving(false);
     }
@@ -59,7 +59,7 @@ export default function NewPartnerPage() {
       <div className="mx-auto max-w-3xl rounded-xl bg-white p-8 shadow">
 
         <h1 className="mb-8 text-3xl font-bold">
-          Register Religious Partner
+          Register Verified Priest
         </h1>
 
         <form onSubmit={handleSubmit} className="space-y-5">
@@ -67,7 +67,7 @@ export default function NewPartnerPage() {
           <input
             className="w-full rounded border p-3"
             name="name"
-            placeholder="Partner Name"
+            placeholder="Priest Name"
             value={form.name}
             onChange={handleChange}
             required
@@ -149,7 +149,7 @@ export default function NewPartnerPage() {
             disabled={saving}
             className="rounded bg-blue-600 px-6 py-3 text-white hover:bg-blue-700 disabled:opacity-50"
           >
-            {saving ? "Saving..." : "Save Partner"}
+            {saving ? "Saving..." : "Save Priest"}
           </button>
 
         </form>

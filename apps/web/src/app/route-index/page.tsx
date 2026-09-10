@@ -17,7 +17,7 @@ const iaGroups = [
       ['Ritual Services Master', ROUTES.RITUAL_SERVICES],
       ['Travel Assistance Master', ROUTES.TRAVEL_ASSISTANCE],
       ['Vahi Records', ROUTES.VAHI_RECORDS],
-      ['Religious Partner Network', ROUTES.RELIGIOUS_PARTNERS],
+      ['Verified Priest Network', ROUTES.RELIGIOUS_PARTNERS],
       ['Service Catalog & Booking Entry', ROUTES.BOOKING],
       ['Knowledge Center', ROUTES.KNOWLEDGE_CENTER],
       ['Ask GenZ AI (AI Help)', ROUTES.ASK_GENZ_AI],
@@ -52,7 +52,7 @@ const iaGroups = [
     description: 'Authenticated operations workspace (Requires ADMIN / STAFF role).',
     links: [
       ['Operations Dashboard', ROUTES.DASHBOARD],
-      ['Religious Partners Management', '/partners'],
+      ['Verified Priests Management', '/partners'],
       ['Customers Database', '/customers'],
       ['Bookings Management', '/bookings'],
       ['All Customer Requests', '/requests'],

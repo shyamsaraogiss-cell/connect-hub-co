@@ -15,7 +15,7 @@ const offlineRitualData: BusinessPageShellProps = {
   eyebrow: 'ON-SITE & SACRED DESTINATION PUJAS',
   title: 'Offline On-Site Ritual Services',
   introduction: 'In-person traditional Vedic ceremonies conducted at your residence, venue, or sacred temple destinations across India and Nepal.',
-  supportingLine: 'Coordinated with verified local Religious Partners, pure Samagri procurement, and complete ground support.',
+  supportingLine: 'Coordinated with local Verified Priests, pure Samagri procurement, and complete ground support.',
   inquiryHref: '/contact?topic=offline-ritual-services',
   journeys: [
     {

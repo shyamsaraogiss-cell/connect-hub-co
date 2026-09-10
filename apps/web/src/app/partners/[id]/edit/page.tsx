@@ -1,4 +1,5 @@
 "use client";
+import { priestErrorMessage } from "@/lib/priest-terminology";
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -18,7 +19,7 @@ export default function EditPartnerPage() {
       try {
         setPartner(await getPartner(params.id));
       } catch (loadError) {
-        setError(loadError instanceof Error ? loadError.message : "Unable to load partner.");
+        setError(loadError instanceof Error ? loadError.message : "Unable to load Priest.");
       }
     }
     if (params.id) void load();
@@ -30,7 +31,7 @@ export default function EditPartnerPage() {
     router.refresh();
   }
 
-  if (error) return <main className="p-8"><p role="alert">{error}</p><Link href="/partners">Back to partners</Link></main>;
+  if (error) return <main className="p-8"><p role="alert">{priestErrorMessage(error)}</p><Link href="/partners">Back to Verified Priests</Link></main>;
   if (!partner) return <main className="p-8">Loading...</main>;
 
   const initialValue: ReligiousPartnerInput = {
@@ -38,5 +39,5 @@ export default function EditPartnerPage() {
     phone: partner.phone, city: partner.city, country: partner.country, verified: partner.verified, active: partner.active,
   };
 
-  return <main className="min-h-screen bg-gray-100 p-8"><div className="mx-auto max-w-3xl rounded-xl bg-white p-8 shadow"><h1 className="mb-8 text-3xl font-bold">Edit Religious Partner</h1><PartnerForm initialValue={initialValue} submitLabel="Save Changes" onSubmit={submit} /></div></main>;
+  return <main className="min-h-screen bg-gray-100 p-8"><div className="mx-auto max-w-3xl rounded-xl bg-white p-8 shadow"><h1 className="mb-8 text-3xl font-bold">Edit Verified Priest</h1><PartnerForm initialValue={initialValue} submitLabel="Save Changes" onSubmit={submit} /></div></main>;
 }

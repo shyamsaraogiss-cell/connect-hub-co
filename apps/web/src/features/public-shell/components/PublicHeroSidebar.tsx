@@ -251,7 +251,7 @@ export function PublicHeroSidebar() {
         {/* Religious Partner Registration */}
         <Link href="/religious-partners" className={`${styles.navItem} ${activeMainTab === 'religious-partners' ? styles.activeItem : ''}`}>
           <span className={styles.navIcon}><PartnerUserPlusIcon /></span>
-          <span className={styles.navLabel}>Religious Partner Registration</span>
+          <span className={styles.navLabel}>Priest Registration</span>
         </Link>
 
         {/* Mail / Raise Inquiry */}

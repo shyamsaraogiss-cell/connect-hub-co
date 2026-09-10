@@ -46,7 +46,7 @@ export function LegacyRegisterPage() {
           </span>
           <h1 className="mt-1 font-serif text-3xl text-teal-800">Create an Account</h1>
           <p className="mt-2 text-sm text-stone-600">
-            Register as a Seeking Family Customer or verified Religious Partner
+            Register as a Seeking Family Customer or Verified Priest
           </p>
         </div>
 
@@ -72,7 +72,7 @@ export function LegacyRegisterPage() {
             }`}
             onClick={() => setRole('PARTNER')}
           >
-            Religious Partner
+            Verified Priest
           </button>
         </div>
 
@@ -159,7 +159,7 @@ export function LegacyRegisterPage() {
             disabled={submitting}
             type="submit"
           >
-            {submitting ? 'Registering Account…' : `Register as ${role === 'CUSTOMER' ? 'Customer' : 'Religious Partner'}`}
+            {submitting ? 'Registering Account…' : `Register as ${role === 'CUSTOMER' ? 'Customer' : 'Verified Priest'}`}
           </button>
         </form>
 

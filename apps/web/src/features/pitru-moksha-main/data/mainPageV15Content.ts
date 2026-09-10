@@ -421,7 +421,7 @@ export const v15PageContent = {
         },
         {
           "kind": "paragraph",
-          "text": "Introduction: Connect Hub Co. is a technology-enabled, human and virtual assisted service company. It provides structured guidance, coordination, customer support, and end-to-end assistance through verified partners."
+          "text": "Introduction: Connect Hub Co. is a technology-enabled, human and virtual assisted service company. It provides structured guidance, coordination, customer support, and end-to-end assistance through Verified Priests."
         },
         {
           "kind": "paragraph",

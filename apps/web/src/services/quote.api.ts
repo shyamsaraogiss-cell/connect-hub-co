@@ -1,3 +1,4 @@
+import { priestTerminology } from '@/lib/priest-terminology';
 import { api } from '@/lib/api';
 import type { QuoteInput, QuoteStatus, ServiceQuote } from '@/types/quote';
 import { sendEmailNotification, sendWhatsAppNotification } from './communication.api';
@@ -129,7 +130,7 @@ export async function dispatchQuoteViaEmail(quote: ServiceQuote): Promise<boolea
     <div style="font-family: serif; max-width: 650px; margin: 0 auto; border: 1px solid #087F8C; padding: 24px; border-radius: 16px; background-color: #ffffff;">
       <h2 style="color: #087F8C; border-bottom: 2px solid #D4AF37; padding-bottom: 8px;">Connect Hub Co. - Official Vaidik Service Proposal</h2>
       <p>Dear <strong>${quote.customerName}</strong>,</p>
-      <p>Pranam. Please find enclosed your approved service proposal for <strong>${quote.serviceName}</strong> (Category: ${quote.category.toUpperCase()}).</p>
+      <p>Pranam. Please find enclosed your approved service proposal for <strong>${priestTerminology(quote.serviceName)}</strong> (Category: ${quote.category.toUpperCase()}).</p>
       
       <table style="width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px;">
         <thead>
@@ -144,7 +145,7 @@ export async function dispatchQuoteViaEmail(quote: ServiceQuote): Promise<boolea
             .map(
               (i) => `
             <tr style="border-bottom: 1px solid #eee;">
-              <td style="padding: 8px;">${i.description}</td>
+              <td style="padding: 8px;">${priestTerminology(i.description)}</td>
               <td style="padding: 8px; text-align: center;">${i.quantity}</td>
               <td style="padding: 8px; text-align: right;">₹${i.total.toLocaleString()}</td>
             </tr>
@@ -155,8 +156,8 @@ export async function dispatchQuoteViaEmail(quote: ServiceQuote): Promise<boolea
       </table>
       
       <div style="margin: 16px 0; background: #fffbeb; padding: 12px; border-radius: 8px; border: 1px solid #fef3c7; font-size: 12px;">
-        <strong>Inclusions:</strong> ${quote.inclusions.join(', ')}<br/>
-        <strong>Exclusions:</strong> ${quote.exclusions.join(', ')}
+        <strong>Inclusions:</strong> ${priestTerminology(quote.inclusions.join(', '))}<br/>
+        <strong>Exclusions:</strong> ${priestTerminology(quote.exclusions.join(', '))}
       </div>
 
       <div style="text-align: right; font-weight: bold; font-size: 18px; color: #087F8C;">
@@ -191,16 +192,16 @@ export async function dispatchQuoteViaWhatsApp(quote: ServiceQuote): Promise<str
 
 Pranam ${quote.customerName} Ji,
 
-Here is your approved Vaidik service proposal for *${quote.serviceName}*:
+Here is your approved Vaidik service proposal for *${priestTerminology(quote.serviceName)}*:
 
-${quote.items.map((i) => `• ${i.description} (x${i.quantity}): ₹${i.total.toLocaleString()}`).join('\n')}
+${quote.items.map((i) => `• ${priestTerminology(i.description)} (x${i.quantity}): ₹${i.total.toLocaleString()}`).join('\n')}
 
 *Total Investment:* ₹${quote.totalAmount.toLocaleString()} (Incl. taxes)
 *Approved By:* ${quote.approvedByAdmin || 'Administrator'}
 *Valid Until:* ${quote.validUntil}
 
-*Inclusions:* ${quote.inclusions.join(', ')}
-*Exclusions:* ${quote.exclusions.join(', ')}
+*Inclusions:* ${priestTerminology(quote.inclusions.join(', '))}
+*Exclusions:* ${priestTerminology(quote.exclusions.join(', '))}
 
 Reply to this message to accept or confirm ceremony dates.
 
@@ -275,7 +276,7 @@ export function generateQuotePDFHTML(quote: ServiceQuote): string {
               .map(
                 (i) => `
               <tr>
-                <td>${i.description}</td>
+                <td>${priestTerminology(i.description)}</td>
                 <td style="text-align: center;">${i.quantity}</td>
                 <td style="text-align: right;">₹${i.unitPrice.toLocaleString()}</td>
                 <td style="text-align: right;">₹${i.total.toLocaleString()}</td>
@@ -291,9 +292,9 @@ export function generateQuotePDFHTML(quote: ServiceQuote): string {
           <div class="total-price">Total Amount: ₹${quote.totalAmount.toLocaleString()}</div>
         </div>
         <div class="scope-box">
-          <strong>INCLUSIONS:</strong> ${quote.inclusions.join(', ')}<br/><br/>
-          <strong>EXCLUSIONS:</strong> ${quote.exclusions.join(', ')}<br/><br/>
-          <strong>TERMS & CONDITIONS:</strong> ${quote.termsAndConditions}
+          <strong>INCLUSIONS:</strong> ${priestTerminology(quote.inclusions.join(', '))}<br/><br/>
+          <strong>EXCLUSIONS:</strong> ${priestTerminology(quote.exclusions.join(', '))}<br/><br/>
+          <strong>TERMS & CONDITIONS:</strong> ${priestTerminology(quote.termsAndConditions)}
         </div>
         <div class="footer">
           Official Vaidik Service Proposal issued by Connect Hub Co. Operations Desk.<br/>

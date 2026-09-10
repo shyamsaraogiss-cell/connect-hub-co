@@ -1,3 +1,4 @@
+import { priestTerminology } from '@/lib/priest-terminology';
 import { type URMSUniversalRecord } from '@/types/urms';
 
 export type URMSNotificationEventType =
@@ -55,7 +56,7 @@ export function dispatchURMSNotification(
     recipientPhone: record.guestPhone,
     channel: 'SYSTEM',
     status: 'PENDING_EXTERNAL_PROVIDER',
-    message: msg,
+    message: priestTerminology(msg),
     createdAt: now,
   };
 

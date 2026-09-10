@@ -41,7 +41,7 @@ const services = [
   ['NRI & Remote Family Assistance', 'Provide inquiry and coordination support for families who cannot initially visit Gaya Ji in person.'],
   ['Vahi-linked Ritual Guidance', 'Explain how available lineage or pilgrimage references may support a related PitruMoksha Gaya inquiry, without treating the Vahi search as ritual performance.'],
   ['Digital Access', 'Support families in responsibly viewing, receiving, and understanding available ancestral record entries.'],
-  ['Authentic & Verified', 'Assist in identifying and coordinating with relevant traditional record custodians through verified Religious Partners.'],
+  ['Authentic & Verified', 'Assist in identifying and coordinating with relevant traditional record custodians through Verified Priests.'],
 ] as const;
 
 const cardServices = [services[0], services[1], services[2], services[3], services[4], services[7]] as const;

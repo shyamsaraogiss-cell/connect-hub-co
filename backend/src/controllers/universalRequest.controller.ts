@@ -66,7 +66,7 @@ export async function updateUniversalRequest(req: AuthenticatedRequest, res: Res
     return res.json(await requests.updateRequestByAdmin(routeParam(req.params.referenceId), req.body, req.auth));
   } catch (error) {
     if (error instanceof Error && error.message === "ASSIGNED_PARTNER_NOT_ELIGIBLE") {
-      return res.status(400).json({ success: false, message: "Assigned user is not an active Religious Partner." });
+      return res.status(400).json({ success: false, message: "Assigned user is not an active Verified Priest." });
     }
     if (error instanceof Error && error.message === "INVALID_STATUS_TRANSITION") {
       return res.status(409).json({ success: false, message: "Status transition is not permitted." });
@@ -81,7 +81,7 @@ export async function updateUniversalRequest(req: AuthenticatedRequest, res: Res
 export async function updatePartnerStatus(req: AuthenticatedRequest, res: Response) {
   const { status, publicNote } = req.body as { status?: string; publicNote?: string };
   if (status !== "IN_PROGRESS" && status !== "COMPLETED") {
-    return res.status(400).json({ success: false, message: "Partner status is not permitted." });
+    return res.status(400).json({ success: false, message: "Priest Status is not permitted." });
   }
   const result = await requests.updateRequestByPartner(routeParam(req.params.referenceId), req.auth!.id, status, publicNote);
   if (!result.count) return res.status(404).json({ success: false, message: "Assigned request not found." });

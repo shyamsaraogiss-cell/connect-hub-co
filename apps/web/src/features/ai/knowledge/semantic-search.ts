@@ -48,7 +48,7 @@ export const SITE_NAVIGATION_MAP: NavigationRoute[] = [
   { label: 'Vaidik Ritual Services', href: '/ritual-services', category: 'Services Page', description: 'Griha Pravesh, Navagraha Shanti, and home pujas' },
   { label: 'Pilgrimage Travel Assist', href: '/travel-assistance', category: 'Services Page', description: 'Station pickup, hotel accommodation, and senior citizen escort' },
   { label: 'Vahi Lineage Records', href: '/vahi-records', category: 'Services Page', description: 'Ancestral Vahi & Panji ledger verification' },
-  { label: 'Religious Partner Portal', href: '/religious-partners', category: 'Services Page', description: 'Registration for Tirth Pandas, Purohits & Acharyas' },
+  { label: 'Verified Priest Portal', href: '/religious-partners', category: 'Services Page', description: 'Registration for Tirth Pandas, Purohits & Acharyas' },
   { label: 'Services Catalog', href: '/services', category: 'Catalog Page', description: 'Complete service catalog with transparent Dakshina pricing' },
   { label: 'URMS Tracking Portal', href: '/tracking', category: 'Tracking & Forms', description: 'Live status tracking via Universal Reference ID (CHC-2026-XXXXXX)' },
   { label: 'Knowledge Center', href: '/knowledge-center', category: 'Repository', description: 'Central repository for Vedic guides, articles & FAQs' },
@@ -143,7 +143,7 @@ export const APPROVED_PUBLIC_KNOWLEDGE_SOURCES: readonly PublicKnowledgeSource[]
   {
     id: 'public_company_overview', sourceType: 'public-page', route: '/about', category: 'company-info', domain: 'company', intent: 'definition',
     questions: ['What is Connect Hub Co.?', 'What does Connect Hub Co. do?', 'Tell me about Connect Hub Co.'],
-    approvedContent: 'Our mission is to connect families with verified Hindu religious partners and practical pilgrimage support through clear, respectful, auditable workflows.',
+    approvedContent: 'Our mission is to connect families with Hindu Verified Priests and practical pilgrimage support through clear, respectful, auditable workflows.',
   },
   {
     id: 'public_knowledge_center_overview', sourceType: 'knowledge-guide', route: '/knowledge-center', category: 'company-info', domain: 'knowledge-center', intent: 'definition',
@@ -159,7 +159,7 @@ export const APPROVED_PUBLIC_KNOWLEDGE_SOURCES: readonly PublicKnowledgeSource[]
   {
     id: 'public_privacy_lineage', sourceType: 'policy', route: '/privacy-policy', category: 'company-info', domain: 'privacy', intent: 'privacy',
     questions: ['How is family lineage information protected?', 'How are Vahi and Panji records protected?'],
-    approvedContent: 'Traditional Vahi and Panji lineage records are strictly protected. They are never published for public online search, sold, or shared with unauthorized third parties. Access is restricted to assigned verified Religious Partners and Pandas.',
+    approvedContent: 'Traditional Vahi and Panji lineage records are strictly protected. They are never published for public online search, sold, or shared with unauthorized third parties. Access is restricted to assigned Verified Priests and Pandas.',
   },
   {
     id: 'public_cancellation_policy', sourceType: 'policy', route: '/cancellation-policy', category: 'company-info', domain: 'cancellation', intent: 'policy',
@@ -169,7 +169,7 @@ export const APPROVED_PUBLIC_KNOWLEDGE_SOURCES: readonly PublicKnowledgeSource[]
   {
     id: 'public_terms', sourceType: 'policy', route: '/terms', category: 'company-info', domain: 'terms', intent: 'policy',
     questions: ['What approved service terms apply?', 'What are the service terms?'],
-    approvedContent: 'Connect Hub Co. acts as an authorized coordination platform connecting families with verified Religious Partners, qualified priests, and travel support providers. Final ritual formats and traditions are confirmed with verified priests.',
+    approvedContent: 'Connect Hub Co. acts as an authorized coordination platform connecting families with Verified Priests, qualified priests, and travel support providers. Final ritual formats and traditions are confirmed with verified priests.',
   },
   {
     id: 'public_booking_terms', sourceType: 'policy', route: '/booking-terms', category: 'booking', domain: 'booking', intent: 'policy',
@@ -179,7 +179,7 @@ export const APPROVED_PUBLIC_KNOWLEDGE_SOURCES: readonly PublicKnowledgeSource[]
   {
     id: 'public_offline_ritual', sourceType: 'public-page', route: '/ritual-services/offline', category: 'ritual-services', domain: 'offline-ritual', intent: 'participation',
     questions: ['How does offline ritual participation work?', 'How do offline on-site ritual services work?'],
-    approvedContent: 'In-person traditional Vedic ceremonies are conducted at your residence, venue, or sacred temple destinations across India and Nepal, coordinated with verified local Religious Partners, pure Samagri procurement, and complete ground support.',
+    approvedContent: 'In-person traditional Vedic ceremonies are conducted at your residence, venue, or sacred temple destinations across India and Nepal, coordinated with local Verified Priests, pure Samagri procurement, and complete ground support.',
   },
   {
     id: 'public_online_ritual', sourceType: 'public-page', route: '/ritual-services/online', category: 'ritual-services', domain: 'online-ritual', intent: 'participation',
