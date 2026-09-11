@@ -1,0 +1,19 @@
+:root {
+  --ch-bg: #f4f8fb;
+  --ch-bg-elevated: #ffffff;
+  --ch-ink: #0b1f33;
+  --ch-ink-muted: #4a6578;
+  --ch-accent: #0e4d6c;
+  --ch-accent-soft: #d7e8f2;
+  /* Aliases: keep gold names so leftover callers inherit peacock, not sand */
+  --ch-gold: var(--ch-accent);
+  --ch-gold-soft: #5b8fa8;
+  --ch-hero-overlay: linear-gradient(
+    105deg,
+    rgba(11, 31, 51, 0.78) 0%,
+    rgba(11, 31, 51, 0.5) 42%,
+    rgba(11, 31, 51, 0.22) 100%
+  );
+  --ch-radius: 12px;
+  --ch-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}

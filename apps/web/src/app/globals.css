@@ -1,36 +1,29 @@
 @import "tailwindcss";
+@import "../styles/public-theme.css";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --shell-peacock-top: #043D45;
-  --shell-peacock: #087F8C;
-  --shell-peacock-bottom: #032E35;
+  --background: var(--ch-bg);
+  --foreground: var(--ch-ink);
+  --shell-peacock-top: #043d45;
+  --shell-peacock: #087f8c;
+  --shell-peacock-bottom: #032e35;
   --royal-navy: #0c192c;
-  --ritual-gold: #D4AF37;
-  --gold-bright: #F4B942;
-  --border-soft: #055B66;
+  --ritual-gold: var(--ch-gold-soft);
+  --gold-bright: #c9a227;
+  --border-soft: color-mix(in srgb, var(--ch-gold) 35%, transparent);
   --text-on-peacock: #ffffff;
-  --warm-ivory-soft: #fffdf8;
+  --warm-ivory-soft: var(--ch-bg-elevated);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-body);
+  --font-serif: var(--font-display);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--ch-bg);
+  color: var(--ch-ink);
+  font-family: var(--font-body), system-ui, sans-serif;
 }
-

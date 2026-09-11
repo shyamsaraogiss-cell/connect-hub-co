@@ -1,8 +1,8 @@
 'use client';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useState } from 'react';
-import styles from '../PublicHeroShell.module.css';
+import { useEffect, useState } from 'react';
+import styles from '@/components/auth/PublicServicesSidebar.module.css';
 
 // SVG Icons matching the PNG Design Specification
 const HomeIcon = () => (
@@ -159,9 +159,30 @@ const LocationIcon = () => (
   </svg>
 );
 
-export function PublicHeroSidebar() {
+export function PublicHeroSidebar({
+  open: openProp,
+  onOpenChange,
+  showTrigger = true,
+}: {
+  open?: boolean;
+  onOpenChange?: (open: boolean) => void;
+  showTrigger?: boolean;
+} = {}) {
   const path = usePathname();
-  const [open, setOpen] = useState(false);
+  const [internalOpen, setInternalOpen] = useState(false);
+  const controlled = typeof openProp === 'boolean';
+  const open = controlled ? openProp : internalOpen;
+
+  const setOpen = (next: boolean | ((value: boolean) => boolean)) => {
+    const value = typeof next === 'function' ? next(open) : next;
+    if (!controlled) setInternalOpen(value);
+    onOpenChange?.(value);
+  };
+
+  useEffect(() => {
+    setOpen(false);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- close drawer on route change only
+  }, [path]);
 
   const getActiveMainTab = () => {
     if (!path) return '';
@@ -286,33 +307,36 @@ export function PublicHeroSidebar() {
 
   return (
     <>
-      <button
-        className={styles.mobileTrigger}
-        type="button"
-        aria-expanded={open}
-        aria-controls="public-hero-sidebar"
-        onClick={() => setOpen((value) => !value)}
-      >
-        <span aria-hidden="true">â˜°</span>
-        {open ? 'Close Explore menu' : 'Explore menu'}
-      </button>
+      {showTrigger ? (
+        <button
+          className={styles.drawerTrigger}
+          type="button"
+          aria-expanded={open}
+          aria-controls="public-services-drawer"
+          onClick={() => setOpen(!open)}
+        >
+          <span aria-hidden="true">☰</span>
+          {open ? 'Close services' : 'Services'}
+        </button>
+      ) : null}
       {open ? (
         <button
           className={styles.backdrop}
           type="button"
-          aria-label="Close Explore menu"
+          aria-label="Close services menu"
           onClick={() => setOpen(false)}
         />
       ) : null}
       <nav
-        id="public-hero-sidebar"
+        id="public-services-drawer"
         className={`${styles.sidebar} ${open ? styles.open : ''}`}
-        aria-label="Explore Connect Hub Co"
+        aria-label="Connect Hub Co services"
+        aria-hidden={!open}
       >
-        <div className={styles.mobileHeading}>
-          <strong>Explore</strong>
-          <button type="button" onClick={() => setOpen(false)} aria-label="Close Explore menu">
-            Ã—
+        <div className={styles.drawerHeading}>
+          <strong>Services</strong>
+          <button type="button" onClick={() => setOpen(false)} aria-label="Close services menu">
+            ×
           </button>
         </div>
         {sidebarContent}

@@ -1,6 +1,5 @@
-﻿import React from 'react';
-import { BusinessHome } from '@/components/common/BusinessHome';
+﻿import { HomeLanding } from '@/features/home-landing';
 
 export default function HomePage() {
-  return <BusinessHome />;
+  return <HomeLanding />;
 }

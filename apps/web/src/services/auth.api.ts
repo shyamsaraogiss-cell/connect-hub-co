@@ -1,5 +1,5 @@
 import { api, clearAccessToken, persistAccessToken } from "@/lib/api";
-import { AuthUser, LoginInput } from "@/types/auth";
+import { AuthUser, LoginInput, RegisterInput } from "@/types/auth";
 
 interface BackendAuthUser {
   id: string;
@@ -10,6 +10,12 @@ interface BackendAuthUser {
 
 interface BackendLoginResponse {
   token: string;
+  user: BackendAuthUser;
+}
+
+interface BackendRegisterResponse {
+  success: boolean;
+  message: string;
   user: BackendAuthUser;
 }
 
@@ -28,6 +34,14 @@ export async function login(input: LoginInput): Promise<{ user: AuthUser }> {
       role: response.user.role,
     },
   };
+}
+
+export async function register(input: RegisterInput): Promise<{ message: string }> {
+  const response = await api<BackendRegisterResponse>("/api/auth/register", {
+    method: "POST",
+    body: JSON.stringify(input),
+  });
+  return { message: response.message };
 }
 
 export async function logout() {

@@ -26,6 +26,7 @@ export function PageContent({ children }: { children: React.ReactNode }) {
     path.startsWith("/travel-assistance/success") ||
     path.startsWith("/religious-partners") ||
     path === "/knowledge-center" ||
+    path.startsWith("/knowledge-center/") ||
     path === "/tracking" ||
     path === "/complaint" ||
     path === "/grievance" ||
@@ -43,10 +44,11 @@ export function PageContent({ children }: { children: React.ReactNode }) {
     return (
       <>
         {children}
-        {exceptionPage ? <NeedHelpAITrigger /> : null}
+        {exceptionPage || path === "/" ? <NeedHelpAITrigger /> : null}
       </>
     );
   }
+
   return (
     <InternalSidebar>
       {path === "/dashboard" ? <BusinessDashboard /> : children}

@@ -18,7 +18,7 @@ export function BusinessHome() {
 
         <section
           aria-label="AI panel area"
-          className="col-start-2 row-start-1 h-[400px] w-[324px] overflow-hidden border-2 border-[#7A5FE0] bg-[#07162f] shadow-[0_0_0_1px_#D4AF37,0_12px_28px_rgba(4,12,35,.28)]"
+          className="col-start-2 row-start-1 h-[400px] w-[324px] overflow-hidden border-2 border-[#087F8C] bg-[#fffdfa] shadow-[0_0_0_1px_#D4AF37,0_12px_28px_rgba(6,78,89,.22)]"
         >
           <GenZRitualAIEngine category="pitru-moksha-gaya" compact />
         </section>

@@ -2,15 +2,15 @@
 
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
-import { getCurrentUser, login as loginRequest, logout as logoutRequest } from "@/services/auth.api";
-import { AuthUser, LoginInput } from "@/types/auth";
+import { getCurrentUser, login as loginRequest, logout as logoutRequest, register as registerRequest } from "@/services/auth.api";
+import { AuthUser, LoginInput, RegisterInput } from "@/types/auth";
 
 interface AuthContextValue {
   user: AuthUser | null;
   loading: boolean;
   login: (input: LoginInput) => Promise<void>;
   logout: () => Promise<void>;
-  register: (...args: unknown[]) => Promise<void>;
+  register: (input: RegisterInput) => Promise<void>;
   forgotPassword: (...args: unknown[]) => Promise<{ message: string }>;
   resetPassword: (...args: unknown[]) => Promise<{ message: string }>;
   verifyEmail: (...args: unknown[]) => Promise<{ message: string }>;
@@ -54,7 +54,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     if (!loading && !user && !isPublic) router.replace("/login");
-    if (!loading && user && pathname === "/login") router.replace("/");
+    if (!loading && user && (pathname === "/login" || pathname === "/register")) router.replace("/");
   }, [isPublic, loading, pathname, router, user]);
 
   const login = useCallback(async (input: LoginInput) => {
@@ -65,7 +65,12 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   const logout = useCallback(async () => {
     try { await logoutRequest(); }
-    finally { setUser(null); router.replace("/login"); }
+    finally { setUser(null); router.replace("/"); }
+  }, [router]);
+
+  const register = useCallback(async (input: RegisterInput) => {
+    await registerRequest(input);
+    router.replace("/login?registered=1");
   }, [router]);
 
   const hasRole = useCallback((role: AuthUser["role"] | AuthUser["role"][]) => {
@@ -83,11 +88,11 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     login,
     logout,
     hasRole,
-    register: unsupportedAuthFlow,
+    register,
     forgotPassword: unsupportedAuthFlow,
     resetPassword: unsupportedAuthFlow,
     verifyEmail: unsupportedAuthFlow,
-  }), [hasRole, loading, login, logout, unsupportedAuthFlow, user]);
+  }), [hasRole, loading, login, logout, register, unsupportedAuthFlow, user]);
 
   const canRender = isPublic || (!loading && user);
 
