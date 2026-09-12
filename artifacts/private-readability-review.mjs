@@ -3,7 +3,7 @@
 import assert from 'node:assert/strict';
 import { mkdir, writeFile, readFile } from 'node:fs/promises';
 
-const site = 'http://localhost:3000';
+const site = 'http://localhost:3050';
 const phase = process.argv[2] || 'before';
 const debugging = 'http://localhost:9229';
 const page = await (await fetch(`${debugging}/json/new?about:blank`, { method: 'PUT' })).json();
