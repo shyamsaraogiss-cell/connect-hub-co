@@ -1,5 +1,0 @@
-﻿import ts from '../apps/web/node_modules/typescript/lib/typescript.js';
-import {readFileSync,readdirSync,writeFileSync} from 'node:fs';
-const rows=[];
-function walk(dir){for(const e of readdirSync(dir,{withFileTypes:true})){const p=dir+'/'+e.name;if(e.isDirectory())walk(p);else if(/\.(tsx|ts)$/.test(p)&&!p.includes('/__tests__/')&&!p.endsWith('.test.ts')){const text=readFileSync(p,'utf8');const sf=ts.createSourceFile(p,text,99,true,p.endsWith('tsx')?4:3);function visit(n){if((ts.isStringLiteral(n)||ts.isJsxText(n)||ts.isNoSubstitutionTemplateLiteral(n)||ts.isTemplateHead(n)||ts.isTemplateTail(n))&&/\bpartners?\b/i.test(n.text)&&!/^[@/\w.?#=&:-]+$/.test(n.text.trim()))rows.push({file:p,line:sf.getLineAndCharacterOfPosition(n.getStart(sf)).line+1,text:n.text});ts.forEachChild(n,visit)}visit(sf)}}}
-walk('apps/web/src');walk('backend/src');writeFileSync('artifacts/priest-remaining.json',JSON.stringify(rows,null,2));for(const r of rows)console.log(`${r.file}:${r.line}: ${r.text.slice(0,250)}`);

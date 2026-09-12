@@ -1,0 +1,362 @@
+.page {
+  background: var(--ch-bg);
+  color: var(--ch-ink);
+}
+
+.hero {
+  position: relative;
+  min-height: min(62vh, 560px);
+  display: grid;
+  align-items: end;
+  overflow: hidden;
+  outline: none;
+}
+
+.heroMedia {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.4s var(--ch-ease);
+  pointer-events: none;
+}
+
+.heroMediaActive {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .heroMedia {
+    transition: none;
+  }
+}
+
+.heroMedia img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: var(--ch-hero-overlay);
+}
+
+.heroInner {
+  position: relative;
+  z-index: 1;
+  width: min(1120px, calc(100% - 2.5rem));
+  margin: 0 auto 4.25rem;
+  color: #f4f8fb;
+}
+
+.brand {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(2.6rem, 6vw, 4.4rem);
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+}
+
+.headline {
+  margin-top: 0.85rem;
+  max-width: 18ch;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.45rem, 3.2vw, 2.15rem);
+  font-weight: 550;
+  line-height: 1.25;
+}
+
+.support {
+  margin-top: 0.9rem;
+  max-width: 38rem;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: color-mix(in srgb, #f4f8fb 88%, transparent);
+}
+
+.cta {
+  display: inline-flex;
+  margin-top: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: var(--ch-accent-soft);
+  color: var(--ch-ink);
+  font-family: var(--font-ui, var(--font-body)), system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.9rem 1.35rem;
+  text-decoration: none;
+}
+
+.cta:hover {
+  filter: brightness(1.03);
+}
+
+.cta:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+.heroControls {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  bottom: 1.5rem;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.heroArrow {
+  display: inline-flex;
+  width: 2.25rem;
+  height: 2.25rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid color-mix(in srgb, #fff 45%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--ch-ink) 35%, transparent);
+  color: #f4f8fb;
+  font-size: 1.35rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.heroArrow:hover {
+  background: color-mix(in srgb, var(--ch-ink) 55%, transparent);
+}
+
+.heroArrow:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.heroDots {
+  display: flex;
+  gap: 0.45rem;
+  align-items: center;
+}
+
+.heroDot {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 999px;
+  border: 0;
+  padding: 0;
+  background: color-mix(in srgb, #fff 45%, transparent);
+  cursor: pointer;
+}
+
+.heroDotActive {
+  width: 1.35rem;
+  background: #f4f8fb;
+}
+
+.heroDot:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.section {
+  width: min(960px, calc(100% - 2.5rem));
+  margin: 0 auto;
+  padding: 4.25rem 0;
+}
+
+.sectionTitle {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  line-height: 1.15;
+}
+
+.sectionBody {
+  margin-top: 1rem;
+  max-width: 40rem;
+  color: var(--ch-ink-muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.whyUs {
+  padding: 5rem 0 4.5rem;
+  border-top: 1px solid color-mix(in srgb, var(--ch-accent) 14%, transparent);
+}
+
+.whyUsInner {
+  width: min(960px, calc(100% - 2.5rem));
+  margin: 0 auto;
+}
+
+.whyUsEyebrow {
+  margin: 0;
+  font-family: var(--font-ui, var(--font-body)), system-ui, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 650;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ch-ink-muted);
+}
+
+.whyUsTitle {
+  margin: 0.85rem 0 0;
+  max-width: 14ch;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(2.15rem, 5vw, 3.4rem);
+  font-weight: 650;
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+}
+
+.whyUsSupport {
+  margin: 1.15rem 0 0;
+  max-width: 36rem;
+  color: var(--ch-ink-muted);
+  font-size: 1.08rem;
+  line-height: 1.65;
+}
+
+.whyUsAccordion {
+  margin-top: 2.75rem;
+  border-top: 1px solid color-mix(in srgb, var(--ch-ink) 14%, transparent);
+}
+
+.whyUsRow {
+  border-bottom: 1px solid color-mix(in srgb, var(--ch-ink) 14%, transparent);
+}
+
+.whyUsTrigger {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 1rem;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 1.35rem 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.whyUsTrigger:focus-visible {
+  outline: 2px solid var(--ch-accent);
+  outline-offset: 4px;
+}
+
+.whyUsNumber {
+  font-family: var(--font-ui, var(--font-body)), system-ui, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--ch-ink-muted);
+}
+
+.whyUsRowTitle {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.35rem, 2.6vw, 1.85rem);
+  font-weight: 550;
+  line-height: 1.2;
+}
+
+.whyUsTrigger[aria-expanded='true'] .whyUsRowTitle {
+  font-weight: 650;
+  color: var(--ch-ink);
+}
+
+.whyUsIcon {
+  display: inline-flex;
+  width: 1.75rem;
+  height: 1.75rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.45rem;
+  line-height: 1;
+  color: var(--ch-accent);
+}
+
+.whyUsPanel {
+  overflow: hidden;
+}
+
+.whyUsPanelInner {
+  padding: 0 0 1.6rem;
+  max-width: 40rem;
+}
+
+.whyUsBody {
+  margin: 0;
+  color: var(--ch-ink-muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.whyUsMeaningsLabel {
+  margin: 1.25rem 0 0.65rem;
+  font-family: var(--font-ui, var(--font-body)), system-ui, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ch-ink);
+}
+
+.whyUsMeanings {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.whyUsMeanings li {
+  position: relative;
+  padding: 0.45rem 0 0.45rem 1.35rem;
+  color: var(--ch-ink-muted);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.whyUsMeanings li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--ch-accent);
+  font-weight: 600;
+}
+
+@media (max-width: 720px) {
+  .whyUs {
+    padding: 3.75rem 0 3.5rem;
+  }
+
+  .whyUsTrigger {
+    gap: 0.75rem;
+    padding: 1.15rem 0;
+  }
+
+  .whyUsNumber {
+    font-size: 0.75rem;
+  }
+}
+
+.finalBand {
+  background:
+    radial-gradient(
+      1200px 400px at 20% 0%,
+      color-mix(in srgb, var(--ch-accent) 14%, transparent),
+      transparent
+    ),
+    var(--ch-bg-elevated);
+  border-top: 1px solid color-mix(in srgb, var(--ch-accent) 18%, transparent);
+}
+
+@media (max-width: 720px) {
+  .hero {
+    min-height: 52vh;
+  }
+
+  .heroInner {
+    margin-bottom: 3.5rem;
+  }
+}

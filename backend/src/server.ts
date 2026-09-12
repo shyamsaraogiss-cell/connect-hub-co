@@ -63,7 +63,7 @@ app.use("/api/governance", governanceRoutes);
 app.use("/api/public", serviceCatalogRoutes);
 app.use("/api", serviceCatalogRoutes);
 
-const PORT = 5000;
+const PORT = Number(process.env.PORT ?? 5000);
 
 app.listen(PORT, () => {
   console.log(

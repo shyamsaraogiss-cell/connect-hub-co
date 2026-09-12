@@ -1,0 +1,664 @@
+{
+  "info": {
+    "name": "Connect Hub Co Backend",
+    "description": "Express API at backend/src. Default local port is 5050 (macOS AirPlay uses 5000).\n\nBearer token: run Auth → Login (or Register then Login). The test script stores `token` in `accessToken`.\n\nRoles: CUSTOMER (register default), RELIGIOUS_PARTNER, ADMIN, FOUNDER. Admin/Founder users must be set in Postgres (`User.role`).",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "baseUrl", "value": "http://localhost:5050" },
+    { "key": "accessToken", "value": "" },
+    { "key": "email", "value": "customer@example.test" },
+    { "key": "password", "value": "ChangeMe123!" },
+    { "key": "fullName", "value": "Local Customer" },
+    { "key": "referenceId", "value": "CHC-2026-123456" },
+    { "key": "contactVerification", "value": "guest@example.test" },
+    { "key": "customerId", "value": "" },
+    { "key": "partnerId", "value": "" },
+    { "key": "partnerUserId", "value": "" },
+    { "key": "articleId", "value": "" },
+    { "key": "faqId", "value": "" },
+    { "key": "quotationId", "value": "" },
+    { "key": "agreementId", "value": "" },
+    { "key": "serviceSlug", "value": "pitru-moksha-gaya" }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [{ "key": "token", "value": "{{accessToken}}", "type": "string" }]
+  },
+  "item": [
+    {
+      "name": "Health",
+      "item": [
+        {
+          "name": "Root",
+          "request": {
+            "auth": { "type": "noauth" },
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/"
+          }
+        },
+        {
+          "name": "Auth health",
+          "request": {
+            "auth": { "type": "noauth" },
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/auth/health"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Register (creates CUSTOMER)",
+          "request": {
+            "auth": { "type": "noauth" },
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"fullName\": \"{{fullName}}\",\n  \"email\": \"{{email}}\",\n  \"password\": \"{{password}}\"\n}"
+            },
+            "url": "{{baseUrl}}/api/auth/register"
+          }
+        },
+        {
+          "name": "Login (saves accessToken)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "if (pm.response.code === 200) {",
+                  "  const json = pm.response.json();",
+                  "  if (json.token) {",
+                  "    pm.collectionVariables.set('accessToken', json.token);",
+                  "    if (json.user && json.user.id) pm.collectionVariables.set('partnerUserId', json.user.id);",
+                  "  }",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "auth": { "type": "noauth" },
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"{{email}}\",\n  \"password\": \"{{password}}\"\n}"
+            },
+            "url": "{{baseUrl}}/api/auth/login"
+          }
+        },
+        {
+          "name": "Me",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/auth/me"
+          }
+        },
+        {
+          "name": "Logout",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{baseUrl}}/api/auth/logout"
+          }
+        }
+      ]
+    },
+    {
+      "name": "URMS",
+      "item": [
+        {
+          "name": "Create public request (optional Bearer)",
+          "request": {
+            "auth": { "type": "noauth" },
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"requestType\": \"SERVICE_REQUEST\",\n  \"serviceDomain\": \"pitru-moksha-gaya\",\n  \"guestName\": \"Guest Devotee\",\n  \"guestPhone\": \"9999999999\",\n  \"guestEmail\": \"{{contactVerification}}\",\n  \"title\": \"Pind Daan enquiry\",\n  \"description\": \"Need offline ritual assistance in Gaya.\",\n  \"priority\": \"MEDIUM\",\n  \"sourceChannel\": \"WEBSITE_FORM\"\n}"
+            },
+            "url": "{{baseUrl}}/api/urms/universal-requests/public",
+            "description": "requestType: INQUIRY | BOOKING | SERVICE_REQUEST | PARTNER_REGISTRATION | COMPLAINT | GRIEVANCE | FOUNDER_SUPPORT | OTHER. Commercial workflow endpoints require SERVICE_REQUEST. Send Bearer as CUSTOMER to attach customerId."
+          }
+        },
+        {
+          "name": "Track by reference + contact",
+          "request": {
+            "auth": { "type": "noauth" },
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"referenceId\": \"{{referenceId}}\",\n  \"contactVerification\": \"{{contactVerification}}\"\n}"
+            },
+            "url": "{{baseUrl}}/api/urms/universal-requests/track"
+          }
+        },
+        {
+          "name": "Customer quotation decision",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"quotationId\": \"{{quotationId}}\",\n  \"decision\": \"ACCEPT\",\n  \"contactVerification\": \"{{contactVerification}}\"\n}"
+            },
+            "url": "{{baseUrl}}/api/urms/universal-requests/{{referenceId}}/quotation-decision",
+            "description": "decision: ACCEPT | REQUEST_CHANGE | REJECT. For REQUEST_CHANGE also send changeRequest."
+          }
+        },
+        {
+          "name": "Customer accept agreement",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"agreementId\": \"{{agreementId}}\",\n  \"agreementVersion\": 1,\n  \"contactVerification\": \"{{contactVerification}}\"\n}"
+            },
+            "url": "{{baseUrl}}/api/urms/universal-requests/{{referenceId}}/agreement-acceptance"
+          }
+        },
+        {
+          "name": "Customer submit payment details",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"amountPaid\": \"5000\",\n  \"paymentDate\": \"2026-09-10\",\n  \"externalReference\": \"UTR123456\",\n  \"paymentMode\": \"NEFT\",\n  \"payerName\": \"Guest Devotee\",\n  \"remarks\": \"Paid from HDFC\",\n  \"contactVerification\": \"{{contactVerification}}\"\n}"
+            },
+            "url": "{{baseUrl}}/api/urms/universal-requests/{{referenceId}}/payment-details",
+            "description": "paymentMode: BANK_TRANSFER | NEFT | RTGS | IMPS"
+          }
+        },
+        {
+          "name": "List mine (CUSTOMER)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/urms/universal-requests/mine"
+          }
+        },
+        {
+          "name": "List assigned to me (RELIGIOUS_PARTNER)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/urms/universal-requests/assigned-to-me"
+          }
+        },
+        {
+          "name": "Eligible partners (ADMIN/FOUNDER)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/urms/universal-requests/eligible-partners"
+          }
+        },
+        {
+          "name": "List all (ADMIN/FOUNDER)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/urms/universal-requests"
+          }
+        },
+        {
+          "name": "Get by referenceId (role-scoped)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/urms/universal-requests/{{referenceId}}"
+          }
+        },
+        {
+          "name": "Admin patch request",
+          "request": {
+            "method": "PATCH",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"currentStatus\": \"ACKNOWLEDGED\",\n  \"currentStage\": \"Acknowledged\",\n  \"assignedTeam\": \"Operations\",\n  \"assignedPartnerUserId\": \"{{partnerUserId}}\",\n  \"publicNote\": \"We have received your request.\",\n  \"internalNote\": \"Assign after verification.\"\n}"
+            },
+            "url": "{{baseUrl}}/api/urms/universal-requests/{{referenceId}}"
+          }
+        },
+        {
+          "name": "Partner patch status",
+          "request": {
+            "method": "PATCH",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"status\": \"IN_PROGRESS\",\n  \"publicNote\": \"Work started.\"\n}"
+            },
+            "url": "{{baseUrl}}/api/urms/universal-requests/{{referenceId}}/partner-status",
+            "description": "status: IN_PROGRESS | COMPLETED. RELIGIOUS_PARTNER only; 204 on success."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Commercial (ADMIN/FOUNDER)",
+      "item": [
+        {
+          "name": "Get internal workflow",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/commercial-workflows/{{referenceId}}"
+          }
+        },
+        {
+          "name": "Create quotation",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"serviceName\": \"Pind Daan Gaya\",\n  \"serviceScope\": \"Offline ancestral rites at Gaya.\",\n  \"inclusions\": [\"Purohit coordination\", \"Ritual materials\"],\n  \"exclusions\": [\"Airfare\"],\n  \"basePrice\": \"5000\",\n  \"applicableChargesTaxes\": \"0\",\n  \"currency\": \"INR\",\n  \"validUntil\": \"2026-12-31\",\n  \"notes\": null,\n  \"paymentTerms\": \"100% before service\",\n  \"paymentInstructions\": \"NEFT to the registered Connect Hub account.\"\n}"
+            },
+            "url": "{{baseUrl}}/api/commercial-workflows/{{referenceId}}/quotations"
+          }
+        },
+        {
+          "name": "Release quotation",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{baseUrl}}/api/commercial-workflows/{{referenceId}}/quotations/{{quotationId}}/release"
+          }
+        },
+        {
+          "name": "Revise quotation",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"serviceName\": \"Pind Daan Gaya\",\n  \"serviceScope\": \"Revised scope.\",\n  \"inclusions\": [\"Purohit coordination\"],\n  \"exclusions\": [\"Airfare\", \"Hotel\"],\n  \"basePrice\": \"4500\",\n  \"applicableChargesTaxes\": \"0\",\n  \"currency\": \"INR\",\n  \"paymentTerms\": \"100% before service\",\n  \"paymentInstructions\": \"NEFT to the registered Connect Hub account.\"\n}"
+            },
+            "url": "{{baseUrl}}/api/commercial-workflows/{{referenceId}}/quotations/{{quotationId}}/revise"
+          }
+        },
+        {
+          "name": "Confirm external payment",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"amountConfirmed\": \"5000\",\n  \"currency\": \"INR\",\n  \"externalReference\": \"UTR123456\",\n  \"internalNote\": \"Matched to bank statement.\"\n}"
+            },
+            "url": "{{baseUrl}}/api/commercial-workflows/{{referenceId}}/external-payment/confirm"
+          }
+        },
+        {
+          "name": "Confirm booking",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{baseUrl}}/api/commercial-workflows/{{referenceId}}/booking/confirm"
+          }
+        }
+      ]
+    },
+    {
+      "name": "PitruMoksha",
+      "item": [
+        {
+          "name": "Create request (public)",
+          "request": {
+            "auth": { "type": "noauth" },
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"customerName\": \"Guest Devotee\",\n  \"mobile\": \"9999999999\",\n  \"whatsapp\": \"9999999999\",\n  \"email\": \"guest@example.test\",\n  \"country\": \"India\",\n  \"state\": \"Bihar\",\n  \"city\": \"Gaya\",\n  \"serviceMode\": \"offline\",\n  \"ritualType\": \"Pind Daan\",\n  \"preferredDate\": \"2026-10-01T00:00:00.000Z\",\n  \"preferredTime\": \"morning\",\n  \"language\": \"Hindi\",\n  \"samagriRequired\": true,\n  \"documentationRequired\": false,\n  \"travelAssistance\": false\n}"
+            },
+            "url": "{{baseUrl}}/api/pitrumoksha"
+          }
+        },
+        {
+          "name": "List requests (ADMIN/FOUNDER)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/pitrumoksha"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Religious Partners",
+      "item": [
+        {
+          "name": "Register (public)",
+          "request": {
+            "auth": { "type": "noauth" },
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"fullName\": \"Pandit Example\",\n  \"category\": \"Purohit\",\n  \"mobile\": \"9888888888\",\n  \"whatsapp\": \"9888888888\",\n  \"email\": \"priest@example.test\",\n  \"city\": \"Gaya\",\n  \"state\": \"Bihar\",\n  \"country\": \"India\",\n  \"preferredServiceArea\": \"Gaya\",\n  \"onlineAvailable\": true,\n  \"offlineAvailable\": true,\n  \"relocationAvailable\": false\n}"
+            },
+            "url": "{{baseUrl}}/api/religious-partners"
+          }
+        },
+        {
+          "name": "List (ADMIN/FOUNDER)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/religious-partners"
+          }
+        },
+        {
+          "name": "Get one (ADMIN/FOUNDER)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/religious-partners/{{partnerId}}"
+          }
+        },
+        {
+          "name": "Update (ADMIN/FOUNDER)",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"fullName\": \"Pandit Example\",\n  \"category\": \"Purohit\",\n  \"mobile\": \"9888888888\",\n  \"identityVerified\": true,\n  \"addressVerified\": true,\n  \"qualificationVerified\": true,\n  \"status\": \"Verified\",\n  \"remarks\": \"Approved locally\"\n}"
+            },
+            "url": "{{baseUrl}}/api/religious-partners/{{partnerId}}"
+          }
+        },
+        {
+          "name": "Link user (ADMIN/FOUNDER)",
+          "request": {
+            "method": "PATCH",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"userId\": \"{{partnerUserId}}\"\n}"
+            },
+            "url": "{{baseUrl}}/api/religious-partners/{{partnerId}}/link-user"
+          }
+        },
+        {
+          "name": "Deactivate (ADMIN/FOUNDER)",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": "{{baseUrl}}/api/religious-partners/{{partnerId}}/deactivate"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Customers (ADMIN/FOUNDER)",
+      "item": [
+        {
+          "name": "List",
+          "request": { "method": "GET", "header": [], "url": "{{baseUrl}}/api/customers" }
+        },
+        {
+          "name": "Get one",
+          "request": { "method": "GET", "header": [], "url": "{{baseUrl}}/api/customers/{{customerId}}" }
+        },
+        {
+          "name": "Create",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"fullName\": \"CRM Customer\",\n  \"mobile\": \"9777777777\",\n  \"email\": \"crm@example.test\",\n  \"city\": \"Patna\",\n  \"state\": \"Bihar\",\n  \"country\": \"India\",\n  \"purpose\": \"Ritual enquiry\",\n  \"serviceType\": \"PitruMoksha\",\n  \"status\": \"New\"\n}"
+            },
+            "url": "{{baseUrl}}/api/customers"
+          }
+        },
+        {
+          "name": "Update",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"fullName\": \"CRM Customer\",\n  \"mobile\": \"9777777777\",\n  \"purpose\": \"Follow-up\",\n  \"status\": \"In Progress\"\n}"
+            },
+            "url": "{{baseUrl}}/api/customers/{{customerId}}"
+          }
+        },
+        {
+          "name": "Delete",
+          "request": { "method": "DELETE", "header": [], "url": "{{baseUrl}}/api/customers/{{customerId}}" }
+        }
+      ]
+    },
+    {
+      "name": "Dashboard (ADMIN/FOUNDER)",
+      "item": [
+        {
+          "name": "Summary",
+          "request": { "method": "GET", "header": [], "url": "{{baseUrl}}/api/dashboard/summary" }
+        }
+      ]
+    },
+    {
+      "name": "Governance (public published)",
+      "item": [
+        {
+          "name": "Published articles",
+          "request": {
+            "auth": { "type": "noauth" },
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/governance/articles/published?category="
+          }
+        },
+        {
+          "name": "Published article by id",
+          "request": {
+            "auth": { "type": "noauth" },
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/governance/articles/published/{{articleId}}"
+          }
+        },
+        {
+          "name": "Published FAQs",
+          "request": {
+            "auth": { "type": "noauth" },
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/governance/faqs/published"
+          }
+        },
+        {
+          "name": "Published FAQ by id",
+          "request": {
+            "auth": { "type": "noauth" },
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/governance/faqs/published/{{faqId}}"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Governance (ADMIN/FOUNDER)",
+      "item": [
+        {
+          "name": "Create article draft",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"category\": \"pitru\",\n  \"categoryTitle\": \"PitruMoksha\",\n  \"title\": \"What is Pind Daan?\",\n  \"keywords\": [\"pind daan\", \"gaya\"],\n  \"synonyms\": [\"shraddha\"],\n  \"summary\": \"Short published-ready summary.\",\n  \"content\": \"Full article body.\",\n  \"link\": \"/pitru-moksha-gaya\",\n  \"contentKey\": \"pind-daan-intro\"\n}"
+            },
+            "url": "{{baseUrl}}/api/governance/articles"
+          }
+        },
+        {
+          "name": "Edit article draft",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"What is Pind Daan?\",\n  \"summary\": \"Updated summary.\",\n  \"content\": \"Updated body.\",\n  \"keywords\": [\"pind daan\"],\n  \"synonyms\": [],\n  \"link\": \"/pitru-moksha-gaya\"\n}"
+            },
+            "url": "{{baseUrl}}/api/governance/articles/{{articleId}}"
+          }
+        },
+        {
+          "name": "Approve article (FOUNDER)",
+          "request": { "method": "POST", "header": [], "url": "{{baseUrl}}/api/governance/articles/{{articleId}}/approve" }
+        },
+        {
+          "name": "Lock article",
+          "request": { "method": "POST", "header": [], "url": "{{baseUrl}}/api/governance/articles/{{articleId}}/lock" }
+        },
+        {
+          "name": "Publish article",
+          "request": { "method": "POST", "header": [], "url": "{{baseUrl}}/api/governance/articles/{{articleId}}/publish" }
+        },
+        {
+          "name": "Rollback article (FOUNDER)",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"targetVersionId\": 1\n}" },
+            "url": "{{baseUrl}}/api/governance/articles/{{articleId}}/rollback"
+          }
+        },
+        {
+          "name": "Archive article",
+          "request": { "method": "POST", "header": [], "url": "{{baseUrl}}/api/governance/articles/{{articleId}}/archive" }
+        },
+        {
+          "name": "Admin list articles",
+          "request": { "method": "GET", "header": [], "url": "{{baseUrl}}/api/governance/articles/admin/list" }
+        },
+        {
+          "name": "Admin get article",
+          "request": { "method": "GET", "header": [], "url": "{{baseUrl}}/api/governance/articles/admin/{{articleId}}" }
+        },
+        {
+          "name": "Create FAQ draft",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"category\": \"pitru\",\n  \"question\": \"Who can perform Pind Daan?\",\n  \"answer\": \"Family members with priest coordination.\",\n  \"keywords\": [\"pind daan\"],\n  \"link\": \"/pitru-moksha-gaya\",\n  \"contentKey\": \"who-can-perform-pind-daan\"\n}"
+            },
+            "url": "{{baseUrl}}/api/governance/faqs"
+          }
+        },
+        {
+          "name": "Edit FAQ draft",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"question\": \"Who can perform Pind Daan?\",\n  \"answer\": \"Updated answer.\",\n  \"keywords\": [\"pind daan\"],\n  \"link\": \"/pitru-moksha-gaya\"\n}"
+            },
+            "url": "{{baseUrl}}/api/governance/faqs/{{faqId}}"
+          }
+        },
+        {
+          "name": "Approve FAQ (FOUNDER)",
+          "request": { "method": "POST", "header": [], "url": "{{baseUrl}}/api/governance/faqs/{{faqId}}/approve" }
+        },
+        {
+          "name": "Lock FAQ",
+          "request": { "method": "POST", "header": [], "url": "{{baseUrl}}/api/governance/faqs/{{faqId}}/lock" }
+        },
+        {
+          "name": "Publish FAQ",
+          "request": { "method": "POST", "header": [], "url": "{{baseUrl}}/api/governance/faqs/{{faqId}}/publish" }
+        },
+        {
+          "name": "Rollback FAQ (FOUNDER)",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"targetVersion\": 1\n}" },
+            "url": "{{baseUrl}}/api/governance/faqs/{{faqId}}/rollback"
+          }
+        },
+        {
+          "name": "Archive FAQ",
+          "request": { "method": "POST", "header": [], "url": "{{baseUrl}}/api/governance/faqs/{{faqId}}/archive" }
+        },
+        {
+          "name": "Admin list FAQs",
+          "request": { "method": "GET", "header": [], "url": "{{baseUrl}}/api/governance/faqs/admin/list" }
+        },
+        {
+          "name": "Admin get FAQ",
+          "request": { "method": "GET", "header": [], "url": "{{baseUrl}}/api/governance/faqs/admin/{{faqId}}" }
+        },
+        {
+          "name": "Audit log",
+          "request": { "method": "GET", "header": [], "url": "{{baseUrl}}/api/governance/audit-log" }
+        }
+      ]
+    },
+    {
+      "name": "Service catalog (in-memory public)",
+      "item": [
+        {
+          "name": "Categories",
+          "request": {
+            "auth": { "type": "noauth" },
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/public/service-categories"
+          }
+        },
+        {
+          "name": "Services",
+          "request": {
+            "auth": { "type": "noauth" },
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/public/services?q=&category=&featured=&page=1&pageSize=12"
+          }
+        },
+        {
+          "name": "Service by slug",
+          "request": {
+            "auth": { "type": "noauth" },
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/public/services/{{serviceSlug}}"
+          }
+        },
+        {
+          "name": "Categories (alias /api)",
+          "request": {
+            "auth": { "type": "noauth" },
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/service-categories"
+          }
+        }
+      ]
+    }
+  ]
+}

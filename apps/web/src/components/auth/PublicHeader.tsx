@@ -5,17 +5,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { useAuth } from "./AuthProvider";
-import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
-
-const links = [
-  ["Home", "/"],
-  ["About", "/about"],
-  ["Services", "/services"],
-  ["PitruMoksha Gaya", "/pitru-moksha-gaya"],
-  ["Travel", "/travel-assistance"],
-  ["GenZ AI", "/zen-g"],
-  ["Contact", "/contact"],
-] as const;
+import { useServicesDrawer } from "@/components/auth/ServicesDrawerContext";
+import { ROUTES } from "@/config/navigation";
+import styles from "./PublicHeader.module.css";
 
 export function HeaderMailIcon({ className = "" }: { className?: string }) {
   return (
@@ -26,11 +18,21 @@ export function HeaderMailIcon({ className = "" }: { className?: string }) {
   );
 }
 
+function ServicesChevron({ className = "" }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 16 16" fill="none" aria-hidden="true">
+      <path d="M4 6l4 4 4-4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+const centerLinks = [["About", "/about"]] as const;
+
 export function PublicHeader() {
   const path = usePathname();
   const { user } = useAuth();
   const [open, setOpen] = useState(false);
-  const [language, setLanguage] = useState("EN-IN");
+  const { open: servicesOpen, toggleDrawer } = useServicesDrawer();
 
   const show =
     !path.startsWith("/admin") &&
@@ -41,112 +43,79 @@ export function PublicHeader() {
 
   if (!show) return null;
 
+  const loginHref = user ? ROUTES.DASHBOARD : ROUTES.LOGIN;
+  const loginLabel = user ? "Dashboard" : "Login";
+
   return (
-    <header className="sticky top-0 z-50 min-h-[96px] border-b border-[var(--border-soft)] bg-[linear-gradient(180deg,var(--shell-peacock-top)_0%,var(--shell-peacock)_55%,var(--shell-peacock-bottom)_100%)] text-[var(--text-on-peacock)] shadow-[0_4px_18px_rgba(8,127,140,0.28)]">
-      <nav
-        className="mx-auto max-w-[1500px] px-3 py-2"
-        aria-label="Primary navigation"
-      >
-        <div className="flex min-h-[78px] items-center gap-3">
-          {/* BRAND */}
-          <Link
-            className="mr-auto flex items-center gap-3 rounded-md px-1 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--ritual-gold)]"
-            href="/"
-            onClick={() => setOpen(false)}
-            aria-label="Connect Hub Co. — The Authentic Ancestral Rites — home"
-          >
-            <Image
-              src="/images/brand/golden-lotus-mark.svg"
-              alt="Golden Lotus Logo"
-              width={60}
-              height={50}
-              priority
-              className="h-[50px] w-[60px] shrink-0"
-            />
+    <header className={styles.header}>
+      <nav className={styles.bar} aria-label="Primary navigation">
+        <Link
+          className={styles.brand}
+          href={ROUTES.HOME}
+          onClick={() => setOpen(false)}
+          aria-label="Connect Hub Co. home"
+        >
+          <Image
+            src="/images/brand/golden-lotus-mark.svg"
+            alt=""
+            width={34}
+            height={28}
+            priority
+            className={styles.brandMark}
+          />
+          <span className={styles.brandName}>Connect Hub Co.</span>
+        </Link>
 
-            <div>
-              <strong className="block font-serif text-[28px] leading-tight xl:text-[31px]">
-                Connect Hub Co.
-              </strong>
-
-              <small className="mt-1 block text-[12px] leading-snug text-[var(--gold-bright)] xl:text-[13px]">
-                The Authentic Ancestral Rites | Verified Lineage | Vedic Precision
-              </small>
-            </div>
-          </Link>
-
-          {/* DESKTOP HEADER CONTROLS */}
-          <div className="hidden items-center gap-2 self-end mb-[2px] lg:flex">
-            {/* MAIL */}
-            <Link
-              className="flex h-7 w-7 items-center justify-center rounded-lg border border-sky-300 bg-sky-500/15 text-sky-200 shadow-sm transition-[transform,background-color,color,box-shadow] hover:bg-sky-500/25 hover:text-white active:translate-y-px active:scale-95 active:shadow-inner focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-300"
-              href="/contact?topic=inquiry"
-              title="Raise Inquiry"
-            >
-              <HeaderMailIcon className="h-[18px] w-[18px]" />
-            </Link>
-
-            {/* WHATSAPP */}
-            <Link
-              className="flex h-7 w-7 items-center justify-center rounded-lg border border-[#25D366] bg-[#25D366]/15 text-[#5BE58B] shadow-sm transition-[transform,background-color,color,box-shadow] hover:bg-[#25D366]/25 hover:text-white active:translate-y-px active:scale-95 active:shadow-inner focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5BE58B]"
-              href="/contact"
-              title="Contact options"
-            >
-              <WhatsAppIcon className="h-[18px] w-[18px]" />
-            </Link>
-
-            {/* LANGUAGE */}
-            <div className="relative flex h-7 items-center rounded-lg border border-[var(--ritual-gold)] bg-transparent px-2 text-[13px] font-semibold text-[var(--ritual-gold)] transition-colors hover:bg-white/10">
-              <span aria-hidden="true" className="mr-1">
-                🌐</span>
-
-              <select
-                aria-label="Select language"
-                value={language}
-                onChange={(event) => setLanguage(event.target.value)}
-                className="cursor-pointer appearance-none bg-transparent pr-4 font-semibold text-[var(--ritual-gold)] outline-none"
-              >
-                <option value="EN-IN" className="text-black">
-                  EN-IN
-                </option>
-
-                <option value="HI-IN" className="text-black">
-                  हिन्दी</option>
-
-                <option value="EN" className="text-black">
-                  English
-                </option>
-              </select>
-
-              <span
-                aria-hidden="true"
-                className="pointer-events-none absolute right-2"
-              >
-                ▾</span>
-            </div>
-
-            {/* LOGIN / SIGN UP */}
-            <Link
-              className="inline-flex h-7 items-center justify-center rounded-lg border border-[var(--ritual-gold)] bg-transparent px-3 text-[13px] font-semibold text-[var(--ritual-gold)] transition-[transform,background-color,box-shadow] hover:bg-white/10 active:translate-y-px active:scale-[0.97] active:shadow-inner focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--gold-bright)]"
-              href={user ? "/dashboard" : "/login"}
-            >
-              {user ? "Dashboard" : "Login / Sign Up"}
-            </Link>
-
-            {/* BOOK NOW */}
-            <Link
-              className="inline-flex h-7 items-center justify-center gap-1.5 rounded-lg bg-[var(--ritual-gold)] px-3 text-[13px] font-semibold text-[var(--royal-navy)] transition-[transform,filter,box-shadow] hover:brightness-105 active:translate-y-px active:scale-[0.97] active:shadow-inner focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--gold-bright)]"
-              href="/services"
-            >
-              <span aria-hidden="true">📅</span>
-              <span>Book Now</span>
-            </Link>
-          </div>
-
-          {/* MOBILE MENU BUTTON */}
+        <div className={styles.navCluster}>
           <button
-            className="rounded-lg border border-white/70 px-3 py-2 lg:hidden"
             type="button"
+            className={`${styles.link} ${servicesOpen ? styles.linkActive : ""}`}
+            aria-expanded={servicesOpen}
+            aria-controls="public-services-drawer"
+            aria-label={servicesOpen ? "Close services menu" : "Open services menu"}
+            onClick={toggleDrawer}
+          >
+            Services
+            <ServicesChevron className={styles.chevron} />
+          </button>
+
+          {centerLinks.map(([label, href]) => {
+            const active = path === href || path.startsWith(`${href}/`);
+            return (
+              <Link
+                key={href}
+                href={href}
+                className={`${styles.link} ${active ? styles.linkActive : ""}`}
+              >
+                {label}
+              </Link>
+            );
+          })}
+        </div>
+
+        <div className={styles.actions}>
+          <Link href={loginHref} className={styles.pillSoft}>
+            {loginLabel}
+          </Link>
+          <Link href={ROUTES.INQUIRY} className={styles.pillPrimary}>
+            Talk to a coordinator
+          </Link>
+        </div>
+
+        <div className={styles.mobileActions}>
+          <button
+            type="button"
+            className={`${styles.link} ${servicesOpen ? styles.linkActive : ""}`}
+            aria-expanded={servicesOpen}
+            aria-controls="public-services-drawer"
+            onClick={toggleDrawer}
+          >
+            Services
+            <ServicesChevron className={styles.chevron} />
+          </button>
+          <button
+            type="button"
+            className={styles.pillSoft}
             aria-expanded={open}
             aria-controls="public-mobile-menu"
             aria-label={open ? "Close navigation menu" : "Open navigation menu"}
@@ -155,54 +124,30 @@ export function PublicHeader() {
             {open ? "Close" : "Menu"}
           </button>
         </div>
+      </nav>
 
-        {/* MOBILE MENU */}
-        {open ? (
-          <div
-            id="public-mobile-menu"
-            className="mt-2 grid gap-1 border-t border-white/25 bg-[var(--shell-peacock)] pt-3 lg:hidden"
-          >
-            {links.map(([label, href]) => (
-              <Link
-                className="rounded-lg px-3 py-2 hover:bg-white/15 focus:bg-white/15"
-                href={href}
-                key={href}
-                onClick={() => setOpen(false)}
-              >
-                {label}
-              </Link>
-            ))}
-
+      {open ? (
+        <div id="public-mobile-menu" className={styles.menuPanel}>
+          {centerLinks.map(([label, href]) => (
             <Link
-              className="rounded-lg px-3 py-2 hover:bg-white/15"
-              href="/contact"
+              key={href}
+              href={href}
+              className={styles.menuLink}
               onClick={() => setOpen(false)}
             >
-              Contact options
+              {label}
             </Link>
-
-            <Link
-              className="mt-1 rounded-lg bg-[var(--ritual-gold)] px-3 py-2 font-semibold text-[var(--royal-navy)] transition-[transform,box-shadow] active:translate-y-px active:scale-[0.99] active:shadow-inner focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--gold-bright)]"
-              href={user ? "/dashboard" : "/login"}
-              onClick={() => setOpen(false)}
-            >
-              {user ? "Dashboard" : "Login / Sign Up"}
+          ))}
+          <div className={styles.menuCtas}>
+            <Link href={loginHref} className={styles.pillSoft} onClick={() => setOpen(false)}>
+              {loginLabel}
             </Link>
-
-            <Link
-              className="rounded-lg bg-[var(--ritual-gold)] px-3 py-2 font-semibold text-[var(--royal-navy)] transition-[transform,box-shadow] active:translate-y-px active:scale-[0.99] active:shadow-inner focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--gold-bright)]"
-              href="/services"
-              onClick={() => setOpen(false)}
-            >
-              ?? Book Now
+            <Link href={ROUTES.INQUIRY} className={styles.pillPrimary} onClick={() => setOpen(false)}>
+              Talk to a coordinator
             </Link>
           </div>
-        ) : null}
-      </nav>
+        </div>
+      ) : null}
     </header>
   );
 }
-
-
-
-
