@@ -15,7 +15,7 @@ import commercialWorkflowRoutes from "./routes/commercialWorkflow.routes";
 const app = express();
 
 const allowedOrigins = new Set([
-  "http://localhost:3000",
+  "http://localhost:3050",
   ...(process.env.CORS_ALLOWED_ORIGINS ?? "")
     .split(",")
     .map((origin) => origin.trim())
